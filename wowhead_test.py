@@ -1,317 +1,261 @@
 import csv
 import json
 import re
+from dataclasses import dataclass
+from enum import Enum
 from io import StringIO
 from pathlib import Path
-from typing import Optional, Set, Dict, Any, List
+from typing import Optional, Final, Set, Dict, Any, List, TypeVar, Type
 
 from scrape_utils import ScrapeUtils
 
-class WowheadClassSpec:
+WowEnumT = TypeVar('WowEnumT', bound='WowEnumBase')
 
-    UNKNOWN_VALUE: str = "Unknown"
-    primary_stats: Dict[str, str] = {
-        "Agility": "Agi",
-        "Strength": "Str",
-        "Intellect": "Int",
-    }
-    secondary_stats: Dict[str, str] = {
-        "Critical Strike": "Crit",
-        "Haste": "Haste",
-        "Mastery": "Mastery",
-        "Versatility": "Vers",
-    }
-    slot_categories: Dict[str, List[str]] = {
-        "Head": ["Head"],
-        "Shoulders": ["Shoulder"],
-        "Chest": ["Chest"],
-        "Wrists": ["Wrist"],
-        "Hands": ["Hands"],
-        "Waist": ["Waist"],
-        "Legs": ["Legs"],
-        "Feet": ["Feet"],
-        "Neck": ["Neck"],
-        "Back": ["Back"],
-        "Ring": ["Finger"],
-        "Onehand": ["One-Hand", "Wand"],
-        "Twohand": ["Two-Hand", "Ranged"],
-        "Offhand": ["Held In Off-hand", "Off Hand"],
-        "Trinket": ["Trinket"],
-    }
+class WowEnumBase(Enum):
+    """Base class for all WoW enums."""
 
-    def __init__(self, class_name: str, spec_dict: Dict[int, str], short_names: Dict[str, str]):
-        """Initialize a WowheadClassSpec instance."""
-        self.name: str = class_name
-        self.shortname: str = WowheadClassSpec.get_short_class_name(class_name)
-        self.spec_dict: Dict[int, str] = spec_dict
-        self.spec_shortened_names: Dict[str, str] = short_names
+    @classmethod
+    def get_all(cls: Type[WowEnumT]) -> List[WowEnumT]:
+        return list(cls)
 
-    def get_spec_ids(self) -> List[int]:
+    @classmethod
+    def get_all_abbrs(cls) -> List[str]:
+        abbreviations: List[str] = []
+        for enum in cls:
+            abbreviations.append(enum.get_abbr())
+        return abbreviations
+
+    @classmethod
+    def get_all_ingame_names(cls) -> str:
+        ingame_names: List[str] = []
+        for enum in cls:
+            ingame_names.append(enum.get_ingame_name())
+        return ingame_names
+
+    def get_abbr(self) -> str:
+        abbreviation = self.name
+        return abbreviation.capitalize()
+
+    def get_ingame_name(self) -> str:
+        return self.value
+
+
+class WowStatBase(WowEnumBase):
+    """Base class for WoW primary and secondary stats providing common methods."""
+
+    def get_single_letter_name(self) -> str:
+        return self.name[0]
+
+
+class WowStatPrimary(WowStatBase):
+    """Primary stats in WoW (do NOT rename these. They must match names used on Wowhead.com) """
+    AGI = "Agility"
+    STR = "Strength"
+    INT = "Intellect"
+
+
+class WowStatSecondary(WowStatBase):
+    """Secondary stats in WoW (do NOT rename these. They must match names used on Wowhead.com) """
+    CRIT = "Critical Strike"
+    HASTE = "Haste"
+    MASTERY = "Mastery"
+    VERS = "Versatility"
+
+
+class WowRole(WowEnumBase):
+    """Roles in WoW"""
+    TANK = "Tank"
+    HEAL = "Healer"
+    DPS = "Dps"
+
+
+class WowEquipSlot(WowEnumBase):
+    """Equip slot names in WoW (do NOT rename these. They must match names used on Wowhead.com)"""
+    HEAD = "Head"
+    SHOULDERS = "Shoulder"
+    CHEST = "Chest"
+    WRISTS = "Wrist"
+    HANDS = "Hands"
+    WAIST = "Waist"
+    LEGS = "Legs"
+    FEET = "Feet"
+    NECK = "Neck"
+    BACK = "Back"
+    RING = "Finger"
+    ONEHAND = "One-Hand"
+    TWOHAND = "Two-Hand"
+    RANGED = "Ranged"
+    OFFHAND = "Held In Off-hand"
+    MAINHAND = "Main Hand"
+    SHIELD = "Off Hand"
+    TRINKET = "Trinket"
+
+    def mainstat_matters(self) -> bool:
+        """Returns true if items for gearslot should be split by Agi/Str/Int"""
+        return self in (WowEquipSlot.ONEHAND, WowEquipSlot.TWOHAND, WowEquipSlot.TRINKET)
+
+    def role_and_mainstat_matters(self) -> bool:
+        """Returns true if items for gearslot should be split by Tank/Heal/Dps"""
+        return self == WowEquipSlot.TRINKET
+
+    def create_variant(self, mainstat: Optional[WowStatPrimary], role: Optional[WowRole]) -> str:
+        name = self.get_abbr()
+        if mainstat is not None and self.mainstat_matters():  #Onehand, Twohand and Trinkets
+            mainstat_name = mainstat.get_abbr()
+            if self == WowEquipSlot.ONEHAND:
+                return f"1H {mainstat_name} Weapon"
+            if self == WowEquipSlot.TWOHAND:
+                return f"2H {mainstat_name} Weapon"
+            if role is not None and self.role_and_mainstat_matters():  #Trinkets only
+                role_name = role.get_abbr()
+                if role in (WowRole.HEAL, WowRole.TANK):
+                    return f"{role_name} {name}"
+                if role == WowRole.DPS:
+                    return f"{role_name} {mainstat_name} {name}"
+        return name
+
+
+class WowClass(WowEnumBase):
+    """Classes in WoW """
+    DK = "Death Knight"
+    DH = "Demon Hunter"
+    DRUID = "Druid"
+    EVOKER = "Evoker"
+    HUNTER = "Hunter"
+    MAGE = "Mage"
+    MONK = "Monk"
+    PALADIN = "Paladin"
+    PRIEST = "Priest"
+    ROGUE = "Rogue"
+    SHAMAN = "Shaman"
+    WARLOCK = "Warlock"
+    WARRIOR = "Warrior"
+
+
+@dataclass
+class WowSpecData:
+    """Data for a WoW spec"""
+    spec_id: int
+    name: str
+    wowclass: WowClass
+    role: WowRole
+    mainstat: WowStatPrimary
+
+
+class WowSpec(WowEnumBase):
+    """Specs in WoW"""
+    DK_BLOOD = WowSpecData(250, "Blood", WowClass.DK, WowRole.TANK, WowStatPrimary.STR)
+    DK_FROST = WowSpecData(251, "Frost", WowClass.DK, WowRole.DPS, WowStatPrimary.STR)
+    DK_UNHOLY = WowSpecData(252, "Unholy", WowClass.DK, WowRole.DPS, WowStatPrimary.STR)
+
+    DH_HAVOC = WowSpecData(577, "Havoc", WowClass.DH, WowRole.DPS, WowStatPrimary.AGI)
+    DH_VENG = WowSpecData(581, "Vengeance", WowClass.DH, WowRole.TANK, WowStatPrimary.AGI)
+
+    DRUID_BOOMIE = WowSpecData(102, "Balance", WowClass.DRUID, WowRole.DPS, WowStatPrimary.INT)
+    DRUID_CAT = WowSpecData(103, "Feral", WowClass.DRUID, WowRole.DPS, WowStatPrimary.AGI)
+    DRUID_BEAR = WowSpecData(104, "Guardian", WowClass.DRUID, WowRole.TANK, WowStatPrimary.AGI)
+    DRUID_RESTO = WowSpecData(105, "Restoration", WowClass.DRUID, WowRole.HEAL, WowStatPrimary.INT)
+
+    EVOKER_DEV = WowSpecData(1467, "Devastation", WowClass.EVOKER, WowRole.DPS, WowStatPrimary.INT)
+    EVOKER_PRES = WowSpecData(1468, "Preservation", WowClass.EVOKER, WowRole.HEAL, WowStatPrimary.INT)
+    EVOKER_AUG = WowSpecData(1473, "Augmentation", WowClass.EVOKER, WowRole.DPS, WowStatPrimary.INT)
+
+    HUNTER_BM = WowSpecData(253, "Beast Mastery", WowClass.HUNTER, WowRole.DPS, WowStatPrimary.AGI)
+    HUNTER_MM = WowSpecData(254, "Marksmanship", WowClass.HUNTER, WowRole.DPS, WowStatPrimary.AGI)
+    HUNTER_SV = WowSpecData(255, "Survival", WowClass.HUNTER, WowRole.DPS, WowStatPrimary.AGI)
+
+    MAGE_ARCANE = WowSpecData(62, "Arcane", WowClass.MAGE, WowRole.DPS, WowStatPrimary.INT)
+    MAGE_FIRE = WowSpecData(63, "Fire", WowClass.MAGE, WowRole.DPS, WowStatPrimary.INT)
+    MAGE_FROST = WowSpecData(64, "Frost", WowClass.MAGE, WowRole.DPS, WowStatPrimary.INT)
+
+    MONK_BREW = WowSpecData(268, "Brewmaster", WowClass.MONK, WowRole.TANK, WowStatPrimary.AGI)
+    MONK_MW = WowSpecData(270, "Mistweaver", WowClass.MONK, WowRole.HEAL, WowStatPrimary.INT)
+    MONK_WW = WowSpecData(269, "Windwalker", WowClass.MONK, WowRole.DPS, WowStatPrimary.AGI)
+
+    PALADIN_HOLY = WowSpecData(65, "Holy", WowClass.PALADIN, WowRole.HEAL, WowStatPrimary.INT)
+    PALADIN_PROT = WowSpecData(66, "Protection", WowClass.PALADIN, WowRole.TANK, WowStatPrimary.STR)
+    PALADIN_RET = WowSpecData(70, "Retribution", WowClass.PALADIN, WowRole.DPS, WowStatPrimary.STR)
+
+    PRIEST_DISC = WowSpecData(256, "Discipline", WowClass.PRIEST, WowRole.HEAL, WowStatPrimary.INT)
+    PRIEST_HOLY = WowSpecData(257, "Holy", WowClass.PRIEST, WowRole.HEAL, WowStatPrimary.INT)
+    PRIEST_SHADOW = WowSpecData(258, "Shadow", WowClass.PRIEST, WowRole.DPS, WowStatPrimary.INT)
+
+    ROGUE_SIN = WowSpecData(259, "Assassination", WowClass.ROGUE, WowRole.DPS, WowStatPrimary.AGI)
+    ROGUE_OUTLAW = WowSpecData(260, "Outlaw", WowClass.ROGUE, WowRole.DPS, WowStatPrimary.AGI)
+    ROGUE_SUB = WowSpecData(261, "Subtlety", WowClass.ROGUE, WowRole.DPS, WowStatPrimary.AGI)
+
+    SHAMAN_ELE = WowSpecData(262, "Elemental", WowClass.SHAMAN, WowRole.DPS, WowStatPrimary.INT)
+    SHAMAN_ENH = WowSpecData(263, "Enhancement", WowClass.SHAMAN, WowRole.DPS, WowStatPrimary.AGI)
+    SHAMAN_RESTO = WowSpecData(264, "Restoration", WowClass.SHAMAN, WowRole.HEAL, WowStatPrimary.INT)
+
+    WARLOCK_AFF = WowSpecData(265, "Affliction", WowClass.WARLOCK, WowRole.DPS, WowStatPrimary.INT)
+    WARLOCK_DEMO = WowSpecData(266, "Demonology", WowClass.WARLOCK, WowRole.DPS, WowStatPrimary.INT)
+    WARLOCK_DEST = WowSpecData(267, "Destruction", WowClass.WARLOCK, WowRole.DPS, WowStatPrimary.INT)
+
+    WARRIOR_ARMS = WowSpecData(71, "Arms", WowClass.WARRIOR, WowRole.DPS, WowStatPrimary.STR)
+    WARRIOR_FURY = WowSpecData(72, "Fury", WowClass.WARRIOR, WowRole.DPS, WowStatPrimary.STR)
+    WARRIOR_PROT = WowSpecData(73, "Protection", WowClass.WARRIOR, WowRole.TANK, WowStatPrimary.STR)
+
+    @classmethod
+    def get_spec_from_id(cls, spec_id: int) -> 'WowSpec':
+        for spec in cls:
+            if spec.value.spec_id == spec_id:
+                return spec
+        raise ValueError(f"No spec found with id {spec_id}")
+
+    @classmethod
+    def get_abbr_from_id(cls, spec_id: int) -> str:
+        return cls.get_spec_from_id(spec_id).get_abbr()
+
+    @classmethod
+    def get_all_spec_ids(cls) -> List[int]:
         spec_ids: List[int] = []
-        for key in self.spec_dict:
-            spec_ids.append(key)
+        for enum in cls:
+            spec_ids.append(enum.value.spec_id)
         return spec_ids
 
-    @staticmethod
-    def death_knight() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Death Knight."""
-        return WowheadClassSpec("Death Knight", {
-            250: "Blood",
-            251: "Frost",
-            252: "Unholy"
-        }, {
-            "Blood": "Blood",
-            "Frost": "Frost",
-            "Unholy": "UH"
-        })
+    @classmethod
+    def get_all_spec_ids_for_class(cls, wowclass: WowClass) -> List[int]:
+        spec_list: List[int] = []
+        for spec in cls:
+            if spec.value.wowclass == wowclass:
+                spec_list.append(spec)
+        return spec_list
 
-    @staticmethod
-    def demon_hunter() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Demon Hunter."""
-        return WowheadClassSpec("Demon Hunter", {
-            577: "Havoc",
-            581: "Vengeance"
-        }, {
-            "Havoc": "Havoc",
-            "Vengeance": "Veng"
-        })
+    @classmethod
+    def get_all_spec_ids_for_role(cls, role: WowRole) -> List[int]:
+        spec_list: List[int] = []
+        for spec in cls:
+            if spec.value.role == role:
+                spec_list.append(spec)
+        return spec_list
 
-    @staticmethod
-    def druid() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Druid."""
-        return WowheadClassSpec("Druid", {
-            102: "Balance",
-            103: "Feral",
-            104: "Guardian",
-            105: "Restoration"
-        }, {
-            "Balance": "Owl",
-            "Feral": "Cat",
-            "Guardian": "Bear",
-            "Restoration": "Resto"
-        })
+    @classmethod
+    def get_all_spec_ids_for_mainstat(cls, mainstat: WowStatPrimary) -> List[int]:
+        spec_list: List[int] = []
+        for spec in cls:
+            if spec.value.mainstat == mainstat:
+                spec_list.append(spec)
+        return spec_list
 
-    @staticmethod
-    def evoker() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Evoker."""
-        return WowheadClassSpec("Evoker", {
-            1467: "Devastation",
-            1468: "Preservation",
-            1473: "Augmentation"
-        }, {
-            "Devastation": "Dev",
-            "Preservation": "Pres",
-            "Augmentation": "Aug"
-        })
+    def get_abbr(self) -> str:
+        return ''.join(word.capitalize() for word in self.name.split('_'))
 
-    @staticmethod
-    def hunter() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Hunter."""
-        return WowheadClassSpec("Hunter", {
-            253: "Beast Mastery",
-            254: "Marksmanship",
-            255: "Survival"
-        }, {
-            "Beast Mastery": "BM",
-            "Marksmanship": "MM",
-            "Survival": "SV"
-        })
+    def get_spec_id(self) -> int:
+        return self.value.spec_id
 
-    @staticmethod
-    def mage() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Mage."""
-        return WowheadClassSpec("Mage", {
-            62: "Arcane",
-            63: "Fire",
-            64: "Frost"
-        }, {
-            "Arcane": "Arc",
-            "Fire": "Fire",
-            "Frost": "Frost"
-        })
+    def get_ingame_name(self) -> str:
+        return self.value.name
 
-    @staticmethod
-    def monk() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Monk."""
-        return WowheadClassSpec("Monk", {
-            268: "Brewmaster",
-            270: "Mistweaver",
-            269: "Windwalker"
-        }, {
-            "Brewmaster": "Brew",
-            "Mistweaver": "MW",
-            "Windwalker": "WW"
-        })
+    def get_class(self) -> WowClass:
+        return self.value.spec_id
 
-    @staticmethod
-    def paladin() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Paladin."""
-        return WowheadClassSpec("Paladin", {
-            65: "Holy",
-            66: "Protection",
-            70: "Retribution"
-        }, {
-            "Holy": "Holy",
-            "Protection": "Prot",
-            "Retribution": "Ret"
-        })
+    def get_role(self) -> WowRole:
+        return self.value.role
 
-    @staticmethod
-    def priest() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Priest."""
-        return WowheadClassSpec("Priest", {
-            256: "Discipline",
-            257: "Holy",
-            258: "Shadow"
-        }, {
-            "Discipline": "Disc",
-            "Holy": "Holy",
-            "Shadow": "Shad"
-        })
+    def get_mainstat(self) -> WowStatPrimary:
+        return self.value.mainstat
 
-    @staticmethod
-    def rogue() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Rogue."""
-        return WowheadClassSpec("Rogue", {
-            259: "Assassination",
-            260: "Outlaw",
-            261: "Subtlety"
-        }, {
-            "Assassination": "Ass",
-            "Outlaw": "Out",
-            "Subtlety": "Sub"
-        })
-
-    @staticmethod
-    def shaman() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Shaman."""
-        return WowheadClassSpec("Shaman", {
-            262: "Elemental",
-            263: "Enhancement",
-            264: "Restoration"
-        }, {
-            "Elemental": "Ele",
-            "Enhancement": "Enh",
-            "Restoration": "Resto"
-        })
-
-    @staticmethod
-    def warlock() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Warlock."""
-        return WowheadClassSpec("Warlock", {
-            265: "Affliction",
-            266: "Demonology",
-            267: "Destruction"
-        }, {
-            "Affliction": "Aff",
-            "Demonology": "Demo",
-            "Destruction": "Dest"
-        })
-
-    @staticmethod
-    def warrior() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for Warrior."""
-        return WowheadClassSpec("Warrior", {
-            71: "Arms",
-            72: "Fury",
-            73: "Protection"
-        }, {
-            "Arms": "Arms",
-            "Fury": "Fury",
-            "Protection": "Prot"
-        })
-
-    @staticmethod
-    def unknown_class() -> 'WowheadClassSpec':
-        """Return a WowheadClassSpec instance for an unknown class."""
-        return WowheadClassSpec(WowheadClassSpec.UNKNOWN_VALUE, {}, {})
-
-
-    @staticmethod
-    def get_class_name(spec_id: int) -> str:
-        """Get the class name for a given spec ID."""
-        wow_class = WowheadClassSpec.get_wow_class(spec_id)
-        return wow_class.name
-
-    @staticmethod
-    def get_short_class_name(class_name: str) -> str:
-        """Get the short class name of a class"""
-        if class_name == "Death Knight":
-            return "DK"
-        if class_name == "Demon Hunter":
-            return "DH"
-        return class_name
-
-    @staticmethod
-    def get_spec_name(spec_id: int) -> str:
-        """Get the spec name for a given spec ID."""
-        wow_class = WowheadClassSpec.get_wow_class(spec_id)
-        return wow_class.spec_dict.get(spec_id, WowheadClassSpec.UNKNOWN_VALUE)
-
-    @staticmethod
-    def get_short_spec_name(spec_id: int) -> str:
-        """Get the spec name for a given spec ID."""
-        wow_class = WowheadClassSpec.get_wow_class(spec_id)
-        spec_name = wow_class.spec_dict.get(spec_id, WowheadClassSpec.UNKNOWN_VALUE)
-        return wow_class.spec_shortened_names.get(spec_name, WowheadClassSpec.UNKNOWN_VALUE)
-
-    @staticmethod
-    def get_name(spec_id: int) -> str:
-        """Get the full name (spec + class) for a given spec ID."""
-        class_name = WowheadClassSpec.get_class_name(spec_id)
-        spec_name = WowheadClassSpec.get_spec_name(spec_id)
-        return f"{spec_name} {class_name}"
-
-    @staticmethod
-    def get_camel_case_name(spec_id: int) -> str:
-        class_name = WowheadClassSpec.get_class_name(spec_id)
-        spec_name = WowheadClassSpec.get_spec_name(spec_id)
-        return f"{class_name} {spec_name}".replace(" ", "")
-
-    @staticmethod
-    def get_camel_case_short_name(spec_id: int) -> str:
-        class_name = WowheadClassSpec.get_class_name(spec_id)
-        spec_name = WowheadClassSpec.get_short_spec_name(spec_id)
-        return f"{class_name} {spec_name}".replace(" ", "")
-
-    @staticmethod
-    def get_wow_class(spec_id: int) -> 'WowheadClassSpec':
-        """Get the WowheadClassSpec instance for a given spec ID."""
-        all_classes = WowheadClassSpec.get_all_classes()
-        for wow_class in all_classes:
-            if spec_id in wow_class.spec_dict:
-                return wow_class
-        return WowheadClassSpec.unknown_class()
-
-    @staticmethod
-    def get_other_class_specs(spec_id: int) -> List[int]:
-        """Get a list of other spec IDs for the same class as the given spec ID."""
-        wow_class = WowheadClassSpec.get_wow_class(spec_id)
-        return wow_class.get_spec_ids()
-
-    @staticmethod
-    def get_all_specs_dict() -> Dict[int, str]:
-        """Get a dictionary of all spec IDs and their corresponding spec names."""
-        all_specs = {}
-        for wow_class in WowheadClassSpec.get_all_classes():
-            all_specs.update(wow_class.spec_dict)
-        return all_specs
-
-    @staticmethod
-    def get_all_specs_list() -> List[int]:
-        all_specs = WowheadClassSpec.get_all_specs_dict()
-        return list(all_specs.keys())
-
-    @staticmethod
-    def get_all_classes() -> List['WowheadClassSpec']:
-        """Get a list of all WowheadClassSpec instances."""
-        return [
-            WowheadClassSpec.death_knight(), WowheadClassSpec.demon_hunter(),
-            WowheadClassSpec.druid(), WowheadClassSpec.evoker(), WowheadClassSpec.hunter(),
-            WowheadClassSpec.mage(), WowheadClassSpec.monk(), WowheadClassSpec.paladin(),
-            WowheadClassSpec.priest(), WowheadClassSpec.rogue(), WowheadClassSpec.shaman(),
-            WowheadClassSpec.warlock(), WowheadClassSpec.warrior()
-        ]
 
 class WowheadItem:
     """Represents a WoW item with data scraped from Wowhead."""
@@ -348,12 +292,11 @@ class WowheadItem:
         return items
 
     @staticmethod
-    def get_all_items_for_spec_and_slot(spec_id: int, slot_names: List[str]) -> Set['WowheadItem']:
+    def get_all_items_for_spec_and_slot(spec_id: int, slot_name: str) -> Set['WowheadItem']:
         items: Set['WowheadItem'] = set()
-        for slot_name in slot_names:
-            for item in WowheadItem.get_all_items_for_spec(spec_id):
-                if item.parsed_data['gear_slot'] == slot_name:
-                    items.add(item)
+        for item in WowheadItem.get_all_items_for_spec(spec_id):
+            if item.parsed_data['gear_slot'] == slot_name:
+                items.add(item)
         return items
 
     def parse(self, item_id: int) -> None:
@@ -400,7 +343,8 @@ class WowheadItem:
 
     def extract_primary_stats(self) -> Dict[str, int]:
         stats = {}
-        for stat in WowheadClassSpec.primary_stats:
+        for stat_enum in WowStatPrimary.get_all():
+            stat = stat_enum.get_ingame_name()
             pattern = rf'\+([0-9,]+) \[?([^\]]*{stat}[^\]]*)\]?'
             value = self.extract_content(pattern)
             if value:
@@ -411,9 +355,9 @@ class WowheadItem:
 
     def format_primary_stat_label(self, stat_dict: Dict[str, int]) -> None:
         stats_found: List[str] = []
-        for stat in WowheadClassSpec.primary_stats:
+        for stat in WowStatPrimary.get_all_ingame_names():
             if stat in stat_dict:
-                stats_found.append(WowheadClassSpec.primary_stats[stat])
+                stats_found.append(stat)
                 self.parsed_data[stat.lower()] = f"{100}%"
             else:
                 self.parsed_data[stat.lower()] = f"{0}%"
@@ -424,7 +368,7 @@ class WowheadItem:
 
     def extract_secondary_stats(self) -> Dict[str, int]:
         stats = {}
-        for stat in WowheadClassSpec.secondary_stats:
+        for stat in WowStatPrimary.get_all_ingame_names():
             value = self.extract_content(rf'([0-9,]+) {stat}')
             if value:
                 # Remove commas and convert to integer
@@ -437,13 +381,13 @@ class WowheadItem:
         for stat in stat_dict:
             total_stats += stat_dict[stat]
         distribution: List[str] = []
-        for stat in WowheadClassSpec.secondary_stats:
+        for stat in WowStatSecondary.get_all_ingame_names():
             if stat not in stat_dict or stat_dict[stat] == 0:
                 self.parsed_data[stat.lower()] = f"{0}%"
             else:
                 percent = f"{100 * stat_dict[stat] // total_stats}%"
                 self.parsed_data[stat.lower()] = percent
-                distribution.append(f"{percent} {WowheadClassSpec.secondary_stats[stat]}")
+                distribution.append(f"{percent} {stat}")
         distribution.sort(reverse=True)
         self.parsed_data["distribution"] = " + ".join(distribution)
         single_letter_distribution: List[str] = []
@@ -478,7 +422,7 @@ class WowheadItem:
         for match in matches:
             spec_ids.append(int(match))
         if len(spec_ids) == 0:
-            return WowheadClassSpec.get_all_specs_list()
+            return WowSpec.get_all_spec_ids()
         return spec_ids
 
     def extract_spec_names(self) -> List[str]:
@@ -486,11 +430,7 @@ class WowheadItem:
         spec_names: List[str] = []
         spec_ids = self.extract_spec_ids()
         for spec_id in spec_ids:
-            name = WowheadClassSpec.get_name(spec_id)
-            if name != WowheadClassSpec.UNKNOWN_VALUE:
-                spec_names.append(name)
-            else:
-                print(f"Warning: Spec ID {spec_id} did not map to a name!")
+            spec_names.append(WowSpec.get_abbr_from_id(spec_id))
         return spec_names
 
     def convert_to_json_and_save_to_disk(self) -> None:
@@ -514,7 +454,7 @@ class WowheadItem:
         self.parsed_data['boss_position'] = position
 
     def add_statistic_item_drop_chance_per_spec(self) -> None:
-        spec_ids = WowheadClassSpec.get_all_specs_list()
+        spec_ids = WowSpec.get_all_spec_ids()
         for spec_id in spec_ids:
             items = WowheadItem.get_all_items_for_spec(spec_id)
             boss_loot_table_size = 0
@@ -526,21 +466,21 @@ class WowheadItem:
             drop_chance = f"{0}%"
             if not boss_loot_table_size == 0:
                 drop_chance = f"{100 // boss_loot_table_size}%"
-            column_name = WowheadClassSpec.get_camel_case_short_name(spec_id)
+            column_name = WowSpec.get_abbr_from_id(spec_id)
             self.parsed_data[column_name] = drop_chance
 
     @staticmethod
     def sim_world_tour() -> None:
-        for spec_id in WowheadClassSpec.get_all_specs_list():
-            shortname = WowheadClassSpec.get_camel_case_short_name(spec_id)
+        for spec_id in WowSpec.get_all_spec_ids():
+            shortname = WowSpec.get_abbr_from_id(spec_id)
             loot_chance = 0.2  # Chance of loot per player per boss
             gear_slots: Dict[str, str] = {}
             items = WowheadItem.get_all_items_for_spec(spec_id)
-            for slot in WowheadClassSpec.slot_categories:
+            for slot in WowEquipSlot.get_all_ingame_names():
                 chance_of_no_drops = 1.0
                 items_considered = 0
                 for item in items:
-                    if item.parsed_data['gear_slot'] in WowheadClassSpec.slot_categories[slot]:
+                    if item.parsed_data['gear_slot'] == slot:
                         drop_chance = item.parsed_data[shortname].rstrip('%')
                         try:
                             drop_chance_float = float(drop_chance) / 100
@@ -588,13 +528,12 @@ class WowheadItemCsvExporter:
         Each combination is represented by a fixed-length row section in the CSV.
         """
         nested_csv_tables: Dict[str, List[WowheadItem]] = {}
-        for wow_class in WowheadClassSpec.get_all_classes():
-            for slot_category in WowheadClassSpec.slot_categories:
+        for wow_class in WowClass.get_all():
+            for slot_category in WowEquipSlot.get_all_ingame_names():
                 items: List[WowheadItem] = []
                 key = f"{wow_class.shortname} {slot_category}"
                 for spec_id in wow_class.get_spec_ids():
-                    wowhead_slot_names = WowheadClassSpec.slot_categories[slot_category]
-                    items.extend(list(WowheadItem.get_all_items_for_spec_and_slot(int(spec_id), wowhead_slot_names)))
+                    items.extend(list(WowheadItem.get_all_items_for_spec_and_slot(int(spec_id), slot_category)))
 
                 # Sort items and ensure exactly a fixed_length number of items
                 items = WowheadItemCsvExporter._sort_items(set(items))
@@ -635,17 +574,17 @@ class WowheadItemCsvExporter:
 
     @staticmethod
     def export_items_to_csv_for_all_specs_and_classes() -> None:
-        all_specs = WowheadClassSpec.get_all_specs_list()
-        for wow_class in WowheadClassSpec.get_all_classes():
-            class_spec_ids = wow_class.get_spec_ids()
+        all_spec_ids = WowSpec.get_all_spec_ids()
+        for wow_class in WowClass.get_all():
+            class_spec_ids = WowSpec.get_all_spec_ids_for_class(wow_class)
             for spec_id in class_spec_ids:
-                file_name = f"{WowheadClassSpec.get_camel_case_name(spec_id)}.csv"
+                file_name = f"{WowSpec.get_abbr_from_id(spec_id)}.csv"
                 csv_path = WowheadItem.csv_folder / file_name
                 WowheadItemCsvExporter._export_items_to_csv([spec_id], csv_path)
             wow_class_csv_path = WowheadItem.csv_folder / f"{wow_class.name.replace(' ', '')}.csv"
             WowheadItemCsvExporter._export_items_to_csv(class_spec_ids, wow_class_csv_path)
         all_specs_csv_path = WowheadItem.csv_folder / "all_items.csv"
-        WowheadItemCsvExporter._export_items_to_csv(all_specs, all_specs_csv_path)
+        WowheadItemCsvExporter._export_items_to_csv(all_spec_ids, all_specs_csv_path)
 
     @staticmethod
     def _export_items_to_csv(spec_ids: List[int], csv_path: Path) -> None:
@@ -671,7 +610,9 @@ class WowheadItemCsvExporter:
 
     @staticmethod
     def _decide_number_of_rows_in_fixed_csv(slot_category: str) -> int:
-        default = 0
+        if slot_category != 0:
+            return 24
+        """ default = 0
         rows_for_armor_slots = 5
         rows_for_shared_slots = 5
         rows_for_rings = 8
@@ -691,7 +632,7 @@ class WowheadItemCsvExporter:
         if slot_category in armor_slots:
             return rows_for_armor_slots
         print(f"Error: {slot_category} did not match any known slot_category")
-        return default
+        return default """
 
     @staticmethod
     def _sort_items(sorted_item_list: Set['WowheadItem']) -> List['WowheadItem']:
@@ -701,7 +642,8 @@ class WowheadItemCsvExporter:
                 x.parsed_data.get('gear_slot') or '', # sort by slot #1 prio
                 x.parsed_data.get('gear_type') or '', # sort by type #2 prio
                 x.parsed_data.get('dropped_in') or '',
-                x.parsed_data.get('boss_position') or ''
+                x.parsed_data.get('boss_position') or '',
+                x.parsed_data.get('item_id') or '' # Finally sort by id to avoid random row order
             )
         )
 
@@ -765,7 +707,7 @@ class WowheadZone:
                 for href in boss_hrefs:
                     if href_boss_name == href:
                         return zone.parsed_data['name']
-        return WowheadClassSpec.UNKNOWN_VALUE
+        return "UNKNOWN"
 
     @staticmethod
     def get_shortened_boss_zone_name(boss_name: str) -> str:
@@ -832,10 +774,10 @@ class WowheadZone:
                 href_name = npc_match.group(2)
             else:
                 npc_id = -1
-                href_name = WowheadClassSpec.UNKNOWN_VALUE
+                href_name = "UNKNOWN"
 
             display_name = name_match.group(1) if name_match else None
-            if href_name == WowheadClassSpec.UNKNOWN_VALUE:
+            if href_name == "UNKNOWN":
                 if isinstance(display_name, str):
                     href_name = WowheadZone.convert_boss_name_to_href_name(display_name)
             if display_name:
@@ -890,7 +832,7 @@ class WowheadZone:
     @staticmethod
     def convert_boss_name_to_href_name(boss_name: Optional[str]) -> str:
         if boss_name is None:
-            return WowheadClassSpec.UNKNOWN_VALUE
+            return "UNKNOWN"
         href_name = boss_name.lower()# Convert to lowercase
         return re.sub(r'[^a-z0-9]+', '-', href_name) #replace special chars with hyphen
 
@@ -977,26 +919,72 @@ class WowheadZoneList:
         WowheadZoneList.register_instance(zone_list, wowhead_zone_list)
 
 
+class OutputValidation:
+
+    @staticmethod
+    def validate() -> None:
+        test_folder: Path = Path.cwd() / "tests"
+        csv_folder = WowheadItem.csv_folder
+        all_class_slots_csv = "all_class_slots.csv"
+        all_items_csv = "all_items.csv"
+        real_out1 = ScrapeUtils.Persistence.read_textfile(csv_folder / all_class_slots_csv)
+        real_out2 = ScrapeUtils.Persistence.read_textfile(csv_folder / all_items_csv)
+        test_out1 = ScrapeUtils.Persistence.read_textfile(test_folder / all_class_slots_csv)
+        test_out2 = ScrapeUtils.Persistence.read_textfile(test_folder / all_items_csv)
+        out1_match = real_out1 == test_out1
+        out2_match = real_out2 == test_out2
+        if not out1_match:
+            print("Warning: output1 does not match expected output!")
+            OutputValidation.print_differences(real_out1, test_out1)
+        elif not out2_match:
+            print("Warning: output2 does not match expected output!")
+            OutputValidation.print_differences(real_out2, test_out2)
+        else:
+            print("Validation was passed.")
+
+    @staticmethod
+    def print_differences(actual: str, expected: str) -> None:
+        expected_lines = expected.splitlines()
+        actual_lines = actual.splitlines()
+        for i, (expected_line, actual_line) in enumerate(zip(expected_lines, actual_lines), start=1):
+            if expected_line != actual_line:
+                print(f"Line {i} differs:")
+                print(f"Expected: {expected_line}")
+                print(f"Actual:   {actual_line}")
+                break
+        if len(expected_lines) != len(actual_lines):
+            print("File lengths differ.")
+            print(f"Expected file length: {len(expected_lines)} lines.")
+            print(f"Actual file length: {len(actual_lines)} lines.")
+
+class MainWowheadPipeline:
+
+    @staticmethod
+    def main() -> None:
+        print("Starting code execution...")
+        my_zone_list = "war-within/dungeons"
+        WowheadZoneList.scrape_wowhead_zone_list(my_zone_list)
+        every_zone_ids = WowheadZoneList.get_all_zone_ids()
+        for my_zone in every_zone_ids:
+            WowheadZone.scrape_wowhead_zone(my_zone)
+
+        every_item_ids = WowheadZone.get_all_item_ids()
+        for my_index, my_item in enumerate(every_item_ids):
+            print(f"Scraping {my_item} ({my_index+1} of {len(every_item_ids)})")
+            WowheadItem.scrape_wowhead_item(my_item)
+
+        print("Creating item jsons...")
+        WowheadItem.parse_statistics_across_all_items_and_write_json()
+
+        print("Building csv files...")
+        WowheadItemCsvExporter.export_items_to_csv_for_all_specs_and_classes()
+        WowheadItemCsvExporter.create_fixed_size_csv()
+
+        #WowheadItem.sim_world_tour()
+
+        OutputValidation.validate()
+        print("Finished!")
+
+
 if __name__ == "__main__":
-
-    print("Starting code execution...")
-    my_zone_list = "war-within/dungeons"
-    WowheadZoneList.scrape_wowhead_zone_list(my_zone_list)
-    every_zone_ids = WowheadZoneList.get_all_zone_ids()
-    for my_zone in every_zone_ids:
-        WowheadZone.scrape_wowhead_zone(my_zone)
-
-    every_item_ids = WowheadZone.get_all_item_ids()
-    for my_index, my_item in enumerate(every_item_ids):
-        #print(f"Scraping {my_item} ({my_index+1} of {len(every_item_ids)})")
-        WowheadItem.scrape_wowhead_item(my_item)
-
-    print("Creating item jsons...")
-    WowheadItem.parse_statistics_across_all_items_and_write_json()
-
-    print("Building csv files...")
-    WowheadItemCsvExporter.export_items_to_csv_for_all_specs_and_classes()
-    WowheadItemCsvExporter.create_fixed_size_csv()
-
-    WowheadItem.sim_world_tour()
-    print("Finished!")
+    MainWowheadPipeline.main()
