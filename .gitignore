@@ -1,10 +1,7 @@
 ### My project-specific ignores:
 # Cached wowhead htmls
 webcache
-wowhead_items
-wowhead_item_csv
-wowhead_zones
-wow_drop_chances
+output
 
 
 ### C# IGNORES --- COPY PASTE FROM https://gist.github.com/takekazuomi/10955889
