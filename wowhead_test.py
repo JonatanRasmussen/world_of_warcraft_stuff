@@ -32,12 +32,19 @@ class WowEnumBase(Enum):
             ingame_names.append(enum.get_ingame_name())
         return ingame_names
 
+    @classmethod
+    def get_from_ingame_name(cls, ingame_name: str) -> Type[WowEnumT]:
+        for enum in cls:
+            if enum.get_ingame_name() == ingame_name:
+                return enum
+
     def get_abbr(self) -> str:
-        abbreviation = self.name
-        return abbreviation.capitalize()
+        return ''.join(word.capitalize() for word in self.name.split('_'))
 
     def get_ingame_name(self) -> str:
         return self.value
+
+
 
 
 class WowStatBase(WowEnumBase):
@@ -90,30 +97,57 @@ class WowEquipSlot(WowEnumBase):
     SHIELD = "Off Hand"
     TRINKET = "Trinket"
 
-    def mainstat_matters(self) -> bool:
-        """Returns true if items for gearslot should be split by Agi/Str/Int"""
-        return self in (WowEquipSlot.ONEHAND, WowEquipSlot.TWOHAND, WowEquipSlot.TRINKET)
 
-    def role_and_mainstat_matters(self) -> bool:
-        """Returns true if items for gearslot should be split by Tank/Heal/Dps"""
-        return self == WowEquipSlot.TRINKET
+@dataclass
+class WowLootCategoryData:
+    """Data for a WoW loot category"""
+    equip_slot: WowEquipSlot
+    mainstat: Optional[WowStatPrimary]
+    role: Optional[WowRole]
 
-    def create_variant(self, mainstat: Optional[WowStatPrimary], role: Optional[WowRole]) -> str:
-        name = self.get_abbr()
-        if mainstat is not None and self.mainstat_matters():  #Onehand, Twohand and Trinkets
-            mainstat_name = mainstat.get_abbr()
-            if self == WowEquipSlot.ONEHAND:
-                return f"1H {mainstat_name} Weapon"
-            if self == WowEquipSlot.TWOHAND:
-                return f"2H {mainstat_name} Weapon"
-            if role is not None and self.role_and_mainstat_matters():  #Trinkets only
-                role_name = role.get_abbr()
-                if role in (WowRole.HEAL, WowRole.TANK):
-                    return f"{role_name} {name}"
-                if role == WowRole.DPS:
-                    return f"{role_name} {mainstat_name} {name}"
-        return name
+class WowLootCategory(WowEnumBase):
+    """Loot categories for items in WoW"""
+    HEAD = WowLootCategoryData(WowEquipSlot.HEAD, None, None)
+    SHOULDERS = WowLootCategoryData(WowEquipSlot.SHOULDERS, None, None)
+    CHEST = WowLootCategoryData(WowEquipSlot.CHEST, None, None)
+    WRISTS = WowLootCategoryData(WowEquipSlot.WRISTS, None, None)
+    HANDS = WowLootCategoryData(WowEquipSlot.HANDS, None, None)
+    WAIST = WowLootCategoryData(WowEquipSlot.WAIST, None, None)
+    LEGS = WowLootCategoryData(WowEquipSlot.LEGS, None, None)
+    FEET = WowLootCategoryData(WowEquipSlot.FEET, None, None)
+    NECK = WowLootCategoryData(WowEquipSlot.NECK, None, None)
+    BACK = WowLootCategoryData(WowEquipSlot.BACK, None, None)
+    RING = WowLootCategoryData(WowEquipSlot.RING, None, None)
+    AGI_1H_Weapon = WowLootCategoryData(WowEquipSlot.ONEHAND, WowStatPrimary.AGI, None)
+    STR_1H_Weapon = WowLootCategoryData(WowEquipSlot.ONEHAND, WowStatPrimary.STR, None)
+    INT_1H_Weapon = WowLootCategoryData(WowEquipSlot.ONEHAND, WowStatPrimary.INT, None)
+    AGI_2H_Weapon = WowLootCategoryData(WowEquipSlot.TWOHAND, WowStatPrimary.AGI, None)
+    STR_2H_Weapon = WowLootCategoryData(WowEquipSlot.TWOHAND, WowStatPrimary.STR, None)
+    INT_2H_Weapon = WowLootCategoryData(WowEquipSlot.TWOHAND, WowStatPrimary.INT, None)
+    RANGED = WowLootCategoryData(WowEquipSlot.RANGED, None, None)
+    OFFHAND = WowLootCategoryData(WowEquipSlot.OFFHAND, None, None)
+    MAINHAND = WowLootCategoryData(WowEquipSlot.MAINHAND, None, None)
+    SHIELD = WowLootCategoryData(WowEquipSlot.SHIELD, None, None)
+    TANK_TRINKET = WowLootCategoryData(WowEquipSlot.TRINKET, None, WowRole.TANK)
+    HEAL_TRINKET = WowLootCategoryData(WowEquipSlot.TRINKET, None, WowRole.HEAL)
+    DPS_AGI_TRINKET = WowLootCategoryData(WowEquipSlot.TRINKET, WowStatPrimary.AGI, WowRole.DPS)
+    DPS_STR_TRINKET = WowLootCategoryData(WowEquipSlot.TRINKET, WowStatPrimary.STR, WowRole.DPS)
+    DPS_INT_TRINKET = WowLootCategoryData(WowEquipSlot.TRINKET, WowStatPrimary.INT, WowRole.DPS)
 
+    def get_ingame_name(self) -> str:
+        return self.get_equip_slot().get_ingame_name
+
+    def get_name(self) -> str:
+        return self.value.name
+
+    def get_equip_slot(self) -> WowEquipSlot:
+        return self.value.equip_slot
+
+    def get_mainstat(self) -> Optional[WowStatPrimary]:
+        return self.value.mainstat
+
+    def get_role(self) -> Optional[WowRole]:
+        return self.value.role
 
 class WowClass(WowEnumBase):
     """Classes in WoW """
@@ -136,7 +170,7 @@ class WowClass(WowEnumBase):
 class WowSpecData:
     """Data for a WoW spec"""
     spec_id: int
-    name: str
+    ingame_name: str
     wowclass: WowClass
     role: WowRole
     mainstat: WowStatPrimary
@@ -219,7 +253,7 @@ class WowSpec(WowEnumBase):
         spec_list: List[int] = []
         for spec in cls:
             if spec.value.wowclass == wowclass:
-                spec_list.append(spec)
+                spec_list.append(spec.get_spec_id())
         return spec_list
 
     @classmethod
@@ -227,7 +261,7 @@ class WowSpec(WowEnumBase):
         spec_list: List[int] = []
         for spec in cls:
             if spec.value.role == role:
-                spec_list.append(spec)
+                spec_list.append(spec.get_spec_id())
         return spec_list
 
     @classmethod
@@ -235,17 +269,14 @@ class WowSpec(WowEnumBase):
         spec_list: List[int] = []
         for spec in cls:
             if spec.value.mainstat == mainstat:
-                spec_list.append(spec)
+                spec_list.append(spec.get_spec_id())
         return spec_list
-
-    def get_abbr(self) -> str:
-        return ''.join(word.capitalize() for word in self.name.split('_'))
 
     def get_spec_id(self) -> int:
         return self.value.spec_id
 
     def get_ingame_name(self) -> str:
-        return self.value.name
+        return self.value.ingame_name
 
     def get_class(self) -> WowClass:
         return self.value.spec_id
@@ -257,8 +288,31 @@ class WowSpec(WowEnumBase):
         return self.value.mainstat
 
 
+
 class WowheadItem:
     """Represents a WoW item with data scraped from Wowhead."""
+
+    # Constants for parsed data keys
+    ITEM_ID = 'item_id'
+    NAME = 'name'
+    ITEM_LEVEL = 'item_level'
+    BIND = 'bind'
+    GEAR_SLOT = 'gear_slot'
+    GEAR_TYPE = 'gear_type'
+    UNIQUE = 'unique'
+    PRIMARY_STATS = 'primary_stats'
+    SECONDARY_STATS = 'secondary_stats'
+    REQUIRED_LEVEL = 'required_level'
+    SELL_PRICE = 'sell_price'
+    DROPPED_BY = 'dropped_by'
+    SPEC_IDS = 'spec_ids'
+    SPEC_NAMES = 'spec_names'
+    MAINSTAT = 'mainstat'
+    DISTRIBUTION = 'distribution'
+    STATS = 'stats'
+    DROPPED_IN = 'dropped_in'
+    FROM = 'from'
+    BOSS_POSITION = 'boss_position'
 
     json_folder: Path = Path.cwd() / "wowhead_items"
     csv_folder: Path = Path.cwd() / "wowhead_item_csv"
@@ -282,7 +336,7 @@ class WowheadItem:
         for item in WowheadItem.instances.values():
             if not item.is_mount_or_quest_item():
                 integer_spec_ids: List[int] = []
-                for scraped_spec_id in item.parsed_data['spec_ids']:
+                for scraped_spec_id in item.parsed_data[WowheadItem.SPEC_IDS]:
                     if isinstance(scraped_spec_id, int):
                         integer_spec_ids.append(scraped_spec_id)
                     else:
@@ -301,20 +355,20 @@ class WowheadItem:
 
     def parse(self, item_id: int) -> None:
         """Parse HTML content to extract item data."""
-        self.parsed_data['item_id'] = item_id
-        self.parsed_data['name'] = self.extract_content(r'<h1 class="heading-size-1">(.*?)</h1>')
-        self.parsed_data['item_level'] = self.extract_content(r'Item Level <!--ilvl-->(\d+)')
-        self.parsed_data['bind'] = "Soulbound" if "Binds when picked up" in self.html_string else "BoE"
-        self.parsed_data['gear_slot'] = self.extract_content(r'<table width="100%"><tr><td>(.*?)</td>')
-        self.parsed_data['gear_type'] = self.extract_item_subtype()
-        self.parsed_data['unique'] = "Unique-Equipped" in self.html_string
-        self.parsed_data['primary_stats'] = self.extract_primary_stats()
-        self.parsed_data['secondary_stats'] = self.extract_secondary_stats()
-        self.parsed_data['required_level'] = self.extract_content(r'Requires Level <!--rlvl-->(\d+)')
-        self.parsed_data['sell_price'] = self.extract_sell_price()
-        self.parsed_data['dropped_by'] = self.extract_content(r'Dropped by: (.*?)</div>')
-        self.parsed_data['spec_ids'] = self.extract_spec_ids()
-        self.parsed_data['spec_names'] = self.extract_spec_names()
+        self.parsed_data[self.ITEM_ID] = item_id
+        self.parsed_data[self.NAME] = self.extract_content(r'<h1 class="heading-size-1">(.*?)</h1>')
+        self.parsed_data[self.ITEM_LEVEL] = self.extract_content(r'Item Level <!--ilvl-->(\d+)')
+        self.parsed_data[self.BIND] = "Soulbound" if "Binds when picked up" in self.html_string else "BoE"
+        self.parsed_data[self.GEAR_SLOT] = self.extract_content(r'<table width="100%"><tr><td>(.*?)</td>')
+        self.parsed_data[self.GEAR_TYPE] = self.extract_item_subtype()
+        self.parsed_data[self.UNIQUE] = "Unique-Equipped" in self.html_string
+        self.parsed_data[self.PRIMARY_STATS] = self.extract_primary_stats()
+        self.parsed_data[self.SECONDARY_STATS] = self.extract_secondary_stats()
+        self.parsed_data[self.REQUIRED_LEVEL] = self.extract_content(r'Requires Level <!--rlvl-->(\d+)')
+        self.parsed_data[self.SELL_PRICE] = self.extract_sell_price()
+        self.parsed_data[self.DROPPED_BY] = self.extract_content(r'Dropped by: (.*?)</div>')
+        self.parsed_data[self.SPEC_IDS] = self.extract_spec_ids()
+        self.parsed_data[self.SPEC_NAMES] = self.extract_spec_names()
 
     @staticmethod
     def parse_statistics_across_all_items_and_write_json() -> None:
@@ -362,13 +416,13 @@ class WowheadItem:
             else:
                 self.parsed_data[stat.lower()] = f"{0}%"
         if "Str" in stats_found and "Agi" in stats_found and "Int" in stats_found:
-            self.parsed_data["mainstat"] = "All 3"
+            self.parsed_data[self.MAINSTAT] = "All 3"
         else:
-            self.parsed_data["mainstat"] = ",".join(stats_found)
+            self.parsed_data[self.MAINSTAT] = ",".join(stats_found)
 
     def extract_secondary_stats(self) -> Dict[str, int]:
         stats = {}
-        for stat in WowStatPrimary.get_all_ingame_names():
+        for stat in WowStatSecondary.get_all_ingame_names():
             value = self.extract_content(rf'([0-9,]+) {stat}')
             if value:
                 # Remove commas and convert to integer
@@ -401,11 +455,11 @@ class WowheadItem:
                     single_letter_distribution.append(stat[4])
                 else:
                     single_letter_distribution.append("")
-        if self.parsed_data['gear_slot'] in ["One-Hand", "Wand", "Two-Hand", "Ranged", "Offhand",
+        if self.parsed_data[self.GEAR_SLOT] in ["One-Hand", "Wand", "Two-Hand", "Ranged", "Offhand",
                                              "Held In Off-hand", "Off Hand", "Trinket"]:
-            self.parsed_data["stats"] = self.parsed_data["mainstat"] #Write mainstat type instead
+            self.parsed_data[self.STATS] = self.parsed_data[self.MAINSTAT] #Write mainstat type instead
         else:
-            self.parsed_data["stats"] = ">".join(single_letter_distribution)
+            self.parsed_data[self.STATS] = ">".join(single_letter_distribution)
 
     def extract_sell_price(self) -> str:
         """Extract and format item sell price."""
@@ -442,16 +496,16 @@ class WowheadItem:
         ScrapeUtils.Persistence.write_textfile(path, json_str)
 
     def add_statistic_dungeon_name(self) -> None:
-        boss_name = self.parsed_data['dropped_by']
+        boss_name = self.parsed_data[self.DROPPED_BY]
         dungeon_name = WowheadZone.get_boss_zone_name(boss_name)
-        self.parsed_data['dropped_in'] = dungeon_name
+        self.parsed_data[self.DROPPED_IN] = dungeon_name
         dungeon_short_name = WowheadZone.get_shortened_boss_zone_name(boss_name)
-        self.parsed_data['from'] = dungeon_short_name
+        self.parsed_data[self.FROM] = dungeon_short_name
 
     def add_statistic_boss_position(self) -> None:
-        boss_name = self.parsed_data['dropped_by']
+        boss_name = self.parsed_data[self.DROPPED_BY]
         position = WowheadZone.get_boss_position(boss_name)
-        self.parsed_data['boss_position'] = position
+        self.parsed_data[self.BOSS_POSITION] = position
 
     def add_statistic_item_drop_chance_per_spec(self) -> None:
         spec_ids = WowSpec.get_all_spec_ids()
@@ -459,9 +513,9 @@ class WowheadItem:
             items = WowheadItem.get_all_items_for_spec(spec_id)
             boss_loot_table_size = 0
             for item in items:
-                if spec_id in self.parsed_data['spec_ids']:
-                    if item.parsed_data['dropped_by'] == self.parsed_data['dropped_by']:
-                        if item.parsed_data['gear_slot'] is not None: #Ignore mounts/quest items
+                if spec_id in self.parsed_data[self.SPEC_IDS]:
+                    if item.parsed_data[self.DROPPED_BY] == self.parsed_data[self.DROPPED_BY]:
+                        if item.parsed_data[self.GEAR_SLOT] is not None: #Ignore mounts/quest items
                             boss_loot_table_size += 1
             drop_chance = f"{0}%"
             if not boss_loot_table_size == 0:
@@ -471,29 +525,60 @@ class WowheadItem:
 
     @staticmethod
     def sim_world_tour() -> None:
-        for spec_id in WowSpec.get_all_spec_ids():
-            shortname = WowSpec.get_abbr_from_id(spec_id)
+        for wow_class in WowClass.get_all():
             loot_chance = 0.2  # Chance of loot per player per boss
-            gear_slots: Dict[str, str] = {}
-            items = WowheadItem.get_all_items_for_spec(spec_id)
-            for slot in WowEquipSlot.get_all_ingame_names():
-                chance_of_no_drops = 1.0
-                items_considered = 0
-                for item in items:
-                    if item.parsed_data['gear_slot'] == slot:
-                        drop_chance = item.parsed_data[shortname].rstrip('%')
-                        try:
-                            drop_chance_float = float(drop_chance) / 100
-                        except ValueError:
-                            print(f"Warning: drop chance {drop_chance} is not numeric")
-                            continue
-                        chance_item_not_dropping = 1 - (loot_chance * drop_chance_float)
-                        if drop_chance_float > 0:
-                            chance_of_no_drops *= chance_item_not_dropping
-                            items_considered += 1
-                chance_of_at_least_one = (1 - chance_of_no_drops) * 100
-                gear_slots[slot] = f"{chance_of_at_least_one:.2f}% ({items_considered} items)"
-            print(f"{shortname}: {gear_slots}")
+            class_drop_rates: Dict[str, Dict[str, str]] = {}
+            for loot_category in WowLootCategory.get_all():
+                if loot_category.get_mainstat() is not None:
+                    matching_spec_found = False
+                    for spec_id in WowSpec.get_all_spec_ids_for_class(wow_class):
+                        spec = WowSpec.get_spec_from_id(spec_id)
+                        if loot_category.get_mainstat() == spec.get_mainstat():
+                            matching_spec_found = True
+                    if not matching_spec_found:
+                        continue
+                if loot_category.get_role() is not None:
+                    matching_spec_found = False
+                    for spec_id in WowSpec.get_all_spec_ids_for_class(wow_class):
+                        spec = WowSpec.get_spec_from_id(spec_id)
+                        if loot_category.get_role() == spec.get_role():
+                            matching_spec_found = True
+                    if not matching_spec_found:
+                        continue
+                loot_category.get_mainstat()
+                slot = loot_category.get_equip_slot()
+                spec_drop_rates: Dict[str, str] = {}
+                best_chance = 0
+                for spec_id in WowSpec.get_all_spec_ids_for_class(wow_class):
+                    abbr_name = WowSpec.get_abbr_from_id(spec_id)
+                    chance_of_no_drops = 1.0
+                    items_considered = 0
+                    for item in list(WowheadItem.get_all_items_for_spec(spec_id)):
+                        matching_slot = item.parsed_data[WowheadItem.GEAR_SLOT] == slot.get_ingame_name()
+                        matching_mainstat = loot_category.get_mainstat() is None or item.has_mainstat(loot_category.get_mainstat())
+                        matching_role = loot_category.get_role() is None or item.drops_for_role(loot_category.get_role())
+                        if matching_slot and matching_mainstat and matching_role:
+                            drop_chance = item.parsed_data[abbr_name].rstrip('%')
+                            try:
+                                drop_chance_float = float(drop_chance) / 100
+                            except ValueError:
+                                print(f"Warning: drop chance {drop_chance} is not numeric")
+                                continue
+                            chance_item_not_dropping = 1 - (loot_chance * drop_chance_float)
+                            if drop_chance_float > 0:
+                                chance_of_no_drops *= chance_item_not_dropping
+                                items_considered += 1
+                    chance_of_at_least_one = (1 - chance_of_no_drops) * 100
+                    best_chance = max(best_chance, chance_of_at_least_one)
+
+                    spec_drop_rates[abbr_name] = f"{chance_of_at_least_one:.0f}% ({items_considered} items)"
+                spec_drop_rates[wow_class.get_abbr()] = f"{best_chance:.0f}% ({items_considered} items)"
+                class_drop_rates[loot_category.get_abbr()] = spec_drop_rates
+
+            json_str = json.dumps(class_drop_rates, indent=4)
+            folder: Path = Path.cwd() / "wow_drop_chances"
+            path = folder / f"{wow_class.get_abbr()}.json"
+            ScrapeUtils.Persistence.write_textfile(path, json_str)
 
     @staticmethod
     def scrape_wowhead_item(item_id: int) -> None:
@@ -508,7 +593,28 @@ class WowheadItem:
         WowheadItem.register_instance(item_id, wowhead_item)
 
     def is_mount_or_quest_item(self) -> bool:
-        return self.parsed_data['gear_slot'] == "" or self.parsed_data['gear_slot'] is None
+        return self.parsed_data[self.GEAR_SLOT] == "" or self.parsed_data[self.GEAR_SLOT] is None
+
+    def has_mainstat(self, mainstat: WowStatPrimary) -> bool:
+        return mainstat.get_ingame_name() in self.parsed_data[WowheadItem.PRIMARY_STATS]
+
+    def drops_for_mainstat(self, mainstat: WowStatPrimary) -> bool:
+        specs_within_mainstat = WowSpec.get_all_spec_ids_for_mainstat(mainstat)
+        for spec_id in specs_within_mainstat:
+            spec = WowSpec.get_spec_from_id(spec_id)
+            drop_chance = self.parsed_data[spec.get_abbr()].rstrip('%')
+            if drop_chance == 0 or drop_chance == "0":
+                return False
+        return True
+
+    def drops_for_role(self, role: WowRole) -> bool:
+        specs_within_role = WowSpec.get_all_spec_ids_for_role(role)
+        for spec_id in specs_within_role:
+            spec = WowSpec.get_spec_from_id(spec_id)
+            drop_chance = self.parsed_data[spec.get_abbr()].rstrip('%')
+            if drop_chance == 0 or drop_chance == "0":
+                return False
+        return True
 
     @staticmethod
     def _set_trimmer_ruleset_for_wowhead_items() -> None:
@@ -531,8 +637,8 @@ class WowheadItemCsvExporter:
         for wow_class in WowClass.get_all():
             for slot_category in WowEquipSlot.get_all_ingame_names():
                 items: List[WowheadItem] = []
-                key = f"{wow_class.shortname} {slot_category}"
-                for spec_id in wow_class.get_spec_ids():
+                key = f"{wow_class.get_abbr()} {slot_category}"
+                for spec_id in WowSpec.get_all_spec_ids_for_class(wow_class):
                     items.extend(list(WowheadItem.get_all_items_for_spec_and_slot(int(spec_id), slot_category)))
 
                 # Sort items and ensure exactly a fixed_length number of items
@@ -612,50 +718,30 @@ class WowheadItemCsvExporter:
     def _decide_number_of_rows_in_fixed_csv(slot_category: str) -> int:
         if slot_category != 0:
             return 24
-        """ default = 0
-        rows_for_armor_slots = 5
-        rows_for_shared_slots = 5
-        rows_for_rings = 8
-        rows_for_weapon_slots = 10
-        rows_for_trinkets = 24
-        if slot_category == "Trinket":
-            return rows_for_trinkets
-        if slot_category == "Ring":
-            return rows_for_rings
-        weapons = ["Onehand", "Twohand", "Offhand"]
-        if slot_category in weapons:
-            return rows_for_weapon_slots
-        shared_slots = ["Neck", "Back"]
-        if slot_category in shared_slots:
-            return rows_for_shared_slots
-        armor_slots = ["Head", "Shoulders", "Chest", "Wrists", "Hands", "Waist", "Legs", "Feet"]
-        if slot_category in armor_slots:
-            return rows_for_armor_slots
-        print(f"Error: {slot_category} did not match any known slot_category")
-        return default """
 
     @staticmethod
     def _sort_items(sorted_item_list: Set['WowheadItem']) -> List['WowheadItem']:
         return sorted(
             list(sorted_item_list),
             key=lambda x: (
-                x.parsed_data.get('gear_slot') or '', # sort by slot #1 prio
-                x.parsed_data.get('gear_type') or '', # sort by type #2 prio
-                x.parsed_data.get('dropped_in') or '',
-                x.parsed_data.get('boss_position') or '',
-                x.parsed_data.get('item_id') or '' # Finally sort by id to avoid random row order
+                x.parsed_data.get(WowheadItem.GEAR_SLOT) or '',  # sort by slot #1 prio
+                x.parsed_data.get(WowheadItem.GEAR_TYPE) or '',  # sort by type #2 prio
+                x.parsed_data.get(WowheadItem.DROPPED_IN) or '',
+                x.parsed_data.get(WowheadItem.BOSS_POSITION) or '',
+                x.parsed_data.get(WowheadItem.ITEM_ID) or ''  # Finally sort by id to avoid random row order
             )
         )
 
     @staticmethod
     def _sort_column_order(item_list: List['WowheadItem']) -> List[str]:
         columns: List[str] = []  # Create the fieldnames list with the desired order
-        first_columns: List[str] = ['item_id', 'from', 'dropped_by',
-                                    'boss_position', 'gear_slot', 'gear_type',
-                                    'name', 'distribution', 'stats', 'mainstat']
-        last_columns: List[str] = ['spec_ids', 'spec_names']
+        first_columns: List[str] = [WowheadItem.ITEM_ID, WowheadItem.FROM, WowheadItem.DROPPED_BY,
+                                    WowheadItem.BOSS_POSITION, WowheadItem.GEAR_SLOT, WowheadItem.GEAR_TYPE,
+                                    WowheadItem.NAME, WowheadItem.DISTRIBUTION, WowheadItem.STATS, WowheadItem.MAINSTAT,
+                                    "DkBlood", "DkFrost", "DkUnholy"]
+        last_columns: List[str] = [WowheadItem.SPEC_IDS, WowheadItem.SPEC_NAMES]
         columns.extend(first_columns)
-        all_keys: Set[str] = set() # Get all unique keys from all items
+        all_keys: Set[str] = set()  # Get all unique keys from all items
         for item in item_list:
             all_keys.update(item.parsed_data.keys())
         middle_columns = sorted(list(all_keys - set(first_columns) - set(last_columns)))
@@ -666,6 +752,19 @@ class WowheadItemCsvExporter:
 
 class WowheadZone:
     """Represents a WoW zone with data scraped from Wowhead."""
+
+    # Constants for parsed data keys
+    ZONE_ID = 'zone_id'
+    NAME = 'name'
+    BOSSES = 'bosses'
+    ITEM_IDS = 'item_ids'
+    BOSS_ORDER = 'boss_order'
+    BOSS_HREFS = 'boss_hrefs'
+
+    # Constants for boss data keys
+    NPC_ID = 'npc_id'
+    HREF_NAME = 'href_name'
+    DISPLAY_NAME = 'display_name'
 
     folder: Path = Path.cwd() / "wowhead_zones"
     instances: Dict[int, 'WowheadZone'] = {}
@@ -690,7 +789,7 @@ class WowheadZone:
         """
         all_item_ids = []
         for instance in WowheadZone.instances.values():
-            all_item_ids.extend(instance.parsed_data['item_ids'])
+            all_item_ids.extend(instance.parsed_data[WowheadZone.ITEM_IDS])
         return list(set(all_item_ids))  # Remove duplicates and return as list
 
     @staticmethod
@@ -698,15 +797,15 @@ class WowheadZone:
         href_boss_name = WowheadZone.convert_boss_name_to_href_name(boss_name)
         if boss_name is not None:
             for zone in WowheadZone.instances.values():
-                boss_order = zone.parsed_data['boss_order']
+                boss_order = zone.parsed_data[WowheadZone.BOSS_ORDER]
                 for boss in boss_order:
                     if boss.lower() == boss_name.lower():
-                        return zone.parsed_data['name']
+                        return zone.parsed_data[WowheadZone.NAME]
                 # Try alternative href names
-                boss_hrefs = zone.parsed_data['boss_hrefs']
+                boss_hrefs = zone.parsed_data[WowheadZone.BOSS_HREFS]
                 for href in boss_hrefs:
                     if href_boss_name == href:
-                        return zone.parsed_data['name']
+                        return zone.parsed_data[WowheadZone.NAME]
         return "UNKNOWN"
 
     @staticmethod
@@ -732,12 +831,12 @@ class WowheadZone:
         href_boss_name = WowheadZone.convert_boss_name_to_href_name(boss_name)
         if boss_name is not None:
             for zone in WowheadZone.instances.values():
-                boss_order = zone.parsed_data['boss_order']
+                boss_order = zone.parsed_data[WowheadZone.BOSS_ORDER]
                 for index, boss in enumerate(boss_order):
                     if boss.lower() == boss_name.lower():
                         return f"{index + 1} of {len(boss_order)}"
                 # Try alternative href names
-                boss_hrefs = zone.parsed_data['boss_hrefs']
+                boss_hrefs = zone.parsed_data[WowheadZone.BOSS_HREFS]
                 for index, href in enumerate(boss_hrefs):
                     if href_boss_name == href:
                         return f"{index + 1} of {len(boss_hrefs)}"
@@ -745,14 +844,14 @@ class WowheadZone:
 
     def parse(self, zone_id: int) -> None:
         """Parse HTML content to extract item IDs."""
-        self.parsed_data['zone_id'] = zone_id
-        self.parsed_data['name'] = self.extract_name()
-        self.parsed_data['bosses'] = self.extract_bosses()
-        self.parsed_data['item_ids'] = self.extract_item_ids()
-        boss_order = [boss['display_name'] for boss in self.parsed_data['bosses'].values()]
-        self.parsed_data['boss_order'] = boss_order
-        boss_href_name = [boss['href_name'] for boss in self.parsed_data['bosses'].values()]
-        self.parsed_data['boss_hrefs'] = boss_href_name
+        self.parsed_data[self.ZONE_ID] = zone_id
+        self.parsed_data[self.NAME] = self.extract_name()
+        self.parsed_data[self.BOSSES] = self.extract_bosses()
+        self.parsed_data[self.ITEM_IDS] = self.extract_item_ids()
+        boss_order = [boss[self.DISPLAY_NAME] for boss in self.parsed_data[self.BOSSES].values()]
+        self.parsed_data[self.BOSS_ORDER] = boss_order
+        boss_href_name = [boss[self.HREF_NAME] for boss in self.parsed_data[self.BOSSES].values()]
+        self.parsed_data[self.BOSS_HREFS] = boss_href_name
 
     def extract_name(self) -> str:
         pattern = r'var myMapper = new Mapper\({"parent":"[^"]+","zone":\d+,"name":"([^"]+)"\}\);'
@@ -782,9 +881,9 @@ class WowheadZone:
                     href_name = WowheadZone.convert_boss_name_to_href_name(display_name)
             if display_name:
                 boss_data[display_name] = {
-                    'npc_id': str(npc_id),
-                    'href_name': href_name,
-                    'display_name': display_name
+                    self.NPC_ID: str(npc_id),
+                    self.HREF_NAME: href_name,
+                    self.DISPLAY_NAME: display_name
                 }
         return boss_data
 
@@ -807,7 +906,6 @@ class WowheadZone:
         json_str = json.dumps(self.parsed_data, indent=4)
         path = WowheadZone.folder / f"{self.zone_id}.json"
         ScrapeUtils.Persistence.write_textfile(path, json_str)
-
 
     @staticmethod
     def _set_trimmer_ruleset_for_wowhead_zone() -> None:
@@ -980,7 +1078,7 @@ class MainWowheadPipeline:
         WowheadItemCsvExporter.export_items_to_csv_for_all_specs_and_classes()
         WowheadItemCsvExporter.create_fixed_size_csv()
 
-        #WowheadItem.sim_world_tour()
+        WowheadItem.sim_world_tour()
 
         OutputValidation.validate()
         print("Finished!")
