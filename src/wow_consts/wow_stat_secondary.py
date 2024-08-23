@@ -7,3 +7,6 @@ class WowStatSecondary(WowStatBase):
     MASTERY = "Mastery"
     VERS = "Versatility"
 
+    @staticmethod
+    def get_first_letters() -> str:
+        return "CHMV"
