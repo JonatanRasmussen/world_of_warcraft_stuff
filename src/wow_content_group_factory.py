@@ -9,7 +9,10 @@ class WowContentGroupFactory:
         group_name = "tww_hc_week"
         zone_ids: List[int] = []
         wowhead_suburl = "war-within/dungeons"
-        return WowContentGroup(group_name, zone_ids, wowhead_suburl)
+        content_group = WowContentGroup(group_name, zone_ids, wowhead_suburl)
+        #Remove fake dungeon zzoldPriory
+        content_group.zone_ids.remove(15055)
+        return content_group
 
     @staticmethod
     def create_tww_mplus_s1() -> WowContentGroup:

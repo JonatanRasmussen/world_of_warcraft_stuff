@@ -17,10 +17,13 @@ class WowContentGroup:
         self.group_name = group_name
         self.output_folder = WowContentGroup._convert_group_name_to_folder(group_name)
         self.output_path = WowContentGroup._create_output_path(group_name)
-        self.wow_zones: List[WowZone] = []
+        self.zone_ids = zone_ids
         if len(zone_ids) == 0:
-            zone_ids = WowContentGroupScraper.scrape_zone_ids(wowhead_zone_subpage)
-        for zone_id in zone_ids:
+            self.zone_ids = WowContentGroupScraper.scrape_zone_ids(wowhead_zone_subpage)
+        self.wow_zones: List[WowZone] = []
+
+    def cascade_scrape_zones_and_its_items(self) -> None:
+        for zone_id in self.zone_ids:
             wow_zone = WowZone(zone_id)
             self.wow_zones.append(wow_zone)
 
