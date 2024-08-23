@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import List
+from typing import Optional, List
 
 from src.wow_npc import WowNpc
 from src.wow_item import WowItem
@@ -19,11 +19,16 @@ class WowZone:
         self.shortened_zone_name = WowZone.shorten_zone_name(scraper.zone_name)
         self.bosses: List[WowNpc] = scraper.bosses
         self.wow_items: List[WowItem] = []
-        for item_id in scraper.item_ids:
+        self.cascade_scrape_items(scraper.item_ids)
+        self.item_ids = scraper.item_ids
+
+    def cascade_scrape_items(self, item_ids: List[int]) -> None:
+        """Scrape and (re)initialize wow_items based on item_ids passed as arg"""
+        self.wow_items.clear()
+        for item_id in item_ids:
             wow_item = WowItem(item_id)
             wow_item.add_zone_data_to_item(self.zone_name, self.shortened_zone_name, self.bosses)
             self.wow_items.append(wow_item)
-        self.item_ids = scraper.item_ids
 
     def get_all_wow_items(self) -> List[WowItem]:
         """Get the item_id for each WowItem in this zone """
@@ -37,6 +42,7 @@ class WowZone:
 
     @staticmethod
     def shorten_zone_name(zone_name: str) -> str:
+        """Shorten a too-long zone name using verious techniques"""
         name_length_limit = 16
         if zone_name.startswith("The "):
             zone_name = zone_name[4:]
