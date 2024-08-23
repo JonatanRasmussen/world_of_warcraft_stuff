@@ -8,8 +8,9 @@ class MainWowheadPipeline:
 
     factories: List[Callable[[], WowContentGroup]] = [
         WowContentGroupFactory.create_tww_hc_week,
-        WowContentGroupFactory.create_tww_mplus_s1
+        WowContentGroupFactory.create_tww_mplus_s1,
     ]
+    validation_passed: List[bool] = []
 
     @staticmethod
     def main() -> None:
@@ -27,5 +28,7 @@ class MainWowheadPipeline:
             print("Simming world tour...")
             content_group.sim_world_tour()
 
-            OutputValidation.validate(content_group.output_folder)
+            is_valid = OutputValidation.validate(content_group.output_folder)
+            MainWowheadPipeline.validation_passed.append(is_valid)
             print("Finished!\n")
+        print(f"Validation passed summary: {MainWowheadPipeline.validation_passed}")

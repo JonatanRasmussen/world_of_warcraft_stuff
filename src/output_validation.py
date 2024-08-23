@@ -10,19 +10,21 @@ class OutputValidation:
     BASE_OUTPUT_FOLDER = "output"
 
     @staticmethod
-    def validate(item_csv: str) -> None:
+    def validate(item_csv: str) -> bool:
         test_folder: Path = Path.cwd() / OutputValidation.TEST_FOLDER / OutputValidation.BASE_TEST_OUTPUT_FOLDER
         output_folder: Path = Path.cwd() / OutputValidation.BASE_OUTPUT_FOLDER
         subfolder = WowItemCsvExporter.ITEMS_FOR_SPEC_FOLDER
         csv_to_validate = WowItemCsvExporter.ALL_COLUMNS_CSV_NAME
         real_out = ScrapeUtils.Persistence.read_textfile(output_folder / item_csv / subfolder / csv_to_validate)
         test_out = ScrapeUtils.Persistence.read_textfile(test_folder / item_csv / subfolder / csv_to_validate)
-        out1_match = real_out == test_out
-        if not out1_match:
+        out_match = real_out == test_out
+        if not out_match:
             print("Warning: output does not match expected output!")
             #OutputValidation.print_differences(real_out1, test_out1)
+            return False
         else:
             print("Validation was passed.")
+            return True
 
     @staticmethod
     def print_differences(actual: str, expected: str) -> None:
