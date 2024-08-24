@@ -81,6 +81,10 @@ class WowSpec(WowEnumBase):
         return cls.get_spec_from_id(spec_id).get_abbr()
 
     @classmethod
+    def get_item_id_from_abbr(cls, spec_abbr: str) -> int:
+        return cls.get_from_abbr(spec_abbr).get_spec_id()
+
+    @classmethod
     def get_all_spec_ids(cls) -> List[int]:
         spec_ids: List[int] = []
         for enum in cls:

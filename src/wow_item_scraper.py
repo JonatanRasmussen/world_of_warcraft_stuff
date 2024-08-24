@@ -33,6 +33,11 @@ class WowItemScraper:
         self.distribution = self.extract_distribution()
         self.stats = self.extract_stats()
 
+    @classmethod
+    def create_empty(cls, item_id: int) -> 'WowItemScraper':
+        empty_html = ""
+        return WowItemScraper(item_id, empty_html)
+
     @staticmethod
     def scrape_wowhead_item(item_id: int) -> 'WowItemScraper':
         """Scrape zone data from Wowhead and save it."""

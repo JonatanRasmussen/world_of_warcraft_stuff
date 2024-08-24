@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Optional, Set, Dict, Any, List
+from typing import Optional, Set, Dict, Any, List, Iterable
 
 from src.wow_npc import WowNpc
 from src.wow_consts.wow_role import WowRole
@@ -15,6 +15,7 @@ class WowItem:
 
     UNINITIALIZED_VALUE = "NOT_INITIALIZED"
     UNKNOWN_VALUE = WowItemScraper.UNKNOWN_VALUE
+    EMPTY_ITEM_ID = 0
 
     # Column names that needs referencing by WowItemCsvExporter
     COLUMN_ITEM_ID = 'item_id'
@@ -23,13 +24,17 @@ class WowItem:
     COLUMN_GEAR_SLOT = 'gear_slot'
     COLUMN_GEAR_TYPE = 'gear_type'
     COLUMN_STATS = 'stats'
+    COLUMN_RELEASE = 'release'
     COLUMN_SPEC_IDS = 'spec_ids'
     COLUMN_SPEC_NAMES = 'spec_names'
 
-    def __init__(self, item_id: int):
+    def __init__(self, item_id: int, scrape_from_wowhead: bool = True):
         """Initialize WowItem by scraping data via WowItemScraper"""
         self.item_id = item_id
-        scraper = WowItemScraper.scrape_wowhead_item(item_id)
+        if scrape_from_wowhead:
+            scraper = WowItemScraper.scrape_wowhead_item(item_id)
+        else:
+            scraper = WowItemScraper.create_empty(item_id)
         self.name = scraper.name
         self.item_level = scraper.item_level
         self.bind = scraper.bind
@@ -49,9 +54,14 @@ class WowItem:
         # end of data from scraper
         self.dropped_in = WowItem.UNINITIALIZED_VALUE
         self.from_ = WowItem.UNINITIALIZED_VALUE # 'from' is a keyword in Python, so using 'from_'
+        self.release = WowItem.UNINITIALIZED_VALUE
         self.boss = WowItem.UNINITIALIZED_VALUE
         self.drop_chances: Dict[str, str] = {}
         self.check_if_any_hardcoded_values_exist_for_this_item()
+
+    @classmethod
+    def create_empty(cls) -> 'WowItem':
+        return WowItem(WowItem.EMPTY_ITEM_ID, scrape_from_wowhead=False)
 
     def check_if_any_hardcoded_values_exist_for_this_item(self) -> None:
         """Check in WowItemFixer if any hardcoded dropped_by values are provided for this item_id"""
@@ -59,7 +69,6 @@ class WowItem:
             optional_fixed_dropped_by = WowItemFixer.try_fix_item_dropped_by(self.item_id, self.dropped_by)
             if optional_fixed_dropped_by is not None:
                 self.dropped_by = optional_fixed_dropped_by
-
 
     def create_csv_row_data(self) -> Dict[str, Any]:
         row_data = {
@@ -80,6 +89,7 @@ class WowItem:
             WowItem.COLUMN_STATS: self.stats,
             'dropped_in': self.dropped_in,
             WowItem.COLUMN_FROM: self.from_,
+            WowItem.COLUMN_RELEASE: self.release,
             WowItem.COLUMN_BOSS: self.boss,
             WowItem.COLUMN_SPEC_IDS: ', '.join(map(str, self.spec_ids)), #Moved to end
             WowItem.COLUMN_SPEC_NAMES: ', '.join(map(str, self.spec_names)), #Moved to end
@@ -112,9 +122,18 @@ class WowItem:
                 items.add(item)
         return items
 
-    def add_zone_data_to_item(self, zone_name: str, short_zone_name: str, bosses: List[WowNpc]) -> None:
+    @staticmethod
+    def count_items_with_special_id(all_items: Iterable['WowItem']) -> int:
+        count = 0
+        for item in all_items:
+            if item.item_id == WowItem.EMPTY_ITEM_ID:
+                count += 1
+        return count
+
+    def add_zone_data_to_item(self, zone_name: str, short_zone_name: str, release: str, bosses: List[WowNpc]) -> None:
         self.dropped_in = zone_name
         self.from_ = short_zone_name
+        self.release = release
         self.boss = WowNpc.get_boss_position(self.dropped_by, bosses)
 
     def calculate_drop_chance_per_spec(self, all_items: List['WowItem']) -> None:
@@ -145,25 +164,8 @@ class WowItem:
                 else:
                     print("Error: This should not be possible!")
 
-    """ def add_statistic_item_drop_chance_per_spec(self) -> None:
-        spec_ids = WowSpec.get_all_spec_ids()
-        for spec_id in spec_ids:
-            items = WowItem.get_all_items_for_spec(spec_id)
-            boss_loot_table_size = 0
-            for item in items:
-                if spec_id in self.parsed_data[ItemConst.SPEC_IDS]:
-                    if item.parsed_data[ItemConst.DROPPED_BY] == self.parsed_data[ItemConst.DROPPED_BY]:
-                        if item.parsed_data[ItemConst.GEAR_SLOT] is not None: #Ignore mounts/quest items
-                            #Only spec ID 65 (PaladinHoly) reaches a print statement placed here for item 221100. Why?????
-                            boss_loot_table_size += 1
-            drop_chance = f"{0}%"
-            if not boss_loot_table_size == 0:
-                drop_chance = f"{100 // boss_loot_table_size}%"
-            column_name = WowSpec.get_abbr_from_id(spec_id)
-            self.parsed_data[column_name] = drop_chance """
-
     def is_mount_or_quest_item(self) -> bool:
-        return self.gear_slot == "" or self.gear_slot is None
+        return self.gear_slot == "" or self.gear_slot is None or self.gear_type == "Cosmetic"
 
     def has_known_source(self) -> bool:
         if self.from_ == WowItemScraper.UNKNOWN_VALUE:

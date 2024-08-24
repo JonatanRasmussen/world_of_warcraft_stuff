@@ -18,6 +18,7 @@ class WowZone:
         self.zone_name = scraper.zone_name
         self.shortened_zone_name = WowZone.shorten_zone_name(scraper.zone_name)
         self.bosses: List[WowNpc] = scraper.bosses
+        self.release: str = WowZoneFixer.get_release(zone_id)
         self.wow_items: List[WowItem] = []
         self.item_ids = scraper.item_ids
         self.check_if_any_hardcoded_values_exist_for_this_zone()
@@ -38,7 +39,7 @@ class WowZone:
         self.wow_items.clear()
         for item_id in item_ids:
             wow_item = WowItem(item_id)
-            wow_item.add_zone_data_to_item(self.zone_name, self.shortened_zone_name, self.bosses)
+            wow_item.add_zone_data_to_item(self.zone_name, self.shortened_zone_name, self.release, self.bosses)
             self.wow_items.append(wow_item)
 
     def print_extracted_info(self) -> None:
@@ -90,11 +91,6 @@ class WowZone:
         elif not all_bosses_has_drops and not WowZoneFixer.missing_source_is_ok(self.zone_id):
             print(f"Info: zone {self.zone_id} has loot without source: {boss_drops_count}")
             print(f"The followings items are missing: {items_missing_source}")
-
-
-
-
-
 
     @staticmethod
     def shorten_zone_name(zone_name: str) -> str:

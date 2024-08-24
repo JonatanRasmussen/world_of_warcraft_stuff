@@ -31,6 +31,14 @@ class WowEnumBase(Enum):
                 return enum
         return None
 
+    @classmethod
+    def get_from_abbr(cls: Type[WowEnumT], abbr: str) -> WowEnumT:
+        for enum in cls:
+            if enum.get_abbr() == abbr:
+                return enum
+        raise ValueError(f"No enum matched the abbr {abbr}")
+
+
     def get_abbr(self) -> str:
         return ''.join(word.capitalize() for word in self.name.split('_'))
 

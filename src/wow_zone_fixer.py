@@ -74,13 +74,37 @@ class WowZoneFixer:
         12916: 33,
     }
 
+    release_category_hc = "Hc"
+    release_category_m0_s1 = "M0"
+    release_category_both = f"{release_category_hc}+{release_category_m0_s1}"
+    release_category_missing = ""
+
+    _release: Dict[int, str] = {
+        14938: release_category_hc,
+        15103: release_category_hc,
+        14882: release_category_hc,
+        14954: release_category_hc,
+        15093: release_category_both,
+        14971: release_category_both,
+        14883: release_category_both,
+        14979: release_category_both,
+        13334: release_category_m0_s1,
+        12916: release_category_m0_s1,
+        9354: release_category_m0_s1,
+        4950: release_category_m0_s1,
+    }
     """ 12916,
     9354,
     4950, """
 
     @staticmethod
+    def get_release(zone_id: int) -> str:
+        missing = WowZoneFixer.release_category_missing
+        return WowZoneFixer._release.get(zone_id, missing)
+
+    @staticmethod
     def missing_source_is_ok(zone_id: int) -> bool:
-        return zone_id in [-420] #this method is not currently in use
+        return zone_id in [] #for now, missing sources should be hardcoded in
 
     @staticmethod
     def try_fix_boss_list(zone_id: int) -> Optional[List[WowNpc]]:

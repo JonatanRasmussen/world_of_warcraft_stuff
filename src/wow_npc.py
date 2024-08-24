@@ -22,7 +22,7 @@ class WowNpc:
     def get_boss_position(boss_name: str, boss_list: List['WowNpc']) -> str:
         for list_index, boss in enumerate(boss_list):
             if boss.has_matching_name(boss_name):
-                position = f"{list_index + 1} of {len(boss_list)})"
+                position = f"{list_index + 1} of {len(boss_list)}"
                 return position
         return "? of ?"
 

@@ -35,6 +35,10 @@ class WowLootCategory(WowEnumBase):
     SHIELD = WowLootCategoryData(WowEquipSlot.SHIELD, None)
     TRINKET = WowLootCategoryData(WowEquipSlot.TRINKET, None)
 
+    @staticmethod
+    def convert_abbr_to_ingame_equipslot(loot_category_abbr: str) -> str:
+        return WowLootCategory.get_from_abbr(loot_category_abbr).get_ingame_name()
+
     def get_ingame_name(self) -> str:
         return self.get_equip_slot().get_ingame_name()
 
