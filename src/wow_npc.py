@@ -20,11 +20,20 @@ class WowNpc:
 
     @staticmethod
     def get_boss_position(boss_name: str, boss_list: List['WowNpc']) -> str:
+        boss_position = "???"
         for list_index, boss in enumerate(boss_list):
             if boss.has_matching_name(boss_name):
-                position = f"{list_index + 1} of {len(boss_list)}"
-                return position
-        return "? of ?"
+                if list_index + 1 == len(boss_list):
+                    boss_position = "Last"
+                elif list_index + 1 == 1:
+                    boss_position = "1st"
+                elif list_index + 1 == 2:
+                    boss_position = "2nd"
+                elif list_index + 1 == 3:
+                    boss_position = "3rd"
+                else:
+                    boss_position = f"{list_index + 1}th"
+        return f"{boss_position} boss"
 
     @staticmethod
     def convert_display_name_to_href_name(display_name: str) -> str:

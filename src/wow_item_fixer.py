@@ -1,11 +1,13 @@
 from typing import Dict, List, Optional
 
+from src.wow_consts.wow_role import WowRole
+from src.wow_consts.wow_spec import WowSpec
 from src.wow_item_scraper import WowItemScraper
 
 class WowItemFixer:
     """Hardcoded zone date for zones with bugged Wowhead pages."""
 
-    _hardcoded_item_dropped_by_values: Dict[str, List[int]] = {
+    _hardcoded_loot_tables: Dict[str, List[int]] = {
         # Mists of Tirna Scithe
         'Mistcaller': [
             178691, 178695, 178697, 178706, 178707,
@@ -44,10 +46,30 @@ class WowItemFixer:
         ],
     }
 
+    hardcoded_item_loot_specs: Dict[int, List[WowRole]] = {
+        # Tank trinkets with 'tankspec-only' in item description is not included
+        # tww hc + tww s1.
+        219298: [WowRole.DPS],
+        219306: [WowRole.HEAL],
+        219304: [WowRole.DPS],
+        219310: [WowRole.HEAL],
+        219294: [WowRole.DPS],
+        219316: [WowRole.TANK],
+        219320: [WowRole.HEAL],
+        219319: [WowRole.DPS],
+        219302: [WowRole.HEAL],
+        219301: [WowRole.DPS],
+        159622: [WowRole.DPS],
+        178783: [WowRole.HEAL],
+        178772: [WowRole.DPS],
+        133304: [WowRole.HEAL],
+        133291: [WowRole.TANK],
+    }
+
     @staticmethod
     def try_fix_item_dropped_by(item_id: int, dropped_by: str) -> Optional[str]:
         boss = None
-        for key, value in WowItemFixer._hardcoded_item_dropped_by_values.items():
+        for key, value in WowItemFixer._hardcoded_loot_tables.items():
             for itemid in value:
                 if itemid == item_id:
                     boss = key
@@ -57,4 +79,14 @@ class WowItemFixer:
             return boss
         if boss is not None and dropped_by != WowItemScraper.UNKNOWN_VALUE:
             print(f"Warning: {item_id} has a hardcoded dropped_by despite not needing it.")
+        return None
+
+    @staticmethod
+    def try_fix_item_spec_ids(item_id: int) -> Optional[List[WowRole]]:
+        wow_roles = WowItemFixer.hardcoded_item_loot_specs.get(item_id, None)
+        if wow_roles:
+            roles: List[WowRole] = []
+            for role in wow_roles:
+                roles.append(role)
+            return roles
         return None

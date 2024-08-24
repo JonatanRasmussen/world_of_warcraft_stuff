@@ -2,6 +2,8 @@ from pathlib import Path
 from typing import Optional, Set, Dict, Any, List, Iterable
 
 from src.wow_npc import WowNpc
+from src.wow_consts.wow_loot_category import WowLootCategory
+from src.wow_consts.wow_equip_slot import WowEquipSlot
 from src.wow_consts.wow_role import WowRole
 from src.wow_consts.wow_spec import WowSpec
 from src.wow_consts.wow_stat_primary import WowStatPrimary
@@ -24,7 +26,7 @@ class WowItem:
     COLUMN_GEAR_SLOT = 'gear_slot'
     COLUMN_GEAR_TYPE = 'gear_type'
     COLUMN_STATS = 'stats'
-    COLUMN_RELEASE = 'release'
+    COLUMN_WEEK = 'week'
     COLUMN_SPEC_IDS = 'spec_ids'
     COLUMN_SPEC_NAMES = 'spec_names'
 
@@ -54,7 +56,7 @@ class WowItem:
         # end of data from scraper
         self.dropped_in = WowItem.UNINITIALIZED_VALUE
         self.from_ = WowItem.UNINITIALIZED_VALUE # 'from' is a keyword in Python, so using 'from_'
-        self.release = WowItem.UNINITIALIZED_VALUE
+        self.week = WowItem.UNINITIALIZED_VALUE
         self.boss = WowItem.UNINITIALIZED_VALUE
         self.drop_chances: Dict[str, str] = {}
         self.check_if_any_hardcoded_values_exist_for_this_item()
@@ -69,6 +71,14 @@ class WowItem:
             optional_fixed_dropped_by = WowItemFixer.try_fix_item_dropped_by(self.item_id, self.dropped_by)
             if optional_fixed_dropped_by is not None:
                 self.dropped_by = optional_fixed_dropped_by
+            optional_hardcoded_roles = WowItemFixer.try_fix_item_spec_ids(self.item_id)
+            if optional_hardcoded_roles is not None:
+                spec_ids: List[int] = []
+                for wow_role in optional_hardcoded_roles:
+                    spec_ids.extend(WowSpec.get_all_spec_ids_for_role(wow_role))
+                    self.gear_type = WowLootCategory.get_trinket_gear_type(wow_role)
+                self.spec_ids = spec_ids
+                self.spec_names = WowItemScraper.extract_spec_names(spec_ids)
 
     def create_csv_row_data(self) -> Dict[str, Any]:
         row_data = {
@@ -89,7 +99,7 @@ class WowItem:
             WowItem.COLUMN_STATS: self.stats,
             'dropped_in': self.dropped_in,
             WowItem.COLUMN_FROM: self.from_,
-            WowItem.COLUMN_RELEASE: self.release,
+            WowItem.COLUMN_WEEK: self.week,
             WowItem.COLUMN_BOSS: self.boss,
             WowItem.COLUMN_SPEC_IDS: ', '.join(map(str, self.spec_ids)), #Moved to end
             WowItem.COLUMN_SPEC_NAMES: ', '.join(map(str, self.spec_names)), #Moved to end
@@ -130,10 +140,20 @@ class WowItem:
                 count += 1
         return count
 
-    def add_zone_data_to_item(self, zone_name: str, short_zone_name: str, release: str, bosses: List[WowNpc]) -> None:
+    @staticmethod
+    def validate_each_hardcoded_item_spec_exists_in_items(all_items: Iterable['WowItem']) -> None:
+        for hardcoded_item in WowItemFixer.hardcoded_item_loot_specs:
+            found = False
+            for item in all_items:
+                if item.item_id == hardcoded_item:
+                    found = True
+            if not found:
+                print(f"Warning: item {hardcoded_item} was not found in all_items!")
+
+    def add_zone_data_to_item(self, zone_name: str, short_zone_name: str, week: str, bosses: List[WowNpc]) -> None:
         self.dropped_in = zone_name
         self.from_ = short_zone_name
-        self.release = release
+        self.week = week
         self.boss = WowNpc.get_boss_position(self.dropped_by, bosses)
 
     def calculate_drop_chance_per_spec(self, all_items: List['WowItem']) -> None:
@@ -177,6 +197,11 @@ class WowItem:
             return mainstat.get_ingame_name() in self.primary_stats
         return False
 
+    def has_role(self, role: Optional[WowRole]) -> bool:
+        if self.gear_slot == WowEquipSlot.TRINKET.get_ingame_name():
+            return WowLootCategory.get_trinket_gear_type(role) == self.gear_type
+        return False
+
     def drops_for_mainstat(self, mainstat: WowStatPrimary) -> bool:
         specs_within_mainstat = WowSpec.get_all_spec_ids_for_mainstat(mainstat)
         for spec_id in specs_within_mainstat:
@@ -194,3 +219,10 @@ class WowItem:
             if drop_chance == 0 or drop_chance == "0":
                 return False
         return True
+
+    def is_duplicate(self, all_items: List['WowItem']) -> bool:
+        if not self.item_id == WowItem.EMPTY_ITEM_ID:
+            for item in all_items:
+                if item.item_id == self.item_id:
+                    return True
+        return False

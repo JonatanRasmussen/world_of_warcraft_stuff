@@ -77,7 +77,7 @@ class WowZoneFixer:
     release_category_hc = "Hc"
     release_category_m0_s1 = "M0"
     release_category_both = f"{release_category_hc}+{release_category_m0_s1}"
-    release_category_missing = ""
+    release_week_category_missing = ""
 
     _release: Dict[int, str] = {
         14938: release_category_hc,
@@ -98,8 +98,8 @@ class WowZoneFixer:
     4950, """
 
     @staticmethod
-    def get_release(zone_id: int) -> str:
-        missing = WowZoneFixer.release_category_missing
+    def get_release_week(zone_id: int) -> str:
+        missing = WowZoneFixer.release_week_category_missing
         return WowZoneFixer._release.get(zone_id, missing)
 
     @staticmethod

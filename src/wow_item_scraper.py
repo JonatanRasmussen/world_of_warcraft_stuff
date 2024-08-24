@@ -1,7 +1,9 @@
 import re
-from typing import Dict, List
+from typing import Dict, List, Set, Optional
 
+from src.wow_consts.wow_loot_category import WowLootCategory
 from src.wow_consts.wow_equip_slot import WowEquipSlot
+from src.wow_consts.wow_role import WowRole
 from src.wow_consts.wow_spec import WowSpec
 from src.wow_consts.wow_stat_primary import WowStatPrimary
 from src.wow_consts.wow_stat_secondary import WowStatSecondary
@@ -11,6 +13,7 @@ class WowItemScraper:
     """Scrapes data from Wowhead for specified WowZone"""
 
     UNKNOWN_VALUE = ""
+    VALID_ONLY_FOR_TANK_SPECS = "Valid only for tank specializations."
 
     def __init__(self, item_id: int, html_string: str):
         """Scrape wowhead data for zone_id"""
@@ -28,10 +31,11 @@ class WowItemScraper:
         self.sell_price = self.extract_sell_price()
         self.dropped_by = self.extract_dropped_by()
         self.spec_ids = self.extract_spec_ids()
-        self.spec_names = self.extract_spec_names()
+        self.spec_names = self.extract_spec_names(self.spec_ids)
         self.mainstat = self.extract_mainstat()
         self.distribution = self.extract_distribution()
         self.stats = self.extract_stats()
+        self.check_if_trinket_is_valid_only_for_tanks()
 
     @classmethod
     def create_empty(cls, item_id: int) -> 'WowItemScraper':
@@ -55,6 +59,17 @@ class WowItemScraper:
         html_start = '<h1 class="heading-size-1">'
         html_end = '<h2 class="heading-size-2 clear">Related</h2></div>'
         ScrapeUtils.Trimmer.register_trimming_ruleset(target_url, html_start, html_end)
+
+    def check_if_trinket_is_valid_only_for_tanks(self) -> None:
+        if WowItemScraper.VALID_ONLY_FOR_TANK_SPECS not in self.html_string:
+            if self.gear_slot == WowEquipSlot.TRINKET.get_ingame_name():
+                self.gear_type = WowLootCategory.get_trinket_gear_type()
+        else:
+            self.spec_ids = WowSpec.get_all_spec_ids_for_role(WowRole.TANK)
+            self.spec_names = WowItemScraper.extract_spec_names(self.spec_ids)
+            self.gear_type = WowLootCategory.get_trinket_gear_type(WowRole.TANK)
+            if self.gear_slot != WowEquipSlot.TRINKET.get_ingame_name():
+                print("Warning: 'Only valid for tanks' was found in a non-Trinket description.")
 
     def extract_content(self, pattern: str) -> str:
         match = re.search(pattern, self.html_string)
@@ -119,8 +134,9 @@ class WowItemScraper:
             spec_ids.append(int(match))
         return spec_ids if spec_ids else WowSpec.get_all_spec_ids()
 
-    def extract_spec_names(self) -> List[str]:
-        return [WowSpec.get_abbr_from_id(spec_id) for spec_id in self.spec_ids]
+    @staticmethod
+    def extract_spec_names(spec_ids: List[int]) -> List[str]:
+        return [WowSpec.get_abbr_from_id(spec_id) for spec_id in spec_ids]
 
     def extract_mainstat(self) -> str:
         primary_stats = self.primary_stats.keys()
@@ -146,7 +162,7 @@ class WowItemScraper:
     def extract_stats(self) -> str:
         equip_slot = WowEquipSlot.get_from_ingame_name(self.gear_slot)
         if equip_slot in [WowEquipSlot.ONEHAND, WowEquipSlot.TWOHAND, WowEquipSlot.RANGED,
-                          WowEquipSlot.OFFHAND, WowEquipSlot.SHIELD, WowEquipSlot. TRINKET]:
+                          WowEquipSlot.OFFHAND, WowEquipSlot.SHIELD, WowEquipSlot.TRINKET]:
             return self.mainstat
         single_letter_distribution = []
         for stat in self.distribution.split(" + "):

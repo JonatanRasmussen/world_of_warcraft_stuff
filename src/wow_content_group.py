@@ -2,7 +2,6 @@ import re
 from pathlib import Path
 from typing import List, Dict
 
-from src.wow_consts.wow_loot_category import WowLootCategory
 from src.wow_item import WowItem
 from src.wow_zone import WowZone
 from src.wow_content_group_scraper import WowContentGroupScraper
@@ -62,13 +61,14 @@ class WowContentGroup:
 
     @staticmethod
     def export_csv_for_two_groups(groups: List['WowContentGroup']) -> None:
-        all_items: List[WowItem] = []
+        all_unique_items: List[WowItem] = []
         for group in groups:
-            all_items.extend(group.get_all_wow_items())
-            all_items.extend(group.gearslot_statistics)
-        all_items_no_dupes = list(set(all_items))
+            for item in group.get_all_wow_items() + group.gearslot_statistics:
+                if not item.is_duplicate(all_unique_items):
+                    all_unique_items.append(item)
+        WowItem.validate_each_hardcoded_item_spec_exists_in_items(all_unique_items)
         path = WowContentGroup._create_output_path(WowContentGroup.COMBINED_NAME)
-        WowItemCsvExporter.export_items_to_csv_for_all_specs_and_classes(all_items_no_dupes, path)
+        WowItemCsvExporter.export_items_to_csv_for_all_specs_and_classes(all_unique_items, path)
 
     def validate_that_each_boss_has_loot(self) -> None:
         all_items = self.get_all_wow_items()

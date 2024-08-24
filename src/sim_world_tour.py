@@ -3,6 +3,7 @@ from typing import Dict, List
 from pathlib import Path
 
 from src.wow_consts.wow_class import WowClass
+from src.wow_consts.wow_equip_slot import WowEquipSlot
 from src.wow_consts.wow_loot_category import WowLootCategory
 from src.wow_consts.wow_spec import WowSpec
 from src.wow_item import WowItem
@@ -13,6 +14,7 @@ class SimWorldTour:
 
     WORLD_TOUR_FOLDER = "sim"
     ITEM_AVAILABLE_COUNT = "Available"
+    SOURCES_STR = "sources"
 
     # Group categories
     HC = "Hc"
@@ -38,12 +40,11 @@ class SimWorldTour:
                     abbr_name = WowSpec.get_abbr_from_id(spec_id)
                     chance_of_no_drops = 1.0
                     items_considered = 0
-                    if items_considered == 1 or items_considered == 2:
-                        pass
                     for item in list(WowItem.get_all_items_for_spec(spec_id, all_items)):
                         matching_slot = item.gear_slot == slot.get_ingame_name()
                         matching_mainstat = loot_category.get_mainstat() is None or item.has_mainstat(loot_category.get_mainstat())
-                        if matching_slot and matching_mainstat:
+                        matching_role = loot_category.get_equip_slot() != WowEquipSlot.TRINKET or item.has_role(loot_category.get_role())
+                        if matching_slot and matching_mainstat and matching_role:
                             drop_chance = item.drop_chances[abbr_name].rstrip('%')
                             try:
                                 drop_chance_float = float(drop_chance) / 100
@@ -59,10 +60,10 @@ class SimWorldTour:
                     class_items_considered = max(items_considered, class_items_considered)
 
                     spec_drop_rates[abbr_name] = f"{chance_of_at_least_one:.0f}%" #({items_considered} items)
-                spec_drop_rates[SimWorldTour.ITEM_AVAILABLE_COUNT] = f"{class_items_considered} items"
+                spec_drop_rates[SimWorldTour.ITEM_AVAILABLE_COUNT] = f"{class_items_considered} {SimWorldTour.SOURCES_STR}"
                 spec_drop_rates[wow_class.get_abbr()] = f"{best_chance:.0f}%"
                 for value in spec_drop_rates.values():
-                    if value not in ("0%", "0 items"):
+                    if value not in ("0%", f"0 {SimWorldTour.SOURCES_STR}"):
                         class_drop_rates[loot_category.get_abbr()] = spec_drop_rates
 
             json_str = json.dumps(class_drop_rates, indent=4)
@@ -81,11 +82,12 @@ class SimWorldTour:
                 empty_item = WowItem.create_empty()
                 empty_item.spec_ids.clear() #Is populated by all spec_ids by default if none was scraped
                 empty_item.name = f"{loot_category} items for ({wow_class})"
-                empty_item.release = abbr
+                empty_item.week = abbr
                 empty_item.from_ = f"{loot_category} ({wow_class})"
+                empty_item.dropped_in = formatted_abbr
                 empty_item.gear_slot = WowLootCategory.convert_abbr_to_ingame_equipslot(loot_category)
                 empty_item.gear_type = formatted_abbr
-                empty_item.boss = spec_drop_chances.get(SimWorldTour.ITEM_AVAILABLE_COUNT, "?")
+                empty_item.boss = spec_drop_chances.get(SimWorldTour.ITEM_AVAILABLE_COUNT, f"? {SimWorldTour.SOURCES_STR}")
                 for spec_abbr, drop_chance in spec_drop_chances.items():
                     # spec drop chance dict contains wow class and total item count. Ignore those.
                     if spec_abbr != wow_class and spec_abbr != SimWorldTour.ITEM_AVAILABLE_COUNT:

@@ -1,3 +1,5 @@
+from typing import Optional
+
 from .wow_enum_base import WowEnumBase
 
 class WowEquipSlot(WowEnumBase):

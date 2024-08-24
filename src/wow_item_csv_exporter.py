@@ -20,10 +20,10 @@ class WowItemCsvExporter:
         all_spec_ids = WowSpec.get_all_spec_ids()
         for wow_class in WowClass.get_all():
             class_spec_ids = WowSpec.get_all_spec_ids_for_class(wow_class)
-            for spec_id in class_spec_ids:
-                file_name = f"{WowSpec.get_abbr_from_id(spec_id)}.csv"
-                file_csv_path = csv_path / file_name
-                WowItemCsvExporter._export_items_to_csv([spec_id], file_csv_path, all_items)
+            #for spec_id in class_spec_ids:
+                #file_name = f"{WowSpec.get_abbr_from_id(spec_id)}.csv"
+                #file_csv_path = csv_path / file_name
+                #WowItemCsvExporter._export_items_to_csv([spec_id], file_csv_path, all_items)
             wow_class_csv_path = csv_path / f"{wow_class.get_abbr()}.csv"
             WowItemCsvExporter._export_items_to_csv(class_spec_ids, wow_class_csv_path, all_items)
         all_specs_csv_path = csv_path / WowItemCsvExporter.ALL_ITEMS_CSV_NAME
@@ -67,10 +67,9 @@ class WowItemCsvExporter:
                 gear_slot_order.get(str(x.gear_slot), len(WowEquipSlot.get_all())+1),
                 x.gear_slot or '',  # sort by slot #1 prio
                 x.gear_type or '',  # sort by type #2 prio
-                x.release or '',
-                x.dropped_in or '',
-                x.boss or '',
+                x.week or '',
                 x.from_ or '',
+                x.boss or '',
                 x.item_id or ''  # Finally sort by id to avoid random row order
             )
         )
@@ -78,7 +77,7 @@ class WowItemCsvExporter:
     @staticmethod
     def _sort_column_order(item_list: List['WowItem']) -> List[str]:
         columns: List[str] = []  # Create the fieldnames list with the desired order
-        first_columns: List[str] = [WowItem.COLUMN_ITEM_ID, WowItem.COLUMN_RELEASE, WowItem.COLUMN_FROM, WowItem.COLUMN_BOSS,
+        first_columns: List[str] = [WowItem.COLUMN_ITEM_ID, WowItem.COLUMN_WEEK, WowItem.COLUMN_FROM, WowItem.COLUMN_BOSS,
                                     WowItem.COLUMN_GEAR_SLOT, WowItem.COLUMN_GEAR_TYPE, WowItem.COLUMN_STATS,
                                     WowSpec.DK_BLOOD.get_abbr(), WowSpec.DK_FROST.get_abbr(), WowSpec.DK_UNHOLY.get_abbr()]
         last_columns: List[str] = [WowItem.COLUMN_SPEC_IDS, WowItem.COLUMN_SPEC_NAMES]
@@ -97,7 +96,7 @@ class WowItemCsvExporter:
 
     @staticmethod
     def _get_columns_to_use(spec_ids: List[int]) -> List[str]:
-        columns_to_use = [WowItem.COLUMN_ITEM_ID, WowItem.COLUMN_RELEASE, WowItem.COLUMN_FROM, WowItem.COLUMN_BOSS,
+        columns_to_use = [WowItem.COLUMN_ITEM_ID, WowItem.COLUMN_WEEK, WowItem.COLUMN_FROM, WowItem.COLUMN_BOSS,
                           WowItem.COLUMN_GEAR_SLOT, WowItem.COLUMN_GEAR_TYPE, WowItem.COLUMN_STATS]
         for spec_id in spec_ids:
             columns_to_use.append(WowSpec.get_abbr_from_id(spec_id))
