@@ -28,6 +28,9 @@ class MainWowheadPipeline:
             print("Simming world tour...")
             content_group.sim_world_tour()
 
+            print("Validating that each boss has items...")
+            content_group.validate_that_each_boss_has_loot()
+
             is_valid = OutputValidation.validate(content_group.output_folder)
             MainWowheadPipeline.validation_passed.append(is_valid)
             print("Finished!\n")

@@ -48,6 +48,11 @@ class WowContentGroup:
         world_tour_path = self.output_path / SimWorldTour.WORLD_TOUR_FOLDER
         SimWorldTour.sim_world_tour(all_items, world_tour_path)
 
+    def validate_that_each_boss_has_loot(self) -> None:
+        all_items = self.get_all_wow_items()
+        for zone in self.wow_zones:
+            zone.validate_that_each_boss_has_loot(all_items)
+
     @staticmethod
     def _convert_group_name_to_folder(group_name: str) -> str:
         """Convert npc name to the format used in wowhead urls"""

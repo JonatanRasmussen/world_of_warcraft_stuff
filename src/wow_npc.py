@@ -9,9 +9,14 @@ class WowNpc:
         self.display_name = display_name
         self.href_name = href_name
 
+    def print_info(self) -> None:
+        print(f"Boss info: npc_id={self.npc_id}, display_name={self.display_name}, href_name={self.href_name}")
+
     def has_matching_name(self, boss_name: str) -> bool:
         href_boss_name = WowNpc.convert_display_name_to_href_name(boss_name)
-        return self.href_name.lower() == href_boss_name.lower()
+        has_matching_href = self.href_name.lower() == href_boss_name.lower()
+        has_matching_display_name = self.display_name == boss_name
+        return has_matching_href or has_matching_display_name
 
     @staticmethod
     def get_boss_position(boss_name: str, boss_list: List['WowNpc']) -> str:
@@ -24,6 +29,9 @@ class WowNpc:
     @staticmethod
     def convert_display_name_to_href_name(display_name: str) -> str:
         """Convert npc name to the format used in wowhead urls"""
+        # Remove apostrophes
+        display_name = re.sub(r"'", '', display_name)
+        # Replace non-alphanumeric characters with hyphens
         return re.sub(r'[^a-z0-9]+', '-', display_name.lower())
 
     @staticmethod

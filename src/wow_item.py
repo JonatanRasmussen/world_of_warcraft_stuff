@@ -6,13 +6,15 @@ from src.wow_consts.wow_role import WowRole
 from src.wow_consts.wow_spec import WowSpec
 from src.wow_consts.wow_stat_primary import WowStatPrimary
 from src.wow_item_scraper import WowItemScraper
+from src.wow_item_fixer import WowItemFixer
 
 class WowItem:
     """Represents a WoW item with data scraped from Wowhead."""
 
     json_folder: Path = Path.cwd() / "output" / "wowhead_items"
 
-    _DEFAULT = "DEFAULT"
+    UNINITIALIZED_VALUE = "NOT_INITIALIZED"
+    UNKNOWN_VALUE = WowItemScraper.UNKNOWN_VALUE
 
     # Column names that needs referencing by WowItemCsvExporter
     COLUMN_ITEM_ID = 'item_id'
@@ -45,10 +47,19 @@ class WowItem:
         self.distribution = scraper.distribution
         self.stats = scraper.stats
         # end of data from scraper
-        self.dropped_in = WowItem._DEFAULT
-        self.from_ = WowItem._DEFAULT # 'from' is a keyword in Python, so using 'from_'
-        self.boss = WowItem._DEFAULT
+        self.dropped_in = WowItem.UNINITIALIZED_VALUE
+        self.from_ = WowItem.UNINITIALIZED_VALUE # 'from' is a keyword in Python, so using 'from_'
+        self.boss = WowItem.UNINITIALIZED_VALUE
         self.drop_chances: Dict[str, str] = {}
+        self.check_if_any_hardcoded_values_exist_for_this_item()
+
+    def check_if_any_hardcoded_values_exist_for_this_item(self) -> None:
+        """Check in WowItemFixer if any hardcoded dropped_by values are provided for this item_id"""
+        if not self.is_mount_or_quest_item():
+            optional_fixed_dropped_by = WowItemFixer.try_fix_item_dropped_by(self.item_id, self.dropped_by)
+            if optional_fixed_dropped_by is not None:
+                self.dropped_by = optional_fixed_dropped_by
+
 
     def create_csv_row_data(self) -> Dict[str, Any]:
         row_data = {
@@ -66,12 +77,12 @@ class WowItem:
             'dropped_by': self.dropped_by,
             'mainstat': self.mainstat,
             'distribution': self.distribution,
-            WowItem.COLUMN_STATS: ', '.join(map(str, self.stats)),
+            WowItem.COLUMN_STATS: self.stats,
             'dropped_in': self.dropped_in,
             WowItem.COLUMN_FROM: self.from_,
             WowItem.COLUMN_BOSS: self.boss,
             WowItem.COLUMN_SPEC_IDS: ', '.join(map(str, self.spec_ids)), #Moved to end
-            WowItem.COLUMN_SPEC_NAMES: ', '.join(self.spec_names), #Moved to end
+            WowItem.COLUMN_SPEC_NAMES: ', '.join(map(str, self.spec_names)), #Moved to end
         }
         # Add each drop chance as a separate column
         for key, value in self.drop_chances.items():
@@ -82,7 +93,7 @@ class WowItem:
     def get_all_items_for_spec(spec_id: int, all_items: List['WowItem']) -> Set['WowItem']:
         items: Set['WowItem'] = set()
         for item in all_items:
-            if not item.is_mount_or_quest_item() and item.has_known_source():
+            if not item.is_mount_or_quest_item():
                 spec_ids: List[int] = []
                 for scraped_spec_id in item.spec_ids:
                     if isinstance(scraped_spec_id, int):

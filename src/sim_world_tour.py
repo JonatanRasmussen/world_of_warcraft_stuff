@@ -9,12 +9,15 @@ from src.wow_item import WowItem
 from scrape_utils import ScrapeUtils
 
 class SimWorldTour:
+    """Simulate the expected loot outcome after doing each zone exactly once"""
 
     WORLD_TOUR_FOLDER = "sim"
     ITEM_AVAILABLE_COUNT = "Available"
 
     @staticmethod
     def sim_world_tour(all_items: List['WowItem'], sim_path: Path) -> None:
+        """Sim each spec looting 1 of each item available to them and calculate slot drop rates"""
+        # Warning: high levels of indentation. Viewer discretion is adviced!
         for wow_class in WowClass.get_all():
             loot_chance = 0.2  # Chance of loot per player per boss
             class_drop_rates: Dict[str, Dict[str, str]] = {}

@@ -15,11 +15,6 @@ class WowZoneScraper:
         self.bosses = WowNpc.create_zone_encounter_boss_list(html_string)
         self.item_ids = self.extract_item_ids()
 
-    def print_extracted_info(self) -> None:
-        print(f"Info: Zone_id {self.zone_id} was parsed as {self.zone_name} "
-              f"with {len(self.bosses)} bosses and "
-              f"{len(self.item_ids)} items")
-
     @staticmethod
     def scrape_wowhead_zone(zone_id: int) -> 'WowZoneScraper':
         """Scrape zone data from Wowhead and save it."""
