@@ -44,3 +44,6 @@ class WowEnumBase(Enum):
 
     def get_ingame_name(self) -> str:
         return self.value
+
+    def is_in_enum_set(self, value: str) -> bool:
+        return value in self.get_all_abbrs() or value in self.get_all_ingame_names()

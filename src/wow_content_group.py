@@ -49,7 +49,7 @@ class WowContentGroup:
     def sim_world_tour(self) -> None:
         all_items = self.get_all_wow_items()
         world_tour_path = self.output_path / SimWorldTour.WORLD_TOUR_FOLDER
-        self.world_tour_sim = SimWorldTour.sim_world_tour(all_items, world_tour_path)
+        self.world_tour_sim = SimWorldTour.sim_world_tour(self.group_abbr, all_items, world_tour_path)
 
     def create_gearslot_statistics(self) -> None:
         self.gearslot_statistics = SimWorldTour.create_gearslot_statistics(self.group_abbr, self.world_tour_sim)

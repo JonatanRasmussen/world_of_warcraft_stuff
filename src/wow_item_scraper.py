@@ -68,6 +68,7 @@ class WowItemScraper:
             self.spec_ids = WowSpec.get_all_spec_ids_for_role(WowRole.TANK)
             self.spec_names = WowItemScraper.extract_spec_names(self.spec_ids)
             self.gear_type = WowLootCategory.get_trinket_gear_type(WowRole.TANK)
+            self.stats = WowLootCategory.get_trinket_category(self.gear_type, self.stats)
             if self.gear_slot != WowEquipSlot.TRINKET.get_ingame_name():
                 print("Warning: 'Only valid for tanks' was found in a non-Trinket description.")
 

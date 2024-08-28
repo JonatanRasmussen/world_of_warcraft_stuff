@@ -1,7 +1,6 @@
 from typing import Dict, List, Optional
 
 from src.wow_consts.wow_role import WowRole
-from src.wow_consts.wow_spec import WowSpec
 from src.wow_item_scraper import WowItemScraper
 
 class WowItemFixer:

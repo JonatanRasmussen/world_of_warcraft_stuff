@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Optional, Set, Dict, Any, List, Iterable
 
 from src.wow_npc import WowNpc
+from src.wow_consts.wow_equip_type_armor import WowEquipTypeArmor
 from src.wow_consts.wow_loot_category import WowLootCategory
 from src.wow_consts.wow_equip_slot import WowEquipSlot
 from src.wow_consts.wow_role import WowRole
@@ -18,15 +19,18 @@ class WowItem:
     UNINITIALIZED_VALUE = "NOT_INITIALIZED"
     UNKNOWN_VALUE = WowItemScraper.UNKNOWN_VALUE
     EMPTY_ITEM_ID = 0
+    DROP_CHANCE_REPLACEMENT = ""
+    EMPTY_GEAR_TYPE_VALUE = "Other"
 
     # Column names that needs referencing by WowItemCsvExporter
-    COLUMN_ITEM_ID = 'item_id'
-    COLUMN_FROM = 'from'
-    COLUMN_BOSS = 'boss'
+    COLUMN_ITEM_ID = 'ID'
+    COLUMN_FROM = 'Dungeon'
+    COLUMN_BOSS = 'Boss'
     COLUMN_GEAR_SLOT = 'gear_slot'
     COLUMN_GEAR_TYPE = 'gear_type'
     COLUMN_STATS = 'stats'
-    COLUMN_WEEK = 'week'
+    COLUMN_LOOT_CATEGORY = 'Type'
+    COLUMN_WEEK = 'Week'
     COLUMN_SPEC_IDS = 'spec_ids'
     COLUMN_SPEC_NAMES = 'spec_names'
 
@@ -54,6 +58,7 @@ class WowItem:
         self.distribution = scraper.distribution
         self.stats = scraper.stats
         # end of data from scraper
+        self.loot_category = self.set_loot_category()
         self.dropped_in = WowItem.UNINITIALIZED_VALUE
         self.from_ = WowItem.UNINITIALIZED_VALUE # 'from' is a keyword in Python, so using 'from_'
         self.week = WowItem.UNINITIALIZED_VALUE
@@ -64,6 +69,14 @@ class WowItem:
     @classmethod
     def create_empty(cls) -> 'WowItem':
         return WowItem(WowItem.EMPTY_ITEM_ID, scrape_from_wowhead=False)
+
+    def set_loot_category(self) -> str:
+        if self.item_id == WowItem.EMPTY_ITEM_ID or self.is_mount_or_quest_item():
+            return WowItem.UNKNOWN_VALUE
+        loot_category = WowLootCategory.get_from_gear_slot_and_stats(self.item_id, self.gear_slot, self.stats)
+        if loot_category is None:
+            return WowItem.UNKNOWN_VALUE
+        return loot_category.get_abbr()
 
     def check_if_any_hardcoded_values_exist_for_this_item(self) -> None:
         """Check in WowItemFixer if any hardcoded dropped_by values are provided for this item_id"""
@@ -77,6 +90,7 @@ class WowItem:
                 for wow_role in optional_hardcoded_roles:
                     spec_ids.extend(WowSpec.get_all_spec_ids_for_role(wow_role))
                     self.gear_type = WowLootCategory.get_trinket_gear_type(wow_role)
+                    self.stats = WowLootCategory.get_trinket_category(self.gear_type, self.stats)
                 self.spec_ids = spec_ids
                 self.spec_names = WowItemScraper.extract_spec_names(spec_ids)
 
@@ -97,6 +111,7 @@ class WowItem:
             'mainstat': self.mainstat,
             'distribution': self.distribution,
             WowItem.COLUMN_STATS: self.stats,
+            WowItem.COLUMN_LOOT_CATEGORY: self.loot_category,
             'dropped_in': self.dropped_in,
             WowItem.COLUMN_FROM: self.from_,
             WowItem.COLUMN_WEEK: self.week,
@@ -183,6 +198,37 @@ class WowItem:
                     self.drop_chances[spec_abbr] = f"{100 // boss_count_dict[self_boss]}%"
                 else:
                     print("Error: This should not be possible!")
+        self.calculate_drop_chance_per_class()
+
+    def calculate_drop_chance_per_class(self) -> None:
+        for spec_id in WowSpec.get_all_spec_ids():
+            spec = WowSpec.get_spec_from_id(spec_id)
+            wow_class = spec.get_class()
+            class_spec_ids = WowSpec.get_all_spec_ids_for_class(wow_class)
+            best_drop_chance = 0
+            for class_spec_id in class_spec_ids:
+                spec_abbr = WowSpec.get_abbr_from_id(class_spec_id)
+                self.drop_chances[spec_abbr].rstrip('%')
+                drop_chance_str = self.drop_chances[spec_abbr].rstrip('%')
+                try:
+                    drop_chance = int(drop_chance_str)
+                    if drop_chance >= best_drop_chance:
+                        self.drop_chances[wow_class.get_abbr()] = self.drop_chances[spec_abbr]
+                except ValueError:
+                    print(f"Warning: {drop_chance_str} could not be parsed to a number")
+
+    def prettify_table_by_removing_duplicate_droprates(self) -> None:
+        replacement = WowItem.DROP_CHANCE_REPLACEMENT
+        for spec in WowSpec.get_all():
+            wow_class = spec.get_class()
+            spec_ids_for_class = WowSpec.get_all_spec_ids_for_class(wow_class)
+            for spec_id in spec_ids_for_class:
+                class_spec = WowSpec.get_spec_from_id(spec_id)
+                if class_spec.get_abbr() in self.drop_chances:
+                    drop_chance = self.drop_chances[class_spec.get_abbr()]
+                    if not drop_chance == replacement:
+                        if self.drop_chances[wow_class.get_abbr()] == drop_chance:
+                            self.drop_chances[class_spec.get_abbr()] = replacement
 
     def is_mount_or_quest_item(self) -> bool:
         return self.gear_slot == "" or self.gear_slot is None or self.gear_type == "Cosmetic"

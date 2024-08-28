@@ -5,6 +5,12 @@ from src.wow_npc import WowNpc
 class WowZoneFixer:
     """Hardcoded zone date for zones with bugged Wowhead pages."""
 
+    release_category_hc = "Hc"
+    release_category_m0_s1 = "m0"
+    release_category_both = "both"
+    release_week_category_missing = ""
+
+
     _hardcoded_boss_lists: Dict[int, List[WowNpc]] = {
         # Siege of Boralus (fix for wowhead showing both Alliance and Horde version of bosses)
         9354: [
@@ -73,11 +79,6 @@ class WowZoneFixer:
         13334: 32,
         12916: 33,
     }
-
-    release_category_hc = "Hc"
-    release_category_m0_s1 = "M0"
-    release_category_both = f"{release_category_hc}+{release_category_m0_s1}"
-    release_week_category_missing = ""
 
     _release: Dict[int, str] = {
         14938: release_category_hc,

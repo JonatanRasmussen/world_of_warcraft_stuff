@@ -6,6 +6,7 @@ from src.wow_consts.wow_class import WowClass
 from src.wow_consts.wow_equip_slot import WowEquipSlot
 from src.wow_consts.wow_loot_category import WowLootCategory
 from src.wow_consts.wow_spec import WowSpec
+from src.wow_zone_fixer import WowZoneFixer
 from src.wow_item import WowItem
 from scrape_utils import ScrapeUtils
 
@@ -14,17 +15,17 @@ class SimWorldTour:
 
     WORLD_TOUR_FOLDER = "sim"
     ITEM_AVAILABLE_COUNT = "Available"
-    SOURCES_STR = "sources"
+    SOURCES_STR = "available"
 
     # Group categories
-    HC = "Hc"
+    HC = WowZoneFixer.release_category_hc
     HC_CSV_VALUE = "1st/2nd week"
-    M0 = "M0"
+    M0 = WowZoneFixer.release_category_m0_s1
     M0_CSV_VALUE = "m0 week"
     DEFAULT_GROUP_CATEGORY_VALUE = ""
 
     @staticmethod
-    def sim_world_tour(all_items: List['WowItem'], sim_path: Path) -> Dict[str, Dict[str, Dict[str, str]]]:
+    def sim_world_tour(abbr: str, all_items: List['WowItem'], sim_path: Path) -> Dict[str, Dict[str, Dict[str, str]]]:
         """Sim each spec looting 1 of each item available to them and calculate slot drop rates"""
         # Warning: high levels of indentation. Viewer discretion is adviced!
         all_class_drop_rates: Dict[str, Dict[str, Dict[str, str]]] = {}
@@ -60,10 +61,10 @@ class SimWorldTour:
                     class_items_considered = max(items_considered, class_items_considered)
 
                     spec_drop_rates[abbr_name] = f"{chance_of_at_least_one:.0f}%" #({items_considered} items)
-                spec_drop_rates[SimWorldTour.ITEM_AVAILABLE_COUNT] = f"{class_items_considered} {SimWorldTour.SOURCES_STR}"
+                spec_drop_rates[SimWorldTour.ITEM_AVAILABLE_COUNT] = SimWorldTour._format_item_availability(class_items_considered, abbr)
                 spec_drop_rates[wow_class.get_abbr()] = f"{best_chance:.0f}%"
                 for value in spec_drop_rates.values():
-                    if value not in ("0%", f"0 {SimWorldTour.SOURCES_STR}"):
+                    if value not in ("0%", SimWorldTour._format_item_availability(0, abbr)):
                         class_drop_rates[loot_category.get_abbr()] = spec_drop_rates
 
             json_str = json.dumps(class_drop_rates, indent=4)
@@ -83,13 +84,16 @@ class SimWorldTour:
                 empty_item.spec_ids.clear() #Is populated by all spec_ids by default if none was scraped
                 empty_item.name = f"{loot_category} items for ({wow_class})"
                 empty_item.week = abbr
-                empty_item.from_ = f"{loot_category} ({wow_class})"
+                empty_item.boss = ""
+                empty_item.loot_category = f"{loot_category} ({wow_class}, {abbr})"
                 empty_item.dropped_in = formatted_abbr
                 empty_item.gear_slot = WowLootCategory.convert_abbr_to_ingame_equipslot(loot_category)
                 empty_item.gear_type = formatted_abbr
-                empty_item.boss = spec_drop_chances.get(SimWorldTour.ITEM_AVAILABLE_COUNT, f"? {SimWorldTour.SOURCES_STR}")
+                empty_item.from_ = spec_drop_chances.get(SimWorldTour.ITEM_AVAILABLE_COUNT, SimWorldTour._format_item_availability(-999, abbr))
                 for spec_abbr, drop_chance in spec_drop_chances.items():
                     # spec drop chance dict contains wow class and total item count. Ignore those.
+                    if spec_abbr == wow_class:
+                        empty_item.drop_chances[wow_class] = drop_chance
                     if spec_abbr != wow_class and spec_abbr != SimWorldTour.ITEM_AVAILABLE_COUNT:
                         empty_item.drop_chances[spec_abbr] = drop_chance
                         spec_id = WowSpec.get_item_id_from_abbr(spec_abbr)
@@ -106,3 +110,7 @@ class SimWorldTour:
         if group_abbr == SimWorldTour.M0:
             return SimWorldTour.M0_CSV_VALUE
         return SimWorldTour.DEFAULT_GROUP_CATEGORY_VALUE
+
+    @staticmethod
+    def _format_item_availability(count: int, group_abbr: str) -> str:
+        return f"{count} available in {group_abbr}"

@@ -33,7 +33,7 @@ class WowNpc:
                     boss_position = "3rd"
                 else:
                     boss_position = f"{list_index + 1}th"
-        return f"{boss_position} boss"
+        return f"{boss_position}"
 
     @staticmethod
     def convert_display_name_to_href_name(display_name: str) -> str:

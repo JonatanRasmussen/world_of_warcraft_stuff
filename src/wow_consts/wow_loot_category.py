@@ -55,8 +55,59 @@ class WowLootCategory(WowEnumBase):
         return "Anyrole"
 
     @staticmethod
+    def get_trinket_category(gear_type: str, stats: str) -> str:
+        """This is a fast inplementation that will totally get replaced later."""
+        return f"{gear_type},{stats}".replace(f" {WowEquipSlot.TRINKET.get_ingame_name()}", "")
+
+    @staticmethod
     def convert_abbr_to_ingame_equipslot(loot_category_abbr: str) -> str:
         return WowLootCategory.get_from_abbr(loot_category_abbr).get_ingame_name()
+
+    @classmethod
+    def get_from_gear_slot_and_stats(cls, item_id: int, gear_slot: str, stats: str) -> Optional['WowLootCategory']:
+        """A long and messy method that gets the job done."""
+        all_abbrs = cls.get_all_abbrs()
+        for abbr in all_abbrs:
+            if gear_slot == abbr:
+                loot_category = cls.get_from_abbr(abbr)
+                if loot_category is not None:
+                    return loot_category
+                else:
+                    print(f"Warning: {item_id} {abbr} could not be converted to a WowLootCategory.")
+        equip_slot = WowEquipSlot.get_from_ingame_name(gear_slot)
+        if equip_slot is None:
+            print(f"Warning: gear slot {gear_slot} did not map onto any known equip slots")
+            return None
+        if equip_slot == WowEquipSlot.ONEHAND:
+            if WowStatPrimary.AGI.get_abbr() in stats:
+                return WowLootCategory.AGI_1H_Weapon
+            if WowStatPrimary.STR.get_abbr() in stats:
+                return WowLootCategory.STR_1H_Weapon
+            if WowStatPrimary.INT.get_abbr() in stats:
+                return WowLootCategory.INT_1H_Weapon
+            print(f"Warning: {item_id} Equip slot is weapon but no mainstat was found in stats '{stats}'")
+        if equip_slot == WowEquipSlot.TWOHAND:
+            if WowStatPrimary.AGI.get_abbr() in stats:
+                return WowLootCategory.AGI_2H_Weapon
+            if WowStatPrimary.STR.get_abbr() in stats:
+                return WowLootCategory.STR_2H_Weapon
+            if WowStatPrimary.INT.get_abbr() in stats:
+                return WowLootCategory.INT_2H_Weapon
+            print(f"Warning: {item_id} Equip slot is weapon but no mainstat was found in stats '{stats}'")
+        if equip_slot == WowEquipSlot.TRINKET:
+            if WowRole.DPS.get_abbr() in stats:
+                return WowLootCategory.DPS_TRINKET
+            elif WowRole.HEAL.get_abbr() in stats:
+                return WowLootCategory.HEAL_TRINKET
+            elif WowRole.TANK.get_abbr() in stats:
+                return WowLootCategory.TANK_TRINKET
+            else:
+                return WowLootCategory.ANYROLE_TRINKET
+        for loot_category in WowLootCategory.get_all():
+            if loot_category.get_equip_slot() == equip_slot:
+                return loot_category
+        print(f"Warning: {item_id} gearslot {gear_slot} with stats {stats} did not match any loot category!")
+        return None
 
     def get_ingame_name(self) -> str:
         return self.get_equip_slot().get_ingame_name()
