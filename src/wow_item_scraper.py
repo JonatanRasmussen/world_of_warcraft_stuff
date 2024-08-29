@@ -109,9 +109,12 @@ class WowItemScraper:
     def extract_secondary_stats(self) -> Dict[str, int]:
         stats = {}
         for stat in WowStatSecondary.get_all_ingame_names():
-            value = self.extract_content(rf'([0-9,]+) {stat}')
-            if value and value.isnumeric():
-                stats[stat] = int(value.replace(',', ''))
+            pattern = rf'([0-9,]+)\s+{re.escape(stat)}'
+            match = re.search(pattern, self.html_string)
+            if match:
+                value = match.group(1)
+                if value:
+                    stats[stat] = int(value.replace(',', ''))
         return stats
 
     def extract_required_level(self) -> int:

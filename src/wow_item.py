@@ -6,6 +6,7 @@ from src.wow_consts.wow_equip_type_armor import WowEquipTypeArmor
 from src.wow_consts.wow_loot_category import WowLootCategory
 from src.wow_consts.wow_equip_slot import WowEquipSlot
 from src.wow_consts.wow_role import WowRole
+from src.wow_consts.wow_class import WowClass
 from src.wow_consts.wow_spec import WowSpec
 from src.wow_consts.wow_stat_primary import WowStatPrimary
 from src.wow_item_scraper import WowItemScraper
@@ -202,21 +203,17 @@ class WowItem:
         self.calculate_drop_chance_per_class()
 
     def calculate_drop_chance_per_class(self) -> None:
-        for spec_id in WowSpec.get_all_spec_ids():
-            spec = WowSpec.get_spec_from_id(spec_id)
-            wow_class = spec.get_class()
+        for wow_class in WowClass.get_all():
             class_spec_ids = WowSpec.get_all_spec_ids_for_class(wow_class)
-            best_drop_chance = 0
+            drop_chances: List[int] = []
             for class_spec_id in class_spec_ids:
                 spec_abbr = WowSpec.get_abbr_from_id(class_spec_id)
-                self.drop_chances[spec_abbr].rstrip('%')
                 drop_chance_str = self.drop_chances[spec_abbr].rstrip('%')
                 try:
-                    drop_chance = int(drop_chance_str)
-                    if drop_chance >= best_drop_chance:
-                        self.drop_chances[wow_class.get_abbr()] = self.drop_chances[spec_abbr]
+                    drop_chances.append(int(drop_chance_str))
                 except ValueError:
                     print(f"Warning: {drop_chance_str} could not be parsed to a number")
+            self.drop_chances[wow_class.get_abbr()] = f"{max(drop_chances)}%"
 
     def prettify_table_by_removing_duplicate_droprates(self) -> None:
         replacement = WowItem.DROP_CHANCE_REPLACEMENT

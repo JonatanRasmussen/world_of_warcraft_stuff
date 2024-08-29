@@ -32,12 +32,11 @@ class WowZoneFixer:
         # Grim Batol (fix for legacy dungeon loot table. Also, Drahga Shadowburner is missing)
         4950: [
             133282, 133283, 133284, 133285, 133286,
-            133287, 133288, 133289, 133290, 133291,
+            133287, 133289, 133290, 133291, 133296,
             133297, 133298, 133299, 133300, 133301,
             133302, 133303, 133304, 133305, 133306,
             133308, 133309, 133353, 133374, 133292,
             133295, 133294, 133354, 133293, 133363,
-            133296,
         ],
         # Siege of Boralus (fix for wowhead showing both Alliance and Horde version of loot)
         9354: [
