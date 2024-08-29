@@ -13,6 +13,7 @@ class WowEquipTypeWeapon(WowEnumBase):
     BOW = "Bow"
     CROSSBOW = "Crossbow"
     GUN = "Gun"
+    WAND = "Wand"
 
     @staticmethod
     def get_custom_name_shared_for_weapon_gear_type() -> str:

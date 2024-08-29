@@ -66,9 +66,11 @@ class WowItemCsvExporter:
                     row_data[key] = ', '.join(map(str, value))
                 # For slot statistics items, replace id with slot category name
                 if key == WowItem.COLUMN_ITEM_ID and str(value) == "0":
-                    row_data[key] = ""
-                if key == WowItem.COLUMN_LOOT_CATEGORY and ("(" and ")") not in value:
-                    row_data[key] = ""
+                    row_data[key] = ''
+                # For loot category (a.k.a. Type), dont show loot category on regular items
+                if not all_columns:
+                    if key == WowItem.COLUMN_LOOT_CATEGORY and ("(" and ")") not in value:
+                        row_data[key] = ''
 
             current_week = row_data.get(WowItem.COLUMN_WEEK, '')
             if empty_rows and previous_week is not None and current_week != previous_week:
@@ -111,6 +113,7 @@ class WowItemCsvExporter:
                 x.week or '',
                 x.from_ or '',
                 x.boss or '',
+                x.name or '',
                 x.item_id or ''  # Finally sort by id to avoid random row order
             )
         )

@@ -24,6 +24,7 @@ class WowItem:
 
     # Column names that needs referencing by WowItemCsvExporter
     COLUMN_ITEM_ID = 'ID'
+    COLUMN_NAME = 'Name'
     COLUMN_FROM = 'Dungeon'
     COLUMN_BOSS = 'Boss'
     COLUMN_GEAR_SLOT = 'gear_slot'
@@ -45,7 +46,7 @@ class WowItem:
         self.item_level = scraper.item_level
         self.bind = scraper.bind
         self.gear_slot = scraper.gear_slot
-        self.gear_type = scraper.gear_type
+        self.gear_type = WowEquipTypeArmor.assign_non_empty_gear_type(scraper.gear_type)
         self.unique = scraper.unique
         self.primary_stats = scraper.primary_stats
         self.secondary_stats = scraper.secondary_stats
@@ -58,13 +59,13 @@ class WowItem:
         self.distribution = scraper.distribution
         self.stats = scraper.stats
         # end of data from scraper
-        self.loot_category = self.set_loot_category()
         self.dropped_in = WowItem.UNINITIALIZED_VALUE
         self.from_ = WowItem.UNINITIALIZED_VALUE # 'from' is a keyword in Python, so using 'from_'
         self.week = WowItem.UNINITIALIZED_VALUE
         self.boss = WowItem.UNINITIALIZED_VALUE
         self.drop_chances: Dict[str, str] = {}
         self.check_if_any_hardcoded_values_exist_for_this_item()
+        self.loot_category = self.set_loot_category()
 
     @classmethod
     def create_empty(cls) -> 'WowItem':
@@ -97,7 +98,7 @@ class WowItem:
     def create_csv_row_data(self) -> Dict[str, Any]:
         row_data = {
             WowItem.COLUMN_ITEM_ID: self.item_id,
-            'name': self.name,
+            WowItem.COLUMN_NAME: self.name,
             'item_level': self.item_level,
             'bind': self.bind,
             WowItem.COLUMN_GEAR_SLOT: self.gear_slot,

@@ -11,6 +11,8 @@ class WowEquipTypeArmor(WowEnumBase):
     @staticmethod
     def assign_non_empty_gear_type(armor_type: str) -> str:
         """For correct csv row sorting, ensure the gear type has a value"""
+        if not armor_type:
+            return WowEquipTypeArmor.get_empty_value()
         if armor_type in WowEquipTypeArmor.get_all_ingame_names():
             return armor_type
         weapon_type = armor_type
