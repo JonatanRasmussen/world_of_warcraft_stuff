@@ -9,4 +9,4 @@ I copied the final output into a massive spreadsheet with multiple drop chance t
 
 **How the code works:** We input a Wowhead-website link to the most recent dungeon pool. From wowhead, we then scrape: each dungeon, each boss for each dungeon, and each piece of loot from each boss. We then parse out the stats for a given piece of loot (str/agi/int and gear type), which then allows us to reverse-construct what every spec in the game can probabilistically expect to have looted after completing a full dungeon run. And if you are missing any combination of gear (chestplate/trinket/necklace, but NOT a helmet/glove/weapon), the script is also smart enough to calculate which dungeon is statistically most likely to provide a loot upgrade.
 
-![Image link](images/wow_lootdrop_optimize_showcase.png)
+![Image link](wow_lootdrop_optimize_showcase.png)
