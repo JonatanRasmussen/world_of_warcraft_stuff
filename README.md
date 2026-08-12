@@ -1,8 +1,8 @@
 # Gear drop optimizer
 
-This project intended to help players optimize their loot by telling them how likely each type of gear (helmet, gloves, weapon, etc.) was to drop from a given dungeon.
+This project is a collection of scripts related to webscraping World of Warcaft, but primarily it intends to help players optimize their loot by telling them how likely each type of gear (helmet, gloves, weapon, etc.) is to drop from a given dungeon.
 
-This is quite hard to calculate, as you can only see the full loot table for each boss.  But each boss is part of a dungeon with multiple bosses (that you must also kill), and the actual drop chance of each item depends on the size of the loot table, the loot elligibility of your *and your allies* class/spec.
+This is quite hard to calculate, as you can only see the full loot table for each boss. But each boss is part of a dungeon with multiple bosses (that you must also kill), and the actual drop chance of each item depends on the size of the loot table, the loot elligibility of your *and your allies* class/spec.
 
 I copied the final output into a massive spreadsheet with multiple drop chance tables for each gear slot and playable class/spec:
 [Google spreadsheet link](https://docs.google.com/spreadsheets/d/1HwX7lmcGNRF1X0eqS8Gbttr7EWLi2pE43eD8ctp9D78/edit?gid=12643874#gid=12643874)
