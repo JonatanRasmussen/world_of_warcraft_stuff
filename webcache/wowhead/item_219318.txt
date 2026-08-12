@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Oppressive Orator's Larynx</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=446787/oppressive-orators-larynx" class="q2">Your attacks have a chance to stir the larynx, allowing its dark whispers to influence you. Each whisper flows through your mind for 30 sec, granting <!--pts1:0:0:446787:0.179779-->198<!----> Strength.</a></span><br><span class="q2">Use: <a href="/spell=443552/oppressive-oration" class="q2">Wave the larynx in the air to release a tormenting chorus, inflicting (<!--sp137028:0--><!--sp137028--><!--sp137023:0--><!--sp137023--><!--sp137010:0--><!--sp137010--><!--sp212613:0--><!--sp212613--><!--sp137008:0--><!--sp137008--><!--sp137039:0--><!--sp137039--><!--sp137031:0--><!--sp137031--><!--sp137032:0--><!--sp137032--><!--sp137029:0--><!--sp137029--><!--sp137024:0--><!--sp137024--><!--sp137024:0--><!--sp137024--><!--sp356810:0--><!--sp356810--><!--sp137012:0--><!--sp137012--><!--sp137048:0-->1<!--sp137048--> * <!--pts2:0:0:446787:44.0308-->39557<!----> * 3 / 1) Shadow damage over 3 sec split between nearby enemies. Your whispers leave to join the chorus, increasing its damage before falling silent.</a> (2 Min Cooldown)</span><!--itemEffects:1--><br>Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">46</span> <span class="moneysilver">85</span> <span class="moneycopper">89</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Orator Krix'vizk</div></td></tr></table></noscript>
+<div id="ic219318" style="float: left"></div>
+<div id="tt219318" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl219318" style="display: block"></div>
+    <div id="ks219318" data-role="spell-modifiers"></div>
+    <div id="iu219318"></div>
+    <div id="rppm219318"></div>
+    <div id="bs219318"></div>
+    <div id="craftedStatsSelector219318"></div>
+    <div id="cs219318"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic219318').appendChild(Icon.create('spell_shadow_shadowmend', 2, null, 0, 1));
+var tt = WH.ge('tt219318');
+var sl = WH.ge('sl219318');
+var ks = WH.ge('ks219318');
+var iu = WH.ge('iu219318');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        219318,
+        true,
+        true,
+        sl,
+        null,
+        [446787,443552],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

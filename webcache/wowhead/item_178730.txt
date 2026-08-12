@@ -1,0 +1,146 @@
+<h1 class="heading-size-1">Engorged Worm Smasher</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->158</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>One-Hand</td><th><!--scstart2:4--><span class="q1">Mace</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->20 - 27 Damage</span></td>
+    <th>Speed <!--spd-->2.60</th>
+</tr></table><!--dps-->(9.0 damage per second)<br><span><!--stat4-->+8 Strength</span><br><span><!--stat7-->+12 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg36-->11 Haste</span><br><span class="q2">+<!--rtg40-->6 Versatility</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 110 / 110</td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->60<div class="whtt-sellprice">Sell Price: <span class="moneygold">3</span> <span class="moneysilver">55</span> <span class="moneycopper">96</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Blightbone</div><div class="whtt-extra whtt-dropchance">Drop Chance: 3.85%</div></td></tr></table></noscript>
+<div id="ic178730" style="float: left"></div>
+<div id="tt178730" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl178730"></div>
+    <div id="ks178730" data-role="spell-modifiers"></div>
+    <div id="iu178730"></div>
+    <div id="rppm178730"></div>
+    <div id="bs178730"></div>
+    <div id="craftedStatsSelector178730"></div>
+    <div id="cs178730"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic178730').appendChild(Icon.create('inv_mace_1h_oribosdungeon_c_02', 2, null, 0, 1));
+var tt = WH.ge('tt178730');
+var sl = WH.ge('sl178730');
+var ks = WH.ge('ks178730');
+var iu = WH.ge('iu178730');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        178730,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Paladin:
+                        <div class="iconsmall spec66" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_paladin_shieldofthetemplar.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.2.66"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec66 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec66 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Warrior:
+                        <div class="iconsmall spec72" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_innerrage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.72"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec72 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Fury", 'q');
+                });
+                $('#lootspecs').find('.spec72 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec73" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_defensivestance.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.73"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec73 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec73 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Death Knight:
+                        <div class="iconsmall spec251" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_frostpresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.251"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec251 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Frost", 'q');
+                });
+                $('#lootspecs').find('.spec251 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear" data-class="6">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3140.jpg?1478742044&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_frostpresence.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Frost        </span>
+                    <span class="guide-image-link-text-type-name c6">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/necrotic-wake-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10275.jpg?1606286558&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Necrotic Wake Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-dungeon-loot-guide-gear-armor-weapons-conduits-legendary-recipes">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/11457.jpg?1606286620&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Shadowlands Dungeon Gear and Loot Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

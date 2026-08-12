@@ -1,0 +1,107 @@
+{
+    "Head": {
+        "MageArcane": "19%",
+        "MageFire": "19%",
+        "MageFrost": "19%",
+        "Available": "3 items",
+        "Mage": "19%"
+    },
+    "Shoulders": {
+        "MageArcane": "21%",
+        "MageFire": "21%",
+        "MageFrost": "21%",
+        "Available": "3 items",
+        "Mage": "21%"
+    },
+    "Chest": {
+        "MageArcane": "24%",
+        "MageFire": "24%",
+        "MageFrost": "24%",
+        "Available": "3 items",
+        "Mage": "24%"
+    },
+    "Wrists": {
+        "MageArcane": "21%",
+        "MageFire": "21%",
+        "MageFrost": "21%",
+        "Available": "3 items",
+        "Mage": "21%"
+    },
+    "Hands": {
+        "MageArcane": "21%",
+        "MageFire": "21%",
+        "MageFrost": "21%",
+        "Available": "3 items",
+        "Mage": "21%"
+    },
+    "Waist": {
+        "MageArcane": "22%",
+        "MageFire": "22%",
+        "MageFrost": "22%",
+        "Available": "3 items",
+        "Mage": "22%"
+    },
+    "Legs": {
+        "MageArcane": "13%",
+        "MageFire": "13%",
+        "MageFrost": "13%",
+        "Available": "2 items",
+        "Mage": "13%"
+    },
+    "Feet": {
+        "MageArcane": "28%",
+        "MageFire": "28%",
+        "MageFrost": "28%",
+        "Available": "2 items",
+        "Mage": "28%"
+    },
+    "Neck": {
+        "MageArcane": "19%",
+        "MageFire": "19%",
+        "MageFrost": "19%",
+        "Available": "3 items",
+        "Mage": "19%"
+    },
+    "Back": {
+        "MageArcane": "27%",
+        "MageFire": "27%",
+        "MageFrost": "27%",
+        "Available": "4 items",
+        "Mage": "27%"
+    },
+    "Ring": {
+        "MageArcane": "42%",
+        "MageFire": "42%",
+        "MageFrost": "42%",
+        "Available": "7 items",
+        "Mage": "42%"
+    },
+    "Int1hWeapon": {
+        "MageArcane": "29%",
+        "MageFire": "29%",
+        "MageFrost": "29%",
+        "Available": "4 items",
+        "Mage": "29%"
+    },
+    "Int2hWeapon": {
+        "MageArcane": "19%",
+        "MageFire": "19%",
+        "MageFrost": "19%",
+        "Available": "3 items",
+        "Mage": "19%"
+    },
+    "Offhand": {
+        "MageArcane": "27%",
+        "MageFire": "27%",
+        "MageFrost": "27%",
+        "Available": "4 items",
+        "Mage": "27%"
+    },
+    "Trinket": {
+        "MageArcane": "79%",
+        "MageFire": "79%",
+        "MageFrost": "79%",
+        "Available": "19 items",
+        "Mage": "79%"
+    }
+}

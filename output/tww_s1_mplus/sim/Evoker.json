@@ -1,0 +1,121 @@
+{
+    "Head": {
+        "EvokerDev": "28%",
+        "EvokerPres": "28%",
+        "EvokerAug": "28%",
+        "Available": "4 available in m0",
+        "Evoker": "28%"
+    },
+    "Shoulders": {
+        "EvokerDev": "34%",
+        "EvokerPres": "34%",
+        "EvokerAug": "34%",
+        "Available": "5 available in m0",
+        "Evoker": "34%"
+    },
+    "Chest": {
+        "EvokerDev": "19%",
+        "EvokerPres": "16%",
+        "EvokerAug": "19%",
+        "Available": "2 available in m0",
+        "Evoker": "19%"
+    },
+    "Wrists": {
+        "EvokerDev": "23%",
+        "EvokerPres": "24%",
+        "EvokerAug": "23%",
+        "Available": "3 available in m0",
+        "Evoker": "24%"
+    },
+    "Hands": {
+        "EvokerDev": "25%",
+        "EvokerPres": "25%",
+        "EvokerAug": "25%",
+        "Available": "2 available in m0",
+        "Evoker": "25%"
+    },
+    "Waist": {
+        "EvokerDev": "25%",
+        "EvokerPres": "28%",
+        "EvokerAug": "25%",
+        "Available": "4 available in m0",
+        "Evoker": "28%"
+    },
+    "Legs": {
+        "EvokerDev": "24%",
+        "EvokerPres": "21%",
+        "EvokerAug": "24%",
+        "Available": "3 available in m0",
+        "Evoker": "24%"
+    },
+    "Feet": {
+        "EvokerDev": "44%",
+        "EvokerPres": "48%",
+        "EvokerAug": "44%",
+        "Available": "7 available in m0",
+        "Evoker": "48%"
+    },
+    "Neck": {
+        "EvokerDev": "32%",
+        "EvokerPres": "29%",
+        "EvokerAug": "32%",
+        "Available": "4 available in m0",
+        "Evoker": "32%"
+    },
+    "Back": {
+        "EvokerDev": "34%",
+        "EvokerPres": "34%",
+        "EvokerAug": "34%",
+        "Available": "6 available in m0",
+        "Evoker": "34%"
+    },
+    "Ring": {
+        "EvokerDev": "56%",
+        "EvokerPres": "54%",
+        "EvokerAug": "56%",
+        "Available": "10 available in m0",
+        "Evoker": "56%"
+    },
+    "Int1hWeapon": {
+        "EvokerDev": "34%",
+        "EvokerPres": "35%",
+        "EvokerAug": "34%",
+        "Available": "6 available in m0",
+        "Evoker": "35%"
+    },
+    "Int2hWeapon": {
+        "EvokerDev": "25%",
+        "EvokerPres": "25%",
+        "EvokerAug": "25%",
+        "Available": "4 available in m0",
+        "Evoker": "25%"
+    },
+    "Offhand": {
+        "EvokerDev": "15%",
+        "EvokerPres": "16%",
+        "EvokerAug": "15%",
+        "Available": "2 available in m0",
+        "Evoker": "16%"
+    },
+    "DpsTrinket": {
+        "EvokerDev": "25%",
+        "EvokerPres": "0%",
+        "EvokerAug": "25%",
+        "Available": "4 available in m0",
+        "Evoker": "25%"
+    },
+    "HealTrinket": {
+        "EvokerDev": "0%",
+        "EvokerPres": "24%",
+        "EvokerAug": "0%",
+        "Available": "4 available in m0",
+        "Evoker": "24%"
+    },
+    "AnyroleTrinket": {
+        "EvokerDev": "47%",
+        "EvokerPres": "47%",
+        "EvokerAug": "47%",
+        "Available": "8 available in m0",
+        "Evoker": "47%"
+    }
+}

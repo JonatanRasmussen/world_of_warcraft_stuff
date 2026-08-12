@@ -1,0 +1,58 @@
+<h1 class="heading-size-1">Umbriss Band</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Finger</td><th><!--scstart4:-2--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat7-->+3 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->3 Critical Strike</span><br><span class="q2">+<!--rtg49-->8 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->32<div class="whtt-sellprice">Sell Price: <span class="moneygold">5</span> <span class="moneysilver">34</span> <span class="moneycopper">34</span></div><div class="whtt-extra whtt-droppedby">Dropped by: General Umbriss</div><div class="whtt-extra whtt-dropchance">Drop Chance: 1.82%</div></td></tr></table></noscript>
+<div id="ic133286" style="float: left"></div>
+<div id="tt133286" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl133286"></div>
+    <div id="ks133286" data-role="spell-modifiers"></div>
+    <div id="iu133286"></div>
+    <div id="rppm133286"></div>
+    <div id="bs133286"></div>
+    <div id="craftedStatsSelector133286"></div>
+    <div id="cs133286"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic133286').appendChild(Icon.create('inv_misc_stonering2', 2, null, 0, 1));
+var tt = WH.ge('tt133286');
+var sl = WH.ge('sl133286');
+var ks = WH.ge('ks133286');
+var iu = WH.ge('iu133286');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        133286,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/cataclysm-timewalking-guide-4922">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/4922.jpg?1491262372&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Cataclysm Timewalking        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

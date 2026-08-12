@@ -1,0 +1,147 @@
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Mists of Tirna,1st,m0,H>M,100%,50%,50%,,178694
+,Necrotic Wake,Last,m0,V>H,50%,33%,33%,,178777
+"Head (Warrior, m0)",2 available in m0,,m0,,28%,16%,16%,,
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>M,50%,,,33%,221155
+,City of Threads,Last,both,C>H,50%,33%,33%,,221185
+,,,,,,,,,
+,Grim Batol,3rd,m0,M>H,33%,,,,133294
+,Mists of Tirna,2nd,m0,M>V,33%,,,,178697
+,Necrotic Wake,3rd,m0,C>V,33%,,,,178749
+,Siege of Boralus,Last,m0,M>H,50%,,,,231830
+"Shoulders (Warrior, m0)",6 available in m0,,m0,,38%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Ara-Kara,Last,both,V>H,100%,,,,221161
+,Dawnbreaker,2nd,both,C>V,50%,,,,221139
+,,,,,,,,,
+,Siege of Boralus,Last,m0,M>H,50%,,,,231827
+"Chest (Warrior, m0)",3 available in m0,,m0,,35%,,,,
+,,,,,,,,,
+,City of Threads,1st,both,H>V,50%,,,,221167
+,Dawnbreaker,Last,both,C>H,25%,,,,212437
+,,,,,,,,,
+,Grim Batol,1st,m0,M>H,50%,,,,133306
+"Wrists (Warrior, m0)",3 available in m0,,m0,,23%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Ara-Kara,1st,both,H>V,50%,,,,221151
+,Stonevault,3rd,both,H>C,50%,33%,33%,,221086
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,M>C,33%,,,,178706
+,Siege of Boralus,2nd,m0,C>M,50%,,33%,33%,159429
+"Hands (Warrior, m0)",4 available in m0,,m0,,29%,,27%,,
+,,,,,,,,,
+,Dawnbreaker,1st,both,M>H,33%,,,,221133
+,Stonevault,2nd,both,C>M,50%,,,,221079
+,,,,,,,,,
+,Grim Batol,2nd,m0,H>C,50%,,,33%,133289
+,Necrotic Wake,1st,m0,M>V,50%,,33%,33%,178734
+,Siege of Boralus,2nd,m0,C>V,50%,,33%,33%,159434
+"Waist (Warrior, m0)",5 available in m0,,m0,,39%,,34%,32%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,City of Threads,2nd,both,M>H,100%,50%,50%,,221173
+,Stonevault,Last,both,M>C,50%,,33%,33%,221092
+,,,,,,,,,
+,Mists of Tirna,Last,m0,M>H,100%,,50%,33%,178701
+,Necrotic Wake,2nd,m0,C>M,100%,,,,178739
+,Siege of Boralus,1st,m0,M>V,50%,33%,33%,,159427
+"Legs (Warrior, m0)",5 available in m0,,m0,,52%,,43%,50%,
+,,,,,,,,,
+,City of Threads,3rd,both,V>H,50%,,,33%,221178
+,,,,,,,,,
+,Siege of Boralus,3rd,m0,H>C,50%,25%,25%,,159428
+"Feet (Warrior, m0)",2 available in m0,,m0,,16%,15%,15%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,City of Threads,3rd,both,V>C,50%,,,33%,221181
+,Dawnbreaker,Last,both,C>H,25%,,,,212448
+,Stonevault,1st,both,M>H,100%,,,33%,221077
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,M>C,33%,,,,178707
+"Neck (Warrior, m0)",4 available in m0,,m0,,36%,,,23%,
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,,,33%,221154
+,Dawnbreaker,Last,both,C>H,25%,,,,225574
+,Stonevault,3rd,both,M>H,50%,33%,33%,,221088
+,,,,,,,,,
+,Grim Batol,3rd,m0,V>C,33%,,,,133292
+,Grim Batol,3rd,m0,M>C,33%,,,,133363
+,Grim Batol,Last,m0,V>C,20%,,16%,,133309
+"Back (Warrior, m0)",6 available in m0,,m0,,33%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,City of Threads,Last,both,V>H,50%,33%,33%,,221189
+,Dawnbreaker,1st,both,C>H,33%,,,,221136
+,Dawnbreaker,2nd,both,V>M,50%,,,,221141
+,,,,,,,,,
+,Grim Batol,1st,m0,M>C,50%,,,,133286
+,Grim Batol,2nd,m0,V>C,50%,,,33%,133287
+,Grim Batol,Last,m0,H>M,20%,,16%,,133299
+,Necrotic Wake,1st,m0,H>V,50%,,33%,33%,178736
+,Necrotic Wake,Last,m0,V>C,50%,33%,33%,,178781
+,Siege of Boralus,1st,m0,M>C,50%,33%,33%,,162541
+,Siege of Boralus,3rd,m0,C>H,50%,25%,25%,,159461
+"Ring (Warrior, m0)",10 available in m0,,m0,,58%,54%,52%,,
+,,,,,,,,,
+,Stonevault,Last,both,Str,33%,0%,,,221091
+,,,,,,,,,
+,Grim Batol,Last,m0,Str,20%,0%,16%,,133301
+,Mists of Tirna,Last,m0,Str,50%,0%,,33%,178711
+,Necrotic Wake,1st,m0,Str,33%,0%,,,178730
+,Siege of Boralus,2nd,m0,Str,33%,0%,,,159649
+"Str1hWeapon (Warrior, m0)",5 available in m0,,m0,,29%,0%,,27%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,City of Threads,Last,both,Str,33%,,,0%,221184
+,,,,,,,,,
+,Grim Batol,Last,m0,Str,20%,,16%,0%,133298
+,Mists of Tirna,1st,m0,Str,50%,,,0%,178713
+,Necrotic Wake,Last,m0,Str,33%,,,0%,178780
+,Siege of Boralus,1st,m0,Str,33%,,,0%,159972
+,Siege of Boralus,3rd,m0,Str,25%,,,0%,159650
+"Str2hWeapon (Warrior, m0)",6 available in m0,,m0,,33%,,,0%,
+,,,,,,,,,
+,City of Threads,3rd,both,"Str,Int",33%,0%,0%,,221177
+,Stonevault,1st,both,"Str,Int",33%,0%,0%,,221073
+,,,,,,,,,
+,Mists of Tirna,Last,m0,"Str,Int",33%,0%,0%,,178712
+,Necrotic Wake,3rd,m0,"Str,Int",33%,0%,0%,,178750
+"Shield (Warrior, m0)",4 available in m0,,m0,,24%,0%,0%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,City of Threads,2nd,both,"Dps,Agi",50%,,,0%,219319
+,Stonevault,3rd,both,"Dps,",33%,,,0%,219301
+,,,,,,,,,
+,Necrotic Wake,3rd,m0,"Dps,Int",33%,,,0%,178772
+,Siege of Boralus,3rd,m0,"Dps,Int",25%,,,0%,159622
+"DpsTrinket (Warrior, m0)",4 available in m0,,m0,,25%,,,0%,
+,,,,,,,,,
+,Ara-Kara,2nd,both,"Tank,Agi,Str",33%,0%,0%,,219316
+,Stonevault,1st,both,"Tank,Agi,Str",33%,0%,0%,,219315
+,,,,,,,,,
+,Grim Batol,2nd,m0,"Tank,",33%,0%,0%,,133291
+"TankTrinket (Warrior, m0)",3 available in m0,,m0,,19%,0%,0%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Ara-Kara,1st,both,,50%,,,,219314
+,City of Threads,1st,both,,50%,,,,219318
+,Dawnbreaker,1st,both,Str,33%,,,,219311
+,Dawnbreaker,Last,both,Str,25%,,,,212453
+,Stonevault,2nd,both,Str,50%,,,,219300
+,Stonevault,Last,both,,50%,,33%,33%,219303
+,,,,,,,,,
+,Grim Batol,Last,m0,,20%,,16%,,133305
+,Grim Batol,Last,m0,Str,20%,,16%,,133300
+,Necrotic Wake,3rd,m0,Str,33%,,,,178751
+"AnyroleTrinket (Warrior, m0)",9 available in m0,,m0,,50%,,47%,48%,

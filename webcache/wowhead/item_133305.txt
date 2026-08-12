@@ -1,0 +1,58 @@
+<h1 class="heading-size-1">Corrupted Egg Shell</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Use: <a href="/spell=91308/egg-shell" class="q2">Places Egg Shell on your current target, absorbing (<!--pts2:0:0:96173:817.645-->600<!----> + <!--pts3:0:0:96173:168.832-->124<!---->) damage. While Egg Shell persists, you gain [<!--pts4:0:0:96173:0-->2<!----> / (6)]% mana every 5 sec. &nbsp;When the effect ends, you gain <!--pts5:0:0:96173:0-->4<!---->% mana. &nbsp;Lasts 30 sec.</a> (2 Min Cooldown)</span><!--itemEffects:1--><br>Requires Level <!--rlvl-->32<div class="whtt-sellprice">Sell Price: <span class="moneygold">8</span> <span class="moneysilver">5</span> <span class="moneycopper">7</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Erudax</div><div class="whtt-extra whtt-dropchance">Drop Chance: 0.45%</div></td></tr></table></noscript>
+<div id="ic133305" style="float: left"></div>
+<div id="tt133305" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl133305"></div>
+    <div id="ks133305" data-role="spell-modifiers"></div>
+    <div id="iu133305"></div>
+    <div id="rppm133305"></div>
+    <div id="bs133305"></div>
+    <div id="craftedStatsSelector133305"></div>
+    <div id="cs133305"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic133305').appendChild(Icon.create('inv_misc_cat_trinket09', 2, null, 0, 1));
+var tt = WH.ge('tt133305');
+var sl = WH.ge('sl133305');
+var ks = WH.ge('ks133305');
+var iu = WH.ge('iu133305');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        133305,
+        true,
+        true,
+        sl,
+        null,
+        [91308,96173],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/cataclysm-timewalking-guide-4922">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/4922.jpg?1491262372&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Cataclysm Timewalking        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

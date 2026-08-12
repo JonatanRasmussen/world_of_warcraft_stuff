@@ -1,0 +1,139 @@
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+"Head (Warrior, Hc)",2 available in Hc,,Hc,,16%,,15%,15%,
+,Darkflame Cleft,2nd,Hc,H>V,50%,,,,221100
+,Rookery,Last,Hc,V>H,33%,,25%,25%,221047
+"Shoulders (Warrior, Hc)",4 available in Hc,,Hc,,29%,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Cinderbrew,1st,Hc,V>M,50%,,,33%,221052
+,Priory,Last,Hc,C>V,50%,33%,33%,,221203
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>M,50%,,,33%,221155
+,City of Threads,Last,both,C>H,50%,33%,33%,,221185
+,,,,,,,,,
+"Chest (Warrior, Hc)",3 available in Hc,,Hc,,35%,,33%,33%,
+,Cinderbrew,Last,Hc,H>C,50%,,33%,33%,221069
+,,,,,,,,,
+,Ara-Kara,Last,both,V>H,100%,,,,221161
+,Dawnbreaker,2nd,both,C>V,50%,,,,221139
+,,,,,,,,,
+"Wrists (Warrior, Hc)",4 available in Hc,,Hc,,36%,28%,28%,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Cinderbrew,3rd,Hc,C>H,100%,33%,33%,,221064
+,Priory,1st,Hc,C>H,50%,,,33%,221118
+,,,,,,,,,
+,City of Threads,1st,both,H>V,50%,,,,221167
+,Dawnbreaker,Last,both,C>H,25%,,,,212437
+,,,,,,,,,
+"Hands (Warrior, Hc)",3 available in Hc,,Hc,,27%,21%,21%,,
+,Darkflame Cleft,Last,Hc,V>H,50%,33%,33%,,221112
+,,,,,,,,,
+,Ara-Kara,1st,both,H>V,50%,,,,221151
+,Stonevault,3rd,both,H>C,50%,33%,33%,,221086
+,,,,,,,,,
+"Waist (Warrior, Hc)",3 available in Hc,,Hc,,21%,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Rookery,2nd,Hc,M>H,33%,,,,221040
+,,,,,,,,,
+,Dawnbreaker,1st,both,M>H,33%,,,,221133
+,Stonevault,2nd,both,C>M,50%,,,,221079
+,,,,,,,,,
+"Legs (Warrior, Hc)",3 available in Hc,,Hc,,40%,27%,24%,,
+,Rookery,1st,Hc,H>V,100%,50%,50%,,221034
+,,,,,,,,,
+,City of Threads,2nd,both,M>H,100%,50%,50%,,221173
+,Stonevault,Last,both,M>C,50%,,33%,33%,221092
+,,,,,,,,,
+"Feet (Warrior, Hc)",3 available in Hc,,Hc,,35%,,,24%,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Cinderbrew,2nd,Hc,M>C,50%,,,,221061
+,Priory,2nd,Hc,V>M,100%,,,50%,221123
+,,,,,,,,,
+,City of Threads,3rd,both,V>H,50%,,,33%,221178
+,,,,,,,,,
+"Neck (Warrior, Hc)",5 available in Hc,,Hc,,45%,,,33%,
+,Cinderbrew,2nd,Hc,H>M,50%,,,,221060
+,Darkflame Cleft,2nd,Hc,C>V,50%,,,,221103
+,,,,,,,,,
+,City of Threads,3rd,both,V>C,50%,,,33%,221181
+,Dawnbreaker,Last,both,C>H,25%,,,,212448
+,Stonevault,1st,both,M>H,100%,,,33%,221077
+,,,,,,,,,
+"Back (Warrior, Hc)",5 available in Hc,,Hc,,43%,,,40%,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Cinderbrew,1st,Hc,C>M,50%,,,33%,221054
+,Darkflame Cleft,3rd,Hc,V>C,100%,,,,221109
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,,,33%,221154
+,Dawnbreaker,Last,both,C>H,25%,,,,225574
+,Stonevault,3rd,both,M>H,50%,33%,33%,,221088
+,,,,,,,,,
+"Ring (Warrior, Hc)",7 available in Hc,,Hc,,46%,45%,39%,,
+,Cinderbrew,Last,Hc,M>C,50%,,33%,33%,221198
+,Darkflame Cleft,1st,Hc,H>V,50%,,33%,,221099
+,Priory,Last,Hc,M>V,50%,33%,33%,,221200
+,Rookery,Last,Hc,C>M,33%,,25%,25%,221197
+,,,,,,,,,
+,City of Threads,Last,both,V>H,50%,33%,33%,,221189
+,Dawnbreaker,1st,both,C>H,33%,,,,221136
+,Dawnbreaker,2nd,both,V>M,50%,,,,221141
+,,,,,,,,,
+"Str1hWeapon (Warrior, Hc)",4 available in Hc,,Hc,,25%,0%,23%,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Cinderbrew,Last,Hc,Str,33%,0%,,,221068
+,Darkflame Cleft,1st,Hc,Str,50%,0%,33%,,221096
+,Rookery,Last,Hc,Str,25%,0%,,,221046
+,,,,,,,,,
+,Stonevault,Last,both,Str,33%,0%,,,221091
+,,,,,,,,,
+"Str2hWeapon (Warrior, Hc)",5 available in Hc,,Hc,,29%,,,0%,
+,Cinderbrew,3rd,Hc,Str,33%,,,0%,221063
+,Darkflame Cleft,Last,Hc,Str,33%,,,0%,221111
+,Priory,Last,Hc,Str,33%,,,0%,221127
+,Rookery,2nd,Hc,Str,33%,,,0%,221038
+,,,,,,,,,
+,City of Threads,Last,both,Str,33%,,,0%,221184
+,,,,,,,,,
+"Shield (Warrior, Hc)",4 available in Hc,,Hc,,24%,0%,0%,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Priory,1st,Hc,"Str,Int",33%,0%,0%,,221117
+,Rookery,2nd,Hc,"Str,Int",33%,0%,0%,,221045
+,,,,,,,,,
+,City of Threads,3rd,both,"Str,Int",33%,0%,0%,,221177
+,Stonevault,1st,both,"Str,Int",33%,0%,0%,,221073
+,,,,,,,,,
+"DpsTrinket (Warrior, Hc)",5 available in Hc,,Hc,,36%,,34%,0%,
+,Cinderbrew,3rd,Hc,"Dps,Agi,Str",33%,,,0%,219298
+,Darkflame Cleft,1st,Hc,"Dps,Agi",50%,,33%,0%,219304
+,Rookery,1st,Hc,"Dps,Agi",50%,,,0%,219294
+,,,,,,,,,
+,City of Threads,2nd,both,"Dps,Agi",50%,,,0%,219319
+,Stonevault,3rd,both,"Dps,",33%,,,0%,219301
+,,,,,,,,,
+"TankTrinket (Warrior, Hc)",4 available in Hc,,Hc,,27%,0%,0%,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Warrior,WarriorArms,WarriorFury,WarriorProt,ID
+,Cinderbrew,1st,Hc,"Tank,",33%,0%,0%,,219297
+,Priory,2nd,Hc,"Tank,",50%,0%,0%,,219309
+,,,,,,,,,
+,Ara-Kara,2nd,both,"Tank,Agi,Str",33%,0%,0%,,219316
+,Stonevault,1st,both,"Tank,Agi,Str",33%,0%,0%,,219315
+,,,,,,,,,
+"AnyroleTrinket (Warrior, Hc)",10 available in Hc,,Hc,,57%,,55%,55%,
+,Darkflame Cleft,Last,Hc,,50%,33%,33%,,219307
+,Priory,1st,Hc,All3,50%,,,33%,219308
+,Rookery,2nd,Hc,All3,33%,,,,219295
+,Rookery,Last,Hc,,33%,,25%,25%,219296
+,,,,,,,,,
+,Ara-Kara,1st,both,,50%,,,,219314
+,City of Threads,1st,both,,50%,,,,219318
+,Dawnbreaker,1st,both,Str,33%,,,,219311
+,Dawnbreaker,Last,both,Str,25%,,,,212453
+,Stonevault,2nd,both,Str,50%,,,,219300
+,Stonevault,Last,both,,50%,,33%,33%,219303

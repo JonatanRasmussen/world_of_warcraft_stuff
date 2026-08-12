@@ -1,0 +1,54 @@
+{
+    "zone_id": 14954,
+    "name": "Priory of the Sacred Flame",
+    "bosses": {
+        "Captain Dailcry": {
+            "npc_id": "207946",
+            "href_name": "captain-dailcry",
+            "display_name": "Captain Dailcry"
+        },
+        "Baron Braunpyke": {
+            "npc_id": "207939",
+            "href_name": "baron-braunpyke",
+            "display_name": "Baron Braunpyke"
+        },
+        "Prioress Murrpray": {
+            "npc_id": "207940",
+            "href_name": "prioress-murrpray",
+            "display_name": "Prioress Murrpray"
+        }
+    },
+    "item_ids": [
+        219308,
+        219309,
+        219310,
+        221116,
+        221117,
+        221118,
+        221119,
+        221120,
+        221121,
+        221122,
+        221123,
+        221124,
+        221125,
+        221126,
+        221127,
+        221128,
+        221129,
+        221130,
+        221131,
+        221200,
+        221203
+    ],
+    "boss_order": [
+        "Captain Dailcry",
+        "Baron Braunpyke",
+        "Prioress Murrpray"
+    ],
+    "boss_hrefs": [
+        "captain-dailcry",
+        "baron-braunpyke",
+        "prioress-murrpray"
+    ]
+}

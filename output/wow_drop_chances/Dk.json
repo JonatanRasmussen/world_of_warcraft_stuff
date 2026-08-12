@@ -1,0 +1,100 @@
+{
+    "Head": {
+        "DkBlood": "16%",
+        "DkFrost": "15%",
+        "DkUnholy": "16%",
+        "Available": "2 items",
+        "Dk": "16%"
+    },
+    "Shoulders": {
+        "DkBlood": "24%",
+        "DkFrost": "24%",
+        "DkUnholy": "24%",
+        "Available": "4 items",
+        "Dk": "24%"
+    },
+    "Chest": {
+        "DkBlood": "35%",
+        "DkFrost": "33%",
+        "DkUnholy": "35%",
+        "Available": "3 items",
+        "Dk": "35%"
+    },
+    "Wrists": {
+        "DkBlood": "24%",
+        "DkFrost": "24%",
+        "DkUnholy": "24%",
+        "Available": "3 items",
+        "Dk": "24%"
+    },
+    "Hands": {
+        "DkBlood": "21%",
+        "DkFrost": "21%",
+        "DkUnholy": "21%",
+        "Available": "3 items",
+        "Dk": "21%"
+    },
+    "Waist": {
+        "DkBlood": "21%",
+        "DkFrost": "21%",
+        "DkUnholy": "21%",
+        "Available": "3 items",
+        "Dk": "21%"
+    },
+    "Legs": {
+        "DkBlood": "42%",
+        "DkFrost": "40%",
+        "DkUnholy": "42%",
+        "Available": "3 items",
+        "Dk": "42%"
+    },
+    "Feet": {
+        "DkBlood": "27%",
+        "DkFrost": "27%",
+        "DkUnholy": "27%",
+        "Available": "3 items",
+        "Dk": "27%"
+    },
+    "Neck": {
+        "DkBlood": "27%",
+        "DkFrost": "27%",
+        "DkUnholy": "27%",
+        "Available": "3 items",
+        "Dk": "27%"
+    },
+    "Back": {
+        "DkBlood": "35%",
+        "DkFrost": "35%",
+        "DkUnholy": "35%",
+        "Available": "4 items",
+        "Dk": "35%"
+    },
+    "Ring": {
+        "DkBlood": "51%",
+        "DkFrost": "41%",
+        "DkUnholy": "51%",
+        "Available": "7 items",
+        "Dk": "51%"
+    },
+    "Str1hWeapon": {
+        "DkBlood": "0%",
+        "DkFrost": "25%",
+        "DkUnholy": "0%",
+        "Available": "4 items",
+        "Dk": "25%"
+    },
+    "Str2hWeapon": {
+        "DkBlood": "29%",
+        "DkFrost": "29%",
+        "DkUnholy": "29%",
+        "Available": "5 items",
+        "Dk": "29%"
+    },
+    "Trinket": {
+        "DkBlood": "69%",
+        "DkFrost": "68%",
+        "DkUnholy": "69%",
+        "Available": "14 items",
+        "Dk": "69%"
+    }
+}

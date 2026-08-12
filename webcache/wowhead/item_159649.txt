@@ -1,0 +1,130 @@
+<h1 class="heading-size-1">Saber of Dread Pirate Lockwood</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->59</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>One-Hand</td><th><!--scstart2:7--><span class="q1">Sword</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->6 - 12 Damage</span></td>
+    <th>Speed <!--spd-->2.60</th>
+</tr></table><!--dps-->(3.5 damage per second)<br><span><!--stat4-->+3 Strength</span><br><span><!--stat7-->+5 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg40-->3 Versatility</span><br><span class="q2">+<!--rtg49-->3 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 110 / 110</td></tr></table><table><tr><td><!--rr--><!--itemEffects:0--><div class="whtt-sellprice">Sell Price: <span class="moneysilver">20</span> <span class="moneycopper">10</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Dread Captain Lockwood</div><div class="whtt-extra whtt-dropchance">Drop Chance: 1.26%</div></td></tr></table></noscript>
+<div id="ic159649" style="float: left"></div>
+<div id="tt159649" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl159649"></div>
+    <div id="ks159649" data-role="spell-modifiers"></div>
+    <div id="iu159649"></div>
+    <div id="rppm159649"></div>
+    <div id="bs159649"></div>
+    <div id="craftedStatsSelector159649"></div>
+    <div id="cs159649"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic159649').appendChild(Icon.create('inv_sword_1h_battledungeon_c_01', 2, null, 0, 1));
+var tt = WH.ge('tt159649');
+var sl = WH.ge('sl159649');
+var ks = WH.ge('ks159649');
+var iu = WH.ge('iu159649');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        159649,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Paladin:
+                        <div class="iconsmall spec66" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_paladin_shieldofthetemplar.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.2.66"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec66 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec66 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Warrior:
+                        <div class="iconsmall spec72" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_innerrage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.72"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec72 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Fury", 'q');
+                });
+                $('#lootspecs').find('.spec72 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec73" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_defensivestance.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.73"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec73 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec73 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Death Knight:
+                        <div class="iconsmall spec251" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_frostpresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.251"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec251 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Frost", 'q');
+                });
+                $('#lootspecs').find('.spec251 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/siege-of-boralus-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/7011.jpg?1533678424&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Siege of Boralus Dungeon Ability Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

@@ -1,0 +1,70 @@
+<h1 class="heading-size-1">Ornate Weapon</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->1</span><!--bo--><!--ue--><br><a href="https://www.wowhead.com/quest=29446/a-wondrous-weapon" class="q1">This Item Begins a Quest</a><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td><span class="q">&quot;This weapon seems as beautiful as it is deadly. Someone at the Darkmoon Faire would probably be interested in acquiring it.&quot;</span></td></tr></table></noscript>
+<div id="ic71638" style="float: left"></div>
+<div id="tt71638" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl71638"></div>
+    <div id="ks71638" data-role="spell-modifiers"></div>
+    <div id="iu71638"></div>
+    <div id="rppm71638"></div>
+    <div id="bs71638"></div>
+    <div id="craftedStatsSelector71638"></div>
+    <div id="cs71638"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic71638').appendChild(Icon.create('inv_weapon_shortblade_96', 2, null, 0, 1));
+var tt = WH.ge('tt71638');
+var sl = WH.ge('sl71638');
+var ks = WH.ge('ks71638');
+var iu = WH.ge('iu71638');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        71638,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/darkmoon-faire-made-easy-1461">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/1461.jpg?1481648585&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Darkmoon Faire Made Easy        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/darkmoon-island-let-the-adventure-begin-522">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/world-events-holidays.jpg?maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Darkmoon Island, Let the Adventure Begin!!!        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/world-events/recurring/darkmoon-faire-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/692.jpg?1479327713&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Wowhead's Darkmoon Faire Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

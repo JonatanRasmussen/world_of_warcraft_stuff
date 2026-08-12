@@ -1,0 +1,121 @@
+{
+    "Head": {
+        "WarriorArms": "16%",
+        "WarriorFury": "16%",
+        "WarriorProt": "28%",
+        "Available": "2 available in m0",
+        "Warrior": "28%"
+    },
+    "Shoulders": {
+        "WarriorArms": "38%",
+        "WarriorFury": "38%",
+        "WarriorProt": "38%",
+        "Available": "6 available in m0",
+        "Warrior": "38%"
+    },
+    "Chest": {
+        "WarriorArms": "35%",
+        "WarriorFury": "35%",
+        "WarriorProt": "35%",
+        "Available": "3 available in m0",
+        "Warrior": "35%"
+    },
+    "Wrists": {
+        "WarriorArms": "23%",
+        "WarriorFury": "23%",
+        "WarriorProt": "23%",
+        "Available": "3 available in m0",
+        "Warrior": "23%"
+    },
+    "Hands": {
+        "WarriorArms": "29%",
+        "WarriorFury": "27%",
+        "WarriorProt": "29%",
+        "Available": "4 available in m0",
+        "Warrior": "29%"
+    },
+    "Waist": {
+        "WarriorArms": "39%",
+        "WarriorFury": "34%",
+        "WarriorProt": "32%",
+        "Available": "5 available in m0",
+        "Warrior": "39%"
+    },
+    "Legs": {
+        "WarriorArms": "52%",
+        "WarriorFury": "43%",
+        "WarriorProt": "50%",
+        "Available": "5 available in m0",
+        "Warrior": "52%"
+    },
+    "Feet": {
+        "WarriorArms": "15%",
+        "WarriorFury": "15%",
+        "WarriorProt": "16%",
+        "Available": "2 available in m0",
+        "Warrior": "16%"
+    },
+    "Neck": {
+        "WarriorArms": "36%",
+        "WarriorFury": "36%",
+        "WarriorProt": "23%",
+        "Available": "4 available in m0",
+        "Warrior": "36%"
+    },
+    "Back": {
+        "WarriorArms": "33%",
+        "WarriorFury": "33%",
+        "WarriorProt": "33%",
+        "Available": "6 available in m0",
+        "Warrior": "33%"
+    },
+    "Ring": {
+        "WarriorArms": "54%",
+        "WarriorFury": "52%",
+        "WarriorProt": "58%",
+        "Available": "10 available in m0",
+        "Warrior": "58%"
+    },
+    "Str1hWeapon": {
+        "WarriorArms": "0%",
+        "WarriorFury": "29%",
+        "WarriorProt": "27%",
+        "Available": "5 available in m0",
+        "Warrior": "29%"
+    },
+    "Str2hWeapon": {
+        "WarriorArms": "33%",
+        "WarriorFury": "33%",
+        "WarriorProt": "0%",
+        "Available": "6 available in m0",
+        "Warrior": "33%"
+    },
+    "Shield": {
+        "WarriorArms": "0%",
+        "WarriorFury": "0%",
+        "WarriorProt": "24%",
+        "Available": "4 available in m0",
+        "Warrior": "24%"
+    },
+    "DpsTrinket": {
+        "WarriorArms": "25%",
+        "WarriorFury": "25%",
+        "WarriorProt": "0%",
+        "Available": "4 available in m0",
+        "Warrior": "25%"
+    },
+    "TankTrinket": {
+        "WarriorArms": "0%",
+        "WarriorFury": "0%",
+        "WarriorProt": "19%",
+        "Available": "3 available in m0",
+        "Warrior": "19%"
+    },
+    "AnyroleTrinket": {
+        "WarriorArms": "50%",
+        "WarriorFury": "47%",
+        "WarriorProt": "48%",
+        "Available": "9 available in m0",
+        "Warrior": "50%"
+    }
+}

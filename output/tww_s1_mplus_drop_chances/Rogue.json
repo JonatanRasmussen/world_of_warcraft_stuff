@@ -1,0 +1,93 @@
+{
+    "Head": {
+        "RogueSin": "35%",
+        "RogueOutlaw": "35%",
+        "RogueSub": "35%",
+        "Available": "3 items",
+        "Rogue": "35%"
+    },
+    "Shoulders": {
+        "RogueSin": "19%",
+        "RogueOutlaw": "16%",
+        "RogueSub": "19%",
+        "Available": "2 items",
+        "Rogue": "19%"
+    },
+    "Chest": {
+        "RogueSin": "41%",
+        "RogueOutlaw": "43%",
+        "RogueSub": "41%",
+        "Available": "9 items",
+        "Rogue": "43%"
+    },
+    "Wrists": {
+        "RogueSin": "20%",
+        "RogueOutlaw": "21%",
+        "RogueSub": "20%",
+        "Available": "3 items",
+        "Rogue": "21%"
+    },
+    "Hands": {
+        "RogueSin": "10%",
+        "RogueOutlaw": "10%",
+        "RogueSub": "10%",
+        "Available": "1 items",
+        "Rogue": "10%"
+    },
+    "Waist": {
+        "RogueSin": "26%",
+        "RogueOutlaw": "26%",
+        "RogueSub": "26%",
+        "Available": "4 items",
+        "Rogue": "26%"
+    },
+    "Legs": {
+        "RogueSin": "12%",
+        "RogueOutlaw": "12%",
+        "RogueSub": "12%",
+        "Available": "2 items",
+        "Rogue": "12%"
+    },
+    "Feet": {
+        "RogueSin": "24%",
+        "RogueOutlaw": "24%",
+        "RogueSub": "24%",
+        "Available": "3 items",
+        "Rogue": "24%"
+    },
+    "Neck": {
+        "RogueSin": "10%",
+        "RogueOutlaw": "10%",
+        "RogueSub": "10%",
+        "Available": "1 items",
+        "Rogue": "10%"
+    },
+    "Back": {
+        "RogueSin": "19%",
+        "RogueOutlaw": "19%",
+        "RogueSub": "19%",
+        "Available": "4 items",
+        "Rogue": "19%"
+    },
+    "Ring": {
+        "RogueSin": "36%",
+        "RogueOutlaw": "39%",
+        "RogueSub": "36%",
+        "Available": "9 items",
+        "Rogue": "39%"
+    },
+    "Agi1hWeapon": {
+        "RogueSin": "29%",
+        "RogueOutlaw": "7%",
+        "RogueSub": "29%",
+        "Available": "3 items",
+        "Rogue": "29%"
+    },
+    "Trinket": {
+        "RogueSin": "66%",
+        "RogueOutlaw": "65%",
+        "RogueSub": "66%",
+        "Available": "21 items",
+        "Rogue": "66%"
+    }
+}

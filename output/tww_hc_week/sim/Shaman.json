@@ -1,0 +1,135 @@
+{
+    "Head": {
+        "ShamanEle": "24%",
+        "ShamanEnh": "27%",
+        "ShamanResto": "24%",
+        "Available": "3 available in Hc",
+        "Shaman": "27%"
+    },
+    "Shoulders": {
+        "ShamanEle": "16%",
+        "ShamanEnh": "17%",
+        "ShamanResto": "17%",
+        "Available": "3 available in Hc",
+        "Shaman": "17%"
+    },
+    "Chest": {
+        "ShamanEle": "13%",
+        "ShamanEnh": "19%",
+        "ShamanResto": "11%",
+        "Available": "2 available in Hc",
+        "Shaman": "19%"
+    },
+    "Wrists": {
+        "ShamanEle": "20%",
+        "ShamanEnh": "35%",
+        "ShamanResto": "21%",
+        "Available": "3 available in Hc",
+        "Shaman": "35%"
+    },
+    "Hands": {
+        "ShamanEle": "21%",
+        "ShamanEnh": "35%",
+        "ShamanResto": "21%",
+        "Available": "3 available in Hc",
+        "Shaman": "35%"
+    },
+    "Waist": {
+        "ShamanEle": "19%",
+        "ShamanEnh": "27%",
+        "ShamanResto": "19%",
+        "Available": "3 available in Hc",
+        "Shaman": "27%"
+    },
+    "Legs": {
+        "ShamanEle": "21%",
+        "ShamanEnh": "24%",
+        "ShamanResto": "21%",
+        "Available": "3 available in Hc",
+        "Shaman": "24%"
+    },
+    "Feet": {
+        "ShamanEle": "30%",
+        "ShamanEnh": "32%",
+        "ShamanResto": "32%",
+        "Available": "5 available in Hc",
+        "Shaman": "32%"
+    },
+    "Neck": {
+        "ShamanEle": "29%",
+        "ShamanEnh": "38%",
+        "ShamanResto": "28%",
+        "Available": "5 available in Hc",
+        "Shaman": "38%"
+    },
+    "Back": {
+        "ShamanEle": "41%",
+        "ShamanEnh": "38%",
+        "ShamanResto": "40%",
+        "Available": "5 available in Hc",
+        "Shaman": "41%"
+    },
+    "Ring": {
+        "ShamanEle": "40%",
+        "ShamanEnh": "50%",
+        "ShamanResto": "39%",
+        "Available": "7 available in Hc",
+        "Shaman": "50%"
+    },
+    "Agi1hWeapon": {
+        "ShamanEle": "0%",
+        "ShamanEnh": "33%",
+        "ShamanResto": "0%",
+        "Available": "5 available in Hc",
+        "Shaman": "33%"
+    },
+    "Int1hWeapon": {
+        "ShamanEle": "30%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "33%",
+        "Available": "5 available in Hc",
+        "Shaman": "33%"
+    },
+    "Int2hWeapon": {
+        "ShamanEle": "27%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "29%",
+        "Available": "4 available in Hc",
+        "Shaman": "29%"
+    },
+    "Offhand": {
+        "ShamanEle": "24%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "27%",
+        "Available": "4 available in Hc",
+        "Shaman": "27%"
+    },
+    "Shield": {
+        "ShamanEle": "24%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "23%",
+        "Available": "4 available in Hc",
+        "Shaman": "24%"
+    },
+    "DpsTrinket": {
+        "ShamanEle": "26%",
+        "ShamanEnh": "36%",
+        "ShamanResto": "0%",
+        "Available": "5 available in Hc",
+        "Shaman": "36%"
+    },
+    "HealTrinket": {
+        "ShamanEle": "0%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "21%",
+        "Available": "4 available in Hc",
+        "Shaman": "21%"
+    },
+    "AnyroleTrinket": {
+        "ShamanEle": "64%",
+        "ShamanEnh": "58%",
+        "ShamanResto": "64%",
+        "Available": "12 available in Hc",
+        "Shaman": "64%"
+    }
+}

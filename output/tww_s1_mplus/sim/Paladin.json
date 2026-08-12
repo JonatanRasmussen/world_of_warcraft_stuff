@@ -1,0 +1,149 @@
+{
+    "Head": {
+        "PaladinHoly": "13%",
+        "PaladinProt": "28%",
+        "PaladinRet": "16%",
+        "Available": "2 available in m0",
+        "Paladin": "28%"
+    },
+    "Shoulders": {
+        "PaladinHoly": "41%",
+        "PaladinProt": "38%",
+        "PaladinRet": "38%",
+        "Available": "6 available in m0",
+        "Paladin": "41%"
+    },
+    "Chest": {
+        "PaladinHoly": "24%",
+        "PaladinProt": "35%",
+        "PaladinRet": "35%",
+        "Available": "3 available in m0",
+        "Paladin": "35%"
+    },
+    "Wrists": {
+        "PaladinHoly": "24%",
+        "PaladinProt": "23%",
+        "PaladinRet": "23%",
+        "Available": "3 available in m0",
+        "Paladin": "24%"
+    },
+    "Hands": {
+        "PaladinHoly": "27%",
+        "PaladinProt": "29%",
+        "PaladinRet": "29%",
+        "Available": "4 available in m0",
+        "Paladin": "29%"
+    },
+    "Waist": {
+        "PaladinHoly": "36%",
+        "PaladinProt": "32%",
+        "PaladinRet": "39%",
+        "Available": "5 available in m0",
+        "Paladin": "39%"
+    },
+    "Legs": {
+        "PaladinHoly": "41%",
+        "PaladinProt": "50%",
+        "PaladinRet": "52%",
+        "Available": "5 available in m0",
+        "Paladin": "52%"
+    },
+    "Feet": {
+        "PaladinHoly": "15%",
+        "PaladinProt": "16%",
+        "PaladinRet": "15%",
+        "Available": "2 available in m0",
+        "Paladin": "16%"
+    },
+    "Neck": {
+        "PaladinHoly": "25%",
+        "PaladinProt": "23%",
+        "PaladinRet": "36%",
+        "Available": "4 available in m0",
+        "Paladin": "36%"
+    },
+    "Back": {
+        "PaladinHoly": "36%",
+        "PaladinProt": "33%",
+        "PaladinRet": "33%",
+        "Available": "6 available in m0",
+        "Paladin": "36%"
+    },
+    "Ring": {
+        "PaladinHoly": "56%",
+        "PaladinProt": "58%",
+        "PaladinRet": "54%",
+        "Available": "10 available in m0",
+        "Paladin": "58%"
+    },
+    "Str1hWeapon": {
+        "PaladinHoly": "0%",
+        "PaladinProt": "27%",
+        "PaladinRet": "0%",
+        "Available": "5 available in m0",
+        "Paladin": "27%"
+    },
+    "Int1hWeapon": {
+        "PaladinHoly": "21%",
+        "PaladinProt": "0%",
+        "PaladinRet": "0%",
+        "Available": "3 available in m0",
+        "Paladin": "21%"
+    },
+    "Str2hWeapon": {
+        "PaladinHoly": "0%",
+        "PaladinProt": "0%",
+        "PaladinRet": "33%",
+        "Available": "6 available in m0",
+        "Paladin": "33%"
+    },
+    "Int2hWeapon": {
+        "PaladinHoly": "10%",
+        "PaladinProt": "0%",
+        "PaladinRet": "0%",
+        "Available": "1 available in m0",
+        "Paladin": "10%"
+    },
+    "Offhand": {
+        "PaladinHoly": "16%",
+        "PaladinProt": "0%",
+        "PaladinRet": "0%",
+        "Available": "2 available in m0",
+        "Paladin": "16%"
+    },
+    "Shield": {
+        "PaladinHoly": "31%",
+        "PaladinProt": "24%",
+        "PaladinRet": "0%",
+        "Available": "4 available in m0",
+        "Paladin": "31%"
+    },
+    "DpsTrinket": {
+        "PaladinHoly": "0%",
+        "PaladinProt": "0%",
+        "PaladinRet": "25%",
+        "Available": "4 available in m0",
+        "Paladin": "25%"
+    },
+    "HealTrinket": {
+        "PaladinHoly": "23%",
+        "PaladinProt": "0%",
+        "PaladinRet": "0%",
+        "Available": "4 available in m0",
+        "Paladin": "23%"
+    },
+    "TankTrinket": {
+        "PaladinHoly": "0%",
+        "PaladinProt": "19%",
+        "PaladinRet": "0%",
+        "Available": "3 available in m0",
+        "Paladin": "19%"
+    },
+    "AnyroleTrinket": {
+        "PaladinHoly": "48%",
+        "PaladinProt": "48%",
+        "PaladinRet": "50%",
+        "Available": "9 available in m0",
+        "Paladin": "50%"
+    }
+}

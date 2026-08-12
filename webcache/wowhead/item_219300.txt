@@ -1,0 +1,173 @@
+<h1 class="heading-size-1">Skarmorak Shard</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat4-->+549 Strength</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Use: <a href="/spell=443407/skarmorak-shard" class="q2">Grasp the shard tightly to enrich yourself with crystalline energy, increasing your Mastery by <!--pts1:0:0:443407:2.28036-->2756<!----> for 15 sec.</a> (1 Min, 30 Sec Cooldown)</span><br><span class="q2">Equip: <a href="/spell=443409/skarmorak-shard" class="q2">The shard draws in remnant energy from defeated enemies, increasing your Mastery by <!--pts1:0:0:449792:0.0481795-->58<!----> for 15 sec, up to 5 times.</a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">47</span> <span class="moneysilver">19</span> <span class="moneycopper">94</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Skarmorak</div></td></tr></table></noscript>
+<div id="ic219300" style="float: left"></div>
+<div id="tt219300" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl219300" style="display: block"></div>
+    <div id="ks219300" data-role="spell-modifiers"></div>
+    <div id="iu219300"></div>
+    <div id="rppm219300"></div>
+    <div id="bs219300"></div>
+    <div id="craftedStatsSelector219300"></div>
+    <div id="cs219300"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic219300').appendChild(Icon.create('inv_arathordungeon_fragment_color2', 2, null, 0, 1));
+var tt = WH.ge('tt219300');
+var sl = WH.ge('sl219300');
+var ks = WH.ge('ks219300');
+var iu = WH.ge('iu219300');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        219300,
+        true,
+        true,
+        sl,
+        null,
+        [443407,443409],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Paladin:
+                        <div class="iconsmall spec66" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_paladin_shieldofthetemplar.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.2.66"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec66 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec66 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec70" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_holy_auraoflight.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.2.70"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec70 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Retribution", 'q');
+                });
+                $('#lootspecs').find('.spec70 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Warrior:
+                        <div class="iconsmall spec71" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_savageblow.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.71"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec71 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Arms", 'q');
+                });
+                $('#lootspecs').find('.spec71 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec72" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_innerrage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.72"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec72 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Fury", 'q');
+                });
+                $('#lootspecs').find('.spec72 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec73" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_defensivestance.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.73"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec73 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec73 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Death Knight:
+                        <div class="iconsmall spec250" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_bloodpresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.250"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec250 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Blood", 'q');
+                });
+                $('#lootspecs').find('.spec250 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec251" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_frostpresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.251"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec251 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Frost", 'q');
+                });
+                $('#lootspecs').find('.spec251 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec252" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_unholypresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.252"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec252 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Unholy", 'q');
+                });
+                $('#lootspecs').find('.spec252 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

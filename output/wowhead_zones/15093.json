@@ -1,0 +1,52 @@
+{
+    "zone_id": 15093,
+    "name": "Ara-Kara, City of Echoes",
+    "bosses": {
+        "Avanoxx": {
+            "npc_id": "213179",
+            "href_name": "avanoxx",
+            "display_name": "Avanoxx"
+        },
+        "Anub'zekt": {
+            "npc_id": "215405",
+            "href_name": "anubzekt",
+            "display_name": "Anub'zekt"
+        },
+        "Ki'katal the Harvester": {
+            "npc_id": "215407",
+            "href_name": "kikatal-the-harvester",
+            "display_name": "Ki'katal the Harvester"
+        }
+    },
+    "item_ids": [
+        219314,
+        219316,
+        219317,
+        221150,
+        221151,
+        221152,
+        221153,
+        221154,
+        221155,
+        221156,
+        221157,
+        221158,
+        221159,
+        221160,
+        221161,
+        221162,
+        221163,
+        221164,
+        221165
+    ],
+    "boss_order": [
+        "Avanoxx",
+        "Anub'zekt",
+        "Ki'katal the Harvester"
+    ],
+    "boss_hrefs": [
+        "avanoxx",
+        "anubzekt",
+        "kikatal-the-harvester"
+    ]
+}

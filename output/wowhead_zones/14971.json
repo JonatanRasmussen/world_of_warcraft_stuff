@@ -1,0 +1,47 @@
+{
+    "zone_id": 14971,
+    "name": "The Dawnbreaker",
+    "bosses": {
+        "Speaker Shadowcrown": {
+            "npc_id": "211087",
+            "href_name": "speaker-shadowcrown",
+            "display_name": "Speaker Shadowcrown"
+        },
+        "Anub'ikkaj": {
+            "npc_id": "211089",
+            "href_name": "anubikkaj",
+            "display_name": "Anub'ikkaj"
+        },
+        "Rasha'nan": {
+            "npc_id": "224552",
+            "href_name": "rashanan",
+            "display_name": "Rasha'nan"
+        }
+    },
+    "item_ids": [
+        219311,
+        219312,
+        221132,
+        221133,
+        221134,
+        221135,
+        221136,
+        221137,
+        221138,
+        221139,
+        221140,
+        221141,
+        221142,
+        221202
+    ],
+    "boss_order": [
+        "Speaker Shadowcrown",
+        "Anub'ikkaj",
+        "Rasha'nan"
+    ],
+    "boss_hrefs": [
+        "speaker-shadowcrown",
+        "anubikkaj",
+        "rashanan"
+    ]
+}

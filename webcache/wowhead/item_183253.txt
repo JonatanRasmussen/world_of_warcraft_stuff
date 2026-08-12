@@ -1,0 +1,94 @@
+<h1 class="heading-size-1">Memory of the Soulforge Embers</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->1</span><!--bo--><br>Binds when picked up<br>Unique<!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td><span class="q2">Use: <a href="/spell=342040/restoring-memory" class="q2">Restore the following memory to the Runecarver:</a></span><br><br><table><tr><td><a class="whtt-name q5" href="/spell=336745/soulforge-embers"><b class="whtt-name q5">Soulforge Embers</b></a><div class="whtt-skill-category">Runecarving Power</div></td></tr></table><table><tr><td><div class="q2">Launching a Flare into your Tar Trap causes up to 5 enemies inside of the Tar Trap to burn for (240% of Attack power) Fire damage over 12 sec.</div><br><div class="q">Runecarve on: <span class="q1">Head, Shoulder, Finger</span></div><br><div class="q">Source: <span class="q1">Dungeon Drop: Ingra Maloch</span></div><br><div class="q">Requires: <span class="q1">Hunter</span></div></td></tr></table></td></tr></table></noscript>
+<div id="ic183253" style="float: left"></div>
+<div id="tt183253" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl183253"></div>
+    <div id="ks183253" data-role="spell-modifiers"></div>
+    <div id="iu183253"></div>
+    <div id="rppm183253"></div>
+    <div id="bs183253"></div>
+    <div id="craftedStatsSelector183253"></div>
+    <div id="cs183253"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic183253').appendChild(Icon.create('ability_warlock_burningembers', 2, null, 0, 1));
+var tt = WH.ge('tt183253');
+var sl = WH.ge('sl183253');
+var ks = WH.ge('ks183253');
+var iu = WH.ge('iu183253');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        183253,
+        true,
+        true,
+        sl,
+        null,
+        [342040],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/legendary-recipes-drop-locations-sources-shadowlands-memory-of-the-runecarver">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/expansion-content-torghast.jpg?maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Legendary Power Sources        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/hunter/beast-mastery/best-legendaries-shadowlands" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-hunter-beast-mastery.jpg?maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_bestialdiscipline.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Best Beast Mastery Hunter Legendaries        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/hunter/marksmanship/best-legendaries-shadowlands" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-hunter-marksmanship.jpg?maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Best Marksmanship Hunter Legendaries        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/hunter/survival/best-legendaries-shadowlands" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-hunter-survival.jpg?maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_camouflage.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Best Survival Hunter Legendaries        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/mists-of-tirna-scithe-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10278.jpg?1606286483&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Mists of Tirna Scithe Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-dungeon-loot-guide-gear-armor-weapons-conduits-legendary-recipes">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/11457.jpg?1606286620&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Shadowlands Dungeon Gear and Loot Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

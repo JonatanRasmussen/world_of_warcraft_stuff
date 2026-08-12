@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Wick's Lead</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->10</span><!--bo--><br>Binds when picked up<!--ue--><br />Mount <span class="q0">(Account-wide)</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td><span class="q2">Use: <a href="/spell=449264/wick">Teaches you how to summon this mount.</a></span><br><span class="q2"><a href="/spell=449264/wick" class="q2">Summons and dismisses this mount.</a></span><br>Requires level <!--minlvl-->1 to <!--maxlvl-->70 (<!--lvl-->70)<br>Requires <a href="/spell=33388/apprentice-riding" class="q1">Apprentice Riding</a><br /><br><span class="q">"Rescued from the ruthless charge of Ol' Waxbeard and the looming threat of The Darkness, now able to nibble on loose wax in peace."</span><br><span style="color: #FFD200">Drop:</span> The Darkness<br /><span style="color: #FFD200">Zone:</span> Darkflame Cleft (Mythic)<br /><br /><span style="color: #FFD200">Drop:</span> Challenger's Cache<br /><span style="color: #FFD200">Zone:</span> Darkflame Cleft</td></tr></table><!--i?225548:1:70:70:872:0--></noscript>
+<div id="ic225548" style="float: left"></div>
+<div id="tt225548" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl225548" style="display: block"></div>
+    <div id="ks225548" data-role="spell-modifiers"></div>
+    <div id="iu225548"></div>
+    <div id="rppm225548"></div>
+    <div id="bs225548"></div>
+    <div id="craftedStatsSelector225548"></div>
+    <div id="cs225548"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic225548').appendChild(Icon.create('inv_misc_rope_01', 2, null, 0, 1));
+var tt = WH.ge('tt225548');
+var sl = WH.ge('sl225548');
+var ks = WH.ge('ks225548');
+var iu = WH.ge('iu225548');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        225548,
+        true,
+        true,
+        sl,
+        null,
+        [55884,449264],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createMountCollectionTrackerCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

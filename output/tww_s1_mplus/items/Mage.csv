@@ -1,0 +1,134 @@
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,City of Threads,Last,both,M>C,33%,,,,221187
+,Dawnbreaker,Last,both,H>C,33%,,,,212440
+,,,,,,,,,
+,Grim Batol,Last,m0,H>C,20%,,,,133302
+,Mists of Tirna,Last,m0,V>H,50%,,,,178693
+,Necrotic Wake,1st,m0,C>M,50%,,,,178732
+,Siege of Boralus,Last,m0,H>C,50%,,,,231818
+"Head (Mage, m0)",6 available in m0,,m0,,39%,,,,
+,,,,,,,,,
+,Dawnbreaker,1st,both,V>C,33%,,,,221135
+,,,,,,,,,
+,Mists of Tirna,1st,m0,C>V,33%,,,,178696
+,Necrotic Wake,2nd,m0,H>M,50%,,,,178740
+"Shoulders (Mage, m0)",3 available in m0,,m0,,21%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,City of Threads,2nd,both,C>H,25%,,,,221176
+,Stonevault,Last,both,V>H,50%,,,,221095
+,,,,,,,,,
+"Chest (Mage, m0)",2 available in m0,,m0,,15%,,,,
+,,,,,,,,,
+,City of Threads,3rd,both,H>C,50%,,,,221182
+,,,,,,,,,
+,Grim Batol,3rd,m0,H>C,33%,,,,133295
+,Mists of Tirna,1st,m0,H>V,33%,,,,178704
+,Necrotic Wake,Last,m0,M>V,50%,,,,178782
+,Siege of Boralus,Last,m0,M>H,50%,,,,159256
+"Wrists (Mage, m0)",5 available in m0,,m0,,36%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,City of Threads,1st,both,C>V,33%,,,,221170
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,H>C,50%,,,,178705
+,Necrotic Wake,3rd,m0,M>C,50%,,,,178748
+,Siege of Boralus,2nd,m0,C>M,50%,,,,159237
+"Hands (Mage, m0)",4 available in m0,,m0,,32%,,,,
+,,,,,,,,,
+,Ara-Kara,2nd,both,C>H,50%,,,,221158
+,Stonevault,3rd,both,V>M,25%,,,,221087
+,,,,,,,,,
+,Siege of Boralus,1st,m0,H>M,33%,,,,159965
+"Waist (Mage, m0)",3 available in m0,,m0,,20%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,Ara-Kara,Last,both,H>C,33%,,,,221164
+,Stonevault,1st,both,M>C,50%,,,,221076
+,,,,,,,,,
+,Grim Batol,2nd,m0,H>M,50%,,,,133308
+,Siege of Boralus,2nd,m0,V>H,50%,,,,159250
+"Legs (Mage, m0)",4 available in m0,,m0,,32%,,,,
+,,,,,,,,,
+,Stonevault,2nd,both,H>V,100%,,,,221082
+,,,,,,,,,
+,Siege of Boralus,1st,m0,V>C,33%,,,,159251
+"Feet (Mage, m0)",2 available in m0,,m0,,25%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,City of Threads,3rd,both,V>C,50%,,,,221181
+,Dawnbreaker,Last,both,C>H,33%,,,,212448
+,Stonevault,1st,both,M>H,50%,,,,221077
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,M>C,50%,,,,178707
+"Neck (Mage, m0)",4 available in m0,,m0,,32%,,,,
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,,,,221154
+,Dawnbreaker,Last,both,C>H,33%,,,,225574
+,Stonevault,3rd,both,M>H,25%,,,,221088
+,,,,,,,,,
+,Grim Batol,3rd,m0,V>C,33%,,,,133292
+,Grim Batol,3rd,m0,M>C,33%,,,,133363
+,Grim Batol,Last,m0,V>C,20%,,,,133309
+"Back (Mage, m0)",6 available in m0,,m0,,33%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,City of Threads,Last,both,V>H,33%,,,,221189
+,Dawnbreaker,1st,both,C>H,33%,,,,221136
+,Dawnbreaker,2nd,both,V>M,50%,,,,221141
+,,,,,,,,,
+,Grim Batol,1st,m0,M>C,50%,,,,133286
+,Grim Batol,2nd,m0,V>C,50%,,,,133287
+,Grim Batol,Last,m0,H>M,20%,,,,133299
+,Necrotic Wake,1st,m0,H>V,50%,,,,178736
+,Necrotic Wake,Last,m0,V>C,50%,,,,178781
+,Siege of Boralus,1st,m0,M>C,33%,,,,162541
+,Siege of Boralus,3rd,m0,C>H,50%,,,,159461
+"Ring (Mage, m0)",10 available in m0,,m0,,58%,,,,
+,,,,,,,,,
+,Ara-Kara,1st,both,Int,50%,,,,221150
+,Ara-Kara,Last,both,Int,33%,,,,221165
+,City of Threads,2nd,both,Int,25%,,,,221171
+,,,,,,,,,
+,Grim Batol,1st,m0,Int,50%,,,,133283
+,Necrotic Wake,2nd,m0,Int,50%,,,,178737
+"Int1hWeapon (Mage, m0)",5 available in m0,,m0,,35%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,City of Threads,1st,both,Int,33%,,,,221166
+,Stonevault,3rd,both,Int,25%,,,,221085
+,,,,,,,,,
+,Grim Batol,Last,m0,Int,20%,,,,133303
+,Mists of Tirna,Last,m0,Int,50%,,,,178714
+"Int2hWeapon (Mage, m0)",4 available in m0,,m0,,23%,,,,
+,,,,,,,,,
+,City of Threads,2nd,both,Int,25%,,,,221172
+,Dawnbreaker,1st,both,Int,33%,,,,221132
+,,,,,,,,,
+"Offhand (Mage, m0)",2 available in m0,,m0,,11%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Mage,MageArcane,MageFire,MageFrost,ID
+,City of Threads,2nd,both,"Dps,Agi",25%,,,,219319
+,Stonevault,3rd,both,"Dps,",25%,,,,219301
+,,,,,,,,,
+,Necrotic Wake,3rd,m0,"Dps,Int",50%,,,,178772
+,Siege of Boralus,3rd,m0,"Dps,Int",50%,,,,159622
+"DpsTrinket (Mage, m0)",4 available in m0,,m0,,27%,,,,
+,,,,,,,,,
+,Ara-Kara,1st,both,,50%,,,,219314
+,Ara-Kara,Last,both,"Agi,Int",33%,,,,219317
+,City of Threads,1st,both,,33%,,,,219318
+,City of Threads,Last,both,Int,33%,,,,219321
+,Dawnbreaker,2nd,both,"Agi,Int",50%,,,,219312
+,Stonevault,Last,both,,50%,,,,219303
+,,,,,,,,,
+,Grim Batol,Last,m0,,20%,,,,133305
+,Mists of Tirna,1st,m0,Int,33%,,,,178708
+"AnyroleTrinket (Mage, m0)",8 available in m0,,m0,,47%,,,,

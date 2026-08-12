@@ -1,0 +1,316 @@
+<h1 class="heading-size-1">Bottled Flayedwing Toxin</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->158</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat3-->+15 Agility</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Use: <a href="/spell=345545/flayedwing-toxin" class="q2">Coat your weapons in Flayedwing Toxin for 1 hour, giving your attacks a high chance to deal (<!--pts1:0:0:345547:7.44828-->58<!----> * 3) Nature damage over 6 sec.</a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->60<div class="whtt-sellprice">Sell Price: <span class="moneygold">2</span> <span class="moneysilver">2</span> <span class="moneycopper">5</span></div></td></tr></table></noscript>
+<div id="ic178742" style="float: left"></div>
+<div id="tt178742" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl178742"></div>
+    <div id="ks178742" data-role="spell-modifiers"></div>
+    <div id="iu178742"></div>
+    <div id="rppm178742"></div>
+    <div id="bs178742"></div>
+    <div id="craftedStatsSelector178742"></div>
+    <div id="cs178742"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic178742').appendChild(Icon.create('inv_alchemy_70_potion2', 2, null, 0, 1));
+var tt = WH.ge('tt178742');
+var sl = WH.ge('sl178742');
+var ks = WH.ge('ks178742');
+var iu = WH.ge('iu178742');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        178742,
+        true,
+        true,
+        sl,
+        null,
+        [345545,345547],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Druid:
+                        <div class="iconsmall spec103" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_druid_catform.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.11.103"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec103 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Feral", 'q');
+                });
+                $('#lootspecs').find('.spec103 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec104" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_racial_bearform.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.11.104"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec104 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Guardian", 'q');
+                });
+                $('#lootspecs').find('.spec104 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Hunter:
+                        <div class="iconsmall spec253" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_bestialdiscipline.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.253"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec253 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Beast Mastery", 'q');
+                });
+                $('#lootspecs').find('.spec253 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec254" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusedaim.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.254"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec254 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Marksmanship", 'q');
+                });
+                $('#lootspecs').find('.spec254 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec255" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_camouflage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.255"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec255 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Survival", 'q');
+                });
+                $('#lootspecs').find('.spec255 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Rogue:
+                        <div class="iconsmall spec259" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_rogue_deadlybrew.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.259"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec259 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Assassination", 'q');
+                });
+                $('#lootspecs').find('.spec259 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec260" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_rogue_waylay.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.260"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec260 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Outlaw", 'q');
+                });
+                $('#lootspecs').find('.spec260 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec261" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_stealth.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.261"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec261 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Subtlety", 'q');
+                });
+                $('#lootspecs').find('.spec261 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Shaman:
+                        <div class="iconsmall spec263" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shaman_improvedstormstrike.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.263"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec263 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Enhancement", 'q');
+                });
+                $('#lootspecs').find('.spec263 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Monk:
+                        <div class="iconsmall spec268" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_monk_brewmaster_spec.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.10.268"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec268 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Brewmaster", 'q');
+                });
+                $('#lootspecs').find('.spec268 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec269" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_monk_windwalker_spec.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.10.269"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec269 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Windwalker", 'q');
+                });
+                $('#lootspecs').find('.spec269 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Demon Hunter:
+                        <div class="iconsmall spec577" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_specdps.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.577"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec577 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Havoc", 'q');
+                });
+                $('#lootspecs').find('.spec577 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec581" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_spectank.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.581"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec581 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Vengeance", 'q');
+                });
+                $('#lootspecs').find('.spec581 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear" data-class="4">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3204.jpg?1478807737&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_rogue_deadlybrew.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Assassination        </span>
+                    <span class="guide-image-link-text-type-name c4">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear" data-class="7">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3236.jpg?1478806901&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_shaman_improvedstormstrike.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Enhancement        </span>
+                    <span class="guide-image-link-text-type-name c7">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3164.jpg?1478748972&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Marksmanship        </span>
+                    <span class="guide-image-link-text-type-name c3">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/necrotic-wake-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10275.jpg?1606286558&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Necrotic Wake Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/rogue/outlaw/bis-gear" data-class="4">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3212.jpg?1478819883&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_rogue_waylay.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Outlaw        </span>
+                    <span class="guide-image-link-text-type-name c4">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-dungeon-loot-guide-gear-armor-weapons-conduits-legendary-recipes">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/11457.jpg?1606286620&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Shadowlands Dungeon Gear and Loot Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear" data-class="4">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3220.jpg?1478802878&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_stealth.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Subtlety        </span>
+                    <span class="guide-image-link-text-type-name c4">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear" data-class="10">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3284.jpg?1478807933&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_monk_windwalker_spec.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Windwalker        </span>
+                    <span class="guide-image-link-text-type-name c10">
+                Best in Slot Guide            </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

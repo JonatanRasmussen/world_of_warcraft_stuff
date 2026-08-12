@@ -1,0 +1,64 @@
+<h1 class="heading-size-1">Hyena Soul</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->1</span><!--bo--><br>Binds when picked up<br>Unique<br><a href="https://www.wowhead.com/quest=64650/hyena-soul" class="q1">This Item Begins a Quest</a><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires Level <!--rlvl-->50</td></tr></table></noscript>
+<div id="ic182173" style="float: left"></div>
+<div id="tt182173" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl182173"></div>
+    <div id="ks182173" data-role="spell-modifiers"></div>
+    <div id="iu182173"></div>
+    <div id="rppm182173"></div>
+    <div id="bs182173"></div>
+    <div id="craftedStatsSelector182173"></div>
+    <div id="cs182173"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic182173').appendChild(Icon.create('ability_hunter_pet_hyena', 2, null, 0, 1));
+var tt = WH.ge('tt182173');
+var sl = WH.ge('sl182173');
+var ks = WH.ge('ks182173');
+var iu = WH.ge('iu182173');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        182173,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/night-fae-covenant-ardenweald-rewards">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/11337.jpg?1605319523&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Night Fae Covenant Rewards        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/soulshapes-night-fae-covenant">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/11902.jpg?1606220435&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Night Fae Soulshapes and Crittershapes in Shadowlands        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

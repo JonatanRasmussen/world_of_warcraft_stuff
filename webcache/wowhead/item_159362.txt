@@ -1,0 +1,272 @@
+<h1 class="heading-size-1">Tri-Heart Chestguard</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->59</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Chest</td><th><!--scstart4:3--><span class="q1">Mail</span><!--scend--></th></tr></table><!--rf--><span><!--amr-->14 Armor</span><br><span><!--stat73-->+12 [Agility or Intellect]</span><br><span><!--stat7-->+14 Stamina</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 165 / 165<br /><br>
+<span class="q">
+Active Azerite Powers (0/5): </span>
+<table><tbody>
+            <tr>
+                <td class="q0" style="width:1px">-&nbsp;</td>
+                <td class="q0">A new power is available.</td>
+            </tr>
+                        <tr>
+                <td class="q0" style="width:1px">-&nbsp;</td>
+                <td class="q0">A new power is available.</td>
+            </tr>
+                        <tr>
+                <td class="q0" style="width:1px">-&nbsp;</td>
+                <td class="q0">A new power is available.</td>
+            </tr>
+                        <tr>
+                <td class="q0" style="width:1px">-&nbsp;</td>
+                <td class="q0">A new power is available.</td>
+            </tr>
+                    <tr>
+            <td class="q0" style="width:1px">-&nbsp;</td>
+            <td class="q0"><a href="/spell=263978/azerite-empowered">Azerite Empowered</a> is available.</td>
+        </tr>
+        </tbody></table>
+<br>
+</td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->50<div class="whtt-sellprice">Sell Price: <span class="moneysilver">14</span> <span class="moneycopper">2</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Viq'Goth</div></td></tr></table></noscript>
+<div id="ic159362" style="float: left"></div>
+<div id="tt159362" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl159362"></div>
+    <div id="ks159362" data-role="spell-modifiers"></div>
+    <div id="iu159362"></div>
+    <div id="rppm159362"></div>
+    <div id="bs159362"></div>
+    <div id="craftedStatsSelector159362"></div>
+    <div id="cs159362"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic159362').appendChild(Icon.create('inv_chest_mail_kultirasdungeon_c_01', 2, null, 0, 1));
+var tt = WH.ge('tt159362');
+var sl = WH.ge('sl159362');
+var ks = WH.ge('ks159362');
+var iu = WH.ge('iu159362');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        159362,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+    <div id="azerite-calc"></div>
+    <script>WH.Wow.Item.AzeriteCalc.init(
+        '#azerite-calc',
+        {"powers":[{"classId":3,"tier":0,"orderIndex":0,"id":13,"spellId":263978,"itemBonus":4775},{"classId":3,"tier":1,"orderIndex":0,"id":44,"spellId":268599,"itemBonus":0},{"classId":3,"tier":1,"orderIndex":1,"id":85,"spellId":268596,"itemBonus":0},{"classId":3,"tier":2,"orderIndex":0,"id":18,"spellId":264108,"itemBonus":0},{"classId":3,"tier":2,"orderIndex":1,"id":459,"spellId":279899,"itemBonus":0},{"classId":3,"tier":2,"orderIndex":2,"id":30,"spellId":266180,"itemBonus":0},{"classId":3,"tier":3,"orderIndex":0,"id":505,"spellId":281841,"itemBonus":0},{"classId":3,"tier":3,"orderIndex":1,"id":161,"spellId":273262,"itemBonus":0},{"classId":3,"tier":3,"orderIndex":2,"id":368,"spellId":277651,"itemBonus":0},{"classId":3,"tier":3,"orderIndex":3,"id":213,"spellId":274590,"itemBonus":0},{"classId":3,"tier":4,"orderIndex":0,"id":107,"spellId":272717,"itemBonus":0},{"classId":3,"tier":4,"orderIndex":1,"id":367,"spellId":278529,"itemBonus":0},{"classId":3,"tier":4,"orderIndex":2,"id":36,"spellId":264198,"itemBonus":0},{"classId":3,"tier":4,"orderIndex":3,"id":370,"spellId":278531,"itemBonus":0},{"classId":3,"tier":4,"orderIndex":4,"id":110,"spellId":272742,"itemBonus":0},{"classId":3,"tier":4,"orderIndex":5,"id":373,"spellId":288570,"itemBonus":0},{"classId":7,"tier":0,"orderIndex":0,"id":13,"spellId":263978,"itemBonus":4775},{"classId":7,"tier":1,"orderIndex":0,"id":44,"spellId":268599,"itemBonus":0},{"classId":7,"tier":1,"orderIndex":1,"id":85,"spellId":268596,"itemBonus":0},{"classId":7,"tier":2,"orderIndex":0,"id":18,"spellId":264108,"itemBonus":0},{"classId":7,"tier":2,"orderIndex":1,"id":459,"spellId":279899,"itemBonus":0},{"classId":7,"tier":2,"orderIndex":2,"id":463,"spellId":267889,"itemBonus":0},{"classId":7,"tier":3,"orderIndex":0,"id":505,"spellId":281841,"itemBonus":0},{"classId":7,"tier":3,"orderIndex":1,"id":178,"spellId":273448,"itemBonus":0},{"classId":7,"tier":3,"orderIndex":2,"id":447,"spellId":277666,"itemBonus":0},{"classId":7,"tier":3,"orderIndex":3,"id":224,"spellId":275488,"itemBonus":0},{"classId":7,"tier":4,"orderIndex":0,"id":457,"spellId":279829,"itemBonus":0},{"classId":7,"tier":4,"orderIndex":1,"id":417,"spellId":286949,"itemBonus":0},{"classId":7,"tier":4,"orderIndex":2,"id":137,"spellId":272992,"itemBonus":0},{"classId":7,"tier":4,"orderIndex":3,"id":420,"spellId":278719,"itemBonus":0},{"classId":7,"tier":4,"orderIndex":4,"id":138,"spellId":272989,"itemBonus":0},{"classId":7,"tier":4,"orderIndex":5,"id":423,"spellId":278715,"itemBonus":0}],"unlock":[{"context":57,"tier":3,"level":1},{"context":17,"tier":3,"level":3},{"context":18,"tier":3,"level":3},{"context":19,"tier":3,"level":5},{"context":1,"tier":3,"level":10},{"context":2,"tier":3,"level":13},{"context":23,"tier":3,"level":14},{"context":1,"tier":2,"level":0},{"context":17,"tier":2,"level":0},{"context":19,"tier":2,"level":0},{"context":18,"tier":2,"level":0},{"context":2,"tier":2,"level":0},{"context":57,"tier":2,"level":1},{"context":23,"tier":2,"level":18},{"context":57,"tier":1,"level":1},{"context":18,"tier":1,"level":5},{"context":17,"tier":1,"level":5},{"context":19,"tier":1,"level":7},{"context":1,"tier":1,"level":13},{"context":2,"tier":1,"level":17},{"context":23,"tier":1,"level":22},{"context":57,"tier":0,"level":1},{"context":18,"tier":0,"level":7},{"context":17,"tier":0,"level":7},{"context":19,"tier":0,"level":9},{"context":1,"tier":0,"level":16},{"context":2,"tier":0,"level":21},{"context":23,"tier":0,"level":26}]},
+        159362    );</script>
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Hunter:
+                        <div class="iconsmall spec253" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_bestialdiscipline.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.253"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec253 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Beast Mastery", 'q');
+                });
+                $('#lootspecs').find('.spec253 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec254" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusedaim.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.254"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec254 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Marksmanship", 'q');
+                });
+                $('#lootspecs').find('.spec254 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec255" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_camouflage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.255"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec255 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Survival", 'q');
+                });
+                $('#lootspecs').find('.spec255 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Shaman:
+                        <div class="iconsmall spec262" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_nature_lightning.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.262"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec262 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Elemental", 'q');
+                });
+                $('#lootspecs').find('.spec262 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec263" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shaman_improvedstormstrike.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.263"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec263 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Enhancement", 'q');
+                });
+                $('#lootspecs').find('.spec263 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec264" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_nature_magicimmunity.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.264"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec264 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Restoration", 'q');
+                });
+                $('#lootspecs').find('.spec264 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Evoker:
+                        <div class="iconsmall spec1467" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/classicon_evoker_devastation.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.13.1467"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec1467 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Devastation", 'q');
+                });
+                $('#lootspecs').find('.spec1467 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec1468" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/classicon_evoker_preservation.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.13.1468"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec1468 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Preservation", 'q');
+                });
+                $('#lootspecs').find('.spec1468 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec1473" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/classicon_evoker_augmentation.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.13.1473"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec1473 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Augmentation", 'q');
+                });
+                $('#lootspecs').find('.spec1473 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+    <div class="pad"></div>This item is part of the following transmog set:     &nbsp;<a href="/transmog-set=2815/kul-tiras-dungeon-mail-mythic-recolor">Kul Tiras Dungeon Mail (Mythic Recolor)</a>
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div><h2 class="heading-size-3">Vendor Locations</h2><div>This item can be purchased in <span id="locations">                        <a href="javascript:" onclick="
+                            myMapper.update({
+                                zone: 8568,
+                                level: 0,
+                            });
+                            WH.setSelectedLink(this, 'mapper');
+                            return false;
+                            " onmousedown="return false">Boralus</a>
+                         and                         <a href="javascript:" onclick="
+                            myMapper.update({
+                                zone: 8670,
+                                level: 0,
+                            });
+                            WH.setSelectedLink(this, 'mapper');
+                            return false;
+                            " onmousedown="return false">Dazar'alor</a>
+                        .</span>
+</div><div id="k6b43j6b"></div>
+<div style="clear:left"></div>
+
+<script>var g_mapperData = {"8568":[{"count":1,"coords":[[71.6,13.6]],"uiMapId":1161,"uiMapName":"Boralus"}],"8670":[{"count":1,"coords":[[54,88.4]],"uiMapId":1165,"uiMapName":"Dazar'alor"}]};
+var myMapper = new Mapper({"parent":"k6b43j6b","zone":8670,"name":"Tri-Heart Chestguard"});
+WH.gE(WH.ge('locations'), 'a')[0].onclick();
+</script>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/azerite-armor-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/6778.jpg?1533067418&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Azerite Armor Overview and FAQ        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/marksmanship-hunter-azerite-traits-powers-armor-bfa-battle-for-azeroth" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-hunter-marksmanship.jpg?maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Marksmanship        </span>
+                    <span class="guide-image-link-text-type-name c3">
+                Azerite Traits Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3164.jpg?1478748972&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Marksmanship        </span>
+                    <span class="guide-image-link-text-type-name c3">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/siege-of-boralus-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/7011.jpg?1533678424&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Siege of Boralus Dungeon Ability Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

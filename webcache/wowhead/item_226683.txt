@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Malfunctioning Mechsuit</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->30</span><!--bo--><br>Binds when picked up<!--ue--><br><a href="https://www.wowhead.com/quest=84020/a-mech-in-need" class="q1">This Item Begins a Quest</a><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td>Requires Level <!--rlvl-->30<br><span class="q">&quot;A machine that has lost its proper form.&quot;</span><div class="whtt-extra whtt-droppedby">Dropped by: Void Speaker Eirich</div></td></tr></table></noscript>
+<div id="ic226683" style="float: left"></div>
+<div id="tt226683" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl226683"></div>
+    <div id="ks226683" data-role="spell-modifiers"></div>
+    <div id="iu226683"></div>
+    <div id="rppm226683"></div>
+    <div id="bs226683"></div>
+    <div id="craftedStatsSelector226683"></div>
+    <div id="cs226683"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic226683').appendChild(Icon.create('inv_dwarvenmechboss', 2, null, 0, 1));
+var tt = WH.ge('tt226683');
+var sl = WH.ge('sl226683');
+var ks = WH.ge('ks226683');
+var iu = WH.ge('iu226683');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        226683,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

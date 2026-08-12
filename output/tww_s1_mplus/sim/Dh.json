@@ -1,0 +1,92 @@
+{
+    "Head": {
+        "DhHavoc": "27%",
+        "DhVeng": "27%",
+        "Available": "4 available in m0",
+        "Dh": "27%"
+    },
+    "Shoulders": {
+        "DhHavoc": "24%",
+        "DhVeng": "33%",
+        "Available": "3 available in m0",
+        "Dh": "33%"
+    },
+    "Chest": {
+        "DhHavoc": "46%",
+        "DhVeng": "52%",
+        "Available": "6 available in m0",
+        "Dh": "52%"
+    },
+    "Wrists": {
+        "DhHavoc": "32%",
+        "DhVeng": "29%",
+        "Available": "4 available in m0",
+        "Dh": "32%"
+    },
+    "Hands": {
+        "DhHavoc": "19%",
+        "DhVeng": "19%",
+        "Available": "2 available in m0",
+        "Dh": "19%"
+    },
+    "Waist": {
+        "DhHavoc": "35%",
+        "DhVeng": "33%",
+        "Available": "5 available in m0",
+        "Dh": "35%"
+    },
+    "Legs": {
+        "DhHavoc": "21%",
+        "DhVeng": "24%",
+        "Available": "3 available in m0",
+        "Dh": "24%"
+    },
+    "Feet": {
+        "DhHavoc": "24%",
+        "DhVeng": "24%",
+        "Available": "3 available in m0",
+        "Dh": "24%"
+    },
+    "Neck": {
+        "DhHavoc": "36%",
+        "DhVeng": "28%",
+        "Available": "4 available in m0",
+        "Dh": "36%"
+    },
+    "Back": {
+        "DhHavoc": "36%",
+        "DhVeng": "41%",
+        "Available": "6 available in m0",
+        "Dh": "41%"
+    },
+    "Ring": {
+        "DhHavoc": "59%",
+        "DhVeng": "59%",
+        "Available": "10 available in m0",
+        "Dh": "59%"
+    },
+    "Agi1hWeapon": {
+        "DhHavoc": "30%",
+        "DhVeng": "30%",
+        "Available": "5 available in m0",
+        "Dh": "30%"
+    },
+    "DpsTrinket": {
+        "DhHavoc": "32%",
+        "DhVeng": "0%",
+        "Available": "4 available in m0",
+        "Dh": "32%"
+    },
+    "TankTrinket": {
+        "DhHavoc": "0%",
+        "DhVeng": "21%",
+        "Available": "3 available in m0",
+        "Dh": "21%"
+    },
+    "AnyroleTrinket": {
+        "DhHavoc": "54%",
+        "DhVeng": "54%",
+        "Available": "10 available in m0",
+        "Dh": "54%"
+    }
+}

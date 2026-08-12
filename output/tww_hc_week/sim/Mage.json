@@ -1,0 +1,114 @@
+{
+    "Head": {
+        "MageArcane": "27%",
+        "MageFire": "27%",
+        "MageFrost": "27%",
+        "Available": "4 available in Hc",
+        "Mage": "27%"
+    },
+    "Shoulders": {
+        "MageArcane": "21%",
+        "MageFire": "21%",
+        "MageFrost": "21%",
+        "Available": "3 available in Hc",
+        "Mage": "21%"
+    },
+    "Chest": {
+        "MageArcane": "32%",
+        "MageFire": "32%",
+        "MageFrost": "32%",
+        "Available": "3 available in Hc",
+        "Mage": "32%"
+    },
+    "Wrists": {
+        "MageArcane": "21%",
+        "MageFire": "21%",
+        "MageFrost": "21%",
+        "Available": "3 available in Hc",
+        "Mage": "21%"
+    },
+    "Hands": {
+        "MageArcane": "21%",
+        "MageFire": "21%",
+        "MageFrost": "21%",
+        "Available": "3 available in Hc",
+        "Mage": "21%"
+    },
+    "Waist": {
+        "MageArcane": "23%",
+        "MageFire": "23%",
+        "MageFrost": "23%",
+        "Available": "3 available in Hc",
+        "Mage": "23%"
+    },
+    "Legs": {
+        "MageArcane": "21%",
+        "MageFire": "21%",
+        "MageFrost": "21%",
+        "Available": "3 available in Hc",
+        "Mage": "21%"
+    },
+    "Feet": {
+        "MageArcane": "28%",
+        "MageFire": "28%",
+        "MageFrost": "28%",
+        "Available": "2 available in Hc",
+        "Mage": "28%"
+    },
+    "Neck": {
+        "MageArcane": "34%",
+        "MageFire": "34%",
+        "MageFrost": "34%",
+        "Available": "5 available in Hc",
+        "Mage": "34%"
+    },
+    "Back": {
+        "MageArcane": "43%",
+        "MageFire": "43%",
+        "MageFrost": "43%",
+        "Available": "5 available in Hc",
+        "Mage": "43%"
+    },
+    "Ring": {
+        "MageArcane": "42%",
+        "MageFire": "42%",
+        "MageFrost": "42%",
+        "Available": "7 available in Hc",
+        "Mage": "42%"
+    },
+    "Int1hWeapon": {
+        "MageArcane": "25%",
+        "MageFire": "25%",
+        "MageFrost": "25%",
+        "Available": "4 available in Hc",
+        "Mage": "25%"
+    },
+    "Int2hWeapon": {
+        "MageArcane": "17%",
+        "MageFire": "17%",
+        "MageFrost": "17%",
+        "Available": "3 available in Hc",
+        "Mage": "17%"
+    },
+    "Offhand": {
+        "MageArcane": "23%",
+        "MageFire": "23%",
+        "MageFrost": "23%",
+        "Available": "4 available in Hc",
+        "Mage": "23%"
+    },
+    "DpsTrinket": {
+        "MageArcane": "26%",
+        "MageFire": "26%",
+        "MageFrost": "26%",
+        "Available": "5 available in Hc",
+        "Mage": "26%"
+    },
+    "AnyroleTrinket": {
+        "MageArcane": "65%",
+        "MageFire": "65%",
+        "MageFrost": "65%",
+        "Available": "12 available in Hc",
+        "Mage": "65%"
+    }
+}

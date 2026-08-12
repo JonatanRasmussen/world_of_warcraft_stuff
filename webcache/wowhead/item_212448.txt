@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Locket of Broken Memories</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->571</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Neck</td><th><!--scstart4:-3--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat7-->+5,034 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->2,596 Critical Strike</span><br><span class="q2">+<!--rtg36-->649 Haste</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->80<div class="whtt-sellprice">Sell Price: <span class="moneygold">41</span> <span class="moneysilver">3</span> <span class="moneycopper">31</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Rasha'nan</div></td></tr></table></noscript>
+<div id="ic212448" style="float: left"></div>
+<div id="tt212448" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl212448"></div>
+    <div id="ks212448" data-role="spell-modifiers"></div>
+    <div id="iu212448"></div>
+    <div id="rppm212448"></div>
+    <div id="bs212448"></div>
+    <div id="craftedStatsSelector212448"></div>
+    <div id="cs212448"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic212448').appendChild(Icon.create('inv_nerubian_necklace_02_color3', 2, null, 0, 1));
+var tt = WH.ge('tt212448');
+var sl = WH.ge('sl212448');
+var ks = WH.ge('ks212448');
+var iu = WH.ge('iu212448');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        212448,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

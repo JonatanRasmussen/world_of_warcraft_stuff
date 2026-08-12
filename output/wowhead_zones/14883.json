@@ -1,0 +1,61 @@
+{
+    "zone_id": 14883,
+    "name": "The Stonevault",
+    "bosses": {
+        "E.D.N.A.": {
+            "npc_id": "-1",
+            "href_name": "e-d-n-a-",
+            "display_name": "E.D.N.A."
+        },
+        "Skarmorak": {
+            "npc_id": "210156",
+            "href_name": "skarmorak",
+            "display_name": "Skarmorak"
+        },
+        "Master Machinists": {
+            "npc_id": "213216",
+            "href_name": "speaker-dorlita",
+            "display_name": "Master Machinists"
+        },
+        "Void Speaker Eirich": {
+            "npc_id": "213119",
+            "href_name": "void-speaker-eirich",
+            "display_name": "Void Speaker Eirich"
+        }
+    },
+    "item_ids": [
+        219300,
+        219301,
+        219302,
+        219303,
+        221079,
+        221080,
+        221081,
+        221082,
+        221083,
+        221084,
+        221085,
+        221086,
+        221087,
+        221088,
+        221089,
+        221090,
+        221091,
+        221092,
+        221094,
+        221095,
+        226683
+    ],
+    "boss_order": [
+        "E.D.N.A.",
+        "Skarmorak",
+        "Master Machinists",
+        "Void Speaker Eirich"
+    ],
+    "boss_hrefs": [
+        "e-d-n-a-",
+        "skarmorak",
+        "speaker-dorlita",
+        "void-speaker-eirich"
+    ]
+}

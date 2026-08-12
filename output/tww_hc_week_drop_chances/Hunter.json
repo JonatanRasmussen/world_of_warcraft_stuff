@@ -1,0 +1,100 @@
+{
+    "Head": {
+        "HunterBm": "24%",
+        "HunterMm": "24%",
+        "HunterSv": "24%",
+        "Available": "3 items",
+        "Hunter": "24%"
+    },
+    "Shoulders": {
+        "HunterBm": "17%",
+        "HunterMm": "17%",
+        "HunterSv": "16%",
+        "Available": "3 items",
+        "Hunter": "17%"
+    },
+    "Chest": {
+        "HunterBm": "16%",
+        "HunterMm": "16%",
+        "HunterSv": "19%",
+        "Available": "2 items",
+        "Hunter": "19%"
+    },
+    "Wrists": {
+        "HunterBm": "27%",
+        "HunterMm": "27%",
+        "HunterSv": "24%",
+        "Available": "3 items",
+        "Hunter": "27%"
+    },
+    "Hands": {
+        "HunterBm": "35%",
+        "HunterMm": "35%",
+        "HunterSv": "30%",
+        "Available": "3 items",
+        "Hunter": "35%"
+    },
+    "Waist": {
+        "HunterBm": "19%",
+        "HunterMm": "19%",
+        "HunterSv": "19%",
+        "Available": "2 items",
+        "Hunter": "19%"
+    },
+    "Legs": {
+        "HunterBm": "27%",
+        "HunterMm": "27%",
+        "HunterSv": "27%",
+        "Available": "3 items",
+        "Hunter": "27%"
+    },
+    "Feet": {
+        "HunterBm": "31%",
+        "HunterMm": "31%",
+        "HunterSv": "30%",
+        "Available": "4 items",
+        "Hunter": "31%"
+    },
+    "Neck": {
+        "HunterBm": "27%",
+        "HunterMm": "27%",
+        "HunterSv": "24%",
+        "Available": "3 items",
+        "Hunter": "27%"
+    },
+    "Back": {
+        "HunterBm": "32%",
+        "HunterMm": "32%",
+        "HunterSv": "32%",
+        "Available": "4 items",
+        "Hunter": "32%"
+    },
+    "Ring": {
+        "HunterBm": "52%",
+        "HunterMm": "52%",
+        "HunterSv": "51%",
+        "Available": "7 items",
+        "Hunter": "52%"
+    },
+    "Agi2hWeapon": {
+        "HunterBm": "0%",
+        "HunterMm": "0%",
+        "HunterSv": "22%",
+        "Available": "4 items",
+        "Hunter": "22%"
+    },
+    "Ranged": {
+        "HunterBm": "16%",
+        "HunterMm": "16%",
+        "HunterSv": "0%",
+        "Available": "2 items",
+        "Hunter": "16%"
+    },
+    "Trinket": {
+        "HunterBm": "80%",
+        "HunterMm": "80%",
+        "HunterSv": "81%",
+        "Available": "17 items",
+        "Hunter": "81%"
+    }
+}

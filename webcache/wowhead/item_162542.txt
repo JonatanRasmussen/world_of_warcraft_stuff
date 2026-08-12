@@ -1,0 +1,108 @@
+<h1 class="heading-size-1">Seal of the City Watch</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->59</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Finger</td><th><!--scstart4:-2--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat7-->+5 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->7 Critical Strike</span><br><span class="q2">+<!--rtg49-->11 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0--><div class="whtt-sellprice">Sell Price: <span class="moneysilver">9</span> <span class="moneycopper">59</span></div></td></tr></table></noscript>
+<div id="ic162542" style="float: left"></div>
+<div id="tt162542" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl162542"></div>
+    <div id="ks162542" data-role="spell-modifiers"></div>
+    <div id="iu162542"></div>
+    <div id="rppm162542"></div>
+    <div id="bs162542"></div>
+    <div id="craftedStatsSelector162542"></div>
+    <div id="cs162542"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic162542').appendChild(Icon.create('inv_ring_80_02a', 2, null, 0, 1));
+var tt = WH.ge('tt162542');
+var sl = WH.ge('sl162542');
+var ks = WH.ge('ks162542');
+var iu = WH.ge('iu162542');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        162542,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/mage/arcane/bis-gear" data-class="8">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3028.jpg?1478749123&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_holy_magicalsentry.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Arcane        </span>
+                    <span class="guide-image-link-text-type-name c8">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/priest/holy/bis-gear" data-class="5">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3188.jpg?1497550499&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_holy_guardianspirit.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Holy        </span>
+                    <span class="guide-image-link-text-type-name c5">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3164.jpg?1478748972&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Marksmanship        </span>
+                    <span class="guide-image-link-text-type-name c3">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear" data-class="2">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3068.jpg?1478820322&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_holy_auraoflight.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Retribution        </span>
+                    <span class="guide-image-link-text-type-name c2">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/siege-of-boralus-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/7011.jpg?1533678424&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Siege of Boralus Dungeon Ability Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear" data-class="4">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3220.jpg?1478802878&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_stealth.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Subtlety        </span>
+                    <span class="guide-image-link-text-type-name c4">
+                Best in Slot Guide            </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

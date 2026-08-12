@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Chef Chewie's Towel</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Back</td></tr></table><!--rf--><span><!--amr-->346 Armor</span><br><span><!--stat71-->+325 [Agility or Strength or Intellect]</span><br><span><!--stat7-->+1,130 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->309 Critical Strike</span><br><span class="q2">+<!--rtg49-->167 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">38</span> <span class="moneysilver">14</span> <span class="moneycopper">5</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Brew Master Aldryr</div></td></tr></table></noscript>
+<div id="ic221054" style="float: left"></div>
+<div id="tt221054" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl221054"></div>
+    <div id="ks221054" data-role="spell-modifiers"></div>
+    <div id="iu221054"></div>
+    <div id="rppm221054"></div>
+    <div id="bs221054"></div>
+    <div id="craftedStatsSelector221054"></div>
+    <div id="cs221054"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic221054').appendChild(Icon.create('inv_cape_cloth_earthendungeon_c_01', 2, null, 0, 1));
+var tt = WH.ge('tt221054');
+var sl = WH.ge('sl221054');
+var ks = WH.ge('ks221054');
+var iu = WH.ge('iu221054');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        221054,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

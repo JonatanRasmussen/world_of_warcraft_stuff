@@ -1,0 +1,80 @@
+{
+    "Head": {
+        "DhHavoc": "24%",
+        "DhVeng": "24%",
+        "Available": "3 items",
+        "Dh": "24%"
+    },
+    "Shoulders": {
+        "DhHavoc": "24%",
+        "DhVeng": "24%",
+        "Available": "3 items",
+        "Dh": "24%"
+    },
+    "Chest": {
+        "DhHavoc": "24%",
+        "DhVeng": "24%",
+        "Available": "3 items",
+        "Dh": "24%"
+    },
+    "Wrists": {
+        "DhHavoc": "19%",
+        "DhVeng": "19%",
+        "Available": "3 items",
+        "Dh": "19%"
+    },
+    "Hands": {
+        "DhHavoc": "24%",
+        "DhVeng": "24%",
+        "Available": "3 items",
+        "Dh": "24%"
+    },
+    "Waist": {
+        "DhHavoc": "27%",
+        "DhVeng": "27%",
+        "Available": "3 items",
+        "Dh": "27%"
+    },
+    "Legs": {
+        "DhHavoc": "27%",
+        "DhVeng": "27%",
+        "Available": "3 items",
+        "Dh": "27%"
+    },
+    "Feet": {
+        "DhHavoc": "27%",
+        "DhVeng": "27%",
+        "Available": "3 items",
+        "Dh": "27%"
+    },
+    "Neck": {
+        "DhHavoc": "27%",
+        "DhVeng": "27%",
+        "Available": "3 items",
+        "Dh": "27%"
+    },
+    "Back": {
+        "DhHavoc": "29%",
+        "DhVeng": "29%",
+        "Available": "4 items",
+        "Dh": "29%"
+    },
+    "Ring": {
+        "DhHavoc": "48%",
+        "DhVeng": "48%",
+        "Available": "7 items",
+        "Dh": "48%"
+    },
+    "Agi1hWeapon": {
+        "DhHavoc": "27%",
+        "DhVeng": "27%",
+        "Available": "4 items",
+        "Dh": "27%"
+    },
+    "Trinket": {
+        "DhHavoc": "78%",
+        "DhVeng": "78%",
+        "Available": "17 items",
+        "Dh": "78%"
+    }
+}

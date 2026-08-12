@@ -1,0 +1,121 @@
+{
+    "Head": {
+        "PriestDisc": "24%",
+        "PriestHoly": "24%",
+        "PriestShadow": "27%",
+        "Available": "4 available in Hc",
+        "Priest": "27%"
+    },
+    "Shoulders": {
+        "PriestDisc": "21%",
+        "PriestHoly": "21%",
+        "PriestShadow": "21%",
+        "Available": "3 available in Hc",
+        "Priest": "21%"
+    },
+    "Chest": {
+        "PriestDisc": "24%",
+        "PriestHoly": "24%",
+        "PriestShadow": "23%",
+        "Available": "3 available in Hc",
+        "Priest": "24%"
+    },
+    "Wrists": {
+        "PriestDisc": "21%",
+        "PriestHoly": "21%",
+        "PriestShadow": "21%",
+        "Available": "3 available in Hc",
+        "Priest": "21%"
+    },
+    "Hands": {
+        "PriestDisc": "21%",
+        "PriestHoly": "21%",
+        "PriestShadow": "21%",
+        "Available": "3 available in Hc",
+        "Priest": "21%"
+    },
+    "Waist": {
+        "PriestDisc": "23%",
+        "PriestHoly": "23%",
+        "PriestShadow": "23%",
+        "Available": "3 available in Hc",
+        "Priest": "23%"
+    },
+    "Legs": {
+        "PriestDisc": "21%",
+        "PriestHoly": "21%",
+        "PriestShadow": "21%",
+        "Available": "3 available in Hc",
+        "Priest": "21%"
+    },
+    "Feet": {
+        "PriestDisc": "28%",
+        "PriestHoly": "28%",
+        "PriestShadow": "28%",
+        "Available": "2 available in Hc",
+        "Priest": "28%"
+    },
+    "Neck": {
+        "PriestDisc": "32%",
+        "PriestHoly": "32%",
+        "PriestShadow": "34%",
+        "Available": "5 available in Hc",
+        "Priest": "34%"
+    },
+    "Back": {
+        "PriestDisc": "40%",
+        "PriestHoly": "40%",
+        "PriestShadow": "43%",
+        "Available": "5 available in Hc",
+        "Priest": "43%"
+    },
+    "Ring": {
+        "PriestDisc": "42%",
+        "PriestHoly": "42%",
+        "PriestShadow": "42%",
+        "Available": "7 available in Hc",
+        "Priest": "42%"
+    },
+    "Int1hWeapon": {
+        "PriestDisc": "29%",
+        "PriestHoly": "29%",
+        "PriestShadow": "25%",
+        "Available": "4 available in Hc",
+        "Priest": "29%"
+    },
+    "Int2hWeapon": {
+        "PriestDisc": "20%",
+        "PriestHoly": "20%",
+        "PriestShadow": "17%",
+        "Available": "3 available in Hc",
+        "Priest": "20%"
+    },
+    "Offhand": {
+        "PriestDisc": "27%",
+        "PriestHoly": "27%",
+        "PriestShadow": "23%",
+        "Available": "4 available in Hc",
+        "Priest": "27%"
+    },
+    "DpsTrinket": {
+        "PriestDisc": "0%",
+        "PriestHoly": "0%",
+        "PriestShadow": "26%",
+        "Available": "5 available in Hc",
+        "Priest": "26%"
+    },
+    "HealTrinket": {
+        "PriestDisc": "23%",
+        "PriestHoly": "23%",
+        "PriestShadow": "0%",
+        "Available": "4 available in Hc",
+        "Priest": "23%"
+    },
+    "AnyroleTrinket": {
+        "PriestDisc": "69%",
+        "PriestHoly": "69%",
+        "PriestShadow": "69%",
+        "Available": "12 available in Hc",
+        "Priest": "69%"
+    }
+}

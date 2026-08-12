@@ -1,0 +1,354 @@
+<h1 class="heading-size-1">Refracting Aggression Module</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat72-->+549 [Agility or Strength]</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=443544/refracting-aggression-module" class="q2">Your taunt abilities activate the module's refracting energy, protecting you from <!--pts2:0:0:451568:0-->50<!---->% of damage taken, up to <!--pts1:0:0:451568:259.416-->233057<!---->. This may only occur once every 1 min.<!--sp137028:0--><!--sp137028--><!--sp137023:0--><!--sp137023--><!--sp137010:0--><!--sp137010--><!--sp212613:0--><!--sp212613--><!--sp137008:0--><!--sp137008--><!--sp137048:0--><br /><br /><span style="color: #FF2020">Valid only for tank specializations.</span><!--sp137048--> (1m cooldown)</a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">46</span> <span class="moneysilver">35</span> <span class="moneycopper">96</span></div><div class="whtt-extra whtt-droppedby">Dropped by: E.D.N.A</div><div class="whtt-extra whtt-dropchance">Drop Chance: 3.28%</div></td></tr></table></noscript>
+<div id="ic219315" style="float: left"></div>
+<div id="tt219315" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl219315" style="display: block"></div>
+    <div id="ks219315" data-role="spell-modifiers"></div>
+    <div id="iu219315"></div>
+    <div id="rppm219315"></div>
+    <div id="bs219315"></div>
+    <div id="craftedStatsSelector219315"></div>
+    <div id="cs219315"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic219315').appendChild(Icon.create('inv_10_engineering2_tinkermodules_color1', 2, null, 0, 1));
+var tt = WH.ge('tt219315');
+var sl = WH.ge('sl219315');
+var ks = WH.ge('ks219315');
+var iu = WH.ge('iu219315');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        219315,
+        true,
+        true,
+        sl,
+        null,
+        [443544],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Paladin:
+                        <div class="iconsmall spec66" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_paladin_shieldofthetemplar.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.2.66"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec66 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec66 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec70" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_holy_auraoflight.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.2.70"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec70 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Retribution", 'q');
+                });
+                $('#lootspecs').find('.spec70 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Warrior:
+                        <div class="iconsmall spec71" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_savageblow.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.71"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec71 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Arms", 'q');
+                });
+                $('#lootspecs').find('.spec71 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec72" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_innerrage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.72"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec72 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Fury", 'q');
+                });
+                $('#lootspecs').find('.spec72 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec73" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_warrior_defensivestance.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.1.73"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec73 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Protection", 'q');
+                });
+                $('#lootspecs').find('.spec73 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Druid:
+                        <div class="iconsmall spec103" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_druid_catform.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.11.103"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec103 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Feral", 'q');
+                });
+                $('#lootspecs').find('.spec103 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec104" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_racial_bearform.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.11.104"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec104 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Guardian", 'q');
+                });
+                $('#lootspecs').find('.spec104 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Death Knight:
+                        <div class="iconsmall spec250" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_bloodpresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.250"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec250 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Blood", 'q');
+                });
+                $('#lootspecs').find('.spec250 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec251" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_frostpresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.251"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec251 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Frost", 'q');
+                });
+                $('#lootspecs').find('.spec251 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec252" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_deathknight_unholypresence.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.6.252"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec252 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Unholy", 'q');
+                });
+                $('#lootspecs').find('.spec252 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Hunter:
+                        <div class="iconsmall spec253" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_bestialdiscipline.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.253"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec253 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Beast Mastery", 'q');
+                });
+                $('#lootspecs').find('.spec253 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec254" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusedaim.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.254"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec254 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Marksmanship", 'q');
+                });
+                $('#lootspecs').find('.spec254 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec255" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_camouflage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.255"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec255 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Survival", 'q');
+                });
+                $('#lootspecs').find('.spec255 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Rogue:
+                        <div class="iconsmall spec259" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_rogue_deadlybrew.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.259"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec259 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Assassination", 'q');
+                });
+                $('#lootspecs').find('.spec259 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec260" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_rogue_waylay.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.260"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec260 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Outlaw", 'q');
+                });
+                $('#lootspecs').find('.spec260 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec261" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_stealth.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.261"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec261 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Subtlety", 'q');
+                });
+                $('#lootspecs').find('.spec261 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Shaman:
+                        <div class="iconsmall spec263" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shaman_improvedstormstrike.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.263"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec263 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Enhancement", 'q');
+                });
+                $('#lootspecs').find('.spec263 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Monk:
+                        <div class="iconsmall spec268" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_monk_brewmaster_spec.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.10.268"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec268 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Brewmaster", 'q');
+                });
+                $('#lootspecs').find('.spec268 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec269" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_monk_windwalker_spec.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.10.269"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec269 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Windwalker", 'q');
+                });
+                $('#lootspecs').find('.spec269 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Demon Hunter:
+                        <div class="iconsmall spec577" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_specdps.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.577"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec577 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Havoc", 'q');
+                });
+                $('#lootspecs').find('.spec577 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec581" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_spectank.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.581"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec581 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Vengeance", 'q');
+                });
+                $('#lootspecs').find('.spec581 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

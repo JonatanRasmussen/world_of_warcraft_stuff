@@ -1,0 +1,70 @@
+item_id,from,boss,gear_slot,gear_type,stats,EvokerPres
+221156,Ara-Kara,2 of 3,Head,Mail,M>H,50%
+221070,Cinderbrew,4 of 4,Head,Mail,V>M,33%
+221113,Darkflame Cleft,4 of 4,Head,Mail,M>V,50%
+221098,Darkflame Cleft,1 of 4,Shoulder,Mail,V>H,33%
+221140,Dawnbreaker,2 of 3,Shoulder,Mail,M>V,25%
+221048,Rookery,3 of 3,Shoulder,Mail,M>V,33%
+221179,City of Threads,3 of 4,Chest,Mail,M>V,33%
+221041,Rookery,2 of 3,Chest,Mail,C>M,50%
+221059,Cinderbrew,2 of 4,Wrist,Mail,C>V,33%
+221174,City of Threads,2 of 4,Wrist,Mail,C>M,33%
+221124,Priory,2 of 3,Wrist,Mail,M>H,33%
+221162,Ara-Kara,3 of 3,Hands,Mail,V>H,33%
+221119,Priory,1 of 3,Hands,Mail,H>V,50%
+221080,Stonevault,2 of 4,Hands,Mail,V>C,100%
+221168,City of Threads,1 of 4,Waist,Mail,H>M,33%
+221101,Darkflame Cleft,2 of 4,Waist,Mail,H>V,33%
+221065,Cinderbrew,3 of 4,Legs,Mail,C>H,50%
+221186,City of Threads,4 of 4,Legs,Mail,H>V,33%
+221129,Priory,3 of 3,Legs,Mail,C>V,33%
+221152,Ara-Kara,1 of 3,Feet,Mail,H>M,33%
+221106,Darkflame Cleft,3 of 4,Feet,Mail,M>H,25%
+221202,Dawnbreaker,2 of 3,Feet,Mail,V>H,25%
+221035,Rookery,1 of 3,Feet,Mail,H>M,50%
+221060,Cinderbrew,2 of 4,Neck,,H>M,33%
+221181,City of Threads,3 of 4,Neck,,V>C,33%
+221103,Darkflame Cleft,2 of 4,Neck,,C>V,33%
+221154,Ara-Kara,2 of 3,Back,,V>C,50%
+221054,Cinderbrew,1 of 4,Back,,C>M,50%
+221109,Darkflame Cleft,3 of 4,Back,,V>C,25%
+221088,Stonevault,3 of 4,Back,,M>H,25%
+221198,Cinderbrew,4 of 4,Finger,,M>C,33%
+221189,City of Threads,4 of 4,Finger,,V>H,33%
+221099,Darkflame Cleft,1 of 4,Finger,,H>V,33%
+221200,Priory,3 of 3,Finger,,M>V,33%
+221136,Dawnbreaker,1 of 3,Finger,,C>H,50%
+221141,Dawnbreaker,2 of 3,Finger,,V>M,25%
+221197,Rookery,3 of 3,Finger,,C>M,33%
+221105,Darkflame Cleft,3 of 4,One-Hand,Axe,Int,25%
+221165,Ara-Kara,3 of 3,One-Hand,Dagger,Int,33%
+221062,Cinderbrew,3 of 4,One-Hand,Dagger,Int,50%
+221171,City of Threads,2 of 4,One-Hand,Dagger,Int,33%
+221122,Priory,2 of 3,One-Hand,Mace,Int,33%
+221150,Ara-Kara,1 of 3,One-Hand,Sword,Int,33%
+221166,City of Threads,1 of 4,Two-Hand,Staff,Int,33%
+221032,Rookery,1 of 3,Two-Hand,Staff,Int,50%
+221085,Stonevault,3 of 4,Two-Hand,Staff,Int,25%
+221056,Cinderbrew,2 of 4,Held In Off-hand,,Int,33%
+221172,City of Threads,2 of 4,Held In Off-hand,,Int,33%
+221097,Darkflame Cleft,1 of 4,Held In Off-hand,,Int,33%
+221132,Dawnbreaker,1 of 3,Held In Off-hand,,Int,50%
+219314,Ara-Kara,1 of 3,Trinket,,,33%
+219317,Ara-Kara,3 of 3,Trinket,,"Agi,Int",33%
+219297,Cinderbrew,1 of 4,Trinket,,,50%
+219299,Cinderbrew,4 of 4,Trinket,,Int,33%
+219318,City of Threads,1 of 4,Trinket,,,33%
+219320,City of Threads,3 of 4,Trinket,,Int,33%
+219321,City of Threads,4 of 4,Trinket,,Int,33%
+219305,Darkflame Cleft,2 of 4,Trinket,,Int,33%
+219306,Darkflame Cleft,3 of 4,Trinket,,Int,25%
+219307,Darkflame Cleft,4 of 4,Trinket,,,50%
+219308,Priory,1 of 3,Trinket,,All3,50%
+219309,Priory,2 of 3,Trinket,,,33%
+219310,Priory,3 of 3,Trinket,,Int,33%
+219312,Dawnbreaker,2 of 3,Trinket,,"Agi,Int",25%
+219295,Rookery,2 of 3,Trinket,,All3,50%
+219296,Rookery,3 of 3,Trinket,,,33%
+219301,Stonevault,3 of 4,Trinket,,,25%
+219302,Stonevault,3 of 4,Trinket,,Int,25%
+219303,Stonevault,4 of 4,Trinket,,,100%

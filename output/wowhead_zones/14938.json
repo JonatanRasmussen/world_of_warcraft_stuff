@@ -1,0 +1,56 @@
+{
+    "zone_id": 14938,
+    "name": "The Rookery",
+    "bosses": {
+        "Kyrioss": {
+            "npc_id": "209230",
+            "href_name": "kyrioss",
+            "display_name": "Kyrioss"
+        },
+        "Stormguard Gorren": {
+            "npc_id": "207205",
+            "href_name": "stormguard-gorren",
+            "display_name": "Stormguard Gorren"
+        },
+        "Voidstone Monstrosity": {
+            "npc_id": "207207",
+            "href_name": "voidstone-monstrosity",
+            "display_name": "Voidstone Monstrosity"
+        }
+    },
+    "item_ids": [
+        219294,
+        219295,
+        219296,
+        221032,
+        221033,
+        221034,
+        221035,
+        221036,
+        221037,
+        221038,
+        221039,
+        221040,
+        221041,
+        221042,
+        221043,
+        221044,
+        221045,
+        221046,
+        221047,
+        221048,
+        221049,
+        221050,
+        221197
+    ],
+    "boss_order": [
+        "Kyrioss",
+        "Stormguard Gorren",
+        "Voidstone Monstrosity"
+    ],
+    "boss_hrefs": [
+        "kyrioss",
+        "stormguard-gorren",
+        "voidstone-monstrosity"
+    ]
+}

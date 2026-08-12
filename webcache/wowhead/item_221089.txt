@@ -1,0 +1,94 @@
+<h1 class="heading-size-1">Silver-Tongued Boltcaster</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Ranged</td><th><!--scstart2:18--><span class="q1">Crossbow</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->1,043 - 1,566 Damage</span></td>
+    <th>Speed <!--spd-->3.00</th>
+</tr></table><!--dps-->(434.8 damage per second)<br><span><!--stat3-->+578 Agility</span><br><span><!--stat7-->+2,008 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->314 Critical Strike</span><br><span class="q2">+<!--rtg40-->532 Versatility</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">98</span> <span class="moneysilver">68</span> <span class="moneycopper">26</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Void Speaker Eirich</div></td></tr></table></noscript>
+<div id="ic221089" style="float: left"></div>
+<div id="tt221089" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl221089"></div>
+    <div id="ks221089" data-role="spell-modifiers"></div>
+    <div id="iu221089"></div>
+    <div id="rppm221089"></div>
+    <div id="bs221089"></div>
+    <div id="craftedStatsSelector221089"></div>
+    <div id="cs221089"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic221089').appendChild(Icon.create('inv_crossbow_2h_earthendungeon_c_01', 2, null, 0, 1));
+var tt = WH.ge('tt221089');
+var sl = WH.ge('sl221089');
+var ks = WH.ge('ks221089');
+var iu = WH.ge('iu221089');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        221089,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Hunter:
+                        <div class="iconsmall spec253" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_bestialdiscipline.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.253"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec253 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Beast Mastery", 'q');
+                });
+                $('#lootspecs').find('.spec253 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec254" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusedaim.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.254"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec254 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Marksmanship", 'q');
+                });
+                $('#lootspecs').find('.spec254 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

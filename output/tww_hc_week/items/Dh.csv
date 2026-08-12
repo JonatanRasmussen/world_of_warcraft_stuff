@@ -1,0 +1,124 @@
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+"Head (Dh, Hc)",3 available in Hc,,Hc,,33%,,24%,
+,Priory,2nd,Hc,C>M,100%,,50%,221125
+,,,,,,,,
+,Ara-Kara,Last,both,M>V,33%,,,221163
+,Stonevault,2nd,both,C>H,50%,,,221081
+,,,,,,,,
+"Shoulders (Dh, Hc)",3 available in Hc,,Hc,,40%,24%,,
+,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+,Cinderbrew,3rd,Hc,H>V,100%,50%,,221201
+,,,,,,,,
+,City of Threads,2nd,both,V>C,100%,50%,,221175
+,Stonevault,Last,both,C>V,33%,,,221094
+,,,,,,,,
+"Chest (Dh, Hc)",3 available in Hc,,Hc,,24%,,,
+,Priory,Last,Hc,V>H,50%,,,221130
+,Rookery,Last,Hc,M>V,33%,,,221049
+,,,,,,,,
+,City of Threads,Last,both,H>M,50%,,,221188
+,,,,,,,,
+"Wrists (Dh, Hc)",3 available in Hc,,Hc,,24%,,19%,
+,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+,Cinderbrew,1st,Hc,M>H,50%,,33%,221053
+,,,,,,,,
+,Ara-Kara,2nd,both,C>M,50%,,33%,221157
+,Dawnbreaker,2nd,both,H>C,33%,,,221142
+,,,,,,,,
+"Hands (Dh, Hc)",3 available in Hc,,Hc,,27%,24%,,
+,Darkflame Cleft,2nd,Hc,H>M,50%,,,221102
+,Rookery,1st,Hc,M>C,50%,33%,,221036
+,,,,,,,,
+,City of Threads,3rd,both,H>C,50%,,,221180
+,,,,,,,,
+"Waist (Dh, Hc)",4 available in Hc,,Hc,,31%,,,
+,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+,Cinderbrew,2nd,Hc,V>H,50%,,,221058
+,Darkflame Cleft,3rd,Hc,C>M,50%,,,221107
+,,,,,,,,
+,Dawnbreaker,1st,both,C>M,50%,,,221134
+,Dawnbreaker,Last,both,H>C,25%,,,225583
+,,,,,,,,
+"Legs (Dh, Hc)",3 available in Hc,,Hc,,27%,,,
+,Darkflame Cleft,Last,Hc,H>C,50%,,,221114
+,Rookery,2nd,Hc,V>C,50%,,,221042
+,,,,,,,,
+,Ara-Kara,1st,both,M>C,50%,,,221153
+,,,,,,,,
+"Feet (Dh, Hc)",3 available in Hc,,Hc,,27%,,,
+,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+,Cinderbrew,Last,Hc,M>H,50%,,,221071
+,Priory,1st,Hc,H>M,50%,,,221120
+,,,,,,,,
+,City of Threads,1st,both,M>C,50%,,,221169
+,,,,,,,,
+"Neck (Dh, Hc)",5 available in Hc,,Hc,,45%,,38%,
+,Cinderbrew,2nd,Hc,H>M,50%,,,221060
+,Darkflame Cleft,2nd,Hc,C>V,50%,,,221103
+,,,,,,,,
+,City of Threads,3rd,both,V>C,50%,,,221181
+,Dawnbreaker,Last,both,C>H,25%,,,212448
+,Stonevault,1st,both,M>H,100%,,50%,221077
+,,,,,,,,
+"Back (Dh, Hc)",5 available in Hc,,Hc,,40%,38%,,
+,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+,Cinderbrew,1st,Hc,C>M,50%,,33%,221054
+,Darkflame Cleft,3rd,Hc,V>C,50%,,,221109
+,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,,33%,221154
+,Dawnbreaker,Last,both,C>H,25%,,,225574
+,Stonevault,3rd,both,M>H,100%,50%,,221088
+,,,,,,,,
+"Ring (Dh, Hc)",7 available in Hc,,Hc,,54%,48%,,
+,Cinderbrew,Last,Hc,M>C,50%,,,221198
+,Darkflame Cleft,1st,Hc,H>V,100%,50%,,221099
+,Priory,Last,Hc,M>V,50%,,,221200
+,Rookery,Last,Hc,C>M,33%,,,221197
+,,,,,,,,
+,City of Threads,Last,both,V>H,50%,,,221189
+,Dawnbreaker,1st,both,C>H,50%,,,221136
+,Dawnbreaker,2nd,both,V>M,33%,,,221141
+,,,,,,,,
+"Agi1hWeapon (Dh, Hc)",5 available in Hc,,Hc,,33%,30%,,
+,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+,Rookery,1st,Hc,Agi,50%,33%,,221033
+,,,,,,,,
+,Ara-Kara,Last,both,Agi,33%,,,221160
+,Dawnbreaker,Last,both,Agi,25%,,,212391
+,Stonevault,2nd,both,Agi,50%,,,221084
+,Stonevault,Last,both,Agi,33%,,,221090
+,,,,,,,,
+"DpsTrinket (Dh, Hc)",5 available in Hc,,Hc,,39%,,0%,
+,Cinderbrew,3rd,Hc,"Dps,Agi,Str",50%,,0%,219298
+,Darkflame Cleft,1st,Hc,"Dps,Agi",50%,,0%,219304
+,Rookery,1st,Hc,"Dps,Agi",33%,,0%,219294
+,,,,,,,,
+,City of Threads,2nd,both,"Dps,Agi",50%,,0%,219319
+,Stonevault,3rd,both,"Dps,",50%,,0%,219301
+,,,,,,,,
+"TankTrinket (Dh, Hc)",4 available in Hc,,Hc,,29%,0%,,
+,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Dh,DhHavoc,DhVeng,ID
+,Cinderbrew,1st,Hc,"Tank,",33%,0%,,219297
+,Priory,2nd,Hc,"Tank,",50%,0%,,219309
+,,,,,,,,
+,Ara-Kara,2nd,both,"Tank,Agi,Str",33%,0%,,219316
+,Stonevault,1st,both,"Tank,Agi,Str",50%,0%,,219315
+,,,,,,,,
+"AnyroleTrinket (Dh, Hc)",9 available in Hc,,Hc,,55%,,,
+,Darkflame Cleft,Last,Hc,,50%,,,219307
+,Priory,1st,Hc,All3,50%,,,219308
+,Rookery,2nd,Hc,All3,50%,,,219295
+,Rookery,Last,Hc,,33%,,,219296
+,,,,,,,,
+,Ara-Kara,1st,both,,50%,,,219314
+,Ara-Kara,Last,both,"Agi,Int",33%,,,219317
+,City of Threads,1st,both,,50%,,,219318
+,Dawnbreaker,2nd,both,"Agi,Int",33%,,,219312
+,Stonevault,Last,both,,33%,,,219303

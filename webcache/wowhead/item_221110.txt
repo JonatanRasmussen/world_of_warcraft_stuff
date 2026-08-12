@@ -1,0 +1,94 @@
+<h1 class="heading-size-1">Crepuscular Carver</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>One-Hand</td><th><!--scstart2:15--><span class="q1">Dagger</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->443 - 739 Damage</span></td>
+    <th>Speed <!--spd-->1.80</th>
+</tr></table><!--dps-->(328.3 damage per second)<br><span><!--stat3-->+289 Agility</span><br><span><!--stat7-->+1,004 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg36-->157 Haste</span><br><span class="q2">+<!--rtg49-->266 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">79</span> <span class="moneysilver">21</span> <span class="moneycopper">84</span></div><div class="whtt-extra whtt-droppedby">Dropped by: The Darkness</div></td></tr></table></noscript>
+<div id="ic221110" style="float: left"></div>
+<div id="tt221110" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl221110"></div>
+    <div id="ks221110" data-role="spell-modifiers"></div>
+    <div id="iu221110"></div>
+    <div id="rppm221110"></div>
+    <div id="bs221110"></div>
+    <div id="craftedStatsSelector221110"></div>
+    <div id="cs221110"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic221110').appendChild(Icon.create('inv_knife_1h_earthendungeon_c_01', 2, null, 0, 1));
+var tt = WH.ge('tt221110');
+var sl = WH.ge('sl221110');
+var ks = WH.ge('ks221110');
+var iu = WH.ge('iu221110');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        221110,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Rogue:
+                        <div class="iconsmall spec259" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_rogue_deadlybrew.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.259"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec259 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Assassination", 'q');
+                });
+                $('#lootspecs').find('.spec259 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec261" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_stealth.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.4.261"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec261 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Subtlety", 'q');
+                });
+                $('#lootspecs').find('.spec261 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

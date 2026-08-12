@@ -1,0 +1,19 @@
+<div class="text">
+
+<div class="db-action-buttons"><a href="javascript:" id="open-links-button" class="btn btn-small fa fa-fw fa-link" style="margin-left:5px;float:right" onclick="WH.Links.show(this, {&quot;type&quot;:7,&quot;typeId&quot;:15055}, event);">Links</a></div><h1 class="heading-size-1 h1-icon"><span class="icon-tww-right">zzoldPriory of the Sacred Flame</span></h1><div id="lenrlkn4"></div>
+<div id="k6b43j6b"></div>
+<div style="clear:left"></div>
+
+<script>var g_mapperData = {"15055":{}};
+var myMapper = new Mapper({"parent":"k6b43j6b","zone":15055,"name":"zzoldPriory of the Sacred Flame"});
+</script><script>var mapShowObject = new ShowOnMap({"instance":true});</script><div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+    <div class="db-page-collection-tracker-cta"></div>
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+
+<h2 class="heading-size-2 clear">Related</h2></div>
+
+<div id="jkbfksdbl4"></div>
+<div id="lkljbjkb574" class="listview">
+</div>
+<script type="text/javascript">//<![CDATA[
+var tabsRelated = new Tabs

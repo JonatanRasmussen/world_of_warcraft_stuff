@@ -1,0 +1,70 @@
+<h1 class="heading-size-1">Spinemaw Gormling</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->1</span><!--bo--><br>Binds when picked up<!--ue--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td><span class="q2">Use: <a href="/spell=341519/spinemaw-gormling">Teaches you how to summon this companion.</a></span><br><span class="q2"><a href="/spell=341519/spinemaw-gormling" class="q2">Right Click to summon and dismiss this companion.</a></span><br>Requires level <!--minlvl-->1 to <!--maxlvl-->70 (<!--lvl-->70)<div class="whtt-extra whtt-droppedby">Dropped by: Tred'ova</div><div class="whtt-extra whtt-dropchance">Drop Chance: 3.13%</div></td></tr></table><!--i?183623:1:70:70:373:0--></noscript>
+<div id="ic183623" style="float: left"></div>
+<div id="tt183623" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl183623" style="display: block"></div>
+    <div id="ks183623" data-role="spell-modifiers"></div>
+    <div id="iu183623"></div>
+    <div id="rppm183623"></div>
+    <div id="bs183623"></div>
+    <div id="craftedStatsSelector183623"></div>
+    <div id="cs183623"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic183623').appendChild(Icon.create('inv_decomposersmallblack', 2, null, 0, 1));
+var tt = WH.ge('tt183623');
+var sl = WH.ge('sl183623');
+var ks = WH.ge('ks183623');
+var iu = WH.ge('iu183623');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        183623,
+        true,
+        true,
+        sl,
+        null,
+        [55884,341519],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/mists-of-tirna-scithe-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10278.jpg?1606286483&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Mists of Tirna Scithe Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-battle-pets">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10467.jpg?1592664971&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Overview of Collectable Battle Pets and Updates in Shadowlands         </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/the-littlest-mountain-a-collectors-overview-of-every-mount-and-pet-in-the-game-1104">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/1104.jpg?1499715413&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            The Littlest Mountain: A collector's overview of EVERY Mount and Pet in the game!        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

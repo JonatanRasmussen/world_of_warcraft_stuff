@@ -1,0 +1,270 @@
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Head (Monk, Hc)",3 available in Hc,,Hc,,40%,33%,35%,,
+,Priory,2nd,Hc,C>M,100%,50%,50%,,221125
+,,,,,,,,,
+,Ara-Kara,Last,both,M>V,50%,33%,,33%,221163
+,Stonevault,2nd,both,C>H,100%,,,,221081
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,H>M,50%,33%,,33%,178691
+,Siege of Boralus,Last,m0,V>M,50%,,,,231824
+"Head (Monk, m0)",4 available in m0,,m0,,42%,37%,,37%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Shoulders (Monk, Hc)",3 available in Hc,,Hc,,40%,,35%,24%,
+,Cinderbrew,3rd,Hc,H>V,100%,,,50%,221201
+,,,,,,,,,
+,City of Threads,2nd,both,V>C,100%,,50%,50%,221175
+,Stonevault,Last,both,C>V,50%,33%,,33%,221094
+,,,,,,,,,
+,Necrotic Wake,Last,m0,M>V,50%,,33%,,178779
+"Shoulders (Monk, m0)",3 available in m0,,m0,,33%,,24%,24%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Chest (Monk, Hc)",3 available in Hc,,Hc,,21%,,19%,,
+,Priory,Last,Hc,V>H,33%,,,,221130
+,Rookery,Last,Hc,M>V,33%,,,,221049
+,,,,,,,,,
+,City of Threads,Last,both,H>M,50%,,33%,,221188
+,,,,,,,,,
+,Grim Batol,1st,m0,M>H,50%,33%,,33%,133284
+,Grim Batol,Last,m0,M>C,25%,,20%,,133297
+,Mists of Tirna,1st,m0,H>C,100%,,33%,,178698
+,Necrotic Wake,3rd,m0,M>C,100%,,,50%,178744
+,Siege of Boralus,Last,m0,C>H,50%,,,,231822
+"Chest (Monk, m0)",6 available in m0,,m0,,54%,,46%,48%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Wrists (Monk, Hc)",3 available in Hc,,Hc,,24%,16%,,20%,
+,Cinderbrew,1st,Hc,M>H,50%,25%,,33%,221053
+,,,,,,,,,
+,Ara-Kara,2nd,both,C>M,50%,33%,,,221157
+,Dawnbreaker,2nd,both,H>C,33%,25%,,25%,221142
+,,,,,,,,,
+,Mists of Tirna,Last,m0,C>V,50%,,33%,,178702
+,Necrotic Wake,2nd,m0,H>V,50%,,,,178741
+"Wrists (Monk, m0)",4 available in m0,,m0,,31%,28%,29%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Hands (Monk, Hc)",3 available in Hc,,Hc,,27%,,21%,24%,
+,Darkflame Cleft,2nd,Hc,H>M,50%,,33%,,221102
+,Rookery,1st,Hc,M>C,50%,,,33%,221036
+,,,,,,,,,
+,City of Threads,3rd,both,H>C,50%,,33%,,221180
+,,,,,,,,,
+,Siege of Boralus,1st,m0,H>M,50%,33%,,33%,159968
+"Hands (Monk, m0)",2 available in m0,,m0,,16%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Waist (Monk, Hc)",4 available in Hc,,Hc,,28%,,23%,,
+,Cinderbrew,2nd,Hc,V>H,33%,,,,221058
+,Darkflame Cleft,3rd,Hc,C>M,50%,,25%,,221107
+,,,,,,,,,
+,Dawnbreaker,1st,both,C>M,50%,,33%,,221134
+,Dawnbreaker,Last,both,H>C,33%,25%,,25%,225583
+,,,,,,,,,
+,Grim Batol,2nd,m0,H>C,50%,33%,33%,,133353
+,Mists of Tirna,Last,m0,H>V,50%,,33%,,178699
+,Siege of Boralus,2nd,m0,H>C,50%,33%,,33%,159309
+"Waist (Monk, m0)",5 available in m0,,m0,,35%,33%,32%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Legs (Monk, Hc)",3 available in Hc,,Hc,,27%,,24%,,
+,Darkflame Cleft,Last,Hc,H>C,50%,,,,221114
+,Rookery,2nd,Hc,V>C,50%,,,,221042
+,,,,,,,,,
+,Ara-Kara,1st,both,M>C,50%,,33%,,221153
+,,,,,,,,,
+,Grim Batol,3rd,m0,H>C,33%,,,,133354
+,Siege of Boralus,3rd,m0,C>H,50%,,,33%,159322
+"Legs (Monk, m0)",3 available in m0,,m0,,24%,,21%,21%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Feet (Monk, Hc)",3 available in Hc,,Hc,,24%,,21%,,
+,Cinderbrew,Last,Hc,M>H,50%,,33%,,221071
+,Priory,1st,Hc,H>M,50%,33%,,33%,221120
+,,,,,,,,,
+,City of Threads,1st,both,M>C,50%,,33%,,221169
+,,,,,,,,,
+,Necrotic Wake,1st,m0,V>C,50%,,,,178731
+,Siege of Boralus,2nd,m0,V>C,50%,33%,,33%,159320
+"Feet (Monk, m0)",3 available in m0,,m0,,24%,,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Neck (Monk, Hc)",5 available in Hc,,Hc,,39%,33%,,35%,
+,Cinderbrew,2nd,Hc,H>M,33%,,,,221060
+,Darkflame Cleft,2nd,Hc,C>V,50%,,33%,,221103
+,,,,,,,,,
+,City of Threads,3rd,both,V>C,50%,,33%,,221181
+,Dawnbreaker,Last,both,C>H,33%,25%,,25%,212448
+,Stonevault,1st,both,M>H,100%,33%,,50%,221077
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,M>C,50%,33%,,33%,178707
+"Neck (Monk, m0)",4 available in m0,,m0,,37%,25%,,28%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Back (Monk, Hc)",5 available in Hc,,Hc,,39%,,33%,35%,
+,Cinderbrew,1st,Hc,C>M,50%,25%,,33%,221054
+,Darkflame Cleft,3rd,Hc,V>C,50%,,25%,,221109
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,33%,,,221154
+,Dawnbreaker,Last,both,C>H,33%,25%,,25%,225574
+,Stonevault,3rd,both,M>H,100%,,33%,50%,221088
+,,,,,,,,,
+,Grim Batol,3rd,m0,V>C,33%,,,,133292
+,Grim Batol,3rd,m0,M>C,33%,,,,133363
+,Grim Batol,Last,m0,V>C,25%,,20%,,133309
+"Back (Monk, m0)",6 available in m0,,m0,,41%,,34%,36%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Ring (Monk, Hc)",7 available in Hc,,Hc,,52%,,40%,46%,
+,Cinderbrew,Last,Hc,M>C,50%,,33%,,221198
+,Darkflame Cleft,1st,Hc,H>V,100%,,50%,50%,221099
+,Priory,Last,Hc,M>V,33%,,,,221200
+,Rookery,Last,Hc,C>M,33%,,,,221197
+,,,,,,,,,
+,City of Threads,Last,both,V>H,50%,,33%,,221189
+,Dawnbreaker,1st,both,C>H,50%,,33%,,221136
+,Dawnbreaker,2nd,both,V>M,33%,25%,,25%,221141
+,,,,,,,,,
+,Grim Batol,1st,m0,M>C,50%,33%,,33%,133286
+,Grim Batol,2nd,m0,V>C,50%,33%,33%,,133287
+,Grim Batol,Last,m0,H>M,25%,,20%,,133299
+,Necrotic Wake,1st,m0,H>V,50%,,,,178736
+,Necrotic Wake,Last,m0,V>C,50%,,33%,,178781
+,Siege of Boralus,1st,m0,M>C,50%,33%,,33%,162541
+,Siege of Boralus,3rd,m0,C>H,50%,,,33%,159461
+"Ring (Monk, m0)",10 available in m0,,m0,,57%,,55%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Agi1hWeapon (Monk, Hc)",5 available in Hc,,Hc,,29%,,0%,28%,
+,Cinderbrew,1st,Hc,Agi,33%,25%,0%,,221051
+,Priory,Last,Hc,Agi,33%,,0%,,221128
+,Rookery,1st,Hc,Agi,50%,,0%,33%,221033
+,,,,,,,,,
+,Dawnbreaker,Last,both,Agi,25%,,0%,,212398
+,Stonevault,Last,both,Agi,33%,,0%,,221090
+,,,,,,,,,
+,Siege of Boralus,1st,m0,Agi,33%,,0%,,159973
+"Agi1hWeapon (Monk, m0)",3 available in m0,,m0,,17%,,0%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Int1hWeapon (Monk, Hc)",3 available in Hc,,Hc,,20%,0%,,0%,
+,Darkflame Cleft,3rd,Hc,Int,25%,0%,,0%,221105
+,Priory,2nd,Hc,Int,50%,0%,,0%,221122
+,,,,,,,,,
+,Ara-Kara,1st,both,Int,33%,0%,,0%,221150
+,,,,,,,,,
+,Mists of Tirna,1st,m0,Int,33%,0%,,0%,178709
+,Necrotic Wake,2nd,m0,Int,50%,0%,,0%,178737
+"Int1hWeapon (Monk, m0)",3 available in m0,,m0,,21%,0%,,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Agi2hWeapon (Monk, Hc)",5 available in Hc,,Hc,,30%,28%,0%,,
+,Cinderbrew,2nd,Hc,Agi,33%,,0%,,221057
+,Priory,1st,Hc,Agi,33%,,0%,,221116
+,,,,,,,,,
+,Ara-Kara,Last,both,Agi,33%,,0%,,221159
+,Dawnbreaker,2nd,both,Agi,25%,,0%,,221137
+,Stonevault,1st,both,Agi,50%,33%,0%,,221078
+,,,,,,,,,
+"Agi2hWeapon (Monk, m0)",3 available in m0,,m0,,20%,17%,0%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Int2hWeapon (Monk, Hc)",3 available in Hc,,Hc,,21%,0%,,0%,
+,Rookery,1st,Hc,Int,50%,0%,,0%,221032
+,,,,,,,,,
+,City of Threads,1st,both,Int,33%,0%,,0%,221166
+,Stonevault,3rd,both,Int,33%,0%,,0%,221085
+,,,,,,,,,
+,Grim Batol,Last,m0,Int,20%,0%,,0%,133303
+,Mists of Tirna,Last,m0,Int,33%,0%,,0%,178714
+"Int2hWeapon (Monk, m0)",4 available in m0,,m0,,22%,0%,,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"Offhand (Monk, Hc)",4 available in Hc,,Hc,,29%,0%,,0%,
+,Cinderbrew,2nd,Hc,Int,33%,0%,,0%,221056
+,Darkflame Cleft,1st,Hc,Int,50%,0%,,0%,221097
+,,,,,,,,,
+,City of Threads,2nd,both,Int,50%,0%,,0%,221172
+,Dawnbreaker,1st,both,Int,33%,0%,,0%,221132
+,,,,,,,,,
+"Offhand (Monk, m0)",2 available in m0,,m0,,16%,0%,,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"DpsTrinket (Monk, Hc)",5 available in Hc,,Hc,,39%,0%,0%,,
+,Cinderbrew,3rd,Hc,"Dps,Agi,Str",50%,0%,0%,,219298
+,Darkflame Cleft,1st,Hc,"Dps,Agi",50%,0%,0%,,219304
+,Rookery,1st,Hc,"Dps,Agi",33%,0%,0%,,219294
+,,,,,,,,,
+,City of Threads,2nd,both,"Dps,Agi",50%,0%,0%,,219319
+,Stonevault,3rd,both,"Dps,",50%,0%,0%,,219301
+,,,,,,,,,
+,Necrotic Wake,3rd,m0,"Dps,Int",50%,0%,0%,,178772
+,Siege of Boralus,3rd,m0,"Dps,Int",33%,0%,0%,,159622
+"DpsTrinket (Monk, m0)",4 available in m0,,m0,,32%,0%,0%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"HealTrinket (Monk, Hc)",4 available in Hc,,Hc,,23%,0%,,0%,
+,Darkflame Cleft,3rd,Hc,"Heal,Int",25%,0%,,0%,219306
+,Priory,Last,Hc,"Heal,Int",33%,0%,,0%,219310
+,,,,,,,,,
+,City of Threads,3rd,both,"Heal,Int",33%,0%,,0%,219320
+,Stonevault,3rd,both,"Heal,Int",33%,0%,,0%,219302
+,,,,,,,,,
+,Grim Batol,2nd,m0,"Heal,",33%,0%,,0%,133304
+,Necrotic Wake,Last,m0,"Heal,Int",33%,0%,,0%,178783
+"HealTrinket (Monk, m0)",4 available in m0,,m0,,24%,0%,,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"TankTrinket (Monk, Hc)",4 available in Hc,,Hc,,25%,,0%,0%,
+,Cinderbrew,1st,Hc,"Tank,",25%,,0%,0%,219297
+,Priory,2nd,Hc,"Tank,",50%,,0%,0%,219309
+,,,,,,,,,
+,Ara-Kara,2nd,both,"Tank,Agi,Str",33%,,0%,0%,219316
+,Stonevault,1st,both,"Tank,Agi,Str",33%,,0%,0%,219315
+,,,,,,,,,
+,Grim Batol,2nd,m0,"Tank,",33%,,0%,0%,133291
+"TankTrinket (Monk, m0)",3 available in m0,,m0,,19%,,0%,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Monk,MonkBrew,MonkMw,MonkWw,ID
+"AnyroleTrinket (Monk, Hc)",12 available in Hc,,Hc,,63%,53%,,53%,
+,Cinderbrew,Last,Hc,Int,33%,0%,,0%,219299
+,Darkflame Cleft,2nd,Hc,Int,33%,0%,,0%,219305
+,Darkflame Cleft,Last,Hc,,50%,,,,219307
+,Priory,1st,Hc,All3,50%,33%,,33%,219308
+,Rookery,2nd,Hc,All3,50%,,,,219295
+,Rookery,Last,Hc,,33%,,,,219296
+,,,,,,,,,
+,Ara-Kara,1st,both,,50%,,33%,,219314
+,Ara-Kara,Last,both,"Agi,Int",50%,33%,,33%,219317
+,City of Threads,1st,both,,50%,,33%,,219318
+,City of Threads,Last,both,Int,33%,0%,,0%,219321
+,Dawnbreaker,2nd,both,"Agi,Int",33%,25%,,25%,219312
+,Stonevault,Last,both,,50%,33%,,33%,219303
+,,,,,,,,,
+,Grim Batol,1st,m0,Agi,33%,,0%,,133282
+,Grim Batol,Last,m0,,25%,,20%,,133305
+,Mists of Tirna,1st,m0,Int,33%,0%,,0%,178708
+,Mists of Tirna,2nd,m0,Agi,33%,,0%,,178715
+,Necrotic Wake,2nd,m0,Agi,50%,,0%,,178742
+,Siege of Boralus,2nd,m0,Agi,33%,,0%,,159623
+"AnyroleTrinket (Monk, m0)",10 available in m0,,m0,,53%,,45%,,

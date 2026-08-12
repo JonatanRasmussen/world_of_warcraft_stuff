@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Corrupted Egg Shell</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Use: <a href="/spell=91296/egg-shell" class="q2">Places Egg Shell on your current target, absorbing <!--pts1:0:0:91296:7.976-->6<!----> damage. &nbsp;While Egg Shell persists, you will gain <!--pts1:0:0:91306:0.00415-->17<!----> mana every 5 sec. &nbsp;When the effect is cancelled, you gain <!--pts1:0:0:91305:0.05-->200<!----> mana. &nbsp;Lasts 30 sec.</a> (2 Min Cooldown)</span><!--itemEffects:1--><br>Requires Level <!--rlvl-->31<div class="whtt-sellprice">Sell Price: <span class="moneysilver">3</span> <span class="moneycopper">1</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Erudax</div><div class="whtt-extra whtt-dropchance">Drop Chance: 6.42%</div></td></tr></table></noscript>
+<div id="ic56136" style="float: left"></div>
+<div id="tt56136" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl56136" style="display: block"></div>
+    <div id="ks56136" data-role="spell-modifiers"></div>
+    <div id="iu56136"></div>
+    <div id="rppm56136"></div>
+    <div id="bs56136"></div>
+    <div id="craftedStatsSelector56136"></div>
+    <div id="cs56136"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic56136').appendChild(Icon.create('inv_misc_cat_trinket09', 2, null, 0, 1));
+var tt = WH.ge('tt56136');
+var sl = WH.ge('sl56136');
+var ks = WH.ge('ks56136');
+var iu = WH.ge('iu56136');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        56136,
+        true,
+        true,
+        sl,
+        null,
+        [91296,96173],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

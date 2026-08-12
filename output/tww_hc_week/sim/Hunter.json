@@ -1,0 +1,107 @@
+{
+    "Head": {
+        "HunterBm": "27%",
+        "HunterMm": "27%",
+        "HunterSv": "27%",
+        "Available": "3 available in Hc",
+        "Hunter": "27%"
+    },
+    "Shoulders": {
+        "HunterBm": "17%",
+        "HunterMm": "17%",
+        "HunterSv": "16%",
+        "Available": "3 available in Hc",
+        "Hunter": "17%"
+    },
+    "Chest": {
+        "HunterBm": "16%",
+        "HunterMm": "16%",
+        "HunterSv": "19%",
+        "Available": "2 available in Hc",
+        "Hunter": "19%"
+    },
+    "Wrists": {
+        "HunterBm": "35%",
+        "HunterMm": "35%",
+        "HunterSv": "33%",
+        "Available": "3 available in Hc",
+        "Hunter": "35%"
+    },
+    "Hands": {
+        "HunterBm": "35%",
+        "HunterMm": "35%",
+        "HunterSv": "30%",
+        "Available": "3 available in Hc",
+        "Hunter": "35%"
+    },
+    "Waist": {
+        "HunterBm": "24%",
+        "HunterMm": "24%",
+        "HunterSv": "24%",
+        "Available": "3 available in Hc",
+        "Hunter": "24%"
+    },
+    "Legs": {
+        "HunterBm": "27%",
+        "HunterMm": "27%",
+        "HunterSv": "27%",
+        "Available": "3 available in Hc",
+        "Hunter": "27%"
+    },
+    "Feet": {
+        "HunterBm": "35%",
+        "HunterMm": "35%",
+        "HunterSv": "35%",
+        "Available": "5 available in Hc",
+        "Hunter": "35%"
+    },
+    "Neck": {
+        "HunterBm": "36%",
+        "HunterMm": "36%",
+        "HunterSv": "34%",
+        "Available": "5 available in Hc",
+        "Hunter": "36%"
+    },
+    "Back": {
+        "HunterBm": "46%",
+        "HunterMm": "46%",
+        "HunterSv": "46%",
+        "Available": "5 available in Hc",
+        "Hunter": "46%"
+    },
+    "Ring": {
+        "HunterBm": "52%",
+        "HunterMm": "52%",
+        "HunterSv": "51%",
+        "Available": "7 available in Hc",
+        "Hunter": "52%"
+    },
+    "Agi2hWeapon": {
+        "HunterBm": "0%",
+        "HunterMm": "0%",
+        "HunterSv": "27%",
+        "Available": "5 available in Hc",
+        "Hunter": "27%"
+    },
+    "Ranged": {
+        "HunterBm": "21%",
+        "HunterMm": "21%",
+        "HunterSv": "0%",
+        "Available": "3 available in Hc",
+        "Hunter": "21%"
+    },
+    "DpsTrinket": {
+        "HunterBm": "39%",
+        "HunterMm": "39%",
+        "HunterSv": "39%",
+        "Available": "5 available in Hc",
+        "Hunter": "39%"
+    },
+    "AnyroleTrinket": {
+        "HunterBm": "56%",
+        "HunterMm": "56%",
+        "HunterSv": "59%",
+        "Available": "9 available in Hc",
+        "Hunter": "59%"
+    }
+}

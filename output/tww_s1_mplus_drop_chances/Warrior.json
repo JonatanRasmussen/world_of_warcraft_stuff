@@ -1,0 +1,107 @@
+{
+    "Head": {
+        "WarriorArms": "10%",
+        "WarriorFury": "10%",
+        "WarriorProt": "20%",
+        "Available": "1 items",
+        "Warrior": "20%"
+    },
+    "Shoulders": {
+        "WarriorArms": "37%",
+        "WarriorFury": "37%",
+        "WarriorProt": "39%",
+        "Available": "4 items",
+        "Warrior": "39%"
+    },
+    "Chest": {
+        "WarriorArms": "35%",
+        "WarriorFury": "35%",
+        "WarriorProt": "35%",
+        "Available": "3 items",
+        "Warrior": "35%"
+    },
+    "Wrists": {
+        "WarriorArms": "16%",
+        "WarriorFury": "16%",
+        "WarriorProt": "15%",
+        "Available": "4 items",
+        "Warrior": "16%"
+    },
+    "Hands": {
+        "WarriorArms": "24%",
+        "WarriorFury": "21%",
+        "WarriorProt": "21%",
+        "Available": "3 items",
+        "Warrior": "24%"
+    },
+    "Waist": {
+        "WarriorArms": "36%",
+        "WarriorFury": "31%",
+        "WarriorProt": "31%",
+        "Available": "7 items",
+        "Warrior": "36%"
+    },
+    "Legs": {
+        "WarriorArms": "42%",
+        "WarriorFury": "33%",
+        "WarriorProt": "30%",
+        "Available": "3 items",
+        "Warrior": "42%"
+    },
+    "Feet": {
+        "WarriorArms": "10%",
+        "WarriorFury": "10%",
+        "WarriorProt": "7%",
+        "Available": "1 items",
+        "Warrior": "10%"
+    },
+    "Neck": {
+        "WarriorArms": "10%",
+        "WarriorFury": "10%",
+        "WarriorProt": "7%",
+        "Available": "1 items",
+        "Warrior": "10%"
+    },
+    "Back": {
+        "WarriorArms": "16%",
+        "WarriorFury": "16%",
+        "WarriorProt": "16%",
+        "Available": "4 items",
+        "Warrior": "16%"
+    },
+    "Ring": {
+        "WarriorArms": "43%",
+        "WarriorFury": "40%",
+        "WarriorProt": "41%",
+        "Available": "11 items",
+        "Warrior": "43%"
+    },
+    "Str1hWeapon": {
+        "WarriorArms": "0%",
+        "WarriorFury": "29%",
+        "WarriorProt": "26%",
+        "Available": "7 items",
+        "Warrior": "29%"
+    },
+    "Str2hWeapon": {
+        "WarriorArms": "18%",
+        "WarriorFury": "18%",
+        "WarriorProt": "0%",
+        "Available": "5 items",
+        "Warrior": "18%"
+    },
+    "Shield": {
+        "WarriorArms": "0%",
+        "WarriorFury": "0%",
+        "WarriorProt": "16%",
+        "Available": "3 items",
+        "Warrior": "16%"
+    },
+    "Trinket": {
+        "WarriorArms": "55%",
+        "WarriorFury": "53%",
+        "WarriorProt": "53%",
+        "Available": "19 items",
+        "Warrior": "55%"
+    }
+}

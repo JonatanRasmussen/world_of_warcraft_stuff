@@ -1,0 +1,66 @@
+{
+    "zone_id": 15103,
+    "name": "Cinderbrew Meadery",
+    "bosses": {
+        "Brew Master Aldryr": {
+            "npc_id": "210271",
+            "href_name": "brew-master-aldryr",
+            "display_name": "Brew Master Aldryr"
+        },
+        "I'pa": {
+            "npc_id": "210267",
+            "href_name": "ipa",
+            "display_name": "I'pa"
+        },
+        "Benk Buzzbee": {
+            "npc_id": "218000",
+            "href_name": "benk-buzzbee",
+            "display_name": "Benk Buzzbee"
+        },
+        "Goldie Baronbottom": {
+            "npc_id": "218523",
+            "href_name": "goldie-baronbottom",
+            "display_name": "Goldie Baronbottom"
+        }
+    },
+    "item_ids": [
+        219297,
+        219298,
+        219299,
+        221051,
+        221052,
+        221053,
+        221054,
+        221055,
+        221056,
+        221057,
+        221058,
+        221059,
+        221060,
+        221061,
+        221062,
+        221063,
+        221064,
+        221065,
+        221067,
+        221068,
+        221069,
+        221070,
+        221071,
+        221072,
+        221198,
+        221201
+    ],
+    "boss_order": [
+        "Brew Master Aldryr",
+        "I'pa",
+        "Benk Buzzbee",
+        "Goldie Baronbottom"
+    ],
+    "boss_hrefs": [
+        "brew-master-aldryr",
+        "ipa",
+        "benk-buzzbee",
+        "goldie-baronbottom"
+    ]
+}

@@ -1,0 +1,100 @@
+<h1 class="heading-size-1">Coral-Edged Crescent</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->59</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>One-Hand</td><th><!--scstart2:9--><span class="q1">Warglaive</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->7 - 11 Damage</span></td>
+    <th>Speed <!--spd-->2.60</th>
+</tr></table><!--dps-->(3.5 damage per second)<br><span><!--stat3-->+3 Agility</span><br><span><!--stat7-->+5 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->3 Critical Strike</span><br><span class="q2">+<!--rtg49-->3 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 120 / 120</td></tr></table><table><tr><td><!--rr--><!--itemEffects:0--><div class="whtt-sellprice">Sell Price: <span class="moneysilver">20</span> <span class="moneycopper">80</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Viq'Goth</div></td></tr></table></noscript>
+<div id="ic159651" style="float: left"></div>
+<div id="tt159651" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl159651"></div>
+    <div id="ks159651" data-role="spell-modifiers"></div>
+    <div id="iu159651"></div>
+    <div id="rppm159651"></div>
+    <div id="bs159651"></div>
+    <div id="craftedStatsSelector159651"></div>
+    <div id="cs159651"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic159651').appendChild(Icon.create('inv_glaive_1h_battledungeon_c_01', 2, null, 0, 1));
+var tt = WH.ge('tt159651');
+var sl = WH.ge('sl159651');
+var ks = WH.ge('ks159651');
+var iu = WH.ge('iu159651');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        159651,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Demon Hunter:
+                        <div class="iconsmall spec577" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_specdps.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.577"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec577 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Havoc", 'q');
+                });
+                $('#lootspecs').find('.spec577 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec581" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_spectank.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.581"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec581 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Vengeance", 'q');
+                });
+                $('#lootspecs').find('.spec581 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/siege-of-boralus-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/7011.jpg?1533678424&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Siege of Boralus Dungeon Ability Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

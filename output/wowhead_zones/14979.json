@@ -1,0 +1,68 @@
+{
+    "zone_id": 14979,
+    "name": "City of Threads",
+    "bosses": {
+        "Orator Krix'vizk": {
+            "npc_id": "216619",
+            "href_name": "orator-krixvizk",
+            "display_name": "Orator Krix'vizk"
+        },
+        "Fangs of the Queen": {
+            "npc_id": "216648",
+            "href_name": "nx",
+            "display_name": "Fangs of the Queen"
+        },
+        "The Coaglamation": {
+            "npc_id": "216320",
+            "href_name": "the-coaglamation",
+            "display_name": "The Coaglamation"
+        },
+        "Izo, the Grand Splicer": {
+            "npc_id": "216658",
+            "href_name": "izo-the-grand-splicer",
+            "display_name": "Izo, the Grand Splicer"
+        }
+    },
+    "item_ids": [
+        219318,
+        219319,
+        219320,
+        219321,
+        221166,
+        221167,
+        221168,
+        221169,
+        221170,
+        221171,
+        221172,
+        221173,
+        221174,
+        221175,
+        221176,
+        221177,
+        221178,
+        221179,
+        221180,
+        221181,
+        221182,
+        221183,
+        221184,
+        221185,
+        221186,
+        221187,
+        221188,
+        221189
+    ],
+    "boss_order": [
+        "Orator Krix'vizk",
+        "Fangs of the Queen",
+        "The Coaglamation",
+        "Izo, the Grand Splicer"
+    ],
+    "boss_hrefs": [
+        "orator-krixvizk",
+        "nx",
+        "the-coaglamation",
+        "izo-the-grand-splicer"
+    ]
+}

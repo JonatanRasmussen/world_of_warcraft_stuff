@@ -1,0 +1,159 @@
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+"Head (Druid, Hc)",3 available in Hc,,Hc,,40%,24%,,33%,24%,
+,Priory,2nd,Hc,C>M,100%,50%,,50%,50%,221125
+,,,,,,,,,,
+,Ara-Kara,Last,both,M>V,33%,,,,,221163
+,Stonevault,2nd,both,C>H,100%,50%,,,50%,221081
+,,,,,,,,,,
+"Shoulders (Druid, Hc)",3 available in Hc,,Hc,,42%,20%,27%,,24%,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,3rd,Hc,H>V,100%,33%,50%,,50%,221201
+,,,,,,,,,,
+,City of Threads,2nd,both,V>C,100%,25%,50%,,33%,221175
+,Stonevault,Last,both,C>V,50%,,,,,221094
+,,,,,,,,,,
+"Chest (Druid, Hc)",3 available in Hc,,Hc,,24%,21%,,,19%,
+,Priory,Last,Hc,V>H,50%,,,,33%,221130
+,Rookery,Last,Hc,M>V,33%,,,,,221049
+,,,,,,,,,,
+,City of Threads,Last,both,H>M,50%,33%,,,33%,221188
+,,,,,,,,,,
+"Wrists (Druid, Hc)",3 available in Hc,,Hc,,24%,,23%,17%,,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,1st,Hc,M>H,50%,,,33%,,221053
+,,,,,,,,,,
+,Ara-Kara,2nd,both,C>M,50%,,,33%,,221157
+,Dawnbreaker,2nd,both,H>C,33%,,25%,25%,,221142
+,,,,,,,,,,
+"Hands (Druid, Hc)",3 available in Hc,,Hc,,35%,21%,27%,,21%,
+,Darkflame Cleft,2nd,Hc,H>M,50%,33%,,,33%,221102
+,Rookery,1st,Hc,M>C,100%,33%,50%,,50%,221036
+,,,,,,,,,,
+,City of Threads,3rd,both,H>C,50%,,,,33%,221180
+,,,,,,,,,,
+"Waist (Druid, Hc)",4 available in Hc,,Hc,,29%,27%,,,24%,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,2nd,Hc,V>H,33%,,,,,221058
+,Darkflame Cleft,3rd,Hc,C>M,50%,,,,33%,221107
+,,,,,,,,,,
+,Dawnbreaker,1st,both,C>M,50%,33%,,,33%,221134
+,Dawnbreaker,Last,both,H>C,33%,,,,,225583
+,,,,,,,,,,
+"Legs (Druid, Hc)",3 available in Hc,,Hc,,27%,,,,,
+,Darkflame Cleft,Last,Hc,H>C,50%,,,,,221114
+,Rookery,2nd,Hc,V>C,50%,,,,,221042
+,,,,,,,,,,
+,Ara-Kara,1st,both,M>C,50%,,,,,221153
+,,,,,,,,,,
+"Feet (Druid, Hc)",3 available in Hc,,Hc,,24%,21%,,,21%,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,Last,Hc,M>H,50%,33%,,,33%,221071
+,Priory,1st,Hc,H>M,50%,,33%,33%,,221120
+,,,,,,,,,,
+,City of Threads,1st,both,M>C,50%,33%,,,33%,221169
+,,,,,,,,,,
+"Neck (Druid, Hc)",5 available in Hc,,Hc,,41%,,36%,34%,39%,
+,Cinderbrew,2nd,Hc,H>M,33%,,,,,221060
+,Darkflame Cleft,2nd,Hc,C>V,50%,33%,,,33%,221103
+,,,,,,,,,,
+,City of Threads,3rd,both,V>C,50%,,,,33%,221181
+,Dawnbreaker,Last,both,C>H,33%,,,,,212448
+,Stonevault,1st,both,M>H,100%,,50%,33%,,221077
+,,,,,,,,,,
+"Back (Druid, Hc)",5 available in Hc,,Hc,,41%,36%,39%,,34%,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,1st,Hc,C>M,50%,,,33%,,221054
+,Darkflame Cleft,3rd,Hc,V>C,50%,,,,33%,221109
+,,,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,,,33%,,221154
+,Dawnbreaker,Last,both,C>H,33%,,,,,225574
+,Stonevault,3rd,both,M>H,100%,33%,50%,,33%,221088
+,,,,,,,,,,
+"Ring (Druid, Hc)",7 available in Hc,,Hc,,53%,40%,48%,,40%,
+,Cinderbrew,Last,Hc,M>C,50%,33%,,,33%,221198
+,Darkflame Cleft,1st,Hc,H>V,100%,33%,50%,,50%,221099
+,Priory,Last,Hc,M>V,50%,,,,33%,221200
+,Rookery,Last,Hc,C>M,33%,,,,,221197
+,,,,,,,,,,
+,City of Threads,Last,both,V>H,50%,33%,,,33%,221189
+,Dawnbreaker,1st,both,C>H,50%,33%,,,33%,221136
+,Dawnbreaker,2nd,both,V>M,33%,,25%,25%,,221141
+,,,,,,,,,,
+"Int1hWeapon (Druid, Hc)",4 available in Hc,,Hc,,29%,25%,0%,0%,,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,3rd,Hc,Int,50%,33%,0%,0%,,221062
+,Priory,2nd,Hc,Int,50%,,0%,0%,,221122
+,,,,,,,,,,
+,Ara-Kara,Last,both,Int,33%,,0%,0%,,221165
+,City of Threads,2nd,both,Int,33%,25%,0%,0%,,221171
+,,,,,,,,,,
+"Agi2hWeapon (Druid, Hc)",5 available in Hc,,Hc,,30%,0%,,28%,0%,
+,Cinderbrew,2nd,Hc,Agi,33%,0%,,,0%,221057
+,Priory,1st,Hc,Agi,33%,0%,,,0%,221116
+,,,,,,,,,,
+,Ara-Kara,Last,both,Agi,33%,0%,,,0%,221159
+,Dawnbreaker,2nd,both,Agi,25%,0%,,,0%,221137
+,Stonevault,1st,both,Agi,50%,0%,,33%,0%,221078
+,,,,,,,,,,
+"Int2hWeapon (Druid, Hc)",4 available in Hc,,Hc,,29%,27%,0%,0%,,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Rookery,1st,Hc,Int,50%,33%,0%,0%,,221032
+,,,,,,,,,,
+,City of Threads,1st,both,Int,33%,,0%,0%,,221166
+,Stonevault,2nd,both,Int,50%,,0%,0%,,221083
+,Stonevault,3rd,both,Int,33%,,0%,0%,,221085
+,,,,,,,,,,
+"Offhand (Druid, Hc)",4 available in Hc,,Hc,,27%,23%,0%,0%,,
+,Cinderbrew,2nd,Hc,Int,33%,,0%,0%,,221056
+,Darkflame Cleft,1st,Hc,Int,50%,33%,0%,0%,,221097
+,,,,,,,,,,
+,City of Threads,2nd,both,Int,33%,25%,0%,0%,,221172
+,Dawnbreaker,1st,both,Int,33%,,0%,0%,,221132
+,,,,,,,,,,
+"DpsTrinket (Druid, Hc)",5 available in Hc,,Hc,,41%,28%,,0%,0%,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,3rd,Hc,"Dps,Agi,Str",50%,33%,,0%,0%,219298
+,Darkflame Cleft,1st,Hc,"Dps,Agi",50%,33%,,0%,0%,219304
+,Rookery,1st,Hc,"Dps,Agi",50%,33%,,0%,0%,219294
+,,,,,,,,,,
+,City of Threads,2nd,both,"Dps,Agi",50%,25%,,0%,0%,219319
+,Stonevault,3rd,both,"Dps,",50%,33%,,0%,0%,219301
+,,,,,,,,,,
+"HealTrinket (Druid, Hc)",4 available in Hc,,Hc,,24%,0%,0%,0%,,
+,Darkflame Cleft,3rd,Hc,"Heal,Int",33%,0%,0%,0%,,219306
+,Priory,Last,Hc,"Heal,Int",33%,0%,0%,0%,,219310
+,,,,,,,,,,
+,City of Threads,3rd,both,"Heal,Int",33%,0%,0%,0%,,219320
+,Stonevault,3rd,both,"Heal,Int",33%,0%,0%,0%,,219302
+,,,,,,,,,,
+"TankTrinket (Druid, Hc)",4 available in Hc,,Hc,,27%,0%,0%,,0%,
+,,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Druid,DruidBoomie,DruidCat,DruidBear,DruidResto,ID
+,Cinderbrew,1st,Hc,"Tank,",33%,0%,0%,,0%,219297
+,Priory,2nd,Hc,"Tank,",50%,0%,0%,,0%,219309
+,,,,,,,,,,
+,Ara-Kara,2nd,both,"Tank,Agi,Str",33%,0%,0%,,0%,219316
+,Stonevault,1st,both,"Tank,Agi,Str",33%,0%,0%,,0%,219315
+,,,,,,,,,,
+"AnyroleTrinket (Druid, Hc)",12 available in Hc,,Hc,,63%,,54%,54%,,
+,Cinderbrew,Last,Hc,Int,33%,,0%,0%,,219299
+,Darkflame Cleft,2nd,Hc,Int,33%,,0%,0%,,219305
+,Darkflame Cleft,Last,Hc,,50%,,,,,219307
+,Priory,1st,Hc,All3,50%,,33%,33%,,219308
+,Rookery,2nd,Hc,All3,50%,,,,,219295
+,Rookery,Last,Hc,,33%,,,,,219296
+,,,,,,,,,,
+,Ara-Kara,1st,both,,50%,,,,,219314
+,Ara-Kara,Last,both,"Agi,Int",33%,,,,,219317
+,City of Threads,1st,both,,50%,33%,,,33%,219318
+,City of Threads,Last,both,Int,33%,,0%,0%,,219321
+,Dawnbreaker,2nd,both,"Agi,Int",33%,,25%,25%,,219312
+,Stonevault,Last,both,,50%,,,,,219303

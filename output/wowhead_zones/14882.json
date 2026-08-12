@@ -1,0 +1,65 @@
+{
+    "zone_id": 14882,
+    "name": "Darkflame Cleft",
+    "bosses": {
+        "Ol' Waxbeard": {
+            "npc_id": "210149",
+            "href_name": "ol-waxbeard",
+            "display_name": "Ol' Waxbeard"
+        },
+        "Blazikon": {
+            "npc_id": "208743",
+            "href_name": "blazikon",
+            "display_name": "Blazikon"
+        },
+        "The Candle King": {
+            "npc_id": "222096",
+            "href_name": "the-candle-king",
+            "display_name": "The Candle King"
+        },
+        "The Darkness": {
+            "npc_id": "210797",
+            "href_name": "the-darkness",
+            "display_name": "The Darkness"
+        }
+    },
+    "item_ids": [
+        219304,
+        219305,
+        219306,
+        219307,
+        221096,
+        221097,
+        221098,
+        221099,
+        221100,
+        221101,
+        221102,
+        221103,
+        221104,
+        221105,
+        221106,
+        221107,
+        221108,
+        221109,
+        221110,
+        221111,
+        221112,
+        221113,
+        221114,
+        221115,
+        225548
+    ],
+    "boss_order": [
+        "Ol' Waxbeard",
+        "Blazikon",
+        "The Candle King",
+        "The Darkness"
+    ],
+    "boss_hrefs": [
+        "ol-waxbeard",
+        "blazikon",
+        "the-candle-king",
+        "the-darkness"
+    ]
+}

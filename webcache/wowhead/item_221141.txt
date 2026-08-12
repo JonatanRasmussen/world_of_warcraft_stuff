@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">High Nerubian Signet</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Finger</td><th><!--scstart4:-2--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat7-->+1,130 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg40-->1,178 Versatility</span><br><span class="q2">+<!--rtg49-->576 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">33</span> <span class="moneysilver">74</span> <span class="moneycopper">74</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Anub'ikkaj</div></td></tr></table></noscript>
+<div id="ic221141" style="float: left"></div>
+<div id="tt221141" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl221141"></div>
+    <div id="ks221141" data-role="spell-modifiers"></div>
+    <div id="iu221141"></div>
+    <div id="rppm221141"></div>
+    <div id="bs221141"></div>
+    <div id="craftedStatsSelector221141"></div>
+    <div id="cs221141"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic221141').appendChild(Icon.create('inv_11_0_nerubian_ring_02_color5', 2, null, 0, 1));
+var tt = WH.ge('tt221141');
+var sl = WH.ge('sl221141');
+var ks = WH.ge('ks221141');
+var iu = WH.ge('iu221141');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        221141,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

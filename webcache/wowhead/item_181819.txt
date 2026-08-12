@@ -1,0 +1,76 @@
+<h1 class="heading-size-1">Marrowfang's Reins</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->30</span><!--bo--><br>Binds when picked up<br>Unique<br />Mount <span class="q0">(Account-wide)</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td><span class="q2">Use: <a href="/spell=336036/marrowfang">Teaches you how to summon Marrowfang.</a></span><br><span class="q2"><a href="/spell=336036/marrowfang" class="q2">Summons and dismisses this mount.</a></span><br>Requires level <!--minlvl-->1 to <!--maxlvl-->70 (<!--lvl-->70)<br>Requires <a href="/spell=33388/apprentice-riding" class="q1">Apprentice Riding</a><br /><br><span class="q">"Marrowfang, Bonefang's progeny, was respected by Amarth the Harvester for her insatiable appetite, even if it disrupted any experiments that the sadistic commander wanted to run."</span><br><span style="color: #FFD200">Drop:</span> Nalthor the Rimebinder<br /><span style="color: #FFD200">Zone: </span>The Necrotic Wake (Mythic)<br /><br /><span style="color: #FFD200">Drop:</span> Challenger's Cache<br /><span style="color: #FFD200">Zone: </span>The Necrotic Wake</td></tr></table><!--i?181819:1:70:70:872:0--></noscript>
+<div id="ic181819" style="float: left"></div>
+<div id="tt181819" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl181819" style="display: block"></div>
+    <div id="ks181819" data-role="spell-modifiers"></div>
+    <div id="iu181819"></div>
+    <div id="rppm181819"></div>
+    <div id="bs181819"></div>
+    <div id="craftedStatsSelector181819"></div>
+    <div id="cs181819"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic181819').appendChild(Icon.create('inv_maldraxxusflyermount_red', 2, null, 0, 1));
+var tt = WH.ge('tt181819');
+var sl = WH.ge('sl181819');
+var ks = WH.ge('ks181819');
+var iu = WH.ge('iu181819');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        181819,
+        true,
+        true,
+        sl,
+        null,
+        [55884,336036],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/necrotic-wake-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10275.jpg?1606286558&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Necrotic Wake Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-dungeon-overview">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10337.jpg?1606286681&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Shadowlands Dungeon Overview        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-mount-guide-10510">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10510.jpg?1593788301&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Shadowlands Mount Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/the-littlest-mountain-a-collectors-overview-of-every-mount-and-pet-in-the-game-1104">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/1104.jpg?1499715413&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            The Littlest Mountain: A collector's overview of EVERY Mount and Pet in the game!        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createMountCollectionTrackerCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

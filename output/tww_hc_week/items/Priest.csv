@@ -1,0 +1,140 @@
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+"Head (Priest, Hc)",4 available in Hc,,Hc,,27%,24%,24%,,
+,Cinderbrew,2nd,Hc,M>V,33%,,,,221055
+,Priory,Last,Hc,M>V,50%,33%,33%,,221131
+,,,,,,,,,
+,City of Threads,Last,both,M>C,33%,,,,221187
+,Dawnbreaker,Last,both,H>C,33%,,,,212440
+,,,,,,,,,
+"Shoulders (Priest, Hc)",3 available in Hc,,Hc,,21%,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Cinderbrew,Last,Hc,C>M,33%,,,,221072
+,Darkflame Cleft,Last,Hc,V>M,50%,,,,221115
+,,,,,,,,,
+,Dawnbreaker,1st,both,V>C,33%,,,,221135
+,,,,,,,,,
+"Chest (Priest, Hc)",3 available in Hc,,Hc,,24%,,,23%,
+,Priory,2nd,Hc,V>C,50%,,,,221126
+,,,,,,,,,
+,City of Threads,2nd,both,C>H,33%,,,25%,221176
+,Stonevault,Last,both,V>H,50%,,,,221095
+,,,,,,,,,
+"Wrists (Priest, Hc)",3 available in Hc,,Hc,,21%,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Darkflame Cleft,2nd,Hc,M>C,33%,,,,221104
+,Rookery,1st,Hc,C>V,50%,,,33%,221037
+,,,,,,,,,
+,City of Threads,3rd,both,H>C,50%,33%,33%,,221182
+,,,,,,,,,
+"Hands (Priest, Hc)",3 available in Hc,,Hc,,21%,,,,
+,Cinderbrew,3rd,Hc,H>M,50%,,,33%,221067
+,Darkflame Cleft,3rd,Hc,C>H,50%,33%,33%,,221108
+,,,,,,,,,
+,City of Threads,1st,both,C>V,33%,,,,221170
+,,,,,,,,,
+"Waist (Priest, Hc)",3 available in Hc,,Hc,,23%,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Priory,1st,Hc,M>C,50%,,,,221121
+,,,,,,,,,
+,Ara-Kara,2nd,both,C>H,50%,,,,221158
+,Stonevault,3rd,both,V>M,25%,,,,221087
+,,,,,,,,,
+"Legs (Priest, Hc)",3 available in Hc,,Hc,,21%,,,,
+,Rookery,Last,Hc,H>C,33%,,,,221050
+,,,,,,,,,
+,Ara-Kara,Last,both,H>C,33%,,,,221164
+,Stonevault,1st,both,M>C,50%,,,,221076
+,,,,,,,,,
+"Feet (Priest, Hc)",2 available in Hc,,Hc,,28%,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Rookery,2nd,Hc,C>H,50%,,,,221043
+,,,,,,,,,
+,Stonevault,2nd,both,H>V,100%,,,,221082
+,,,,,,,,,
+"Neck (Priest, Hc)",5 available in Hc,,Hc,,34%,32%,32%,,
+,Cinderbrew,2nd,Hc,H>M,33%,,,,221060
+,Darkflame Cleft,2nd,Hc,C>V,33%,,,,221103
+,,,,,,,,,
+,City of Threads,3rd,both,V>C,50%,33%,33%,,221181
+,Dawnbreaker,Last,both,C>H,33%,,,,212448
+,Stonevault,1st,both,M>H,50%,,,,221077
+,,,,,,,,,
+"Back (Priest, Hc)",5 available in Hc,,Hc,,43%,40%,40%,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Cinderbrew,1st,Hc,C>M,100%,,,,221054
+,Darkflame Cleft,3rd,Hc,V>C,50%,33%,33%,,221109
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,,,,221154
+,Dawnbreaker,Last,both,C>H,33%,,,,225574
+,Stonevault,3rd,both,M>H,25%,,,,221088
+,,,,,,,,,
+"Ring (Priest, Hc)",7 available in Hc,,Hc,,42%,,,,
+,Cinderbrew,Last,Hc,M>C,33%,,,,221198
+,Darkflame Cleft,1st,Hc,H>V,50%,,,33%,221099
+,Priory,Last,Hc,M>V,50%,33%,33%,,221200
+,Rookery,Last,Hc,C>M,33%,,,,221197
+,,,,,,,,,
+,City of Threads,Last,both,V>H,33%,,,,221189
+,Dawnbreaker,1st,both,C>H,33%,,,,221136
+,Dawnbreaker,2nd,both,V>M,50%,,,,221141
+,,,,,,,,,
+"Int1hWeapon (Priest, Hc)",4 available in Hc,,Hc,,29%,,,25%,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Cinderbrew,3rd,Hc,Int,50%,,,33%,221062
+,Priory,2nd,Hc,Int,50%,,,,221122
+,,,,,,,,,
+,Ara-Kara,Last,both,Int,33%,,,,221165
+,City of Threads,2nd,both,Int,33%,,,25%,221171
+,,,,,,,,,
+"Int2hWeapon (Priest, Hc)",3 available in Hc,,Hc,,20%,,,17%,
+,Rookery,1st,Hc,Int,50%,,,33%,221032
+,,,,,,,,,
+,City of Threads,1st,both,Int,33%,,,,221166
+,Stonevault,3rd,both,Int,25%,,,,221085
+,,,,,,,,,
+"Offhand (Priest, Hc)",4 available in Hc,,Hc,,27%,,,23%,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Cinderbrew,2nd,Hc,Int,33%,,,,221056
+,Darkflame Cleft,1st,Hc,Int,50%,,,33%,221097
+,,,,,,,,,
+,City of Threads,2nd,both,Int,33%,,,25%,221172
+,Dawnbreaker,1st,both,Int,33%,,,,221132
+,,,,,,,,,
+"DpsTrinket (Priest, Hc)",5 available in Hc,,Hc,,26%,0%,0%,,
+,Cinderbrew,3rd,Hc,"Dps,Agi,Str",33%,0%,0%,,219298
+,Darkflame Cleft,1st,Hc,"Dps,Agi",33%,0%,0%,,219304
+,Rookery,1st,Hc,"Dps,Agi",33%,0%,0%,,219294
+,,,,,,,,,
+,City of Threads,2nd,both,"Dps,Agi",25%,0%,0%,,219319
+,Stonevault,3rd,both,"Dps,",25%,0%,0%,,219301
+,,,,,,,,,
+"HealTrinket (Priest, Hc)",4 available in Hc,,Hc,,23%,,,0%,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Priest,PriestDisc,PriestHoly,PriestShadow,ID
+,Darkflame Cleft,3rd,Hc,"Heal,Int",33%,,,0%,219306
+,Priory,Last,Hc,"Heal,Int",33%,,,0%,219310
+,,,,,,,,,
+,City of Threads,3rd,both,"Heal,Int",33%,,,0%,219320
+,Stonevault,3rd,both,"Heal,Int",25%,,,0%,219302
+,,,,,,,,,
+"AnyroleTrinket (Priest, Hc)",12 available in Hc,,Hc,,69%,,,,
+,Cinderbrew,Last,Hc,Int,33%,,,,219299
+,Darkflame Cleft,2nd,Hc,Int,33%,,,,219305
+,Darkflame Cleft,Last,Hc,,50%,,,,219307
+,Priory,1st,Hc,All3,50%,,,,219308
+,Rookery,2nd,Hc,All3,50%,,,,219295
+,Rookery,Last,Hc,,33%,,,,219296
+,,,,,,,,,
+,Ara-Kara,1st,both,,100%,,,,219314
+,Ara-Kara,Last,both,"Agi,Int",33%,,,,219317
+,City of Threads,1st,both,,33%,,,,219318
+,City of Threads,Last,both,Int,33%,,,,219321
+,Dawnbreaker,2nd,both,"Agi,Int",50%,,,,219312
+,Stonevault,Last,both,,50%,,,,219303

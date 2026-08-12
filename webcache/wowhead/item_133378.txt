@@ -1,0 +1,58 @@
+<h1 class="heading-size-1">Smoldering Timewarped Ember</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->32</span><!--bo--><br>Binds when picked up<br>Unique<br><a href="https://www.wowhead.com/quest=40787/the-smoldering-ember" class="q1">This Item Begins a Quest</a><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table></noscript>
+<div id="ic133378" style="float: left"></div>
+<div id="tt133378" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl133378"></div>
+    <div id="ks133378" data-role="spell-modifiers"></div>
+    <div id="iu133378"></div>
+    <div id="rppm133378"></div>
+    <div id="bs133378"></div>
+    <div id="craftedStatsSelector133378"></div>
+    <div id="cs133378"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic133378').appendChild(Icon.create('inv_ember', 2, null, 0, 1));
+var tt = WH.ge('tt133378');
+var sl = WH.ge('sl133378');
+var ks = WH.ge('ks133378');
+var iu = WH.ge('iu133378');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        133378,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/cataclysm-timewalking-guide-4922">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/4922.jpg?1491262372&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Cataclysm Timewalking        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

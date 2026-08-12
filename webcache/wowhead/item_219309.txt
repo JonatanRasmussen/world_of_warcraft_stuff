@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Tome of Light's Devotion</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=443533/tome-of-lights-devotion" class="q2"><!--sp443534:0-->Advance to the <!--pts1:0:0:443533:0-->50<!----> Verses of Inner Resilience, reading as you are attacked.<br />Inner Resilience increases your armor by <!--pts4:0:0:443533:0.656595-->794<!----> and grants your attacks a chance to invoke a ward which absorbs <!--pts5:0:0:443533:85.3625-->39011<!----> Magic damage.<!--sp443534--> When finished, sift through the passages to another chapter.<!--sp137028:0--><!--sp137028--><!--sp137023:0--><!--sp137023--><!--sp137010:0--><!--sp137010--><!--sp212613:0--><!--sp212613--><!--sp137008:0--><!--sp137008--><!--sp137048:0--><br /><br /><span style="color: #FF2020">Valid only for tank specializations.</span><!--sp137048--> (750ms cooldown)</a></span><br><span class="q2">Use: <a href="/spell=443535/tome-of-lights-devotion" class="q2">Sift through the passages in the tome with increased <!--sp443534:0-->Radiance<!--sp443534-->.</a> (1 Min, 30 Sec Cooldown)</span><!--itemEffects:1--><br>Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">44</span> <span class="moneysilver">15</span> <span class="moneycopper">35</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Baron Braunpyke</div></td></tr></table></noscript>
+<div id="ic219309" style="float: left"></div>
+<div id="tt219309" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl219309" style="display: block"></div>
+    <div id="ks219309" data-role="spell-modifiers"></div>
+    <div id="iu219309"></div>
+    <div id="rppm219309"></div>
+    <div id="bs219309"></div>
+    <div id="craftedStatsSelector219309"></div>
+    <div id="cs219309"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic219309').appendChild(Icon.create('inv_7xp_inscription_talenttome01', 2, null, 0, 1));
+var tt = WH.ge('tt219309');
+var sl = WH.ge('sl219309');
+var ks = WH.ge('ks219309');
+var iu = WH.ge('iu219309');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        219309,
+        true,
+        true,
+        sl,
+        null,
+        [443533,443535],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

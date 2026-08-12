@@ -1,0 +1,64 @@
+<h1 class="heading-size-1">Crown of Autumnal Flora</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><br /><span class="whtt-transmogrified-to">Cosmetic</span><span class="q"><br>Item Level <!--ilvl-->1</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Head</td><th><!--scstart4:5--><span class="q1">Cosmetic</span><!--scend--></th></tr></table><!--rf--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->50<br><span class="q">&quot;A circlet of flowers that only bloom late in the cycle of life.&quot;</span><br><span class="q2">Use: Add this appearance to your Warband collection.</span><div class="whtt-sellprice">Sell Price: <span class="moneycopper">1</span></div></td></tr></table></noscript>
+<div id="ic182305" style="float: left"></div>
+<div id="tt182305" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl182305"></div>
+    <div id="ks182305" data-role="spell-modifiers"></div>
+    <div id="iu182305"></div>
+    <div id="rppm182305"></div>
+    <div id="bs182305"></div>
+    <div id="craftedStatsSelector182305"></div>
+    <div id="cs182305"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic182305').appendChild(Icon.create('inv_helm_flowercrown_a_01_orange', 2, null, 0, 1));
+var tt = WH.ge('tt182305');
+var sl = WH.ge('sl182305');
+var ks = WH.ge('ks182305');
+var iu = WH.ge('iu182305');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        182305,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/mists-of-tirna-scithe-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10278.jpg?1606286483&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Mists of Tirna Scithe Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/mythic-plus-dungeons/the-war-within-season-1/loot">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/header/9498b7763c7951d131f538700e37d234b6c4b7bf.jpg?maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            The War Within Season 1 Mythic+ Loot        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

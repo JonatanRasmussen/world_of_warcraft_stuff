@@ -1,0 +1,86 @@
+item_id,release,from,boss,gear_slot,gear_type,stats,PriestHoly
+0,Hc,Head (Priest),4 sources,Head,1st/2nd week,,24%
+221055,Hc,Cinderbrew,2nd boss,Head,Cloth,M>V,33%
+221131,Hc,Priory,Last boss,Head,Cloth,M>V,33%
+221187,Hc+M0,City of Threads,Last boss,Head,Cloth,M>C,33%
+212440,Hc+M0,Dawnbreaker,Last boss,Head,Cloth,H>C,33%
+0,Hc,Shoulders (Priest),3 sources,Shoulder,1st/2nd week,,21%
+221072,Hc,Cinderbrew,Last boss,Shoulder,Cloth,C>M,33%
+221115,Hc,Darkflame Cleft,Last boss,Shoulder,Cloth,V>M,50%
+221135,Hc+M0,Dawnbreaker,1st boss,Shoulder,Cloth,V>C,33%
+0,Hc,Chest (Priest),3 sources,Chest,1st/2nd week,,24%
+221126,Hc,Priory,2nd boss,Chest,Cloth,V>C,50%
+221176,Hc+M0,City of Threads,2nd boss,Chest,Cloth,C>H,33%
+221095,Hc+M0,Stonevault,Last boss,Chest,Cloth,V>H,50%
+0,Hc,Wrists (Priest),3 sources,Wrist,1st/2nd week,,21%
+221104,Hc,Darkflame Cleft,2nd boss,Wrist,Cloth,M>C,33%
+221037,Hc,Rookery,1st boss,Wrist,Cloth,C>V,50%
+221182,Hc+M0,City of Threads,3rd boss,Wrist,Cloth,H>C,33%
+0,Hc,Hands (Priest),3 sources,Hands,1st/2nd week,,21%
+221067,Hc,Cinderbrew,3rd boss,Hands,Cloth,H>M,50%
+221108,Hc,Darkflame Cleft,3rd boss,Hands,Cloth,C>H,33%
+221170,Hc+M0,City of Threads,1st boss,Hands,Cloth,C>V,33%
+0,Hc,Waist (Priest),3 sources,Waist,1st/2nd week,,23%
+221121,Hc,Priory,1st boss,Waist,Cloth,M>C,50%
+221158,Hc+M0,Ara-Kara,2nd boss,Waist,Cloth,C>H,50%
+221087,Hc+M0,Stonevault,3rd boss,Waist,Cloth,V>M,25%
+0,Hc,Legs (Priest),3 sources,Legs,1st/2nd week,,21%
+221050,Hc,Rookery,Last boss,Legs,Cloth,H>C,33%
+221164,Hc+M0,Ara-Kara,Last boss,Legs,Cloth,H>C,33%
+221076,Hc+M0,Stonevault,1st boss,Legs,Cloth,M>C,50%
+0,Hc,Feet (Priest),2 sources,Feet,1st/2nd week,,28%
+221043,Hc,Rookery,2nd boss,Feet,Cloth,C>H,50%
+221082,Hc+M0,Stonevault,2nd boss,Feet,Cloth,H>V,100%
+221060,Hc,Cinderbrew,2nd boss,Neck,,,33%
+221103,Hc,Darkflame Cleft,2nd boss,Neck,,,33%
+221181,Hc+M0,City of Threads,3rd boss,Neck,,,33%
+212448,Hc+M0,Dawnbreaker,Last boss,Neck,,,33%
+221077,Hc+M0,Stonevault,1st boss,Neck,,,50%
+0,Hc,Neck (Priest),5 sources,Neck,1st/2nd week,,32%
+221054,Hc,Cinderbrew,1st boss,Back,,C>M,100%
+221109,Hc,Darkflame Cleft,3rd boss,Back,,V>C,33%
+221154,Hc+M0,Ara-Kara,2nd boss,Back,,V>C,50%
+225574,Hc+M0,Dawnbreaker,Last boss,Back,,C>H,33%
+221088,Hc+M0,Stonevault,3rd boss,Back,,M>H,25%
+0,Hc,Back (Priest),5 sources,Back,1st/2nd week,,40%
+221198,Hc,Cinderbrew,Last boss,Finger,,,33%
+221099,Hc,Darkflame Cleft,1st boss,Finger,,,50%
+221200,Hc,Priory,Last boss,Finger,,,33%
+221197,Hc,Rookery,Last boss,Finger,,,33%
+221189,Hc+M0,City of Threads,Last boss,Finger,,,33%
+221136,Hc+M0,Dawnbreaker,1st boss,Finger,,,33%
+221141,Hc+M0,Dawnbreaker,2nd boss,Finger,,,50%
+0,Hc,Ring (Priest),7 sources,Finger,1st/2nd week,,42%
+0,Hc,Int1hWeapon (Priest),4 sources,One-Hand,1st/2nd week,,29%
+221062,Hc,Cinderbrew,3rd boss,One-Hand,Dagger,Int,50%
+221165,Hc+M0,Ara-Kara,Last boss,One-Hand,Dagger,Int,33%
+221171,Hc+M0,City of Threads,2nd boss,One-Hand,Dagger,Int,33%
+221122,Hc,Priory,2nd boss,One-Hand,Mace,Int,50%
+0,Hc,Int2hWeapon (Priest),3 sources,Two-Hand,1st/2nd week,,20%
+221032,Hc,Rookery,1st boss,Two-Hand,Staff,Int,50%
+221166,Hc+M0,City of Threads,1st boss,Two-Hand,Staff,Int,33%
+221085,Hc+M0,Stonevault,3rd boss,Two-Hand,Staff,Int,25%
+221056,Hc,Cinderbrew,2nd boss,Held In Off-hand,,Int,33%
+221097,Hc,Darkflame Cleft,1st boss,Held In Off-hand,,Int,50%
+221172,Hc+M0,City of Threads,2nd boss,Held In Off-hand,,Int,33%
+221132,Hc+M0,Dawnbreaker,1st boss,Held In Off-hand,,Int,33%
+0,Hc,Offhand (Priest),4 sources,Held In Off-hand,1st/2nd week,,27%
+0,Hc,AnyroleTrinket (Priest),12 sources,Trinket,1st/2nd week,,69%
+0,Hc,DpsTrinket (Priest),5 sources,Trinket,1st/2nd week,,0%
+0,Hc,HealTrinket (Priest),4 sources,Trinket,1st/2nd week,,23%
+219299,Hc,Cinderbrew,Last boss,Trinket,Anyrole Trinket,Int,33%
+219305,Hc,Darkflame Cleft,2nd boss,Trinket,Anyrole Trinket,Int,33%
+219307,Hc,Darkflame Cleft,Last boss,Trinket,Anyrole Trinket,,50%
+219308,Hc,Priory,1st boss,Trinket,Anyrole Trinket,All3,50%
+219295,Hc,Rookery,2nd boss,Trinket,Anyrole Trinket,All3,50%
+219296,Hc,Rookery,Last boss,Trinket,Anyrole Trinket,,33%
+219314,Hc+M0,Ara-Kara,1st boss,Trinket,Anyrole Trinket,,100%
+219317,Hc+M0,Ara-Kara,Last boss,Trinket,Anyrole Trinket,"Agi,Int",33%
+219318,Hc+M0,City of Threads,1st boss,Trinket,Anyrole Trinket,,33%
+219321,Hc+M0,City of Threads,Last boss,Trinket,Anyrole Trinket,Int,33%
+219312,Hc+M0,Dawnbreaker,2nd boss,Trinket,Anyrole Trinket,"Agi,Int",50%
+219303,Hc+M0,Stonevault,Last boss,Trinket,Anyrole Trinket,,50%
+219306,Hc,Darkflame Cleft,3rd boss,Trinket,Heal Trinket,Int,33%
+219310,Hc,Priory,Last boss,Trinket,Heal Trinket,Int,33%
+219320,Hc+M0,City of Threads,3rd boss,Trinket,Heal Trinket,Int,33%
+219302,Hc+M0,Stonevault,3rd boss,Trinket,Heal Trinket,Int,25%

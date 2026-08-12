@@ -1,0 +1,58 @@
+item_id,from,boss,gear_slot,gear_type,stats,DkUnholy
+221100,Darkflame Cleft,2 of 4,Head,Plate,H>V,50%
+221047,Rookery,3 of 3,Head,Plate,V>H,33%
+221155,Ara-Kara,2 of 3,Shoulder,Plate,V>M,33%
+221052,Cinderbrew,1 of 4,Shoulder,Plate,V>M,33%
+221185,City of Threads,4 of 4,Shoulder,Plate,C>H,33%
+221203,Priory,3 of 3,Shoulder,Plate,C>V,33%
+221161,Ara-Kara,3 of 3,Chest,Plate,V>H,100%
+221069,Cinderbrew,4 of 4,Chest,Plate,H>C,50%
+221139,Dawnbreaker,2 of 3,Chest,Plate,C>V,50%
+221064,Cinderbrew,3 of 4,Wrist,Plate,C>H,33%
+221167,City of Threads,1 of 4,Wrist,Plate,H>V,50%
+221118,Priory,1 of 3,Wrist,Plate,C>H,50%
+221151,Ara-Kara,1 of 3,Hands,Plate,H>V,50%
+221112,Darkflame Cleft,4 of 4,Hands,Plate,V>H,33%
+221086,Stonevault,3 of 4,Hands,Plate,H>C,33%
+221133,Dawnbreaker,1 of 3,Waist,Plate,M>H,33%
+221040,Rookery,2 of 3,Waist,Plate,M>H,33%
+221079,Stonevault,2 of 4,Waist,Plate,C>M,50%
+221173,City of Threads,2 of 4,Legs,Plate,M>H,100%
+221034,Rookery,1 of 3,Legs,Plate,H>V,100%
+221092,Stonevault,4 of 4,Legs,Plate,M>C,50%
+221061,Cinderbrew,2 of 4,Feet,Plate,M>C,50%
+221178,City of Threads,3 of 4,Feet,Plate,V>H,50%
+221123,Priory,2 of 3,Feet,Plate,V>M,50%
+221060,Cinderbrew,2 of 4,Neck,,,50%
+221181,City of Threads,3 of 4,Neck,,,50%
+221103,Darkflame Cleft,2 of 4,Neck,,,50%
+221154,Ara-Kara,2 of 3,Back,,V>C,33%
+221054,Cinderbrew,1 of 4,Back,,C>M,33%
+221109,Darkflame Cleft,3 of 4,Back,,V>C,100%
+221088,Stonevault,3 of 4,Back,,M>H,33%
+221198,Cinderbrew,4 of 4,Finger,,,50%
+221189,City of Threads,4 of 4,Finger,,,33%
+221099,Darkflame Cleft,1 of 4,Finger,,,100%
+221200,Priory,3 of 3,Finger,,,33%
+221136,Dawnbreaker,1 of 3,Finger,,,33%
+221141,Dawnbreaker,2 of 3,Finger,,,50%
+221197,Rookery,3 of 3,Finger,,,33%
+221063,Cinderbrew,3 of 4,Two-Hand,Mace,Str,33%
+221038,Rookery,2 of 3,Two-Hand,Mace,Str,33%
+221184,City of Threads,4 of 4,Two-Hand,Polearm,Str,33%
+221111,Darkflame Cleft,4 of 4,Two-Hand,Polearm,Str,33%
+221127,Priory,3 of 3,Two-Hand,Sword,Str,33%
+219314,Ara-Kara,1 of 3,Trinket,,,50%
+219316,Ara-Kara,2 of 3,Trinket,,"Agi,Str",33%
+219297,Cinderbrew,1 of 4,Trinket,,,33%
+219298,Cinderbrew,3 of 4,Trinket,,"Agi,Str",33%
+219318,City of Threads,1 of 4,Trinket,,,50%
+219307,Darkflame Cleft,4 of 4,Trinket,,,33%
+219308,Priory,1 of 3,Trinket,,All3,50%
+219309,Priory,2 of 3,Trinket,,,50%
+219311,Dawnbreaker,1 of 3,Trinket,,Str,33%
+219295,Rookery,2 of 3,Trinket,,All3,33%
+219296,Rookery,3 of 3,Trinket,,,33%
+219300,Stonevault,2 of 4,Trinket,,Str,50%
+219301,Stonevault,3 of 4,Trinket,,,33%
+219303,Stonevault,4 of 4,Trinket,,,50%

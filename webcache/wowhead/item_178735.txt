@@ -1,0 +1,116 @@
+<h1 class="heading-size-1">Blight Belcher</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->158</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Ranged</td><th><!--scstart2:3--><span class="q1">Gun</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->25 - 48 Damage</span></td>
+    <th>Speed <!--spd-->3.00</th>
+</tr></table><!--dps-->(12.2 damage per second)<br><span><!--stat3-->+16 Agility</span><br><span><!--stat7-->+24 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg40-->20 Versatility</span><br><span class="q2">+<!--rtg49-->12 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 120 / 120</td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->60<div class="whtt-sellprice">Sell Price: <span class="moneygold">4</span> <span class="moneysilver">9</span> <span class="moneycopper">92</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Blightbone</div><div class="whtt-extra whtt-dropchance">Drop Chance: 3.02%</div></td></tr></table></noscript>
+<div id="ic178735" style="float: left"></div>
+<div id="tt178735" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl178735"></div>
+    <div id="ks178735" data-role="spell-modifiers"></div>
+    <div id="iu178735"></div>
+    <div id="rppm178735"></div>
+    <div id="bs178735"></div>
+    <div id="craftedStatsSelector178735"></div>
+    <div id="cs178735"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic178735').appendChild(Icon.create('inv_firearm_2h_revendrethquest_b_01', 2, null, 0, 1));
+var tt = WH.ge('tt178735');
+var sl = WH.ge('sl178735');
+var ks = WH.ge('ks178735');
+var iu = WH.ge('iu178735');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        178735,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Hunter:
+                        <div class="iconsmall spec253" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_bestialdiscipline.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.253"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec253 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Beast Mastery", 'q');
+                });
+                $('#lootspecs').find('.spec253 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec254" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusedaim.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.254"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec254 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Marksmanship", 'q');
+                });
+                $('#lootspecs').find('.spec254 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear" data-class="3">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/3164.jpg?1478748972&amp;maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/ability_hunter_focusedaim.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Marksmanship        </span>
+                    <span class="guide-image-link-text-type-name c3">
+                Best in Slot Guide            </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/necrotic-wake-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10275.jpg?1606286558&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Necrotic Wake Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-dungeon-loot-guide-gear-armor-weapons-conduits-legendary-recipes">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/11457.jpg?1606286620&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Shadowlands Dungeon Gear and Loot Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

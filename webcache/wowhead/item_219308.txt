@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Signet of the Priory</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat71-->+549 [Agility or Strength or Intellect]</span><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Use: <a href="/spell=443531/bolstering-light" class="q2">Raise your signet to the Light, increasing your highest secondary stat by <!--pts2:0:0:450877:2.28036-->2756<!----> for 20 sec. Your act inspires nearby signetbearers within your party, granting them <!--pts1:0:0:450877:0.0601248-->73<!----> of the same stat for 20 sec.</a> (2 Min Cooldown)</span><!--itemEffects:1--><br>Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">43</span> <span class="moneysilver">98</span> <span class="moneycopper">56</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Captain Dailcry</div></td></tr></table></noscript>
+<div id="ic219308" style="float: left"></div>
+<div id="tt219308" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl219308"></div>
+    <div id="ks219308" data-role="spell-modifiers"></div>
+    <div id="iu219308"></div>
+    <div id="rppm219308"></div>
+    <div id="bs219308"></div>
+    <div id="craftedStatsSelector219308"></div>
+    <div id="cs219308"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic219308').appendChild(Icon.create('inv_arathordungeon_signet_color1', 2, null, 0, 1));
+var tt = WH.ge('tt219308');
+var sl = WH.ge('sl219308');
+var ks = WH.ge('ks219308');
+var iu = WH.ge('iu219308');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        219308,
+        true,
+        true,
+        sl,
+        null,
+        [443531,450877],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

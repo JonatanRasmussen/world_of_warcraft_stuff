@@ -1,0 +1,142 @@
+{
+    "Head": {
+        "MonkBrew": "33%",
+        "MonkMw": "35%",
+        "MonkWw": "40%",
+        "Available": "3 available in Hc",
+        "Monk": "40%"
+    },
+    "Shoulders": {
+        "MonkBrew": "40%",
+        "MonkMw": "35%",
+        "MonkWw": "24%",
+        "Available": "3 available in Hc",
+        "Monk": "40%"
+    },
+    "Chest": {
+        "MonkBrew": "21%",
+        "MonkMw": "19%",
+        "MonkWw": "21%",
+        "Available": "3 available in Hc",
+        "Monk": "21%"
+    },
+    "Wrists": {
+        "MonkBrew": "16%",
+        "MonkMw": "24%",
+        "MonkWw": "20%",
+        "Available": "3 available in Hc",
+        "Monk": "24%"
+    },
+    "Hands": {
+        "MonkBrew": "27%",
+        "MonkMw": "21%",
+        "MonkWw": "24%",
+        "Available": "3 available in Hc",
+        "Monk": "27%"
+    },
+    "Waist": {
+        "MonkBrew": "28%",
+        "MonkMw": "23%",
+        "MonkWw": "28%",
+        "Available": "4 available in Hc",
+        "Monk": "28%"
+    },
+    "Legs": {
+        "MonkBrew": "27%",
+        "MonkMw": "24%",
+        "MonkWw": "27%",
+        "Available": "3 available in Hc",
+        "Monk": "27%"
+    },
+    "Feet": {
+        "MonkBrew": "24%",
+        "MonkMw": "21%",
+        "MonkWw": "24%",
+        "Available": "3 available in Hc",
+        "Monk": "24%"
+    },
+    "Neck": {
+        "MonkBrew": "33%",
+        "MonkMw": "39%",
+        "MonkWw": "35%",
+        "Available": "5 available in Hc",
+        "Monk": "39%"
+    },
+    "Back": {
+        "MonkBrew": "39%",
+        "MonkMw": "33%",
+        "MonkWw": "35%",
+        "Available": "5 available in Hc",
+        "Monk": "39%"
+    },
+    "Ring": {
+        "MonkBrew": "52%",
+        "MonkMw": "40%",
+        "MonkWw": "46%",
+        "Available": "7 available in Hc",
+        "Monk": "52%"
+    },
+    "Agi1hWeapon": {
+        "MonkBrew": "29%",
+        "MonkMw": "0%",
+        "MonkWw": "28%",
+        "Available": "5 available in Hc",
+        "Monk": "29%"
+    },
+    "Int1hWeapon": {
+        "MonkBrew": "0%",
+        "MonkMw": "20%",
+        "MonkWw": "0%",
+        "Available": "3 available in Hc",
+        "Monk": "20%"
+    },
+    "Agi2hWeapon": {
+        "MonkBrew": "28%",
+        "MonkMw": "0%",
+        "MonkWw": "30%",
+        "Available": "5 available in Hc",
+        "Monk": "30%"
+    },
+    "Int2hWeapon": {
+        "MonkBrew": "0%",
+        "MonkMw": "21%",
+        "MonkWw": "0%",
+        "Available": "3 available in Hc",
+        "Monk": "21%"
+    },
+    "Offhand": {
+        "MonkBrew": "0%",
+        "MonkMw": "29%",
+        "MonkWw": "0%",
+        "Available": "4 available in Hc",
+        "Monk": "29%"
+    },
+    "DpsTrinket": {
+        "MonkBrew": "0%",
+        "MonkMw": "0%",
+        "MonkWw": "39%",
+        "Available": "5 available in Hc",
+        "Monk": "39%"
+    },
+    "HealTrinket": {
+        "MonkBrew": "0%",
+        "MonkMw": "23%",
+        "MonkWw": "0%",
+        "Available": "4 available in Hc",
+        "Monk": "23%"
+    },
+    "TankTrinket": {
+        "MonkBrew": "25%",
+        "MonkMw": "0%",
+        "MonkWw": "0%",
+        "Available": "4 available in Hc",
+        "Monk": "25%"
+    },
+    "AnyroleTrinket": {
+        "MonkBrew": "53%",
+        "MonkMw": "63%",
+        "MonkWw": "53%",
+        "Available": "12 available in Hc",
+        "Monk": "63%"
+    }
+}

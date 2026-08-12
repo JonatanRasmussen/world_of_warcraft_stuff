@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Wings of Shattered Sorrow</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->571</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Back</td></tr></table><!--rf--><span><!--amr-->1222 Armor</span><br><span><!--stat71-->+1,133 [Agility or Strength or Intellect]</span><br><span><!--stat7-->+5,034 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->563 Critical Strike</span><br><span class="q2">+<!--rtg36-->225 Haste</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=457489/wings-of-shattered-sorrow" class="q2">Taking damage greater than <!--pts4:0:0:457489:0-->25<!---->% of your health grants you <!--pts1:0:0:457489:0.900242-->1802<!----> Avoidance and increases healing taken by <!--pts2:0:0:457489:0-->10<!---->% for 10 sec. This effect may only occur every 90 sec.<br /><br />Falling damage reduced. (1.5m cooldown)</a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->80<div class="whtt-sellprice">Sell Price: <span class="moneygold">71</span> <span class="moneysilver">54</span> <span class="moneycopper">81</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Rasha'nan</div></td></tr></table></noscript>
+<div id="ic225574" style="float: left"></div>
+<div id="tt225574" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl225574"></div>
+    <div id="ks225574" data-role="spell-modifiers"></div>
+    <div id="iu225574"></div>
+    <div id="rppm225574"></div>
+    <div id="bs225574"></div>
+    <div id="craftedStatsSelector225574"></div>
+    <div id="cs225574"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic225574').appendChild(Icon.create('inv_leather_raiddemonhunternerubian_d_01_cape', 2, null, 0, 1));
+var tt = WH.ge('tt225574');
+var sl = WH.ge('sl225574');
+var ks = WH.ge('ks225574');
+var iu = WH.ge('iu225574');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        225574,
+        true,
+        true,
+        sl,
+        null,
+        [457489],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

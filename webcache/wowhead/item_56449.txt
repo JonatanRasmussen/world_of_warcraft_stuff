@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Throngus's Finger</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><span class="q2">+<!--rtg14-->6 Parry</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=92207/duelist" class="q2">When you parry, dodge, or block an attack, gain <!--pts1:0:0:92205:3.60179-->42<!----> dodge for 20 sec. &nbsp;Cannot occur more often than once every 60 sec. (1m cooldown)</a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->32<div class="whtt-sellprice">Sell Price: <span class="moneysilver">2</span> <span class="moneycopper">95</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Forgemaster Throngus</div><div class="whtt-extra whtt-dropchance">Drop Chance: 5.95%</div></td></tr></table></noscript>
+<div id="ic56449" style="float: left"></div>
+<div id="tt56449" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl56449" style="display: block"></div>
+    <div id="ks56449" data-role="spell-modifiers"></div>
+    <div id="iu56449"></div>
+    <div id="rppm56449"></div>
+    <div id="bs56449"></div>
+    <div id="craftedStatsSelector56449"></div>
+    <div id="cs56449"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic56449').appendChild(Icon.create('inv_gizmo_felironshell', 2, null, 0, 1));
+var tt = WH.ge('tt56449');
+var sl = WH.ge('sl56449');
+var ks = WH.ge('ks56449');
+var iu = WH.ge('iu56449');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        56449,
+        true,
+        true,
+        sl,
+        null,
+        [92207],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

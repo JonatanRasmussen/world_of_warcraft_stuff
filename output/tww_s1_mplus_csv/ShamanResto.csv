@@ -1,0 +1,80 @@
+item_id,from,boss,gear_slot,gear_type,stats,ShamanResto
+221156,Ara-Kara,2 of 3,Head,Mail,M>H,50%
+56112,Grim Batol,1 of 4,Head,Mail,H>C,11%
+56443,Grim Batol,1 of 4,Head,Mail,H>C,11%
+133285,Grim Batol,1 of 4,Head,Mail,H>C,11%
+178692,Mists of Tirna,1 of 3,Head,Mail,M>H,25%
+133374,Grim Batol,4 of 4,Shoulder,Mail,C>M,8%
+159376,Siege of Boralus,4 of 4,Shoulder,Mail,,50%
+221140,Dawnbreaker,2 of 3,Shoulder,Mail,M>V,25%
+178733,Necrotic Wake,1 of 4,Shoulder,Mail,V>M,50%
+221179,City of Threads,3 of 4,Chest,Mail,M>V,25%
+159362,Siege of Boralus,4 of 4,Chest,Mail,,50%
+221174,City of Threads,2 of 4,Wrist,Mail,C>M,33%
+178703,Mists of Tirna,3 of 3,Wrist,Mail,M>V,33%
+159372,Siege of Boralus,2 of 4,Wrist,Mail,V>H,50%
+221162,Ara-Kara,3 of 3,Hands,Mail,V>H,33%
+221080,Stonevault,2 of 4,Hands,Mail,V>C,50%
+221168,City of Threads,1 of 4,Waist,Mail,H>M,33%
+178700,Mists of Tirna,1 of 3,Waist,Mail,V>M,25%
+221186,City of Threads,4 of 4,Legs,Mail,H>V,33%
+157615,Grim Batol,4 of 4,Legs,Mail,V>M,8%
+221152,Ara-Kara,1 of 3,Feet,Mail,H>M,50%
+56119,Grim Batol,2 of 4,Feet,Mail,V>M,10%
+56448,Grim Batol,2 of 4,Feet,Mail,V>M,10%
+133290,Grim Batol,2 of 4,Feet,Mail,M>H,10%
+56123,Grim Batol,3 of 4,Feet,Mail,H>C,50%
+159379,Siege of Boralus,2 of 4,Feet,Mail,M>H,50%
+221202,Dawnbreaker,2 of 3,Feet,Mail,V>H,25%
+221181,City of Threads,3 of 4,Neck,,,25%
+221154,Ara-Kara,2 of 3,Back,,V>C,50%
+157597,Grim Batol,2 of 4,Back,,M>C,10%
+56126,Grim Batol,3 of 4,Back,,V>C,50%
+133309,Grim Batol,4 of 4,Back,,V>C,8%
+221088,Stonevault,3 of 4,Back,,M>H,25%
+221189,City of Threads,4 of 4,Finger,,,33%
+133286,Grim Batol,1 of 4,Finger,,M>C,11%
+133307,Grim Batol,1 of 4,Finger,,H>C,11%
+133287,Grim Batol,2 of 4,Finger,,V>C,10%
+133299,Grim Batol,4 of 4,Finger,,H>M,8%
+221136,Dawnbreaker,1 of 3,Finger,,,50%
+221141,Dawnbreaker,2 of 3,Finger,,,25%
+178736,Necrotic Wake,1 of 4,Finger,,H>V,50%
+221165,Ara-Kara,3 of 3,One-Hand,Dagger,Int,33%
+221171,City of Threads,2 of 4,One-Hand,Dagger,Int,33%
+56116,Grim Batol,1 of 4,One-Hand,Dagger,Int,11%
+56441,Grim Batol,1 of 4,One-Hand,Dagger,Int,11%
+133283,Grim Batol,1 of 4,One-Hand,Dagger,Int,11%
+157613,Grim Batol,2 of 4,One-Hand,Fist Weapon,Int,10%
+178709,Mists of Tirna,1 of 3,One-Hand,Mace,Int,25%
+221083,Stonevault,2 of 4,Two-Hand,Mace,Int,50%
+221166,City of Threads,1 of 4,Two-Hand,Staff,Int,33%
+56137,Grim Batol,4 of 4,Two-Hand,Staff,Int,8%
+56461,Grim Batol,4 of 4,Two-Hand,Staff,Int,8%
+133303,Grim Batol,4 of 4,Two-Hand,Staff,Int,8%
+178714,Mists of Tirna,3 of 3,Two-Hand,Staff,Int,33%
+221085,Stonevault,3 of 4,Two-Hand,Staff,Int,25%
+221172,City of Threads,2 of 4,Held In Off-hand,,Int,33%
+221132,Dawnbreaker,1 of 3,Held In Off-hand,,Int,50%
+221177,City of Threads,3 of 4,Off Hand,Shield,"Str,Int",25%
+157612,Grim Batol,1 of 4,Off Hand,Shield,"Str,Int",11%
+178712,Mists of Tirna,3 of 3,Off Hand,Shield,"Str,Int",33%
+219314,Ara-Kara,1 of 3,Trinket,,,50%
+219317,Ara-Kara,3 of 3,Trinket,,"Agi,Int",33%
+219318,City of Threads,1 of 4,Trinket,,,33%
+219320,City of Threads,3 of 4,Trinket,,Int,25%
+219321,City of Threads,4 of 4,Trinket,,Int,33%
+56121,Grim Batol,2 of 4,Trinket,,,10%
+56449,Grim Batol,2 of 4,Trinket,,,10%
+133291,Grim Batol,2 of 4,Trinket,,,10%
+133304,Grim Batol,2 of 4,Trinket,,,10%
+56136,Grim Batol,4 of 4,Trinket,,,8%
+56138,Grim Batol,4 of 4,Trinket,,,8%
+56462,Grim Batol,4 of 4,Trinket,,,8%
+56463,Grim Batol,4 of 4,Trinket,,,8%
+133305,Grim Batol,4 of 4,Trinket,,,8%
+178708,Mists of Tirna,1 of 3,Trinket,,Int,25%
+219312,Dawnbreaker,2 of 3,Trinket,,"Agi,Int",25%
+219301,Stonevault,3 of 4,Trinket,,,25%
+219302,Stonevault,3 of 4,Trinket,,Int,25%
+219303,Stonevault,4 of 4,Trinket,,,100%

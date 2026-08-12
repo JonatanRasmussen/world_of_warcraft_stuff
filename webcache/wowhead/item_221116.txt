@@ -1,0 +1,137 @@
+<h1 class="heading-size-1">Glorious Defender's Poleaxe</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Two-Hand</td><th><!--scstart2:6--><span class="q1">Polearm</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->1,095 - 2,035 Damage</span></td>
+    <th>Speed <!--spd-->3.60</th>
+</tr></table><!--dps-->(434.7 damage per second)<br><span><!--stat3-->+578 Agility</span><br><span><!--stat7-->+2,008 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg36-->332 Haste</span><br><span class="q2">+<!--rtg49-->514 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">94</span> <span class="moneysilver">14</span> <span class="moneycopper">33</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Captain Dailcry</div></td></tr></table></noscript>
+<div id="ic221116" style="float: left"></div>
+<div id="tt221116" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl221116"></div>
+    <div id="ks221116" data-role="spell-modifiers"></div>
+    <div id="iu221116"></div>
+    <div id="rppm221116"></div>
+    <div id="bs221116"></div>
+    <div id="craftedStatsSelector221116"></div>
+    <div id="cs221116"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic221116').appendChild(Icon.create('inv_polearm_2h_earthendungeon_c_01', 2, null, 0, 1));
+var tt = WH.ge('tt221116');
+var sl = WH.ge('sl221116');
+var ks = WH.ge('ks221116');
+var iu = WH.ge('iu221116');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        221116,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Druid:
+                        <div class="iconsmall spec103" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_druid_catform.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.11.103"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec103 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Feral", 'q');
+                });
+                $('#lootspecs').find('.spec103 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec104" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_racial_bearform.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.11.104"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec104 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Guardian", 'q');
+                });
+                $('#lootspecs').find('.spec104 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Hunter:
+                        <div class="iconsmall spec255" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_camouflage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.255"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec255 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Survival", 'q');
+                });
+                $('#lootspecs').find('.spec255 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Monk:
+                        <div class="iconsmall spec268" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_monk_brewmaster_spec.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.10.268"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec268 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Brewmaster", 'q');
+                });
+                $('#lootspecs').find('.spec268 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec269" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_monk_windwalker_spec.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.10.269"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec269 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Windwalker", 'q');
+                });
+                $('#lootspecs').find('.spec269 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

@@ -1,0 +1,197 @@
+<h1 class="heading-size-1">Curse-Tainted Leggings</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Legs</td><th><!--scstart4:1--><span class="q1">Cloth</span><!--scend--></th></tr></table><!--rf--><span><!--amr-->4 Armor</span><br><span><!--stat5-->+4 Intellect</span><br><span><!--stat7-->+6 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg36-->5 Haste</span><br><span class="q2">+<!--rtg49-->4 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 100 / 100</td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->32<div class="whtt-sellprice">Sell Price: <span class="moneysilver">3</span> <span class="moneycopper">62</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Forgemaster Throngus</div><div class="whtt-extra whtt-dropchance">Drop Chance: 0.74%</div></td></tr></table></noscript>
+<div id="ic133308" style="float: left"></div>
+<div id="tt133308" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl133308"></div>
+    <div id="ks133308" data-role="spell-modifiers"></div>
+    <div id="iu133308"></div>
+    <div id="rppm133308"></div>
+    <div id="bs133308"></div>
+    <div id="craftedStatsSelector133308"></div>
+    <div id="cs133308"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic133308').appendChild(Icon.create('inv_pants_robe_dungeonrobe_c_03', 2, null, 0, 1));
+var tt = WH.ge('tt133308');
+var sl = WH.ge('sl133308');
+var ks = WH.ge('ks133308');
+var iu = WH.ge('iu133308');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        133308,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Mage:
+                        <div class="iconsmall spec62" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_holy_magicalsentry.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.8.62"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec62 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Arcane", 'q');
+                });
+                $('#lootspecs').find('.spec62 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec63" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_fire_firebolt02.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.8.63"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec63 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Fire", 'q');
+                });
+                $('#lootspecs').find('.spec63 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec64" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_frost_frostbolt02.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.8.64"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec64 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Frost", 'q');
+                });
+                $('#lootspecs').find('.spec64 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Priest:
+                        <div class="iconsmall spec256" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_holy_powerwordshield.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.5.256"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec256 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Discipline", 'q');
+                });
+                $('#lootspecs').find('.spec256 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec257" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_holy_guardianspirit.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.5.257"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec257 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Holy", 'q');
+                });
+                $('#lootspecs').find('.spec257 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec258" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shadow_shadowwordpain.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.5.258"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec258 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Shadow", 'q');
+                });
+                $('#lootspecs').find('.spec258 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Warlock:
+                        <div class="iconsmall spec265" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shadow_deathcoil.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.9.265"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec265 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Affliction", 'q');
+                });
+                $('#lootspecs').find('.spec265 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec266" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shadow_metamorphosis.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.9.266"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec266 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Demonology", 'q');
+                });
+                $('#lootspecs').find('.spec266 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec267" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shadow_rainoffire.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.9.267"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec267 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Destruction", 'q');
+                });
+                $('#lootspecs').find('.spec267 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+    <div class="pad"></div>This item is part of the following transmog set:        <ul>
+            <li><a href="/transmog-set=1301/anraphets-regalia">Anraphet's Regalia</a></li>
+            <li><a href="/transmog-set=1302/anraphets-regalia-recolor">Anraphet's Regalia (Recolor)</a></li>
+            <li><a href="/transmog-set=1485/swampwalker-regalia-recolor">Swampwalker Regalia (Recolor)</a></li>
+        </ul>
+    
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/cataclysm-timewalking-guide-4922">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/4922.jpg?1491262372&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Cataclysm Timewalking        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

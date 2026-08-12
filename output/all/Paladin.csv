@@ -1,0 +1,285 @@
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Head (Paladin, Hc)",2 available in Hc,,Hc,,16%,13%,15%,,
+,Darkflame Cleft,2nd,Hc,H>V,50%,33%,,,221100
+,Rookery,Last,Hc,V>H,33%,,25%,,221047
+,,,,,,,,,
+,Mists of Tirna,1st,m0,H>M,100%,33%,,50%,178694
+,Necrotic Wake,Last,m0,V>H,50%,33%,,33%,178777
+"Head (Paladin, m0)",2 available in m0,,m0,,28%,13%,,16%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Shoulders (Paladin, Hc)",4 available in Hc,,Hc,,29%,,,,
+,Cinderbrew,1st,Hc,V>M,50%,,33%,,221052
+,Priory,Last,Hc,C>V,50%,33%,,33%,221203
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>M,50%,,33%,,221155
+,City of Threads,Last,both,C>H,50%,33%,,33%,221185
+,,,,,,,,,
+,Grim Batol,3rd,m0,M>H,33%,,,,133294
+,Mists of Tirna,2nd,m0,M>V,33%,,,,178697
+,Necrotic Wake,3rd,m0,C>V,50%,,33%,33%,178749
+,Siege of Boralus,Last,m0,M>H,50%,,,,231830
+"Shoulders (Paladin, m0)",6 available in m0,,m0,,41%,,38%,38%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Chest (Paladin, Hc)",3 available in Hc,,Hc,,35%,21%,33%,,
+,Cinderbrew,Last,Hc,H>C,50%,33%,33%,,221069
+,,,,,,,,,
+,Ara-Kara,Last,both,V>H,100%,50%,,,221161
+,Dawnbreaker,2nd,both,C>V,50%,33%,,,221139
+,,,,,,,,,
+,Siege of Boralus,Last,m0,M>H,50%,,,,231827
+"Chest (Paladin, m0)",3 available in m0,,m0,,35%,24%,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Wrists (Paladin, Hc)",4 available in Hc,,Hc,,37%,,36%,28%,
+,Cinderbrew,3rd,Hc,C>H,100%,,,33%,221064
+,Priory,1st,Hc,C>H,50%,33%,33%,,221118
+,,,,,,,,,
+,City of Threads,1st,both,H>V,50%,,,,221167
+,Dawnbreaker,Last,both,C>H,33%,,25%,25%,212437
+,,,,,,,,,
+,Grim Batol,1st,m0,M>H,50%,,,,133306
+"Wrists (Paladin, m0)",3 available in m0,,m0,,24%,,23%,23%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Hands (Paladin, Hc)",3 available in Hc,,Hc,,27%,21%,,21%,
+,Darkflame Cleft,Last,Hc,V>H,50%,,,33%,221112
+,,,,,,,,,
+,Ara-Kara,1st,both,H>V,50%,33%,,,221151
+,Stonevault,3rd,both,H>C,50%,33%,,33%,221086
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,M>C,33%,,,,178706
+,Siege of Boralus,2nd,m0,C>M,50%,,33%,,159429
+"Hands (Paladin, m0)",4 available in m0,,m0,,29%,27%,,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Waist (Paladin, Hc)",3 available in Hc,,Hc,,21%,,,,
+,Rookery,2nd,Hc,M>H,33%,,,,221040
+,,,,,,,,,
+,Dawnbreaker,1st,both,M>H,33%,,,,221133
+,Stonevault,2nd,both,C>M,50%,,,,221079
+,,,,,,,,,
+,Grim Batol,2nd,m0,H>C,50%,33%,33%,,133289
+,Necrotic Wake,1st,m0,M>V,50%,,33%,,178734
+,Siege of Boralus,2nd,m0,C>V,50%,,33%,,159434
+"Waist (Paladin, m0)",5 available in m0,,m0,,39%,36%,32%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Legs (Paladin, Hc)",3 available in Hc,,Hc,,40%,35%,,27%,
+,Rookery,1st,Hc,H>V,100%,,,50%,221034
+,,,,,,,,,
+,City of Threads,2nd,both,M>H,100%,50%,,50%,221173
+,Stonevault,Last,both,M>C,50%,,33%,,221092
+,,,,,,,,,
+,Mists of Tirna,Last,m0,M>H,100%,50%,33%,,178701
+,Necrotic Wake,2nd,m0,C>M,100%,50%,,,178739
+,Siege of Boralus,1st,m0,M>V,50%,,,33%,159427
+"Legs (Paladin, m0)",5 available in m0,,m0,,52%,41%,50%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Feet (Paladin, Hc)",3 available in Hc,,Hc,,35%,20%,24%,,
+,Cinderbrew,2nd,Hc,M>C,50%,33%,,,221061
+,Priory,2nd,Hc,V>M,100%,50%,50%,,221123
+,,,,,,,,,
+,City of Threads,3rd,both,V>H,50%,25%,33%,,221178
+,,,,,,,,,
+,Siege of Boralus,3rd,m0,H>C,50%,,,25%,159428
+"Feet (Paladin, m0)",2 available in m0,,m0,,16%,15%,,15%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Neck (Paladin, Hc)",5 available in Hc,,Hc,,45%,30%,33%,,
+,Cinderbrew,2nd,Hc,H>M,50%,33%,,,221060
+,Darkflame Cleft,2nd,Hc,C>V,50%,33%,,,221103
+,,,,,,,,,
+,City of Threads,3rd,both,V>C,50%,25%,33%,,221181
+,Dawnbreaker,Last,both,C>H,33%,,25%,25%,212448
+,Stonevault,1st,both,M>H,100%,50%,33%,,221077
+,,,,,,,,,
+,Mists of Tirna,2nd,m0,M>C,33%,,,,178707
+"Neck (Paladin, m0)",4 available in m0,,m0,,36%,25%,23%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Back (Paladin, Hc)",5 available in Hc,,Hc,,43%,34%,40%,,
+,Cinderbrew,1st,Hc,C>M,50%,,33%,,221054
+,Darkflame Cleft,3rd,Hc,V>C,100%,33%,,,221109
+,,,,,,,,,
+,Ara-Kara,2nd,both,V>C,50%,,33%,,221154
+,Dawnbreaker,Last,both,C>H,33%,,25%,25%,225574
+,Stonevault,3rd,both,M>H,50%,33%,,33%,221088
+,,,,,,,,,
+,Grim Batol,3rd,m0,V>C,33%,,,,133292
+,Grim Batol,3rd,m0,M>C,33%,,,,133363
+,Grim Batol,Last,m0,V>C,33%,,20%,20%,133309
+"Back (Paladin, m0)",6 available in m0,,m0,,36%,,33%,33%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Ring (Paladin, Hc)",7 available in Hc,,Hc,,46%,40%,,45%,
+,Cinderbrew,Last,Hc,M>C,50%,33%,33%,,221198
+,Darkflame Cleft,1st,Hc,H>V,50%,,,,221099
+,Priory,Last,Hc,M>V,50%,33%,,33%,221200
+,Rookery,Last,Hc,C>M,33%,,25%,,221197
+,,,,,,,,,
+,City of Threads,Last,both,V>H,50%,33%,,33%,221189
+,Dawnbreaker,1st,both,C>H,33%,,,,221136
+,Dawnbreaker,2nd,both,V>M,50%,33%,,,221141
+,,,,,,,,,
+,Grim Batol,1st,m0,M>C,50%,,,,133286
+,Grim Batol,2nd,m0,V>C,50%,33%,33%,,133287
+,Grim Batol,Last,m0,H>M,33%,,20%,20%,133299
+,Necrotic Wake,1st,m0,H>V,50%,,33%,,178736
+,Necrotic Wake,Last,m0,V>C,50%,33%,,33%,178781
+,Siege of Boralus,1st,m0,M>C,50%,,,33%,162541
+,Siege of Boralus,3rd,m0,C>H,50%,,,25%,159461
+"Ring (Paladin, m0)",10 available in m0,,m0,,58%,56%,,54%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Str1hWeapon (Paladin, Hc)",4 available in Hc,,Hc,,25%,0%,,0%,
+,Cinderbrew,Last,Hc,Str,33%,0%,,0%,221068
+,Darkflame Cleft,1st,Hc,Str,50%,0%,,0%,221096
+,Rookery,Last,Hc,Str,25%,0%,,0%,221046
+,,,,,,,,,
+,Stonevault,Last,both,Str,33%,0%,,0%,221091
+,,,,,,,,,
+,Grim Batol,Last,m0,Str,20%,0%,,0%,133301
+,Mists of Tirna,Last,m0,Str,33%,0%,,0%,178711
+,Necrotic Wake,1st,m0,Str,33%,0%,,0%,178730
+,Siege of Boralus,2nd,m0,Str,33%,0%,,0%,159649
+"Str1hWeapon (Paladin, m0)",5 available in m0,,m0,,27%,0%,,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Int1hWeapon (Paladin, Hc)",3 available in Hc,,Hc,,21%,,0%,0%,
+,Darkflame Cleft,3rd,Hc,Int,33%,,0%,0%,221105
+,Priory,2nd,Hc,Int,50%,,0%,0%,221122
+,,,,,,,,,
+,Ara-Kara,1st,both,Int,33%,,0%,0%,221150
+,,,,,,,,,
+,Mists of Tirna,1st,m0,Int,33%,,0%,0%,178709
+,Necrotic Wake,2nd,m0,Int,50%,,0%,0%,178737
+"Int1hWeapon (Paladin, m0)",3 available in m0,,m0,,21%,,0%,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Str2hWeapon (Paladin, Hc)",5 available in Hc,,Hc,,29%,0%,0%,,
+,Cinderbrew,3rd,Hc,Str,33%,0%,0%,,221063
+,Darkflame Cleft,Last,Hc,Str,33%,0%,0%,,221111
+,Priory,Last,Hc,Str,33%,0%,0%,,221127
+,Rookery,2nd,Hc,Str,33%,0%,0%,,221038
+,,,,,,,,,
+,City of Threads,Last,both,Str,33%,0%,0%,,221184
+,,,,,,,,,
+,Grim Batol,Last,m0,Str,20%,0%,0%,,133298
+,Mists of Tirna,1st,m0,Str,50%,0%,0%,,178713
+,Necrotic Wake,Last,m0,Str,33%,0%,0%,,178780
+,Siege of Boralus,1st,m0,Str,33%,0%,0%,,159972
+,Siege of Boralus,3rd,m0,Str,25%,0%,0%,,159650
+"Str2hWeapon (Paladin, m0)",6 available in m0,,m0,,33%,0%,0%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Int2hWeapon (Paladin, Hc)",1 available in Hc,,Hc,,10%,,0%,0%,
+,,,,,,,,,
+,Stonevault,2nd,both,Int,50%,,0%,0%,221083
+,,,,,,,,,
+"Int2hWeapon (Paladin, m0)",1 available in m0,,m0,,10%,,0%,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Offhand (Paladin, Hc)",4 available in Hc,,Hc,,29%,,0%,0%,
+,Cinderbrew,2nd,Hc,Int,33%,,0%,0%,221056
+,Darkflame Cleft,1st,Hc,Int,50%,,0%,0%,221097
+,,,,,,,,,
+,City of Threads,2nd,both,Int,50%,,0%,0%,221172
+,Dawnbreaker,1st,both,Int,33%,,0%,0%,221132
+,,,,,,,,,
+"Offhand (Paladin, m0)",2 available in m0,,m0,,16%,,0%,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"Shield (Paladin, Hc)",4 available in Hc,,Hc,,25%,,24%,0%,
+,Priory,1st,Hc,"Str,Int",33%,,,0%,221117
+,Rookery,2nd,Hc,"Str,Int",33%,,,0%,221045
+,,,,,,,,,
+,City of Threads,3rd,both,"Str,Int",33%,25%,,0%,221177
+,Stonevault,1st,both,"Str,Int",50%,,33%,0%,221073
+,,,,,,,,,
+,Mists of Tirna,Last,m0,"Str,Int",50%,,33%,0%,178712
+,Necrotic Wake,3rd,m0,"Str,Int",50%,,33%,0%,178750
+"Shield (Paladin, m0)",4 available in m0,,m0,,31%,,24%,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"DpsTrinket (Paladin, Hc)",5 available in Hc,,Hc,,36%,0%,0%,,
+,Cinderbrew,3rd,Hc,"Dps,Agi,Str",33%,0%,0%,,219298
+,Darkflame Cleft,1st,Hc,"Dps,Agi",50%,0%,0%,,219304
+,Rookery,1st,Hc,"Dps,Agi",50%,0%,0%,,219294
+,,,,,,,,,
+,City of Threads,2nd,both,"Dps,Agi",50%,0%,0%,,219319
+,Stonevault,3rd,both,"Dps,",33%,0%,0%,,219301
+,,,,,,,,,
+,Necrotic Wake,3rd,m0,"Dps,Int",33%,0%,0%,,178772
+,Siege of Boralus,3rd,m0,"Dps,Int",25%,0%,0%,,159622
+"DpsTrinket (Paladin, m0)",4 available in m0,,m0,,25%,0%,0%,,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"HealTrinket (Paladin, Hc)",4 available in Hc,,Hc,,23%,,0%,0%,
+,Darkflame Cleft,3rd,Hc,"Heal,Int",33%,,0%,0%,219306
+,Priory,Last,Hc,"Heal,Int",33%,,0%,0%,219310
+,,,,,,,,,
+,City of Threads,3rd,both,"Heal,Int",25%,,0%,0%,219320
+,Stonevault,3rd,both,"Heal,Int",33%,,0%,0%,219302
+,,,,,,,,,
+,Grim Batol,2nd,m0,"Heal,",33%,,0%,0%,133304
+,Necrotic Wake,Last,m0,"Heal,Int",33%,,0%,0%,178783
+"HealTrinket (Paladin, m0)",4 available in m0,,m0,,23%,,0%,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"TankTrinket (Paladin, Hc)",4 available in Hc,,Hc,,27%,0%,,0%,
+,Cinderbrew,1st,Hc,"Tank,",33%,0%,,0%,219297
+,Priory,2nd,Hc,"Tank,",50%,0%,,0%,219309
+,,,,,,,,,
+,Ara-Kara,2nd,both,"Tank,Agi,Str",33%,0%,,0%,219316
+,Stonevault,1st,both,"Tank,Agi,Str",33%,0%,,0%,219315
+,,,,,,,,,
+,Grim Batol,2nd,m0,"Tank,",33%,0%,,0%,133291
+"TankTrinket (Paladin, m0)",3 available in m0,,m0,,19%,0%,,0%,
+,,,,,,,,,
+,,,,,,,,,
+Type,Dungeon,Boss,Week,stats,Paladin,PaladinHoly,PaladinProt,PaladinRet,ID
+"AnyroleTrinket (Paladin, Hc)",12 available in Hc,,Hc,,62%,,55%,57%,
+,Cinderbrew,Last,Hc,Int,33%,,0%,0%,219299
+,Darkflame Cleft,2nd,Hc,Int,33%,,0%,0%,219305
+,Darkflame Cleft,Last,Hc,,50%,,,33%,219307
+,Priory,1st,Hc,All3,50%,33%,33%,,219308
+,Rookery,2nd,Hc,All3,33%,,,,219295
+,Rookery,Last,Hc,,33%,,25%,,219296
+,,,,,,,,,
+,Ara-Kara,1st,both,,50%,33%,,,219314
+,Ara-Kara,Last,both,"Agi,Int",50%,,0%,0%,219317
+,City of Threads,1st,both,,50%,,,,219318
+,City of Threads,Last,both,Int,33%,,0%,0%,219321
+,Dawnbreaker,1st,both,Str,33%,0%,,,219311
+,Dawnbreaker,2nd,both,"Agi,Int",33%,,0%,0%,219312
+,Dawnbreaker,Last,both,Str,25%,0%,,,212453
+,Stonevault,2nd,both,Str,50%,0%,,,219300
+,Stonevault,Last,both,,50%,,33%,,219303
+,,,,,,,,,
+,Grim Batol,Last,m0,,33%,,20%,20%,133305
+,Grim Batol,Last,m0,Str,20%,0%,,,133300
+,Mists of Tirna,1st,m0,Int,33%,,0%,0%,178708
+,Necrotic Wake,3rd,m0,Str,33%,0%,,,178751
+"AnyroleTrinket (Paladin, m0)",9 available in m0,,m0,,50%,48%,48%,,

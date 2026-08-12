@@ -1,0 +1,107 @@
+{
+    "Head": {
+        "WarlockAff": "19%",
+        "WarlockDemo": "19%",
+        "WarlockDest": "19%",
+        "Available": "3 items",
+        "Warlock": "19%"
+    },
+    "Shoulders": {
+        "WarlockAff": "21%",
+        "WarlockDemo": "21%",
+        "WarlockDest": "21%",
+        "Available": "3 items",
+        "Warlock": "21%"
+    },
+    "Chest": {
+        "WarlockAff": "24%",
+        "WarlockDemo": "24%",
+        "WarlockDest": "24%",
+        "Available": "3 items",
+        "Warlock": "24%"
+    },
+    "Wrists": {
+        "WarlockAff": "21%",
+        "WarlockDemo": "21%",
+        "WarlockDest": "21%",
+        "Available": "3 items",
+        "Warlock": "21%"
+    },
+    "Hands": {
+        "WarlockAff": "21%",
+        "WarlockDemo": "21%",
+        "WarlockDest": "21%",
+        "Available": "3 items",
+        "Warlock": "21%"
+    },
+    "Waist": {
+        "WarlockAff": "22%",
+        "WarlockDemo": "22%",
+        "WarlockDest": "22%",
+        "Available": "3 items",
+        "Warlock": "22%"
+    },
+    "Legs": {
+        "WarlockAff": "13%",
+        "WarlockDemo": "13%",
+        "WarlockDest": "13%",
+        "Available": "2 items",
+        "Warlock": "13%"
+    },
+    "Feet": {
+        "WarlockAff": "28%",
+        "WarlockDemo": "28%",
+        "WarlockDest": "28%",
+        "Available": "2 items",
+        "Warlock": "28%"
+    },
+    "Neck": {
+        "WarlockAff": "19%",
+        "WarlockDemo": "19%",
+        "WarlockDest": "19%",
+        "Available": "3 items",
+        "Warlock": "19%"
+    },
+    "Back": {
+        "WarlockAff": "27%",
+        "WarlockDemo": "27%",
+        "WarlockDest": "27%",
+        "Available": "4 items",
+        "Warlock": "27%"
+    },
+    "Ring": {
+        "WarlockAff": "42%",
+        "WarlockDemo": "42%",
+        "WarlockDest": "42%",
+        "Available": "7 items",
+        "Warlock": "42%"
+    },
+    "Int1hWeapon": {
+        "WarlockAff": "29%",
+        "WarlockDemo": "29%",
+        "WarlockDest": "29%",
+        "Available": "4 items",
+        "Warlock": "29%"
+    },
+    "Int2hWeapon": {
+        "WarlockAff": "19%",
+        "WarlockDemo": "19%",
+        "WarlockDest": "19%",
+        "Available": "3 items",
+        "Warlock": "19%"
+    },
+    "Offhand": {
+        "WarlockAff": "27%",
+        "WarlockDemo": "27%",
+        "WarlockDest": "27%",
+        "Available": "4 items",
+        "Warlock": "27%"
+    },
+    "Trinket": {
+        "WarlockAff": "79%",
+        "WarlockDemo": "79%",
+        "WarlockDest": "79%",
+        "Available": "19 items",
+        "Warlock": "79%"
+    }
+}

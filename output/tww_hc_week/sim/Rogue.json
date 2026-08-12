@@ -1,0 +1,100 @@
+{
+    "Head": {
+        "RogueSin": "42%",
+        "RogueOutlaw": "42%",
+        "RogueSub": "42%",
+        "Available": "3 available in Hc",
+        "Rogue": "42%"
+    },
+    "Shoulders": {
+        "RogueSin": "27%",
+        "RogueOutlaw": "24%",
+        "RogueSub": "27%",
+        "Available": "3 available in Hc",
+        "Rogue": "27%"
+    },
+    "Chest": {
+        "RogueSin": "20%",
+        "RogueOutlaw": "21%",
+        "RogueSub": "20%",
+        "Available": "3 available in Hc",
+        "Rogue": "21%"
+    },
+    "Wrists": {
+        "RogueSin": "23%",
+        "RogueOutlaw": "21%",
+        "RogueSub": "23%",
+        "Available": "3 available in Hc",
+        "Rogue": "23%"
+    },
+    "Hands": {
+        "RogueSin": "27%",
+        "RogueOutlaw": "24%",
+        "RogueSub": "27%",
+        "Available": "3 available in Hc",
+        "Rogue": "27%"
+    },
+    "Waist": {
+        "RogueSin": "32%",
+        "RogueOutlaw": "31%",
+        "RogueSub": "32%",
+        "Available": "4 available in Hc",
+        "Rogue": "32%"
+    },
+    "Legs": {
+        "RogueSin": "24%",
+        "RogueOutlaw": "27%",
+        "RogueSub": "24%",
+        "Available": "3 available in Hc",
+        "Rogue": "27%"
+    },
+    "Feet": {
+        "RogueSin": "27%",
+        "RogueOutlaw": "27%",
+        "RogueSub": "27%",
+        "Available": "3 available in Hc",
+        "Rogue": "27%"
+    },
+    "Neck": {
+        "RogueSin": "46%",
+        "RogueOutlaw": "45%",
+        "RogueSub": "46%",
+        "Available": "5 available in Hc",
+        "Rogue": "46%"
+    },
+    "Back": {
+        "RogueSin": "39%",
+        "RogueOutlaw": "35%",
+        "RogueSub": "39%",
+        "Available": "5 available in Hc",
+        "Rogue": "39%"
+    },
+    "Ring": {
+        "RogueSin": "45%",
+        "RogueOutlaw": "47%",
+        "RogueSub": "45%",
+        "Available": "7 available in Hc",
+        "Rogue": "47%"
+    },
+    "Agi1hWeapon": {
+        "RogueSin": "21%",
+        "RogueOutlaw": "28%",
+        "RogueSub": "21%",
+        "Available": "5 available in Hc",
+        "Rogue": "28%"
+    },
+    "DpsTrinket": {
+        "RogueSin": "41%",
+        "RogueOutlaw": "39%",
+        "RogueSub": "41%",
+        "Available": "5 available in Hc",
+        "Rogue": "41%"
+    },
+    "AnyroleTrinket": {
+        "RogueSin": "55%",
+        "RogueOutlaw": "57%",
+        "RogueSub": "55%",
+        "Available": "9 available in Hc",
+        "Rogue": "57%"
+    }
+}

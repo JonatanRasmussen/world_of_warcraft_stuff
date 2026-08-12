@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Troggstitched Drape</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Back</td></tr></table><!--rf--><span><!--amr-->3 Armor</span><br><span><!--stat71-->+2 [Agility or Strength or Intellect]</span><br><span><!--stat7-->+3 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->2 Critical Strike</span><br><span class="q2">+<!--rtg49-->2 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->32<div class="whtt-sellprice">Sell Price: <span class="moneysilver">2</span> <span class="moneycopper">54</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Forgemaster Throngus</div><div class="whtt-extra whtt-dropchance">Drop Chance: 0.76%</div></td></tr></table></noscript>
+<div id="ic157597" style="float: left"></div>
+<div id="tt157597" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl157597"></div>
+    <div id="ks157597" data-role="spell-modifiers"></div>
+    <div id="iu157597"></div>
+    <div id="rppm157597"></div>
+    <div id="bs157597"></div>
+    <div id="craftedStatsSelector157597"></div>
+    <div id="cs157597"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic157597').appendChild(Icon.create('inv_misc_cape_cataclysm_caster_b_01', 2, null, 0, 1));
+var tt = WH.ge('tt157597');
+var sl = WH.ge('sl157597');
+var ks = WH.ge('ks157597');
+var iu = WH.ge('iu157597');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        157597,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

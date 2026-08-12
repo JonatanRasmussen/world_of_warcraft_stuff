@@ -1,0 +1,94 @@
+<h1 class="heading-size-1">Memory of the Cold Front</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q whtt-extra whtt-ilvl"><br>Item Level <!--ilvl-->1</span><!--bo--><br>Binds when picked up<br>Unique<!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--></td></tr></table><table><tr><td><span class="q2">Use: <a href="/spell=342040/restoring-memory" class="q2">Restore the following memory to the Runecarver:</a></span><br><br><table><tr><td><a class="whtt-name q5" href="/spell=327284/cold-front"><b class="whtt-name q5">Cold Front</b></a><div class="whtt-skill-category">Runecarving Power</div></td></tr></table><table><tr><td><div class="q2">Casting 30 Frostbolts or Flurries calls down a Frozen Orb toward your target. Hitting an enemy player counts as double.</div><br><div class="q">Runecarve on: <span class="q1">Chest, Back</span></div><br><div class="q">Source: <span class="q1">Dungeon Drop: Nalthor the Rimebinder</span></div><br><div class="q">Requires: <span class="q1">Mage (Frost)</span></div></td></tr></table></td></tr></table></noscript>
+<div id="ic183278" style="float: left"></div>
+<div id="tt183278" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl183278"></div>
+    <div id="ks183278" data-role="spell-modifiers"></div>
+    <div id="iu183278"></div>
+    <div id="rppm183278"></div>
+    <div id="bs183278"></div>
+    <div id="craftedStatsSelector183278"></div>
+    <div id="cs183278"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic183278').appendChild(Icon.create('ability_mage_coldasice', 2, null, 0, 1));
+var tt = WH.ge('tt183278');
+var sl = WH.ge('sl183278');
+var ks = WH.ge('ks183278');
+var iu = WH.ge('iu183278');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        183278,
+        true,
+        true,
+        sl,
+        null,
+        [342040],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+<h2 class="heading-size-3">Guides</h2><div class="guide-image-links guide-image-links-rows"><a class="guide-image-link" href="https://www.wowhead.com/guide/legendary-recipes-drop-locations-sources-shadowlands-memory-of-the-runecarver">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/expansion-content-torghast.jpg?maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Legendary Power Sources        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/mage/arcane/best-legendaries-shadowlands" data-class="8">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-mage-arcane.jpg?maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_holy_magicalsentry.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Arcane Mage Legendary Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/mage/fire/best-legendaries-shadowlands" data-class="8">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-mage-fire.jpg?maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_fire_firebolt02.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Best Fire Mage Legendaries        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/classes/mage/frost/best-legendaries-shadowlands" data-class="8">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-mage-frost.jpg?maxHeight=200)"></span>
+            <span class="guide-image-link-icon"
+              style="background:url(https://wow.zamimg.com/images/wow/icons/large/spell_frost_frostbolt02.jpg)"></span>
+            <span class="guide-image-link-text has-icon">
+        <span class="guide-image-link-text-title">
+            Best Frost Mage Legendaries        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/necrotic-wake-shadowlands-dungeon-strategy-guide">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/10275.jpg?1606286558&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Necrotic Wake Dungeon Strategy Guide        </span>
+            </span>
+</a><a class="guide-image-link" href="https://www.wowhead.com/guide/shadowlands-dungeon-loot-guide-gear-armor-weapons-conduits-legendary-recipes">
+    <span class="guide-image-link-image" style="background: url(https://wow.zamimg.com/uploads/guide/seo/11457.jpg?1606286620&amp;maxHeight=200)"></span>
+        <span class="guide-image-link-text">
+        <span class="guide-image-link-text-title">
+            Shadowlands Dungeon Gear and Loot Guide        </span>
+            </span>
+</a></div>
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

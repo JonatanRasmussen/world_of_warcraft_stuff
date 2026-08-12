@@ -1,7 +1,7 @@
 ### My project-specific ignores:
 # Cached wowhead htmls
-webcache
-output
+#webcache
+#output
 
 
 ### C# IGNORES --- COPY PASTE FROM https://gist.github.com/takekazuomi/10955889

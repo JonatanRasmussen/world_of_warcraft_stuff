@@ -1,0 +1,94 @@
+<h1 class="heading-size-1">Predator's Feasthooks</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->571</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>One-Hand</td><th><!--scstart2:9--><span class="q1">Warglaive</span><!--scend--></th></tr></table><!--rf--><table width="100%"><tr>
+    <td><span><!--dmg-->2,306 - 3,645 Damage</span></td>
+    <th>Speed <!--spd-->2.60</th>
+</tr></table><!--dps-->(1,144 damage per second)<br><span><!--stat3-->+1,007 Agility</span><br><span><!--stat7-->+4,475 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->483 Critical Strike</span><br><span class="q2">+<!--rtg49-->218 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->80<div class="whtt-sellprice">Sell Price: <span class="moneygold">138</span> <span class="moneysilver">35</span> <span class="moneycopper">20</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Rasha'nan</div></td></tr></table></noscript>
+<div id="ic212391" style="float: left"></div>
+<div id="tt212391" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl212391"></div>
+    <div id="ks212391" data-role="spell-modifiers"></div>
+    <div id="iu212391"></div>
+    <div id="rppm212391"></div>
+    <div id="bs212391"></div>
+    <div id="craftedStatsSelector212391"></div>
+    <div id="cs212391"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic212391').appendChild(Icon.create('inv_glaive_1h_nerubianraid_d_01', 2, null, 0, 1));
+var tt = WH.ge('tt212391');
+var sl = WH.ge('sl212391');
+var ks = WH.ge('ks212391');
+var iu = WH.ge('iu212391');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        212391,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Demon Hunter:
+                        <div class="iconsmall spec577" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_specdps.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.577"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec577 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Havoc", 'q');
+                });
+                $('#lootspecs').find('.spec577 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec581" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_spectank.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.12.581"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec581 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Vengeance", 'q');
+                });
+                $('#lootspecs').find('.spec581 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

@@ -1,0 +1,114 @@
+{
+    "Head": {
+        "DkBlood": "16%",
+        "DkFrost": "16%",
+        "DkUnholy": "16%",
+        "Available": "2 available in m0",
+        "Dk": "16%"
+    },
+    "Shoulders": {
+        "DkBlood": "38%",
+        "DkFrost": "38%",
+        "DkUnholy": "38%",
+        "Available": "6 available in m0",
+        "Dk": "38%"
+    },
+    "Chest": {
+        "DkBlood": "35%",
+        "DkFrost": "35%",
+        "DkUnholy": "35%",
+        "Available": "3 available in m0",
+        "Dk": "35%"
+    },
+    "Wrists": {
+        "DkBlood": "23%",
+        "DkFrost": "23%",
+        "DkUnholy": "23%",
+        "Available": "3 available in m0",
+        "Dk": "23%"
+    },
+    "Hands": {
+        "DkBlood": "32%",
+        "DkFrost": "27%",
+        "DkUnholy": "29%",
+        "Available": "4 available in m0",
+        "Dk": "32%"
+    },
+    "Waist": {
+        "DkBlood": "36%",
+        "DkFrost": "34%",
+        "DkUnholy": "39%",
+        "Available": "5 available in m0",
+        "Dk": "39%"
+    },
+    "Legs": {
+        "DkBlood": "57%",
+        "DkFrost": "43%",
+        "DkUnholy": "52%",
+        "Available": "5 available in m0",
+        "Dk": "57%"
+    },
+    "Feet": {
+        "DkBlood": "16%",
+        "DkFrost": "15%",
+        "DkUnholy": "15%",
+        "Available": "2 available in m0",
+        "Dk": "16%"
+    },
+    "Neck": {
+        "DkBlood": "28%",
+        "DkFrost": "36%",
+        "DkUnholy": "36%",
+        "Available": "4 available in m0",
+        "Dk": "36%"
+    },
+    "Back": {
+        "DkBlood": "33%",
+        "DkFrost": "33%",
+        "DkUnholy": "33%",
+        "Available": "6 available in m0",
+        "Dk": "33%"
+    },
+    "Ring": {
+        "DkBlood": "54%",
+        "DkFrost": "52%",
+        "DkUnholy": "54%",
+        "Available": "10 available in m0",
+        "Dk": "54%"
+    },
+    "Str1hWeapon": {
+        "DkBlood": "0%",
+        "DkFrost": "29%",
+        "DkUnholy": "0%",
+        "Available": "5 available in m0",
+        "Dk": "29%"
+    },
+    "Str2hWeapon": {
+        "DkBlood": "34%",
+        "DkFrost": "33%",
+        "DkUnholy": "33%",
+        "Available": "6 available in m0",
+        "Dk": "34%"
+    },
+    "DpsTrinket": {
+        "DkBlood": "0%",
+        "DkFrost": "25%",
+        "DkUnholy": "25%",
+        "Available": "4 available in m0",
+        "Dk": "25%"
+    },
+    "TankTrinket": {
+        "DkBlood": "21%",
+        "DkFrost": "0%",
+        "DkUnholy": "0%",
+        "Available": "3 available in m0",
+        "Dk": "21%"
+    },
+    "AnyroleTrinket": {
+        "DkBlood": "52%",
+        "DkFrost": "47%",
+        "DkUnholy": "50%",
+        "Available": "9 available in m0",
+        "Dk": "52%"
+    }
+}

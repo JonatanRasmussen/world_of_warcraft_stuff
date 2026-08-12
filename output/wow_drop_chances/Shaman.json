@@ -1,0 +1,121 @@
+{
+    "Head": {
+        "ShamanEle": "24%",
+        "ShamanEnh": "24%",
+        "ShamanResto": "24%",
+        "Available": "3 items",
+        "Shaman": "24%"
+    },
+    "Shoulders": {
+        "ShamanEle": "17%",
+        "ShamanEnh": "17%",
+        "ShamanResto": "17%",
+        "Available": "3 items",
+        "Shaman": "17%"
+    },
+    "Chest": {
+        "ShamanEle": "11%",
+        "ShamanEnh": "19%",
+        "ShamanResto": "11%",
+        "Available": "2 items",
+        "Shaman": "19%"
+    },
+    "Wrists": {
+        "ShamanEle": "19%",
+        "ShamanEnh": "27%",
+        "ShamanResto": "19%",
+        "Available": "3 items",
+        "Shaman": "27%"
+    },
+    "Hands": {
+        "ShamanEle": "21%",
+        "ShamanEnh": "35%",
+        "ShamanResto": "21%",
+        "Available": "3 items",
+        "Shaman": "35%"
+    },
+    "Waist": {
+        "ShamanEle": "13%",
+        "ShamanEnh": "19%",
+        "ShamanResto": "13%",
+        "Available": "2 items",
+        "Shaman": "19%"
+    },
+    "Legs": {
+        "ShamanEle": "21%",
+        "ShamanEnh": "24%",
+        "ShamanResto": "21%",
+        "Available": "3 items",
+        "Shaman": "24%"
+    },
+    "Feet": {
+        "ShamanEle": "27%",
+        "ShamanEnh": "28%",
+        "ShamanResto": "27%",
+        "Available": "4 items",
+        "Shaman": "28%"
+    },
+    "Neck": {
+        "ShamanEle": "17%",
+        "ShamanEnh": "27%",
+        "ShamanResto": "17%",
+        "Available": "3 items",
+        "Shaman": "27%"
+    },
+    "Back": {
+        "ShamanEle": "27%",
+        "ShamanEnh": "29%",
+        "ShamanResto": "27%",
+        "Available": "4 items",
+        "Shaman": "29%"
+    },
+    "Ring": {
+        "ShamanEle": "39%",
+        "ShamanEnh": "50%",
+        "ShamanResto": "39%",
+        "Available": "7 items",
+        "Shaman": "50%"
+    },
+    "Agi1hWeapon": {
+        "ShamanEle": "0%",
+        "ShamanEnh": "27%",
+        "ShamanResto": "0%",
+        "Available": "4 items",
+        "Shaman": "27%"
+    },
+    "Int1hWeapon": {
+        "ShamanEle": "30%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "30%",
+        "Available": "5 items",
+        "Shaman": "30%"
+    },
+    "Int2hWeapon": {
+        "ShamanEle": "28%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "28%",
+        "Available": "4 items",
+        "Shaman": "28%"
+    },
+    "Offhand": {
+        "ShamanEle": "27%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "27%",
+        "Available": "4 items",
+        "Shaman": "27%"
+    },
+    "Shield": {
+        "ShamanEle": "17%",
+        "ShamanEnh": "0%",
+        "ShamanResto": "17%",
+        "Available": "3 items",
+        "Shaman": "17%"
+    },
+    "Trinket": {
+        "ShamanEle": "77%",
+        "ShamanEnh": "79%",
+        "ShamanResto": "77%",
+        "Available": "19 items",
+        "Shaman": "79%"
+    }
+}

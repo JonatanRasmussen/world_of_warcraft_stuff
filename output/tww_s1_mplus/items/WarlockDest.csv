@@ -1,0 +1,91 @@
+item_id,release,from,boss,gear_slot,gear_type,stats,WarlockDest
+221187,Hc+M0,City of Threads,Last boss,Head,Cloth,M>C,33%
+212440,Hc+M0,Dawnbreaker,Last boss,Head,Cloth,H>C,33%
+133302,M0,Grim Batol,Last boss,Head,Cloth,H>C,20%
+178693,M0,Mists of Tirna,Last boss,Head,Cloth,V>H,50%
+178732,M0,Necrotic Wake,1st boss,Head,Cloth,C>M,50%
+231818,M0,Siege of Boralus,Last boss,Head,Cloth,H>C,50%
+0,M0,Head (Warlock),6 sources,Head,m0 week,,39%
+221135,Hc+M0,Dawnbreaker,1st boss,Shoulder,Cloth,V>C,33%
+178696,M0,Mists of Tirna,1st boss,Shoulder,Cloth,C>V,33%
+178740,M0,Necrotic Wake,2nd boss,Shoulder,Cloth,H>M,50%
+0,M0,Shoulders (Warlock),3 sources,Shoulder,m0 week,,21%
+221176,Hc+M0,City of Threads,2nd boss,Chest,Cloth,C>H,25%
+221095,Hc+M0,Stonevault,Last boss,Chest,Cloth,V>H,50%
+0,M0,Chest (Warlock),2 sources,Chest,m0 week,,15%
+221182,Hc+M0,City of Threads,3rd boss,Wrist,Cloth,H>C,50%
+133295,M0,Grim Batol,3rd boss,Wrist,Cloth,H>C,33%
+178704,M0,Mists of Tirna,1st boss,Wrist,Cloth,H>V,33%
+178782,M0,Necrotic Wake,Last boss,Wrist,Cloth,M>V,50%
+159256,M0,Siege of Boralus,Last boss,Wrist,Cloth,M>H,50%
+0,M0,Wrists (Warlock),5 sources,Wrist,m0 week,,36%
+221170,Hc+M0,City of Threads,1st boss,Hands,Cloth,C>V,33%
+178705,M0,Mists of Tirna,2nd boss,Hands,Cloth,H>C,50%
+178748,M0,Necrotic Wake,3rd boss,Hands,Cloth,M>C,50%
+159237,M0,Siege of Boralus,2nd boss,Hands,Cloth,C>M,50%
+0,M0,Hands (Warlock),4 sources,Hands,m0 week,,32%
+221158,Hc+M0,Ara-Kara,2nd boss,Waist,Cloth,C>H,50%
+221087,Hc+M0,Stonevault,3rd boss,Waist,Cloth,V>M,25%
+159965,M0,Siege of Boralus,1st boss,Waist,Cloth,H>M,33%
+0,M0,Waist (Warlock),3 sources,Waist,m0 week,,20%
+221164,Hc+M0,Ara-Kara,Last boss,Legs,Cloth,H>C,33%
+221076,Hc+M0,Stonevault,1st boss,Legs,Cloth,M>C,50%
+133308,M0,Grim Batol,2nd boss,Legs,Cloth,H>M,33%
+159250,M0,Siege of Boralus,2nd boss,Legs,Cloth,V>H,50%
+0,M0,Legs (Warlock),4 sources,Legs,m0 week,,29%
+221082,Hc+M0,Stonevault,2nd boss,Feet,Cloth,H>V,100%
+159251,M0,Siege of Boralus,1st boss,Feet,Cloth,V>C,33%
+0,M0,Feet (Warlock),2 sources,Feet,m0 week,,25%
+221181,Hc+M0,City of Threads,3rd boss,Neck,,,50%
+212448,Hc+M0,Dawnbreaker,Last boss,Neck,,,33%
+221077,Hc+M0,Stonevault,1st boss,Neck,,,50%
+178707,M0,Mists of Tirna,2nd boss,Neck,,M>C,50%
+0,M0,Neck (Warlock),4 sources,Neck,m0 week,,32%
+221154,Hc+M0,Ara-Kara,2nd boss,Back,,V>C,50%
+225574,Hc+M0,Dawnbreaker,Last boss,Back,,C>H,33%
+221088,Hc+M0,Stonevault,3rd boss,Back,,M>H,25%
+133292,M0,Grim Batol,3rd boss,Back,,V>C,33%
+133363,M0,Grim Batol,3rd boss,Back,,M>C,33%
+133309,M0,Grim Batol,Last boss,Back,,V>C,20%
+0,M0,Back (Warlock),6 sources,Back,m0 week,,33%
+221189,Hc+M0,City of Threads,Last boss,Finger,,,33%
+221136,Hc+M0,Dawnbreaker,1st boss,Finger,,,33%
+221141,Hc+M0,Dawnbreaker,2nd boss,Finger,,,50%
+133286,M0,Grim Batol,1st boss,Finger,,M>C,50%
+133287,M0,Grim Batol,2nd boss,Finger,,V>C,33%
+133299,M0,Grim Batol,Last boss,Finger,,H>M,20%
+178736,M0,Necrotic Wake,1st boss,Finger,,H>V,50%
+178781,M0,Necrotic Wake,Last boss,Finger,,V>C,50%
+162541,M0,Siege of Boralus,1st boss,Finger,,M>C,33%
+159461,M0,Siege of Boralus,3rd boss,Finger,,C>H,50%
+0,M0,Ring (Warlock),10 sources,Finger,m0 week,,57%
+221165,Hc+M0,Ara-Kara,Last boss,One-Hand,Dagger,Int,33%
+221171,Hc+M0,City of Threads,2nd boss,One-Hand,Dagger,Int,25%
+133283,M0,Grim Batol,1st boss,One-Hand,Dagger,Int,50%
+221150,Hc+M0,Ara-Kara,1st boss,One-Hand,Sword,Int,50%
+178737,M0,Necrotic Wake,2nd boss,One-Hand,Sword,Int,50%
+0,M0,Int1hWeapon (Warlock),5 sources,One-Hand,m0 week,,35%
+221166,Hc+M0,City of Threads,1st boss,Two-Hand,Staff,Int,33%
+221085,Hc+M0,Stonevault,3rd boss,Two-Hand,Staff,Int,25%
+133303,M0,Grim Batol,Last boss,Two-Hand,Staff,Int,20%
+178714,M0,Mists of Tirna,Last boss,Two-Hand,Staff,Int,50%
+0,M0,Int2hWeapon (Warlock),4 sources,Two-Hand,m0 week,,23%
+133288,M0,Grim Batol,2nd boss,Ranged,Wand,Int,33%
+0,M0,Ranged (Warlock),1 sources,Ranged,m0 week,,7%
+221172,Hc+M0,City of Threads,2nd boss,Held In Off-hand,,Int,25%
+221132,Hc+M0,Dawnbreaker,1st boss,Held In Off-hand,,Int,33%
+0,M0,Offhand (Warlock),2 sources,Held In Off-hand,m0 week,,11%
+219314,Hc+M0,Ara-Kara,1st boss,Trinket,Anyrole Trinket,,50%
+219317,Hc+M0,Ara-Kara,Last boss,Trinket,Anyrole Trinket,"Agi,Int",33%
+219318,Hc+M0,City of Threads,1st boss,Trinket,Anyrole Trinket,,33%
+219321,Hc+M0,City of Threads,Last boss,Trinket,Anyrole Trinket,Int,33%
+219312,Hc+M0,Dawnbreaker,2nd boss,Trinket,Anyrole Trinket,"Agi,Int",50%
+219303,Hc+M0,Stonevault,Last boss,Trinket,Anyrole Trinket,,50%
+133305,M0,Grim Batol,Last boss,Trinket,Anyrole Trinket,,20%
+178708,M0,Mists of Tirna,1st boss,Trinket,Anyrole Trinket,Int,33%
+219319,Hc+M0,City of Threads,2nd boss,Trinket,Dps Trinket,Agi,25%
+219301,Hc+M0,Stonevault,3rd boss,Trinket,Dps Trinket,,25%
+178772,M0,Necrotic Wake,3rd boss,Trinket,Dps Trinket,Int,50%
+159622,M0,Siege of Boralus,3rd boss,Trinket,Dps Trinket,Int,50%
+0,M0,AnyroleTrinket (Warlock),8 sources,Trinket,m0 week,,47%
+0,M0,DpsTrinket (Warlock),4 sources,Trinket,m0 week,,27%

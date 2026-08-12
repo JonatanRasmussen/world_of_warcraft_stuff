@@ -1,0 +1,186 @@
+<h1 class="heading-size-1">Dark Iron Chain Boots</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<!--ue--><table width="100%"><tr><td>Feet</td><th><!--scstart4:3--><span class="q1">Mail</span><!--scend--></th></tr></table><!--rf--><span><!--amr-->6 Armor</span><br><span><!--stat73-->+3 [Agility or Intellect]</span><br><span><!--stat7-->+5 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg40-->3 Versatility</span><br><span class="q2">+<!--rtg49-->3 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--><br>Durability 65 / 65</td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->31<div class="whtt-sellprice">Sell Price: <span class="moneysilver">2</span> <span class="moneycopper">66</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Forgemaster Throngus</div><div class="whtt-extra whtt-dropchance">Drop Chance: 4.50%</div></td></tr></table></noscript>
+<div id="ic56119" style="float: left"></div>
+<div id="tt56119" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl56119"></div>
+    <div id="ks56119" data-role="spell-modifiers"></div>
+    <div id="iu56119"></div>
+    <div id="rppm56119"></div>
+    <div id="bs56119"></div>
+    <div id="craftedStatsSelector56119"></div>
+    <div id="cs56119"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic56119').appendChild(Icon.create('inv_boots_mail_dungeonmail_c_03', 2, null, 0, 1));
+var tt = WH.ge('tt56119');
+var sl = WH.ge('sl56119');
+var ks = WH.ge('ks56119');
+var iu = WH.ge('iu56119');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        56119,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+    <div class="pad"></div>
+    <span id="itemspec_ttip" style="cursor:pointer;">Players can win this item when selecting the following class specializations:</span>
+    <script type="text/javascript">
+        $('#itemspec_ttip').bind('mousemove', function (event) {
+            WH.Tooltips.showAtCursor(event, "Loot specialization applies to raid finder, bonus roll, quest, and heroic scenario rewards.", 'q');
+        });
+        $('#itemspec_ttip').bind('mouseout', function(e) {
+            WH.Tooltips.hide();
+        });
+    </script>
+    <ul id="lootspecs">        <li>Hunter:
+                        <div class="iconsmall spec253" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_bestialdiscipline.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.253"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec253 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Beast Mastery", 'q');
+                });
+                $('#lootspecs').find('.spec253 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec254" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_focusedaim.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.254"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec254 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Marksmanship", 'q');
+                });
+                $('#lootspecs').find('.spec254 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec255" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/ability_hunter_camouflage.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.3.255"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec255 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Survival", 'q');
+                });
+                $('#lootspecs').find('.spec255 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Shaman:
+                        <div class="iconsmall spec262" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_nature_lightning.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.262"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec262 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Elemental", 'q');
+                });
+                $('#lootspecs').find('.spec262 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec263" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_shaman_improvedstormstrike.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.263"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec263 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Enhancement", 'q');
+                });
+                $('#lootspecs').find('.spec263 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec264" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/spell_nature_magicimmunity.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.7.264"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec264 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Restoration", 'q');
+                });
+                $('#lootspecs').find('.spec264 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+            <li>Evoker:
+                        <div class="iconsmall spec1467" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/classicon_evoker_devastation.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.13.1467"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec1467 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Devastation", 'q');
+                });
+                $('#lootspecs').find('.spec1467 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec1468" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/classicon_evoker_preservation.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.13.1468"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec1468 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Preservation", 'q');
+                });
+                $('#lootspecs').find('.spec1468 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                        <div class="iconsmall spec1473" style="display:inline-block;vertical-align:bottom">
+                <ins style="background-image: url(https://wow.zamimg.com/images/wow/icons/small/classicon_evoker_augmentation.jpg);"></ins>
+                <del></del>
+                <a target="_blank" href="/spells=-12.13.1473"></a>
+            </div>
+            <script>
+                $('#lootspecs').find('.spec1473 a').bind('mouseover', function() {
+                    WH.Tooltips.show(this, "Augmentation", 'q');
+                });
+                $('#lootspecs').find('.spec1473 a').bind('mouseout', function() {
+                    WH.Tooltips.hide();
+                });
+            </script>
+                    </li>
+    </ul>
+
+
+    <div class="pad"></div>This item is part of the following transmog set:     &nbsp;<a href="/transmog-set=1306/stilled-heart-mail">Stilled Heart Mail</a>
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

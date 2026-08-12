@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Cinderbrew Stein</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=446648/cinderbrew-stein" class="q2">Occasionally share a drink with allies who assist you in combat, granting them <!--pts2:0:0:446648:0.606709-->667<!----> of their primary stat for 15 sec and absorbing <!--pts3:0:0:446648:22.9026-->10467<!----> damage. You take a sip as well, granting <!--pts4:0:0:446648:0.326689-->359<!----> &lt;Primary Stat&gt; and absorbing <!--pts5:0:0:446648:106.878-->48844<!----> damage.<br /><br />When you fall below <!--pts1:0:0:446648:0-->50<!---->% health, you take an emergency sip. This may only occur once every 1 min.<!--sp137028:0--><!--sp137028--><!--sp137023:0--><!--sp137023--><!--sp137010:0--><!--sp137010--><!--sp212613:0--><!--sp212613--><!--sp137008:0--><!--sp137008--><!--sp137048:0--><br /><br /><span style="color: #FF2020">Valid only for tank specializations.</span><!--sp137048--></a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->68<br><span class="q">&quot;Watered down for consumption by lesser mortals.&quot;</span><div class="whtt-sellprice">Sell Price: <span class="moneygold">46</span> <span class="moneysilver">69</span> <span class="moneycopper">55</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Brew Master Aldryr</div></td></tr></table></noscript>
+<div id="ic219297" style="float: left"></div>
+<div id="tt219297" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl219297" style="display: block"></div>
+    <div id="ks219297" data-role="spell-modifiers"></div>
+    <div id="iu219297"></div>
+    <div id="rppm219297"></div>
+    <div id="bs219297"></div>
+    <div id="craftedStatsSelector219297"></div>
+    <div id="cs219297"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic219297').appendChild(Icon.create('inv_misc_1h_earthenpitcher_b_01', 2, null, 0, 1));
+var tt = WH.ge('tt219297');
+var sl = WH.ge('sl219297');
+var ks = WH.ge('ks219297');
+var iu = WH.ge('iu219297');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        219297,
+        true,
+        true,
+        sl,
+        null,
+        [446648],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

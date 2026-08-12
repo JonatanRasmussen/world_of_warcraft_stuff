@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Entropic Skardyn Core</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><span class="q2">+<!--rtg32-->604 Critical Strike</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=443380/entropic-skardyn-core" class="q2">Your spells have a chance to destabilize the void energy, releasing a corrupted fragment. Retrieving a fragment briefly infuses you with its power, increasing your Intellect by <!--pts1:0:0:443380:1.12444-->1235<!----> for 15 sec.</a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">45</span> <span class="moneysilver">32</span> <span class="moneycopper">92</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Voidstone Monstrosity</div></td></tr></table></noscript>
+<div id="ic219296" style="float: left"></div>
+<div id="tt219296" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl219296" style="display: block"></div>
+    <div id="ks219296" data-role="spell-modifiers"></div>
+    <div id="iu219296"></div>
+    <div id="rppm219296"></div>
+    <div id="bs219296"></div>
+    <div id="craftedStatsSelector219296"></div>
+    <div id="cs219296"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic219296').appendChild(Icon.create('inv_nullstone_void', 2, null, 0, 1));
+var tt = WH.ge('tt219296');
+var sl = WH.ge('sl219296');
+var ks = WH.ge('ks219296');
+var iu = WH.ge('iu219296');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        219296,
+        true,
+        true,
+        sl,
+        null,
+        [443380],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

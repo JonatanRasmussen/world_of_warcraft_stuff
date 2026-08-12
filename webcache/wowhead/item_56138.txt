@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Gale of Shadows</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->37</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Trinket</td><th><!--scstart4:-4--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><!--ebstats--><span class="q2">+<!--rtg36-->6 Haste</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><span class="q2">Equip: <a href="/spell=90943/item-proc-stacking-spell-power" class="q2">Your healing and damage periodic spells grant <!--pts1:0:0:90953:0.029-->0<!----> spell power each time they heal or deal damage. &nbsp; Lasts 15 sec, stacking up to 20 times. (500ms cooldown)</a></span><!--itemEffects:1--><br>Requires Level <!--rlvl-->31<div class="whtt-sellprice">Sell Price: <span class="moneysilver">3</span> <span class="moneycopper">4</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Erudax</div><div class="whtt-extra whtt-dropchance">Drop Chance: 8.10%</div></td></tr></table></noscript>
+<div id="ic56138" style="float: left"></div>
+<div id="tt56138" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl56138" style="display: block"></div>
+    <div id="ks56138" data-role="spell-modifiers"></div>
+    <div id="iu56138"></div>
+    <div id="rppm56138"></div>
+    <div id="bs56138"></div>
+    <div id="craftedStatsSelector56138"></div>
+    <div id="cs56138"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic56138').appendChild(Icon.create('spell_shadow_gathershadows', 2, null, 0, 1));
+var tt = WH.ge('tt56138');
+var sl = WH.ge('sl56138');
+var ks = WH.ge('ks56138');
+var iu = WH.ge('iu56138');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        56138,
+        true,
+        true,
+        sl,
+        null,
+        [90943],
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

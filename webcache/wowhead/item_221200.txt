@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">Radiant Necromancer's Band</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Finger</td><th><!--scstart4:-2--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat7-->+1,130 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg40-->677 Versatility</span><br><span class="q2">+<!--rtg49-->1,078 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->68<div class="whtt-sellprice">Sell Price: <span class="moneygold">34</span> <span class="moneysilver">49</span> <span class="moneycopper">30</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Prioress Murrpray</div></td></tr></table></noscript>
+<div id="ic221200" style="float: left"></div>
+<div id="tt221200" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl221200"></div>
+    <div id="ks221200" data-role="spell-modifiers"></div>
+    <div id="iu221200"></div>
+    <div id="rppm221200"></div>
+    <div id="bs221200"></div>
+    <div id="craftedStatsSelector221200"></div>
+    <div id="cs221200"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic221200').appendChild(Icon.create('inv_11_0_arathor_ring_01_color2', 2, null, 0, 1));
+var tt = WH.ge('tt221200');
+var sl = WH.ge('sl221200');
+var ks = WH.ge('ks221200');
+var iu = WH.ge('iu221200');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        221200,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

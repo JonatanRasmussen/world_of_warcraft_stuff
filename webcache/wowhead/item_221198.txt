@@ -1,0 +1,52 @@
+<h1 class="heading-size-1">85-Year Tenure Ring</h1>
+<noscript><table><tr><td><!--nstart--><!--nend--><!--ndstart--><!--ndend--><span class="q"><br>Item Level <!--ilvl-->437</span><!--bo--><br>Binds when picked up<br>Unique-Equipped<table width="100%"><tr><td>Finger</td><th><!--scstart4:-2--><span class="q1"></span><!--scend--></th></tr></table><!--rf--><span><!--stat7-->+1,130 Stamina</span><!--ebstats--><br><span class="q2">+<!--rtg32-->602 Critical Strike</span><br><span class="q2">+<!--rtg49-->1,153 Mastery</span><!--egstats--><!--eistats--><!--nameDescStats--><!--rs--><!--e--><!--ps--></td></tr></table><table><tr><td><!--rr--><!--itemEffects:0-->Requires Level <!--rlvl-->68<br><span class="q">&quot;A small token awarded by the BEE.E.O. to those who dedicate their entire lives to service.&quot;</span><div class="whtt-sellprice">Sell Price: <span class="moneygold">34</span> <span class="moneysilver">25</span></div><div class="whtt-extra whtt-droppedby">Dropped by: Goldie Baronbottom</div></td></tr></table></noscript>
+<div id="ic221198" style="float: left"></div>
+<div id="tt221198" class="wowhead-tooltip" style="float: left; padding-top: 1px"></div>
+<div style="clear: left"></div>
+<div class="tooltip-options">
+    <div id="sl221198"></div>
+    <div id="ks221198" data-role="spell-modifiers"></div>
+    <div id="iu221198"></div>
+    <div id="rppm221198"></div>
+    <div id="bs221198"></div>
+    <div id="craftedStatsSelector221198"></div>
+    <div id="cs221198"></div>
+</div>
+
+<script type="text/javascript">
+WH.ge('ic221198').appendChild(Icon.create('inv_11_0_ventureco_ring01_color1', 2, null, 0, 1));
+var tt = WH.ge('tt221198');
+var sl = WH.ge('sl221198');
+var ks = WH.ge('ks221198');
+var iu = WH.ge('iu221198');
+WH.updateTooltip.call(tt,
+    (WH.enhanceTooltip.bind(tt))(
+        221198,
+        true,
+        true,
+        sl,
+        null,
+        null,
+        ks,
+        null,
+        iu,
+        true,
+        null,
+        null,
+        ''
+    )
+);
+</script>
+
+
+
+
+
+<div id="infobox-alternate-position"></div><div id="video-pos-body"><script>WH.WAS.validateUnit("video-pos-body")</script></div>
+
+    <div class="db-page-collection-tracker-cta"></div>
+
+
+    <script>$('.db-page-collection-tracker-cta').append(WH.Tools.createWowheadClientCta());</script>
+    
+<h2 class="heading-size-2 clear">Related</h2></div>

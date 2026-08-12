@@ -1,0 +1,154 @@
+{
+    "Head": {
+        "DruidBoomie": "32%",
+        "DruidCat": "37%",
+        "DruidBear": "37%",
+        "DruidResto": "32%",
+        "Available": "4 available in m0",
+        "Druid": "37%"
+    },
+    "Shoulders": {
+        "DruidBoomie": "23%",
+        "DruidCat": "27%",
+        "DruidBear": "35%",
+        "DruidResto": "21%",
+        "Available": "3 available in m0",
+        "Druid": "35%"
+    },
+    "Chest": {
+        "DruidBoomie": "37%",
+        "DruidCat": "48%",
+        "DruidBear": "54%",
+        "DruidResto": "44%",
+        "Available": "6 available in m0",
+        "Druid": "54%"
+    },
+    "Wrists": {
+        "DruidBoomie": "37%",
+        "DruidCat": "31%",
+        "DruidBear": "28%",
+        "DruidResto": "37%",
+        "Available": "4 available in m0",
+        "Druid": "37%"
+    },
+    "Hands": {
+        "DruidBoomie": "19%",
+        "DruidCat": "19%",
+        "DruidBear": "19%",
+        "DruidResto": "16%",
+        "Available": "2 available in m0",
+        "Druid": "19%"
+    },
+    "Waist": {
+        "DruidBoomie": "34%",
+        "DruidCat": "36%",
+        "DruidBear": "34%",
+        "DruidResto": "32%",
+        "Available": "5 available in m0",
+        "Druid": "36%"
+    },
+    "Legs": {
+        "DruidBoomie": "21%",
+        "DruidCat": "21%",
+        "DruidBear": "24%",
+        "DruidResto": "24%",
+        "Available": "3 available in m0",
+        "Druid": "24%"
+    },
+    "Feet": {
+        "DruidBoomie": "24%",
+        "DruidCat": "24%",
+        "DruidBear": "24%",
+        "DruidResto": "24%",
+        "Available": "3 available in m0",
+        "Druid": "24%"
+    },
+    "Neck": {
+        "DruidBoomie": "39%",
+        "DruidCat": "29%",
+        "DruidBear": "27%",
+        "DruidResto": "37%",
+        "Available": "4 available in m0",
+        "Druid": "39%"
+    },
+    "Back": {
+        "DruidBoomie": "34%",
+        "DruidCat": "37%",
+        "DruidBear": "42%",
+        "DruidResto": "34%",
+        "Available": "6 available in m0",
+        "Druid": "42%"
+    },
+    "Ring": {
+        "DruidBoomie": "55%",
+        "DruidCat": "58%",
+        "DruidBear": "58%",
+        "DruidResto": "54%",
+        "Available": "10 available in m0",
+        "Druid": "58%"
+    },
+    "Int1hWeapon": {
+        "DruidBoomie": "23%",
+        "DruidCat": "0%",
+        "DruidBear": "0%",
+        "DruidResto": "24%",
+        "Available": "4 available in m0",
+        "Druid": "24%"
+    },
+    "Agi2hWeapon": {
+        "DruidBoomie": "0%",
+        "DruidCat": "20%",
+        "DruidBear": "17%",
+        "DruidResto": "0%",
+        "Available": "3 available in m0",
+        "Druid": "20%"
+    },
+    "Int2hWeapon": {
+        "DruidBoomie": "30%",
+        "DruidCat": "0%",
+        "DruidBear": "0%",
+        "DruidResto": "30%",
+        "Available": "5 available in m0",
+        "Druid": "30%"
+    },
+    "Offhand": {
+        "DruidBoomie": "11%",
+        "DruidCat": "0%",
+        "DruidBear": "0%",
+        "DruidResto": "13%",
+        "Available": "2 available in m0",
+        "Druid": "13%"
+    },
+    "DpsTrinket": {
+        "DruidBoomie": "25%",
+        "DruidCat": "32%",
+        "DruidBear": "0%",
+        "DruidResto": "0%",
+        "Available": "4 available in m0",
+        "Druid": "32%"
+    },
+    "HealTrinket": {
+        "DruidBoomie": "0%",
+        "DruidCat": "0%",
+        "DruidBear": "0%",
+        "DruidResto": "24%",
+        "Available": "4 available in m0",
+        "Druid": "24%"
+    },
+    "TankTrinket": {
+        "DruidBoomie": "0%",
+        "DruidCat": "0%",
+        "DruidBear": "19%",
+        "DruidResto": "0%",
+        "Available": "3 available in m0",
+        "Druid": "19%"
+    },
+    "AnyroleTrinket": {
+        "DruidBoomie": "45%",
+        "DruidCat": "55%",
+        "DruidBear": "55%",
+        "DruidResto": "45%",
+        "Available": "10 available in m0",
+        "Druid": "55%"
+    }
+}
